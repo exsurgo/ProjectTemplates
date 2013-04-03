@@ -1,0 +1,55 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 561,
+        "width": null,
+        "designer|userClassName": "Viewer",
+        "layout": "border",
+        "collapsed": false,
+        "title": "My Panel"
+    },
+    "designerId": "6341b677-2923-437d-8413-1f52779259d3",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "layout|split": true,
+                "dock": null,
+                "designer|userClassName": "MyContainer1"
+            },
+            "designerId": "ce4e1e82-1c7e-40cb-b413-16461e1e97e1"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "layout|split": true,
+                "border": "0 1 0 0",
+                "width": 212,
+                "designer|userClassName": "MyContainer",
+                "resizable": true,
+                "resizeHandles": "e"
+            },
+            "configAlternates": {
+                "resizable": "boolean"
+            },
+            "designerId": "a208c839-8145-4872-a6f5-b8d864f71365"
+        }
+    ]
+}

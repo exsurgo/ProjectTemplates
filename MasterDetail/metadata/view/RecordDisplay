@@ -1,0 +1,132 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "frame": true,
+        "height": 456,
+        "width": null,
+        "designer|userClassName": "RecordDisplay",
+        "designer|initialView": true,
+        "layout": "vbox",
+        "title": "My Records"
+    },
+    "designerId": "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": null,
+                "height": 242,
+                "id": "RecordGrid",
+                "designer|userClassName": "MyGridPanel",
+                "title": null,
+                "store": "RecordStore"
+            },
+            "designerId": "a5a407e7-18fa-4914-918f-2c5b6789392d",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView"
+                    },
+                    "designerId": "78c707bc-3756-4dfe-bfc3-e79324bf3b1b"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onRowSelect",
+                        "fn": "onRowSelect",
+                        "implHandler": [
+                            "",
+                            "// grab a reference to the detailPanel via itemId",
+                            "// the # in front of the id indicates that we would like to grab a reference by",
+                            "var details = this.child('#RecordDetails');",
+                            "",
+                            "// update the detailPanel with data",
+                            "// this will trigger the tpl to become updates",
+                            "details.update(record.data);",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "designerId": "17b7f55e-d4f6-4018-832f-02efddf871dc"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 543,
+                        "designer|userClassName": "MyColumn",
+                        "dataIndex": "title",
+                        "text": "Title"
+                    },
+                    "designerId": "6b7f7bfe-bfdf-4092-8675-e172f98aef7d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "layout|margins": "5 0 0 0",
+                "height": 366,
+                "itemId": "RecordDetails",
+                "designer|userClassName": "MyPanel1",
+                "title": null
+            },
+            "designerId": "289f4b72-3f68-4351-8386-3d61a4680ef8",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<h1>{title}</h1>",
+                            "<p>",
+                            "    {description}",
+                            "</p>    "
+                        ],
+                        "designer|displayName": "DetailTemplate"
+                    },
+                    "designerId": "aa310fed-b45f-4f77-894c-b9f51ea19ba3"
+                }
+            ]
+        }
+    ]
+}

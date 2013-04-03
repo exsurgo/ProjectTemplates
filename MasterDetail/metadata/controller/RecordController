@@ -1,0 +1,61 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RecordController"
+    },
+    "designerId": "2856dba3-c512-4b02-8986-a3e844ab0885",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "viewDetails",
+                "fn": "viewDetails",
+                "designer|params": [
+                    "rowmodel",
+                    "record",
+                    "index",
+                    "eOpts"
+                ],
+                "implHandler": [
+                    "alert('works');"
+                ],
+                "name": "select",
+                "scope": "me",
+                "designer|controlQuery": "#RecordsGrid"
+            },
+            "designerId": "df446b75-e4d7-445e-89e4-61f7a5aefeae"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "addRecord",
+                "fn": "addRecord",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "// Show form"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "#AddButton"
+            },
+            "designerId": "e36d723b-3313-48ef-ac07-dece1e00f055"
+        }
+    ]
+}
