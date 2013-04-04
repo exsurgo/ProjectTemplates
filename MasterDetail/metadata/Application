@@ -10,7 +10,8 @@
             "RecordModel"
         ],
         "stores": [
-            "RecordStore"
+            "RecordStore",
+            "LocalStore"
         ],
         "views": [
             "RecordDisplay",

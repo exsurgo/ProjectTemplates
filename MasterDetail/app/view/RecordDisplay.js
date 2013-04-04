@@ -17,7 +17,7 @@ Ext.define('MyApp.view.RecordDisplay', {
     extend: 'Ext.panel.Panel',
 
     frame: true,
-    height: 456,
+    height: 506,
     layout: {
         align: 'stretch',
         type: 'vbox'

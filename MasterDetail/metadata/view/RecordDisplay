@@ -8,7 +8,7 @@
     "userConfig": {
         "container|align": "stretch",
         "frame": true,
-        "height": 456,
+        "height": 506,
         "width": null,
         "designer|userClassName": "RecordDisplay",
         "designer|initialView": true,

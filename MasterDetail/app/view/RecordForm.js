@@ -16,8 +16,9 @@
 Ext.define('MyApp.view.RecordForm', {
     extend: 'Ext.window.Window',
 
-    height: 348,
-    width: 459,
+    height: 292,
+    width: 455,
+    bodyPadding: 10,
     title: 'Edit Record',
 
     initComponent: function() {
@@ -26,29 +27,25 @@ Ext.define('MyApp.view.RecordForm', {
         Ext.applyIf(me, {
             items: [
                 {
-                    xtype: 'form',
-                    layout: {
-                        type: 'fit'
-                    },
-                    bodyPadding: 10,
-                    title: 'My Form',
-                    items: [
-                        {
-                            xtype: 'textfield',
-                            fieldLabel: 'Title',
-                            name: 'title'
-                        },
-                        {
-                            xtype: 'htmleditor',
-                            height: 150,
-                            fieldLabel: 'Description',
-                            name: 'description'
-                        },
-                        {
-                            xtype: 'button',
-                            text: 'MyButton'
-                        }
-                    ]
+                    xtype: 'textfield',
+                    fieldLabel: 'Title',
+                    name: 'title'
+                },
+                {
+                    xtype: 'htmleditor',
+                    height: 184,
+                    fieldLabel: 'Description',
+                    name: 'description'
+                },
+                {
+                    xtype: 'button',
+                    margin: '5 5 5 5 ',
+                    text: 'Save'
+                },
+                {
+                    xtype: 'button',
+                    margin: '5 5 5 5',
+                    text: 'Cancel'
                 }
             ]
         });

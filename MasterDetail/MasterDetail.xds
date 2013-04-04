@@ -69,6 +69,14 @@
                 "app/view/RecordForm.js"
             ],
             "className": "RecordForm"
+        },
+        "0b3e9ea8-52b8-4463-9375-44b5a27689ff": {
+            "paths": [
+                "metadata/store/LocalStore",
+                "app/store/override/LocalStore.js",
+                "app/store/LocalStore.js"
+            ],
+            "className": "LocalStore"
         }
     },
     "viewOrderMap": {
@@ -78,7 +86,8 @@
             "6341b677-2923-437d-8413-1f52779259d3"
         ],
         "store": [
-            "0315c038-557a-4e0a-8263-df261c02f018"
+            "0315c038-557a-4e0a-8263-df261c02f018",
+            "0b3e9ea8-52b8-4463-9375-44b5a27689ff"
         ],
         "controller": [
             "2856dba3-c512-4b02-8986-a3e844ab0885"
