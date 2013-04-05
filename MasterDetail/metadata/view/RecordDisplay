@@ -31,7 +31,7 @@
                 "id": "RecordGrid",
                 "designer|userClassName": "MyGridPanel",
                 "title": null,
-                "store": "RecordStore"
+                "store": "LocalStore"
             },
             "designerId": "a5a407e7-18fa-4914-918f-2c5b6789392d",
             "cn": [
@@ -125,6 +125,37 @@
                         "designer|displayName": "DetailTemplate"
                     },
                     "designerId": "aa310fed-b45f-4f77-894c-b9f51ea19ba3"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": "top",
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "6681d0a6-a89b-4797-b6db-81cf899503aa",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "AddButton",
+                        "designer|userClassName": "MyButton",
+                        "text": "Add Record"
+                    },
+                    "designerId": "09fadce1-6814-4fa6-a4ca-17ab48cf2bd7"
                 }
             ]
         }

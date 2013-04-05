@@ -17,11 +17,30 @@ Ext.define('MyApp.controller.RecordController', {
     extend: 'Ext.app.Controller',
 
     viewDetails: function(rowmodel, record, index, eOpts) {
-        alert('works');
+
+        Ext.Msg.alert("Works");
+
     },
 
     addRecord: function(target) {
-        // Show form
+
+        // Open new window
+        var window = Ext.create('MyApp.view.RecordForm');
+        window.show();
+
+    },
+
+    closeForm: function(target) {
+
+        // Get the window and close it
+        var window = target.up("window");
+        window.destroy();
+
+    },
+
+    saveRecord: function(target) {
+
+        Ext.Msg.alert("Works");
     },
 
     init: function(application) {
@@ -31,6 +50,12 @@ Ext.define('MyApp.controller.RecordController', {
             },
             "#AddButton": {
                 click: this.addRecord
+            },
+            "#RecordForm [text=Cancel]": {
+                click: this.closeForm
+            },
+            "#RecordForm > form": {
+                submit: this.saveRecord
             }
         });
     }

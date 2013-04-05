@@ -34,7 +34,7 @@ Ext.define('MyApp.view.RecordDisplay', {
                     flex: 1,
                     height: 242,
                     id: 'RecordGrid',
-                    store: 'RecordStore',
+                    store: 'LocalStore',
                     listeners: {
                         select: {
                             fn: me.onRowSelect,
@@ -61,6 +61,20 @@ Ext.define('MyApp.view.RecordDisplay', {
                         '<p>',
                         '    {description}',
                         '</p>    '
+                    ]
+                }
+            ],
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    flex: 1,
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'button',
+                            id: 'AddButton',
+                            text: 'Add Record'
+                        }
                     ]
                 }
             ]

@@ -32,11 +32,11 @@
         },
         "0315c038-557a-4e0a-8263-df261c02f018": {
             "paths": [
-                "metadata/store/RecordStore",
-                "app/store/override/RecordStore.js",
-                "app/store/RecordStore.js"
+                "metadata/store/RemoteStore",
+                "app/store/override/RemoteStore.js",
+                "app/store/RemoteStore.js"
             ],
-            "className": "RecordStore"
+            "className": "RemoteStore"
         },
         "44284846-393f-4336-9e37-fe0ed78e1e2a": {
             "paths": [

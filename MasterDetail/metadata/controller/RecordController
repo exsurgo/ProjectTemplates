@@ -27,7 +27,9 @@
                     "eOpts"
                 ],
                 "implHandler": [
-                    "alert('works');"
+                    "",
+                    "Ext.Msg.alert(\"Works\");",
+                    ""
                 ],
                 "name": "select",
                 "scope": "me",
@@ -49,13 +51,66 @@
                     "target"
                 ],
                 "implHandler": [
-                    "// Show form"
+                    "",
+                    "    // Open new window",
+                    "    var window = Ext.create('MyApp.view.RecordForm');",
+                    "    window.show();",
+                    ""
                 ],
                 "name": "click",
                 "scope": "me",
                 "designer|controlQuery": "#AddButton"
             },
             "designerId": "e36d723b-3313-48ef-ac07-dece1e00f055"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "closeForm",
+                "fn": "closeForm",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "",
+                    "// Get the window and close it",
+                    "var window = target.up(\"window\");",
+                    "window.destroy();",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "#RecordForm [text=Cancel]"
+            },
+            "designerId": "d0c4a0b7-dfc7-4587-919c-a603c5f4a4ff"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "saveRecord",
+                "fn": "saveRecord",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "",
+                    "\tExt.Msg.alert(\"Works\");"
+                ],
+                "name": "submit",
+                "scope": "me",
+                "designer|controlQuery": "#RecordForm > form"
+            },
+            "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
         }
     ]
 }

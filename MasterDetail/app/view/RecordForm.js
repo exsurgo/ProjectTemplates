@@ -16,36 +16,70 @@
 Ext.define('MyApp.view.RecordForm', {
     extend: 'Ext.window.Window',
 
-    height: 292,
+    height: 320,
+    id: 'RecordForm',
     width: 455,
-    bodyPadding: 10,
+    manageHeight: false,
     title: 'Edit Record',
+    modal: true,
 
     initComponent: function() {
         var me = this;
 
         Ext.applyIf(me, {
+            bodyStyle: {
+                'background-color': '#fff'
+            },
             items: [
                 {
-                    xtype: 'textfield',
-                    fieldLabel: 'Title',
-                    name: 'title'
-                },
-                {
-                    xtype: 'htmleditor',
-                    height: 184,
-                    fieldLabel: 'Description',
-                    name: 'description'
-                },
-                {
-                    xtype: 'button',
-                    margin: '5 5 5 5 ',
-                    text: 'Save'
-                },
-                {
-                    xtype: 'button',
-                    margin: '5 5 5 5',
-                    text: 'Cancel'
+                    xtype: 'form',
+                    border: 0,
+                    layout: {
+                        type: 'auto'
+                    },
+                    bodyBorder: false,
+                    bodyPadding: 10,
+                    manageHeight: false,
+                    title: '',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            margin: '0 0 10',
+                            fieldLabel: 'Title',
+                            labelAlign: 'right',
+                            name: 'title'
+                        },
+                        {
+                            xtype: 'htmleditor',
+                            height: 184,
+                            fieldLabel: 'Description',
+                            labelAlign: 'right',
+                            name: 'description'
+                        },
+                        {
+                            xtype: 'container',
+                            padding: '10 10 10 10',
+                            layout: {
+                                align: 'middle',
+                                pack: 'center',
+                                type: 'hbox'
+                            },
+                            items: [
+                                {
+                                    xtype: 'button',
+                                    margin: '5 5 5 5 ',
+                                    text: 'Save',
+                                    type: 'submit'
+                                },
+                                {
+                                    xtype: 'button',
+                                    id: '',
+                                    margin: '5 5 5 5',
+                                    text: 'Cancel'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         });

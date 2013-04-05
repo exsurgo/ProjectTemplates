@@ -9,7 +9,7 @@
         "autoLoad": true,
         "model": "RecordModel",
         "storeId": "MyJsonStore",
-        "designer|userClassName": "RecordStore"
+        "designer|userClassName": "RemoteStore"
     },
     "designerId": "0315c038-557a-4e0a-8263-df261c02f018",
     "cn": [

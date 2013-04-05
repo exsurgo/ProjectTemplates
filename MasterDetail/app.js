@@ -28,7 +28,7 @@ Ext.application({
         'RecordModel'
     ],
     stores: [
-        'RecordStore',
+        'RemoteStore',
         'LocalStore'
     ],
     views: [
