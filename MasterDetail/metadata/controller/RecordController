@@ -45,16 +45,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "addRecord",
-                "fn": "addRecord",
+                "designer|userClassName": "openForm",
+                "fn": "openForm",
                 "designer|params": [
                     "target"
                 ],
                 "implHandler": [
                     "",
-                    "    // Open new window",
-                    "    var window = Ext.create('MyApp.view.RecordForm');",
-                    "    window.show();",
+                    "// Open new window",
+                    "var window = Ext.create('MyApp.view.RecordForm');",
+                    "window.show();",
                     ""
                 ],
                 "name": "click",
@@ -85,7 +85,7 @@
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#RecordForm [text=Cancel]"
+                "designer|controlQuery": "#RecordForm button[text=Cancel]"
             },
             "designerId": "d0c4a0b7-dfc7-4587-919c-a603c5f4a4ff"
         },
@@ -106,9 +106,9 @@
                     "",
                     "\tExt.Msg.alert(\"Works\");"
                 ],
-                "name": "submit",
+                "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#RecordForm > form"
+                "designer|controlQuery": "#RecordForm button[text=Save]"
             },
             "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
         }

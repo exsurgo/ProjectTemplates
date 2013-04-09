@@ -22,7 +22,7 @@ Ext.define('MyApp.controller.RecordController', {
 
     },
 
-    addRecord: function(target) {
+    openForm: function(target) {
 
         // Open new window
         var window = Ext.create('MyApp.view.RecordForm');
@@ -49,13 +49,13 @@ Ext.define('MyApp.controller.RecordController', {
                 select: this.viewDetails
             },
             "#AddButton": {
-                click: this.addRecord
+                click: this.openForm
             },
-            "#RecordForm [text=Cancel]": {
+            "#RecordForm button[text=Cancel]": {
                 click: this.closeForm
             },
-            "#RecordForm > form": {
-                submit: this.saveRecord
+            "#RecordForm button[text=Save]": {
+                click: this.saveRecord
             }
         });
     }

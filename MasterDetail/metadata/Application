@@ -14,9 +14,8 @@
             "LocalStore"
         ],
         "views": [
-            "RecordDisplay",
-            "Viewer",
-            "RecordForm"
+            "RecordForm",
+            "MainViewport"
         ],
         "autoCreateViewport": true,
         "controllers": [

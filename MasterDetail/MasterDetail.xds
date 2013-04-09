@@ -12,18 +12,9 @@
     "xdsVersion": "2.2.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000499,
+    "upgradeVersion": 210000000500,
     "framework": "ext41",
     "topInstanceFileMap": {
-        "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba": {
-            "paths": [
-                "metadata/view/RecordDisplay",
-                "app/view/override/RecordDisplay.js",
-                "app/view/RecordDisplay.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "RecordDisplay"
-        },
         "67363d08-999e-4648-b11d-5d9fe657da91": {
             "paths": [
                 "metadata/resource/Library"
@@ -45,14 +36,6 @@
                 "app/model/RecordModel.js"
             ],
             "className": "RecordModel"
-        },
-        "6341b677-2923-437d-8413-1f52779259d3": {
-            "paths": [
-                "metadata/view/Viewer",
-                "app/view/override/Viewer.js",
-                "app/view/Viewer.js"
-            ],
-            "className": "Viewer"
         },
         "2856dba3-c512-4b02-8986-a3e844ab0885": {
             "paths": [
@@ -77,13 +60,27 @@
                 "app/store/LocalStore.js"
             ],
             "className": "LocalStore"
+        },
+        "698b7864-df89-4b9c-959f-0212282d4ead": {
+            "paths": [
+                "metadata/view/MainViewport",
+                "app/view/override/MainViewport.js",
+                "app/view/MainViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainViewport"
+        },
+        "1e57d176-78ba-4b8f-a784-39f623ab44f5": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
         "view": [
-            "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba",
-            "23afc0a3-a1b1-4f10-9622-02ebe055e576",
-            "6341b677-2923-437d-8413-1f52779259d3"
+            "698b7864-df89-4b9c-959f-0212282d4ead",
+            "23afc0a3-a1b1-4f10-9622-02ebe055e576"
         ],
         "store": [
             "0315c038-557a-4e0a-8263-df261c02f018",
@@ -96,7 +93,8 @@
             "44284846-393f-4336-9e37-fe0ed78e1e2a"
         ],
         "resource": [
-            "67363d08-999e-4648-b11d-5d9fe657da91"
+            "67363d08-999e-4648-b11d-5d9fe657da91",
+            "1e57d176-78ba-4b8f-a784-39f623ab44f5"
         ],
         "app": [
             "application"

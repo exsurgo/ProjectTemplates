@@ -13,6 +13,7 @@
  * Do NOT hand edit this file.
  */
 
+//@require @packageOverrides
 Ext.Loader.setConfig({
     enabled: true
 });
@@ -20,9 +21,8 @@ Ext.Loader.setConfig({
 Ext.application({
 
     requires: [
-        'MyApp.view.RecordDisplay',
-        'MyApp.view.Viewer',
-        'MyApp.view.RecordForm'
+        'MyApp.view.RecordForm',
+        'MyApp.view.MainViewport'
     ],
     models: [
         'RecordModel'
@@ -32,9 +32,8 @@ Ext.application({
         'LocalStore'
     ],
     views: [
-        'RecordDisplay',
-        'Viewer',
-        'RecordForm'
+        'RecordForm',
+        'MainViewport'
     ],
     autoCreateViewport: true,
     controllers: [
