@@ -18,8 +18,11 @@ Ext.define('MyApp.controller.RecordController', {
 
     viewDetails: function(rowmodel, record, index, eOpts) {
 
-        Ext.Msg.alert("Works");
+        // Query the detail panel by it's ID
+        var details = Ext.getCmp('DetailPanel');
 
+        // Update the detail panel with the selected row's data
+        details.update(record.data);
     },
 
     openForm: function(target) {
@@ -45,7 +48,7 @@ Ext.define('MyApp.controller.RecordController', {
 
     init: function(application) {
         this.control({
-            "#RecordsGrid": {
+            "#RecordGrid": {
                 select: this.viewDetails
             },
             "#AddButton": {

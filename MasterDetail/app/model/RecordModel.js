@@ -22,6 +22,13 @@ Ext.define('MyApp.model.RecordModel', {
         },
         {
             name: 'description'
+        },
+        {
+            name: 'createDate',
+            type: 'date'
+        },
+        {
+            name: 'id'
         }
     ]
 });

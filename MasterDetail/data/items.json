@@ -1,6 +1,14 @@
 {
     "data" : [ 
-		{ title: "Item 1", description: "bla bla bla" },
-		{ title: "Item 2", description: "bla bla bla" }
+		{ "id": 1, "title": "Item 1", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "createDate": "10-1-2010" },
+		{ "id": 2, "title": "Item 2", "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "createDate": "10-2-2010" },
+		{ "id": 3, "title": "Item 3", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", "createDate": "10-3-2010" },
+		{ "id": 4, "title": "Item 4", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "createDate": "10-4-2010" },
+		{ "id": 5, "title": "Item 5", "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "createDate": "10-5-2010" },
+		{ "id": 6, "title": "Item 6", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", "createDate": "10-6-2010" },
+		{ "id": 7, "title": "Item 7", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "createDate": "10-7-2010" },
+		{ "id": 8, "title": "Item 8", "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "createDate": "10-8-2010" },
+		{ "id": 9, "title": "Item 9", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", "createDate": "10-9-2010" },
+		{ "id": 10, "title": "Item 10", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "createDate": "10-10-2010" }
     ]
 }

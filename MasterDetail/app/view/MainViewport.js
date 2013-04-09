@@ -51,17 +51,25 @@ Ext.define('MyApp.view.MainViewport', {
                                     id: 'RecordGrid',
                                     forceFit: true,
                                     store: 'RemoteStore',
-                                    listeners: {
-                                        select: {
-                                            fn: me.onRowSelect,
-                                            scope: me
-                                        }
-                                    },
                                     columns: [
+                                        {
+                                            xtype: 'actioncolumn',
+                                            width: 15,
+                                            items: [
+                                                {
+                                                    icon: 'resources/images/edit.png'
+                                                }
+                                            ]
+                                        },
                                         {
                                             xtype: 'gridcolumn',
                                             dataIndex: 'title',
                                             text: 'Title'
+                                        },
+                                        {
+                                            xtype: 'datecolumn',
+                                            dataIndex: 'createDate',
+                                            text: 'Created On'
                                         }
                                     ]
                                 }
@@ -71,24 +79,19 @@ Ext.define('MyApp.view.MainViewport', {
                             xtype: 'panel',
                             flex: 1,
                             region: 'center',
+                            id: 'DetailPanel',
+                            tpl: [
+                                '<h1>{title}</h1>',
+                                '<p>',
+                                '    {description}',
+                                '</p>'
+                            ],
                             layout: {
                                 type: 'fit'
                             },
+                            bodyPadding: '10 10 10 10',
                             manageHeight: false,
-                            title: 'Record Details',
-                            items: [
-                                {
-                                    xtype: 'panel',
-                                    itemId: 'RecordDetails',
-                                    tpl: [
-                                        '<h1>{title}</h1>',
-                                        '<p>',
-                                        '    {description}',
-                                        '</p>    '
-                                    ],
-                                    bodyPadding: '10 10 10 10'
-                                }
-                            ]
+                            title: 'Record Details'
                         }
                     ],
                     dockedItems: [
@@ -109,18 +112,6 @@ Ext.define('MyApp.view.MainViewport', {
         });
 
         me.callParent(arguments);
-    },
-
-    onRowSelect: function(rowmodel, record, index, eOpts) {
-
-        // grab a reference to the detailPanel via itemId
-        // the # in front of the id indicates that we would like to grab a reference by
-        var details = this.child('#RecordDetails');
-
-        // update the detailPanel with data
-        // this will trigger the tpl to become updates
-        details.update(record.data);
-
     }
 
 });

@@ -86,30 +86,34 @@
                                     "designerId": "e0848696-2ab7-4a84-b385-dc05b44c0700"
                                 },
                                 {
-                                    "type": "basiceventbinding",
+                                    "type": "Ext.grid.column.Action",
                                     "reference": {
-                                        "name": "listeners",
+                                        "name": "columns",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "onRowSelect",
-                                        "fn": "onRowSelect",
-                                        "implHandler": [
-                                            "",
-                                            "// grab a reference to the detailPanel via itemId",
-                                            "// the # in front of the id indicates that we would like to grab a reference by",
-                                            "var details = this.child('#RecordDetails');",
-                                            "",
-                                            "// update the detailPanel with data",
-                                            "// this will trigger the tpl to become updates",
-                                            "details.update(record.data);",
-                                            ""
-                                        ],
-                                        "name": "select",
-                                        "scope": "me"
+                                        "width": 15,
+                                        "designer|userClassName": "MyActionColumn",
+                                        "designer|displayName": "Actions"
                                     },
-                                    "designerId": "a3c44d51-966b-4306-821d-72797113b12b"
+                                    "designerId": "64c0501c-d9ee-44b6-9a21-00d755773f50",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyActionColumnItem",
+                                                "designer|displayName": "Edit",
+                                                "icon": "resources/images/edit.png"
+                                            },
+                                            "designerId": "14ea99ae-a534-4948-9ea5-01ac2d10b2cb"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.column.Column",
@@ -125,6 +129,20 @@
                                         "text": "Title"
                                     },
                                     "designerId": "81a6a31f-46de-42a1-a1d0-f392d8490303"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Date",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyDateColumn",
+                                        "dataIndex": "createDate",
+                                        "text": "Created On"
+                                    },
+                                    "designerId": "ebfa67eb-e9ef-48cb-93fa-2984599ac71f"
                                 }
                             ]
                         }
@@ -140,50 +158,34 @@
                     "userConfig": {
                         "layout|flex": 1,
                         "layout|region": "center",
+                        "id": "DetailPanel",
                         "designer|userClassName": "MyPanel4",
-                        "designer|displayName": "DetailPane",
+                        "designer|displayName": null,
                         "layout": "fit",
+                        "bodyPadding": "10 10 10 10",
                         "manageHeight": false,
                         "title": "Record Details"
                     },
                     "designerId": "136884f9-9ae1-4ffa-9933-a0d47a86ced7",
                     "cn": [
                         {
-                            "type": "Ext.panel.Panel",
+                            "type": "Ext.XTemplate",
                             "reference": {
-                                "name": "items",
-                                "type": "array"
+                                "name": "tpl",
+                                "type": "object"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "height": null,
-                                "itemId": "RecordDetails",
-                                "designer|userClassName": "MyPanel1",
-                                "bodyPadding": "10 10 10 10",
-                                "title": null
+                                "designer|userClassName": "tpl",
+                                "implHandler": [
+                                    "<h1>{title}</h1>",
+                                    "<p>",
+                                    "    {description}",
+                                    "</p>"
+                                ],
+                                "designer|displayName": "DetailTemplate"
                             },
-                            "designerId": "b7e6aa7e-9f78-4895-9318-4e6aa0636b5f",
-                            "cn": [
-                                {
-                                    "type": "Ext.XTemplate",
-                                    "reference": {
-                                        "name": "tpl",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "tpl",
-                                        "implHandler": [
-                                            "<h1>{title}</h1>",
-                                            "<p>",
-                                            "    {description}",
-                                            "</p>    "
-                                        ],
-                                        "designer|displayName": "DetailTemplate"
-                                    },
-                                    "designerId": "aff40032-1291-46d8-a893-3a494c39d61b"
-                                }
-                            ]
+                            "designerId": "aff40032-1291-46d8-a893-3a494c39d61b"
                         }
                     ]
                 },

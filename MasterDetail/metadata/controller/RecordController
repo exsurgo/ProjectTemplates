@@ -28,12 +28,15 @@
                 ],
                 "implHandler": [
                     "",
-                    "Ext.Msg.alert(\"Works\");",
-                    ""
+                    "// Query the detail panel by it's ID",
+                    "var details = Ext.getCmp('DetailPanel');",
+                    "",
+                    "// Update the detail panel with the selected row's data",
+                    "details.update(record.data);"
                 ],
                 "name": "select",
                 "scope": "me",
-                "designer|controlQuery": "#RecordsGrid"
+                "designer|controlQuery": "#RecordGrid"
             },
             "designerId": "df446b75-e4d7-445e-89e4-61f7a5aefeae"
         },

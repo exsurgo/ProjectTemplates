@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "url": "resources/styles/app.css",
-        "id": "App"
+        "id": "AppStyles"
     },
     "designerId": "1e57d176-78ba-4b8f-a784-39f623ab44f5"
 }

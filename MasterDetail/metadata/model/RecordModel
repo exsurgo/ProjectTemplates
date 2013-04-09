@@ -35,6 +35,33 @@
                 "designer|userClassName": "MyField1"
             },
             "designerId": "9457f1d9-cb15-48a2-929e-aba43749eb39"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "createDate",
+                "type": "date",
+                "designer|userClassName": "MyField2"
+            },
+            "designerId": "ca1ab0a6-a6f4-4eae-8b3b-a6ccf5af113c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField3"
+            },
+            "designerId": "5b5175e6-f55c-4f1f-80c3-2205bb6bcd0b"
         }
     ]
 }
