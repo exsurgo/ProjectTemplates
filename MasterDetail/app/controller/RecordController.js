@@ -16,7 +16,7 @@
 Ext.define('MyApp.controller.RecordController', {
     extend: 'Ext.app.Controller',
 
-    viewDetails: function(rowmodel, record, index, eOpts) {
+    view: function(rowmodel, record, index, eOpts) {
 
         // Query the detail panel by it's ID
         var details = Ext.getCmp('DetailPanel');
@@ -25,7 +25,7 @@ Ext.define('MyApp.controller.RecordController', {
         details.update(record.data);
     },
 
-    openForm: function(target) {
+    add: function(target) {
 
         // Open new window
         var window = Ext.create('MyApp.view.RecordForm');
@@ -33,7 +33,38 @@ Ext.define('MyApp.controller.RecordController', {
 
     },
 
-    closeForm: function(target) {
+    edit: function(target) {
+        // Get panel data
+        var data = target.up('panel').data;
+
+        // Create new edit window
+        var window = Ext.create('MyApp.view.RecordForm');
+
+        // Set form values
+        var form = window.down('form').getForm();
+        form.setValues(data);
+
+        // Show window
+        window.show();
+
+    },
+
+    save: function(target) {
+
+        // Get values
+        var form = target.up('form').getForm(),	// Form
+        values = form.getValues(),			// Form values
+        window = target.up('window');		// Window
+
+        // Save data
+
+        // Close window
+        window.destroy();
+
+        // Update views
+    },
+
+    cancelEdit: function(target) {
 
         // Get the window and close it
         var window = target.up("window");
@@ -41,24 +72,38 @@ Ext.define('MyApp.controller.RecordController', {
 
     },
 
-    saveRecord: function(target) {
+    delete: function(target) {
 
-        Ext.Msg.alert("Works");
+        // Confirm this delete
+        Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this record?', function() {
+
+            // Delete record from store
+
+            // Remove from UI
+
+
+        });
     },
 
     init: function(application) {
         this.control({
             "#RecordGrid": {
-                select: this.viewDetails
+                select: this.view
             },
             "#AddButton": {
-                click: this.openForm
+                click: this.add
             },
-            "#RecordForm button[text=Cancel]": {
-                click: this.closeForm
+            "#DetailPanel button[text=Edit]": {
+                click: this.edit
             },
             "#RecordForm button[text=Save]": {
-                click: this.saveRecord
+                click: this.save
+            },
+            "#RecordForm button[text=Cancel]": {
+                click: this.cancelEdit
+            },
+            "#DetailPanel button[text=Delete]": {
+                click: this.delete
             }
         });
     }

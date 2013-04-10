@@ -16,7 +16,6 @@
 Ext.define('MyApp.view.RecordForm', {
     extend: 'Ext.window.Window',
 
-    height: 320,
     id: 'RecordForm',
     width: 455,
     manageHeight: false,
@@ -52,9 +51,24 @@ Ext.define('MyApp.view.RecordForm', {
                         {
                             xtype: 'htmleditor',
                             height: 184,
+                            margin: '0 0 10',
                             fieldLabel: 'Description',
                             labelAlign: 'right',
                             name: 'description'
+                        },
+                        {
+                            xtype: 'datefield',
+                            margin: '0 0 10',
+                            fieldLabel: 'Date',
+                            labelAlign: 'right',
+                            name: 'date'
+                        },
+                        {
+                            xtype: 'checkboxfield',
+                            fieldLabel: 'Is Featured',
+                            labelAlign: 'right',
+                            name: 'isFeatured',
+                            boxLabel: ''
                         },
                         {
                             xtype: 'container',

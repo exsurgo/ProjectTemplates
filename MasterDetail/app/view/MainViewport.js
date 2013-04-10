@@ -53,23 +53,19 @@ Ext.define('MyApp.view.MainViewport', {
                                     store: 'RemoteStore',
                                     columns: [
                                         {
-                                            xtype: 'actioncolumn',
-                                            width: 15,
-                                            items: [
-                                                {
-                                                    icon: 'resources/images/edit.png'
-                                                }
-                                            ]
-                                        },
-                                        {
                                             xtype: 'gridcolumn',
                                             dataIndex: 'title',
                                             text: 'Title'
                                         },
                                         {
                                             xtype: 'datecolumn',
-                                            dataIndex: 'createDate',
-                                            text: 'Created On'
+                                            dataIndex: 'date',
+                                            text: 'Date'
+                                        },
+                                        {
+                                            xtype: 'booleancolumn',
+                                            dataIndex: 'isFeatured',
+                                            text: 'Is Featured'
                                         }
                                     ]
                                 }
@@ -91,7 +87,25 @@ Ext.define('MyApp.view.MainViewport', {
                             },
                             bodyPadding: '10 10 10 10',
                             manageHeight: false,
-                            title: 'Record Details'
+                            title: 'Record Details',
+                            dockedItems: [
+                                {
+                                    xtype: 'toolbar',
+                                    dock: 'top',
+                                    items: [
+                                        {
+                                            xtype: 'button',
+                                            icon: 'resources/images/edit.png',
+                                            text: 'Edit'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'resources/images/delete.png',
+                                            text: 'Delete'
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ],
                     dockedItems: [

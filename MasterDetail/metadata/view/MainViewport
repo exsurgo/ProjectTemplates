@@ -86,36 +86,6 @@
                                     "designerId": "e0848696-2ab7-4a84-b385-dc05b44c0700"
                                 },
                                 {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "width": 15,
-                                        "designer|userClassName": "MyActionColumn",
-                                        "designer|displayName": "Actions"
-                                    },
-                                    "designerId": "64c0501c-d9ee-44b6-9a21-00d755773f50",
-                                    "cn": [
-                                        {
-                                            "type": "actioncolumnitem",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyActionColumnItem",
-                                                "designer|displayName": "Edit",
-                                                "icon": "resources/images/edit.png"
-                                            },
-                                            "designerId": "14ea99ae-a534-4948-9ea5-01ac2d10b2cb"
-                                        }
-                                    ]
-                                },
-                                {
                                     "type": "Ext.grid.column.Column",
                                     "reference": {
                                         "name": "columns",
@@ -139,10 +109,24 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyDateColumn",
-                                        "dataIndex": "createDate",
-                                        "text": "Created On"
+                                        "dataIndex": "date",
+                                        "text": "Date"
                                     },
                                     "designerId": "ebfa67eb-e9ef-48cb-93fa-2984599ac71f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Boolean",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyBooleanColumn",
+                                        "dataIndex": "isFeatured",
+                                        "text": "Is Featured"
+                                    },
+                                    "designerId": "c93edf68-a369-42b4-b101-2217b6e31d2b"
                                 }
                             ]
                         }
@@ -168,6 +152,51 @@
                     },
                     "designerId": "136884f9-9ae1-4ffa-9933-a0d47a86ced7",
                     "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "designer|userClassName": "MyToolbar"
+                            },
+                            "designerId": "5f1a0063-c1e8-4aa6-b7e3-10679d10a788",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton3",
+                                        "icon": "resources/images/edit.png",
+                                        "text": "Edit"
+                                    },
+                                    "designerId": "293841ee-a56a-4310-b00a-db5d04c805f9"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton4",
+                                        "icon": "resources/images/delete.png",
+                                        "text": "Delete"
+                                    },
+                                    "designerId": "6018d89c-f993-4c8e-909e-c2c9c5c2dd5b"
+                                }
+                            ]
+                        },
                         {
                             "type": "Ext.XTemplate",
                             "reference": {

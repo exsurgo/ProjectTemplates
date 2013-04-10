@@ -18,8 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "viewDetails",
-                "fn": "viewDetails",
+                "designer|userClassName": "view",
+                "fn": "view",
                 "designer|params": [
                     "rowmodel",
                     "record",
@@ -48,8 +48,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "openForm",
-                "fn": "openForm",
+                "designer|userClassName": "add",
+                "fn": "add",
                 "designer|params": [
                     "target"
                 ],
@@ -74,8 +74,75 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "closeForm",
-                "fn": "closeForm",
+                "designer|userClassName": "edit",
+                "fn": "edit",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "// Get panel data",
+                    "var data = target.up('panel').data;",
+                    "",
+                    "// Create new edit window",
+                    "var window = Ext.create('MyApp.view.RecordForm');",
+                    "",
+                    "// Set form values",
+                    "var form = window.down('form').getForm();",
+                    "form.setValues(data);",
+                    "",
+                    "// Show window",
+                    "window.show();",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "#DetailPanel button[text=Edit]"
+            },
+            "designerId": "6c1bbf38-d9cb-47ea-9ac3-355220170579"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "save",
+                "fn": "save",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "",
+                    "// Get values",
+                    "var form = target.up('form').getForm(),\t// Form",
+                    "    values = form.getValues(),\t\t\t// Form values",
+                    "    window = target.up('window');\t\t// Window",
+                    "",
+                    "// Save data",
+                    "",
+                    "// Close window",
+                    "window.destroy();",
+                    "",
+                    "// Update views"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "#RecordForm button[text=Save]"
+            },
+            "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "cancelEdit",
+                "fn": "cancelEdit",
                 "designer|params": [
                     "target"
                 ],
@@ -100,20 +167,28 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "saveRecord",
-                "fn": "saveRecord",
+                "designer|userClassName": "delete",
+                "fn": "delete",
                 "designer|params": [
                     "target"
                 ],
                 "implHandler": [
                     "",
-                    "\tExt.Msg.alert(\"Works\");"
+                    "// Confirm this delete",
+                    "Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this record?', function() {",
+                    "\t",
+                    "\t// Delete record from store",
+                    "    ",
+                    "    // Remove from UI",
+                    "    ",
+                    "    ",
+                    "});"
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#RecordForm button[text=Save]"
+                "designer|controlQuery": "#DetailPanel button[text=Delete]"
             },
-            "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
+            "designerId": "b98ca3bb-f3ae-4325-bb62-345e81cd9b07"
         }
     ]
 }

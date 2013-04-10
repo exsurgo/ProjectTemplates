@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 320,
+        "height": null,
         "id": "RecordForm",
         "width": 455,
         "designer|userClassName": "RecordForm",
@@ -65,7 +65,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "formBind": null,
                         "height": 184,
+                        "margin": "0 0 10",
                         "designer|userClassName": "MyHtmlEditor",
                         "designer|displayName": "Description",
                         "fieldLabel": "Description",
@@ -73,6 +75,40 @@
                         "name": "description"
                     },
                     "designerId": "199ebfb1-f4e1-4457-a6a3-db75c0a88d3a"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "margin": "0 0 10",
+                        "designer|userClassName": "MyDateField",
+                        "designer|displayName": "Date",
+                        "fieldLabel": "Date",
+                        "labelAlign": "right",
+                        "name": "date"
+                    },
+                    "designerId": "c8e51b7c-5854-4909-b8c6-086c4c9d7fcb"
+                },
+                {
+                    "type": "Ext.form.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox",
+                        "designer|displayName": "Is Featured",
+                        "fieldLabel": "Is Featured",
+                        "labelAlign": "right",
+                        "name": "isFeatured",
+                        "boxLabel": ""
+                    },
+                    "designerId": "512048f9-b49c-4e0d-b3b4-0d07229a9ac8"
                 },
                 {
                     "type": "Ext.container.Container",

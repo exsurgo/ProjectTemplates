@@ -18,10 +18,24 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
+                "name": "id",
+                "type": "int",
                 "designer|userClassName": "MyField"
             },
-            "designerId": "1f2a373a-5542-45c1-a073-a19e2f24e573"
+            "designerId": "f1e46f0b-b766-478e-8e20-20fbc76c2f73"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title",
+                "designer|userClassName": "MyField1"
+            },
+            "designerId": "d4580010-81b0-4a16-aca7-ac6aed2b950a"
         },
         {
             "type": "Ext.data.Field",
@@ -32,23 +46,9 @@
             "codeClass": null,
             "userConfig": {
                 "name": "description",
-                "designer|userClassName": "MyField1"
-            },
-            "designerId": "9457f1d9-cb15-48a2-929e-aba43749eb39"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "createDate",
-                "type": "date",
                 "designer|userClassName": "MyField2"
             },
-            "designerId": "ca1ab0a6-a6f4-4eae-8b3b-a6ccf5af113c"
+            "designerId": "91eb2fe9-630c-4f4f-ad51-7be8bee354d3"
         },
         {
             "type": "Ext.data.Field",
@@ -58,10 +58,25 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
+                "name": "date",
+                "type": "date",
                 "designer|userClassName": "MyField3"
             },
-            "designerId": "5b5175e6-f55c-4f1f-80c3-2205bb6bcd0b"
+            "designerId": "ac58b12c-2d03-46ff-98a6-78a8e6a6e7e2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isFeatured",
+                "type": "boolean",
+                "designer|userClassName": "MyField4"
+            },
+            "designerId": "e15dfec6-8007-4849-bd2e-2f036239d51d"
         }
     ]
 }

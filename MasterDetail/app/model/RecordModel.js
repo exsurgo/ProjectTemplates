@@ -18,17 +18,22 @@ Ext.define('MyApp.model.RecordModel', {
 
     fields: [
         {
+            name: 'id',
+            type: 'int'
+        },
+        {
             name: 'title'
         },
         {
             name: 'description'
         },
         {
-            name: 'createDate',
+            name: 'date',
             type: 'date'
         },
         {
-            name: 'id'
+            name: 'isFeatured',
+            type: 'boolean'
         }
     ]
 });
