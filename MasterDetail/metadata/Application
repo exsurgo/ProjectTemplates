@@ -7,11 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "RecordModel"
+            "Record"
         ],
         "stores": [
-            "RemoteStore",
-            "LocalStore"
+            "Records"
         ],
         "views": [
             "RecordForm",

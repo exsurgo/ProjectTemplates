@@ -24,8 +24,6 @@
                 "height": null,
                 "id": "MainPanel",
                 "width": null,
-                "designer|userClassName": "Viewer",
-                "designer|initialView": true,
                 "layout": "border",
                 "collapsed": false,
                 "manageHeight": false,
@@ -46,7 +44,6 @@
                         "layout|split": true,
                         "dock": null,
                         "width": 150,
-                        "designer|userClassName": "MyPanel3",
                         "designer|displayName": "GridPanel",
                         "layout": "fit",
                         "collapsed": false,
@@ -65,10 +62,9 @@
                                 "dock": null,
                                 "height": null,
                                 "id": "RecordGrid",
-                                "designer|userClassName": "MyGridPanel",
                                 "title": null,
                                 "forceFit": true,
-                                "store": "RemoteStore"
+                                "store": "Records"
                             },
                             "designerId": "b85ec3a4-7231-4b41-bddc-0964306009f7",
                             "cn": [
@@ -80,10 +76,23 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyGridView",
-                                        "designer|displayName": "Grid"
+                                        "designer|displayName": "GridView"
                                     },
                                     "designerId": "e0848696-2ab7-4a84-b385-dc05b44c0700"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id",
+                                        "text": "ID",
+                                        "format": "0"
+                                    },
+                                    "designerId": "96e48393-c1ae-4c17-8eef-270b5aa8effb"
                                 },
                                 {
                                     "type": "Ext.grid.column.Column",
@@ -94,11 +103,21 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "width": null,
-                                        "designer|userClassName": "MyColumn",
                                         "dataIndex": "title",
                                         "text": "Title"
                                     },
-                                    "designerId": "81a6a31f-46de-42a1-a1d0-f392d8490303"
+                                    "designerId": "81a6a31f-46de-42a1-a1d0-f392d8490303",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "a8d982e0-10cc-4b88-a2b8-3bad7fdeab01"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.column.Date",
@@ -108,11 +127,21 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyDateColumn",
                                         "dataIndex": "date",
                                         "text": "Date"
                                     },
-                                    "designerId": "ebfa67eb-e9ef-48cb-93fa-2984599ac71f"
+                                    "designerId": "ebfa67eb-e9ef-48cb-93fa-2984599ac71f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "dd495ae2-7537-42f3-9ded-c57eb864ca78"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.column.Boolean",
@@ -122,11 +151,30 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyBooleanColumn",
                                         "dataIndex": "isFeatured",
                                         "text": "Is Featured"
                                     },
-                                    "designerId": "c93edf68-a369-42b4-b101-2217b6e31d2b"
+                                    "designerId": "c93edf68-a369-42b4-b101-2217b6e31d2b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "a3d2c07d-3d77-4ad8-b569-1d89fca93c03"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.plugin.RowEditing",
+                                    "reference": {
+                                        "name": "plugins",
+                                        "type": "array"
+                                    },
+                                    "codeClass": "Ext.grid.plugin.RowEditing",
+                                    "designerId": "ef9c1521-2641-4052-bedc-ec2960c6af32"
                                 }
                             ]
                         }
@@ -143,7 +191,6 @@
                         "layout|flex": 1,
                         "layout|region": "center",
                         "id": "DetailPanel",
-                        "designer|userClassName": "MyPanel4",
                         "designer|displayName": null,
                         "layout": "fit",
                         "bodyPadding": "10 10 10 10",
@@ -161,7 +208,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dock": "top",
-                                "designer|userClassName": "MyToolbar"
+                                "hidden": true
                             },
                             "designerId": "5f1a0063-c1e8-4aa6-b7e3-10679d10a788",
                             "cn": [
@@ -174,7 +221,6 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "layout|flex": null,
-                                        "designer|userClassName": "MyButton3",
                                         "icon": "resources/images/edit.png",
                                         "text": "Edit"
                                     },
@@ -189,7 +235,6 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "layout|flex": null,
-                                        "designer|userClassName": "MyButton4",
                                         "icon": "resources/images/delete.png",
                                         "text": "Delete"
                                     },
@@ -205,12 +250,17 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "tpl",
                                 "implHandler": [
-                                    "<h1>{title}</h1>",
-                                    "<p>",
-                                    "    {description}",
-                                    "</p>"
+                                    "<tpl if=\"values.id\">",
+                                    "    <h1>{title}</h1>",
+                                    "    <p>",
+                                    "        {description}",
+                                    "    </p>",
+                                    "</tpl>",
+                                    "",
+                                    "<tpl if=\"!values.id\">",
+                                    "    <h1>Please select a record</h1>",
+                                    "</tpl>"
                                 ],
                                 "designer|displayName": "DetailTemplate"
                             },
@@ -227,7 +277,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "dock": "top",
-                        "designer|userClassName": "MyToolbar1",
+                        "hideMode": null,
                         "designer|displayName": "Toolbar"
                     },
                     "designerId": "e4d9d8b0-eb3b-4e18-9fb8-e19c2f8cac69",
@@ -242,7 +292,6 @@
                             "userConfig": {
                                 "layout|flex": null,
                                 "id": "AddButton",
-                                "designer|userClassName": "MyButton",
                                 "text": "Add Record"
                             },
                             "designerId": "bea93a2e-0317-4e11-8c26-d37ea2ff1afa"

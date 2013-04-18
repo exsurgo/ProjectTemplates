@@ -10,6 +10,7 @@
         "id": "RecordForm",
         "width": 455,
         "designer|userClassName": "RecordForm",
+        "layout": "fit",
         "bodyPadding": null,
         "bodyStyle": [
             "{",
@@ -31,14 +32,14 @@
             "codeClass": null,
             "userConfig": {
                 "border": 0,
-                "designer|userClassName": "MyForm",
+                "height": null,
                 "layout": "auto",
                 "bodyBorder": false,
                 "bodyPadding": 10,
                 "manageHeight": false,
                 "title": ""
             },
-            "designerId": "98411298-9998-4387-a894-ad3441357b7e",
+            "designerId": "58e07a6f-7538-4db2-a0d4-302b0bbc3a16",
             "cn": [
                 {
                     "type": "Ext.form.field.Text",
@@ -49,32 +50,31 @@
                     "codeClass": null,
                     "userConfig": {
                         "margin": "0 0 10",
-                        "designer|userClassName": "MyTextField",
-                        "designer|displayName": "Title",
+                        "designer|displayName": "",
                         "fieldLabel": "Title",
                         "labelAlign": "right",
-                        "name": "title"
+                        "name": "title",
+                        "validateBlank": true
                     },
                     "designerId": "ee319f31-7d3b-4068-ad9a-f9009c24cca5"
                 },
                 {
-                    "type": "Ext.form.field.HtmlEditor",
+                    "type": "Ext.form.field.TextArea",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "formBind": null,
-                        "height": 184,
+                        "height": null,
                         "margin": "0 0 10",
-                        "designer|userClassName": "MyHtmlEditor",
-                        "designer|displayName": "Description",
                         "fieldLabel": "Description",
                         "labelAlign": "right",
-                        "name": "description"
+                        "name": "description",
+                        "cols": 45,
+                        "rows": 3
                     },
-                    "designerId": "199ebfb1-f4e1-4457-a6a3-db75c0a88d3a"
+                    "designerId": "a35d024a-976b-43b7-bf66-82b3692048c1"
                 },
                 {
                     "type": "Ext.form.field.Date",
@@ -85,8 +85,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "margin": "0 0 10",
-                        "designer|userClassName": "MyDateField",
-                        "designer|displayName": "Date",
+                        "designer|displayName": "",
                         "fieldLabel": "Date",
                         "labelAlign": "right",
                         "name": "date"
@@ -101,8 +100,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyCheckbox",
-                        "designer|displayName": "Is Featured",
+                        "designer|displayName": "",
                         "fieldLabel": "Is Featured",
                         "labelAlign": "right",
                         "name": "isFeatured",
@@ -121,7 +119,6 @@
                         "container|align": "middle",
                         "container|pack": "center",
                         "padding": "10 10 10 10",
-                        "designer|userClassName": "MyContainer2",
                         "designer|displayName": "Buttons",
                         "layout": "hbox"
                     },
@@ -136,7 +133,6 @@
                             "codeClass": null,
                             "userConfig": {
                                 "margin": "5 5 5 5 ",
-                                "designer|userClassName": "MyButton",
                                 "text": "Save",
                                 "type": "submit"
                             },
@@ -152,7 +148,6 @@
                             "userConfig": {
                                 "id": "",
                                 "margin": "5 5 5 5",
-                                "designer|userClassName": "MyButton1",
                                 "text": "Cancel"
                             },
                             "designerId": "67e89290-54c9-4588-96b3-2548e4e00f95"
