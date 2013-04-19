@@ -16,7 +16,7 @@
 Ext.define('MyApp.view.RecordForm', {
     extend: 'Ext.window.Window',
 
-    id: 'RecordForm',
+    itemId: 'recordForm',
     width: 455,
     layout: {
         type: 'fit'
@@ -36,6 +36,7 @@ Ext.define('MyApp.view.RecordForm', {
                 {
                     xtype: 'form',
                     border: 0,
+                    itemId: 'form',
                     layout: {
                         type: 'auto'
                     },
@@ -86,13 +87,14 @@ Ext.define('MyApp.view.RecordForm', {
                             items: [
                                 {
                                     xtype: 'button',
+                                    itemId: 'saveButton',
                                     margin: '5 5 5 5 ',
                                     text: 'Save',
                                     type: 'submit'
                                 },
                                 {
                                     xtype: 'button',
-                                    id: '',
+                                    id: 'cancelButton',
                                     margin: '5 5 5 5',
                                     text: 'Cancel'
                                 }

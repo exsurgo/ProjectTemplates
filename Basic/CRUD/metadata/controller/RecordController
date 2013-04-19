@@ -28,18 +28,19 @@
                 ],
                 "implHandler": [
                     "",
-                    "var details = this.getDetailPanel(),\t// Detail panel via controller ref",
-                    "    toolbar = this.getToolbar();\t\t// Detail panel toolbar via controller ref",
+                    "var details = this.getDetailsPanel(),\t// Get detail panel via controller ref",
+                    "toolbar = this.getDetailsToolbar();\t\t// Get detail panel toolbar via controller ref",
                     "",
                     "// Update the detail panel with the selected row's data",
                     "details.update(record.data);",
                     "",
                     "// Show toolbar",
-                    "toolbar.show();"
+                    "toolbar.show();",
+                    ""
                 ],
                 "name": "select",
                 "scope": "me",
-                "designer|controlQuery": "#RecordGrid"
+                "designer|controlQuery": "#gridPanel"
             },
             "designerId": "df446b75-e4d7-445e-89e4-61f7a5aefeae"
         },
@@ -57,20 +58,20 @@
                 ],
                 "implHandler": [
                     "",
-                    "var window = Ext.create('MyApp.view.RecordForm'),\t// Create new form window",
-                    "\tform = window.down('form').getForm(),\t\t\t// Get form",
-                    "    model = Ext.create('MyApp.model.Record');\t\t// Create new Record model",
+                    "var formWindow = Ext.create('MyApp.view.RecordForm'),\t// Create new form window",
+                    "form = formWindow.down('form').getForm(),\t\t\t\t// Get form within window",
+                    "model = Ext.create('MyApp.model.Record');\t\t\t\t// Create new Record model",
                     "",
                     "// Associate model with form",
                     "form.loadRecord(model);",
                     "",
                     "// Show window",
-                    "window.show();",
+                    "formWindow.show();",
                     ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#AddButton"
+                "designer|controlQuery": "#mainPanel #addButton"
             },
             "designerId": "e36d723b-3313-48ef-ac07-dece1e00f055"
         },
@@ -87,22 +88,23 @@
                     "target"
                 ],
                 "implHandler": [
-                    "var data = target.up('panel').data,\t\t\t\t\t// Assosiated data",
-                    "    store = this.getRecordsStore(),\t\t\t\t\t// Record store",
-                    "    record = store.getById(data.id),\t\t\t\t// Current record",
-                    "    window = Ext.create('MyApp.view.RecordForm'),\t// Create new form window",
-                    "    form = window.down('form').getForm();\t\t\t// Get form",
+                    "",
+                    "var data = target.up('panel').data,\t\t\t\t\t// Get panel's assosiated data",
+                    "store = this.getRecordsStore(),\t\t\t\t\t\t// Get Records store",
+                    "record = store.getById(data.id),\t\t\t\t\t// Get current record",
+                    "formWindow = Ext.create('MyApp.view.RecordForm'),\t// Create new form window",
+                    "form = formWindow.down('form').getForm();\t\t\t// Get form within window",
                     "",
                     "// Load record model into form",
                     "form.loadRecord(record);",
                     "",
                     "// Show window",
-                    "window.show();",
+                    "formWindow.show();",
                     ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#DetailPanel button[text=Edit]"
+                "designer|controlQuery": "#detailsPanel #editButton"
             },
             "designerId": "6c1bbf38-d9cb-47ea-9ac3-355220170579"
         },
@@ -120,13 +122,13 @@
                 ],
                 "implHandler": [
                     "",
-                    "var form = target.up('form').getForm(),\t\t// Form",
-                    "    window = target.up('window'),\t\t\t// Form window",
-                    "    detailPanel = this.getDetailPanel(),\t// Detail panel",
-                    "    toolbar = this.getToolbar(),\t\t\t// Detail panel toolbar",
-                    "    record = form.getRecord(),\t\t\t\t// Record associated with form",
-                    "\tisNew = !record.get('id'),\t\t\t\t// Is new if no id exists",
-                    "    store = this.getRecordsStore();\t\t\t// Record store",
+                    "var form = target.up('form').getForm(),\t\t// Get parent form",
+                    "formWindow = target.up('window'),\t\t\t// Get parent window",
+                    "detailsPanel = this.getDetailsPanel(),\t\t// Get details panel",
+                    "detailsToolbar = this.getDetailsToolbar(),\t// Get detail panel toolbar",
+                    "record = form.getRecord(),\t\t\t\t\t// Get record associated with form",
+                    "store = this.getRecordsStore(),\t\t\t\t// Get Records store",
+                    "isNew = !record.get('id');\t\t\t\t\t// Is new if no record ID exists",
                     "",
                     "",
                     "// Update associated record with form values",
@@ -134,43 +136,44 @@
                     "",
                     "// Valid",
                     "if (form.isValid()) {",
-                    "    ",
+                    "",
                     "    // Add to store if new record",
                     "    if (isNew) {",
-                    "        ",
+                    "",
                     "        // Assign the record ID",
-                    "\t\t// Normally, this would be a generated ID",
+                    "        // Normally, this would be a generated ID",
                     "        var id = store.getTotalCount() + 1;",
                     "        record.set(\"id\", id);",
-                    "        ",
+                    "",
                     "        // Add to store",
                     "        store.add(record);",
-                    "        ",
+                    "",
                     "    }",
-                    "    ",
+                    "",
                     "    // Commit changes ",
                     "    store.commitChanges();",
-                    "    ",
+                    "",
                     "    // Update detail panel",
-                    "    detailPanel.update(record.getData());",
-                    "    ",
+                    "    detailsPanel.update(record.getData());",
+                    "",
                     "    // Close window",
-                    "    window.destroy();",
-                    "    ",
+                    "    formWindow.destroy();",
+                    "",
                     "}",
                     "",
                     "",
                     "// Invalid",
                     "else {",
-                    "    ",
+                    "",
                     "    // Show errors on form",
-                    "\tform.markInvalid(errors);",
-                    "    ",
-                    "}"
+                    "    form.markInvalid(errors);",
+                    "",
+                    "}",
+                    ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#RecordForm button[text=Save]"
+                "designer|controlQuery": "#recordForm #saveButton"
             },
             "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
         },
@@ -189,13 +192,13 @@
                 "implHandler": [
                     "",
                     "// Get the window and close it",
-                    "var window = target.up(\"window\");",
-                    "window.destroy();",
+                    "var formWindow = target.up(\"window\");",
+                    "formWindow.destroy();",
                     ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#RecordForm button[text=Cancel]"
+                "designer|controlQuery": "#recordForm #cancelButton"
             },
             "designerId": "d0c4a0b7-dfc7-4587-919c-a603c5f4a4ff"
         },
@@ -207,7 +210,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "delete",
+                "fn": "remove",
                 "designer|params": [
                     "target"
                 ],
@@ -216,29 +219,35 @@
                     "var me = this;",
                     "",
                     "// Confirm this delete",
-                    "Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this record?', function() {",
+                    "Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this record?', function(btn) {",
                     "",
-                    "\tvar data = target.up('panel').data,\t\t\t// Get assosiated data\t",
-                    "        store = me.getRecordsStore(),\t\t\t// Get record store",
-                    "        record = store.getById(data.id),\t\t// Get current record",
-                    "        detailPanel = me.getDetailPanel(),\t\t// Get detail panel\t",
-                    "        toolbar = me.getToolbar();\t\t\t\t// Get toolbar",
-                    "        ",
-                    "    // Delete from store",
-                    "\tstore.remove(record);",
+                    "    // User confirmed yes",
+                    "    if (btn == 'yes') {",
                     "",
-                    "\t// Clear panel content",
-                    "    detailPanel.update(null);",
-                    "    ",
-                    "    // Hide toolbar",
-                    "    toolbar.hide();",
-                    "  ",
-                    "    ",
-                    "});"
+                    "        var data = target.up('panel').data,\t\t\t// Get assosiated data\t",
+                    "        store = me.getRecordsStore(),\t\t\t\t// Get Records store",
+                    "        record = store.getById(data.id),\t\t\t// Get current record",
+                    "        detailsPanel = me.getDetailsPanel(),\t\t// Get details panel\t",
+                    "        detailsToolbar = me.getDetailsToolbar();\t// Get details panel toolbar",
+                    "",
+                    "        // Delete from store",
+                    "        store.remove(record);",
+                    "",
+                    "        // Clear panel content",
+                    "        detailsPanel.update(null);",
+                    "",
+                    "        // Hide toolbar",
+                    "        detailsToolbar.hide();",
+                    "",
+                    "    }",
+                    "",
+                    "",
+                    "});",
+                    ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "#DetailPanel button[text=Delete]"
+                "designer|controlQuery": "#detailsPanel #removeButton"
             },
             "designerId": "b98ca3bb-f3ae-4325-bb62-345e81cd9b07"
         },
@@ -250,8 +259,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "detailPanel",
-                "selector": "#DetailPanel"
+                "ref": "detailsPanel",
+                "selector": "#detailsPanel"
             },
             "designerId": "d5fcba7c-366a-4285-baa8-1ad5e532d2d0"
         },
@@ -263,8 +272,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "toolbar",
-                "selector": "#DetailPanel toolbar",
+                "ref": "detailsToolbar",
+                "selector": "#detailsPanel #detailsToolbar",
                 "xtype": null
             },
             "designerId": "fc4ec857-1bbe-40eb-800c-d002cae9f090"

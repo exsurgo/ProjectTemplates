@@ -1,7 +1,7 @@
 {
-    "name": "MasterDetail",
+    "name": "CRUD",
     "settings": {
-        "urlPrefix": "http://localhost/templates/MasterDetail/",
+        "urlPrefix": "http://localhost/templates/basic/CRUD/",
         "spacesToIndent": 4,
         "exportPath": "",
         "sdkPath": "",
@@ -61,12 +61,6 @@
                 "app/view/Viewport.js"
             ],
             "className": "MainViewport"
-        },
-        "1e57d176-78ba-4b8f-a784-39f623ab44f5": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
         }
     },
     "viewOrderMap": {
@@ -84,8 +78,7 @@
             "44284846-393f-4336-9e37-fe0ed78e1e2a"
         ],
         "resource": [
-            "67363d08-999e-4648-b11d-5d9fe657da91",
-            "1e57d176-78ba-4b8f-a784-39f623ab44f5"
+            "67363d08-999e-4648-b11d-5d9fe657da91"
         ],
         "app": [
             "application"

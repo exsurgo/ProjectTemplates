@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "height": null,
-        "id": "RecordForm",
+        "id": null,
+        "itemId": "recordForm",
         "width": 455,
         "designer|userClassName": "RecordForm",
         "layout": "fit",
@@ -33,6 +34,7 @@
             "userConfig": {
                 "border": 0,
                 "height": null,
+                "itemId": "form",
                 "layout": "auto",
                 "bodyBorder": false,
                 "bodyPadding": 10,
@@ -132,7 +134,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": null,
+                                "itemId": "saveButton",
                                 "margin": "5 5 5 5 ",
+                                "designer|displayName": null,
                                 "text": "Save",
                                 "type": "submit"
                             },
@@ -146,7 +151,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "id": "",
+                                "id": "cancelButton",
                                 "margin": "5 5 5 5",
                                 "text": "Cancel"
                             },
