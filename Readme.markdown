@@ -7,3 +7,4 @@ These templates are divided into 3 main categories.
 - **Layouts** - Used for application layouts.
 - **Starter Apps** - Simple but fully working apps.
 
+[View Templates Here](http://exsurgo.github.io/ProjectTemplates/index.html)
