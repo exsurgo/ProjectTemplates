@@ -1,0 +1,40 @@
+{
+    "name": "HeaderLeftRight",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "9a78f845-6352-4ac7-b83a-4179296ac504": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "0ba41f05-69d3-4f65-a25f-892e02e1b78d": {
+            "paths": [
+                "metadata/view/MainViewport",
+                "app/view/override/MainViewport.js",
+                "app/view/MainViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainViewport"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "0ba41f05-69d3-4f65-a25f-892e02e1b78d"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "9a78f845-6352-4ac7-b83a-4179296ac504"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
