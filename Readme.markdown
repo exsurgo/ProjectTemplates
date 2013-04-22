@@ -1,7 +1,7 @@
 Sencha Architect Project Templates
 ---------------
 
-These templates are divided into 3 main categories.
+These templates are divided into the following categories for the **Ext** and **Touch** frameworks.
 
 - **Basic** - Very simple, bare-bones templates.
 - **Layouts** - Used for application layouts.

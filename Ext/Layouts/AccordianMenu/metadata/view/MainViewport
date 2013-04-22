@@ -21,6 +21,21 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|region": "north",
+                "height": 100,
+                "itemId": "headerPanel",
+                "title": "Header"
+            },
+            "designerId": "d12ff238-6d23-4f16-b276-6ecc63966fbf"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "layout|collapseMode": null,
                 "layout|region": "west",
                 "layout|split": true,

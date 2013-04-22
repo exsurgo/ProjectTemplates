@@ -28,6 +28,13 @@ Ext.define('MyApp.view.MainViewport', {
             items: [
                 {
                     xtype: 'panel',
+                    region: 'north',
+                    height: 100,
+                    itemId: 'headerPanel',
+                    title: 'Header'
+                },
+                {
+                    xtype: 'panel',
                     region: 'west',
                     split: true,
                     itemId: 'menuPanel',
