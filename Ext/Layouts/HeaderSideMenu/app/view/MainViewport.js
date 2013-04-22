@@ -18,7 +18,7 @@ Ext.define('MyApp.view.MainViewport', {
 
     itemId: 'mainViewport',
     layout: {
-        type: 'fit'
+        type: 'border'
     },
 
     initComponent: function() {
@@ -28,51 +28,53 @@ Ext.define('MyApp.view.MainViewport', {
             items: [
                 {
                     xtype: 'panel',
-                    itemId: 'mainPanel',
+                    region: 'north',
+                    height: 100,
+                    itemId: 'headerPanel',
                     layout: {
                         type: 'fit'
                     },
-                    title: 'Header',
-                    dockedItems: [
+                    title: 'Header'
+                },
+                {
+                    xtype: 'panel',
+                    region: 'west',
+                    split: true,
+                    border: '0 2 0 0',
+                    itemId: 'menuPanel',
+                    width: 150,
+                    bodyBorder: false,
+                    collapseDirection: 'left',
+                    collapsible: true,
+                    title: 'Menu',
+                    items: [
                         {
-                            xtype: 'panel',
-                            dock: 'left',
-                            border: '0 2 0 0',
-                            itemId: 'menuPanel',
-                            width: 150,
-                            bodyBorder: false,
-                            collapseDirection: 'left',
-                            collapsible: true,
+                            xtype: 'menu',
+                            floating: false,
+                            itemId: 'sideMenu',
                             items: [
                                 {
-                                    xtype: 'menu',
-                                    floating: false,
-                                    itemId: 'sideMenu',
-                                    items: [
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        },
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        },
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        }
-                                    ]
+                                    xtype: 'menuitem',
+                                    text: 'Menu Item'
+                                },
+                                {
+                                    xtype: 'menuitem',
+                                    text: 'Menu Item'
+                                },
+                                {
+                                    xtype: 'menuitem',
+                                    text: 'Menu Item'
                                 }
                             ]
                         }
-                    ],
-                    items: [
-                        {
-                            xtype: 'panel',
-                            itemId: 'contentPanel',
-                            title: 'Content'
-                        }
                     ]
+                },
+                {
+                    xtype: 'panel',
+                    region: 'center',
+                    split: true,
+                    itemId: 'contentPanel',
+                    title: 'Content'
                 }
             ]
         });
