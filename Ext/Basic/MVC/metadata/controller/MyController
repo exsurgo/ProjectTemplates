@@ -1,0 +1,42 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "83c0d72e-5e47-4a99-a928-d22605955ef2",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "displayModel",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Create new model\r",
+                    "var model = Ext.ModelManager.create({\r",
+                    "    id: 123,\r",
+                    "    text: \"Hello World!\"\r",
+                    "}, 'MyModel');\r",
+                    "\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "#runButton"
+            },
+            "designerId": "dea74bdf-c659-4862-8669-adb048e5f1ab"
+        }
+    ]
+}
