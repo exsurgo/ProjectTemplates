@@ -1,0 +1,50 @@
+{
+    "name": "Navigation",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "f9c5ee63-48fe-4ddf-a881-30fc304f00d8": {
+            "paths": [
+                "metadata/view/MainViewport",
+                "app/view/override/MainViewport.js",
+                "app/view/MainViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainViewport"
+        },
+        "9236ef7c-b447-4ff9-ac1e-6e8ec7223450": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "eba8ad4e-66a2-4819-a9ee-cb718b031af7": {
+            "paths": [
+                "metadata/controller/NavController",
+                "app/controller/override/NavController.js",
+                "app/controller/NavController.js"
+            ],
+            "className": "NavController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "f9c5ee63-48fe-4ddf-a881-30fc304f00d8"
+        ],
+        "store": [],
+        "controller": [
+            "eba8ad4e-66a2-4819-a9ee-cb718b031af7"
+        ],
+        "model": [],
+        "resource": [
+            "9236ef7c-b447-4ff9-ac1e-6e8ec7223450"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NavController"
+    },
+    "designerId": "eba8ad4e-66a2-4819-a9ee-cb718b031af7",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLaunch",
+                "implHandler": [
+                    "\r",
+                    "// Init history utility\r",
+                    "Ext.History.init();\r",
+                    "\r",
+                    "// On address change, navigate to view\r",
+                    "Ext.History.on('change', this.navigate);\r",
+                    ""
+                ]
+            },
+            "designerId": "e3875be7-2f90-4a98-a2ff-a92281898e29"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "navigate",
+                "designer|params": [
+                    "view"
+                ],
+                "implHandler": [
+                    "\r",
+                    "//var content = this.getContentPanel();\t// Get the content panel\r",
+                    "//active = content.down(\"#\" + view);\t// Get the active panel within card layout\r",
+                    "var c = Ext.getCmp(\"#mainViewport\");\r",
+                    "//var cp = this.getContentPanel();\r",
+                    "debugger;\r",
+                    "\r",
+                    "\r",
+                    "// Set the active view \r",
+                    "//c.setActiveItem(1);\r",
+                    "\r",
+                    ""
+                ]
+            },
+            "designerId": "4c389f98-6cd0-4dd8-b7f9-2ceff30a5c79"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contentPanel",
+                "selector": "#contentPanel"
+            },
+            "designerId": "4c008134-a559-488c-b045-eca1ea35d56d"
+        }
+    ]
+}

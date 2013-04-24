@@ -1,0 +1,19 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MainViewport"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "NavController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

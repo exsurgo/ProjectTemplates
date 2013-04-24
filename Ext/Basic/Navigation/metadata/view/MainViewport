@@ -1,0 +1,160 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "mainViewport",
+        "designer|userClassName": "MainViewport",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "f9c5ee63-48fe-4ddf-a881-30fc304f00d8",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "height": 150,
+                "itemId": "headerPanel",
+                "title": "Header"
+            },
+            "designerId": "3bb8e657-16d5-4bd6-8bac-aa46aa5d28e5"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "itemId": "menuPanel",
+                "width": 150,
+                "title": "Menu"
+            },
+            "designerId": "667cec8d-735d-4ea4-8eca-3688ddf79c05",
+            "cn": [
+                {
+                    "type": "Ext.menu.Menu",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "floating": false,
+                        "itemId": "menu",
+                        "width": 120
+                    },
+                    "designerId": "e9493b9d-de34-4c59-bbb8-1d1daf98fcae",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "href": "#home",
+                                "text": "Home"
+                            },
+                            "designerId": "cfbe9387-35bf-49e5-aeb6-546a9bd51029"
+                        },
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "href": "#about",
+                                "text": "About Us"
+                            },
+                            "designerId": "5a61bb7f-67f3-46b4-90e4-4dbe88688cd0"
+                        },
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "href": "#contact",
+                                "text": "Contact Us"
+                            },
+                            "designerId": "56161fc1-c8f0-48bf-b0e1-01f06f7026d6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "itemId": "contentPanel",
+                "layout": "card",
+                "title": "Content"
+            },
+            "designerId": "36f0c1e0-4993-4d0c-a189-1f50a905d5a5",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "home",
+                        "title": "Home"
+                    },
+                    "designerId": "5f13e542-36d7-49ed-8bbb-8540b03fa3a5"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "about",
+                        "title": "About Us"
+                    },
+                    "designerId": "150d8f19-c252-4229-afa5-aa5afa586991"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "contact",
+                        "title": "Contact Us"
+                    },
+                    "designerId": "b04cf1e0-2060-4978-899e-b7165719c5a6"
+                }
+            ]
+        }
+    ]
+}
