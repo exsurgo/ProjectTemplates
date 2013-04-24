@@ -1,0 +1,39 @@
+{
+    "name": "Carousel",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "60127843-68c1-40fc-be09-e67a6d46b252": {
+            "paths": [
+                "metadata/view/MyCarousel",
+                "app/view/override/MyCarousel.js",
+                "app/view/MyCarousel.js"
+            ],
+            "className": "MyCarousel"
+        },
+        "22faee61-a534-4526-bc58-155b712e2892": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "60127843-68c1-40fc-be09-e67a6d46b252"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "22faee61-a534-4526-bc58-155b712e2892"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
