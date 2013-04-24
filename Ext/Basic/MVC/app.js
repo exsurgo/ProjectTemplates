@@ -23,7 +23,7 @@ Ext.application({
         'MyModel'
     ],
     stores: [
-        'MyModels'
+        'MyStore'
     ],
     views: [
         'MainViewport'

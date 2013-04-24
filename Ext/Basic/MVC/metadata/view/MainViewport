@@ -54,10 +54,28 @@
             "userConfig": {
                 "layout|region": "center",
                 "itemId": "contentPanel",
-                "bodyPadding": null,
+                "bodyPadding": 10,
                 "title": "Content"
             },
-            "designerId": "ad0d6ecc-a95a-4fa2-9119-59342137596a"
+            "designerId": "ad0d6ecc-a95a-4fa2-9119-59342137596a",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>ID: {id}</div>\r",
+                            "<div>Text: {text}</div>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "2b2289e6-ece8-4394-ba0e-0c7187105e12"
+                }
+            ]
         }
     ]
 }

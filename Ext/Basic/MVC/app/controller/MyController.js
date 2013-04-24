@@ -16,21 +16,31 @@
 Ext.define('MyApp.controller.MyController', {
     extend: 'Ext.app.Controller',
 
-    displayModel: function(target) {
+    refs: [
+        {
+            ref: 'contentPanel',
+            selector: '#contentPanel'
+        }
+    ],
+
+    runAction: function(target) {
 
         // Create new model
         var model = Ext.ModelManager.create({
             id: 123,
-            text: "Hello World!"
-        }, 'MyModel');
+            text: 'Hello World',
+        }, 'MyApp.model.MyModel');
+
+        // Bind model to view
+        this.getContentPanel().update(model.data);
 
 
     },
 
     init: function(application) {
         this.control({
-            "#runButton": {
-                click: this.displayModel
+            "#actionButton": {
+                click: this.runAction
             }
         });
     }

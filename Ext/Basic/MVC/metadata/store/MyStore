@@ -8,7 +8,7 @@
     "userConfig": {
         "model": "MyModel",
         "storeId": "MyStore",
-        "designer|userClassName": "MyModels"
+        "designer|userClassName": "MyStore"
     },
     "designerId": "c46caa31-c4c3-4048-970e-5c952f6447b6"
 }

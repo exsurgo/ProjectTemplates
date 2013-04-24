@@ -45,6 +45,11 @@ Ext.define('MyApp.view.MainViewport', {
                     xtype: 'panel',
                     region: 'center',
                     itemId: 'contentPanel',
+                    tpl: [
+                        '<div>ID: {id}</div>',
+                        '<div>Text: {text}</div>'
+                    ],
+                    bodyPadding: 10,
                     title: 'Content'
                 }
             ]

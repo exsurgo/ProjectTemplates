@@ -8,9 +8,9 @@ These templates are divided into the following categories for the **Ext** and **
 - **Starter Apps** - Simple yet fully-functional apps.
 
 [View Templates Live](http://exsurgo.github.io/ProjectTemplates/index.html)
----------------------
 
-The following code conventions should be used in all templates.
+
+The following code conventions are used.
 
 - Use PascalCase/TitleCase for all classes (top-level, not instances).
 - Assign itemId to all components.  Use these itemdId's in all selectors/refs.

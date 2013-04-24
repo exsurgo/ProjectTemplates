@@ -13,7 +13,7 @@
             "MyStore"
         ],
         "views": [
-            "MyViewport"
+            "MainViewport"
         ],
         "autoCreateViewport": true,
         "controllers": [
