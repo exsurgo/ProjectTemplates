@@ -1,0 +1,48 @@
+{
+    "name": "HeaderLeftContentRightFooter",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "76d17007-2335-4c00-b7ab-dad9b996582b": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "570ee77a-0bfc-47b0-bb1b-7772ff3b7215": {
+            "paths": [
+                "metadata/view/MainViewport",
+                "app/view/override/MainViewport.js",
+                "app/view/MainViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainViewport"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "570ee77a-0bfc-47b0-bb1b-7772ff3b7215"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "76d17007-2335-4c00-b7ab-dad9b996582b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
