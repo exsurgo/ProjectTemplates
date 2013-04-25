@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "views": [
-            "MainViewport"
+            "MainView"
         ],
         "autoCreateViewport": true,
         "controllers": [

@@ -15,12 +15,12 @@
         },
         "ccf11f1b-c72a-44fc-9803-344ace6f3349": {
             "paths": [
-                "metadata/view/MainViewport",
-                "app/view/override/MainViewport.js",
-                "app/view/MainViewport.js",
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MainViewport"
+            "className": "MainView"
         }
     },
     "viewOrderMap": {

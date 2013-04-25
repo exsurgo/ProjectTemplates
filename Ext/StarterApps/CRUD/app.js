@@ -27,7 +27,7 @@ Ext.application({
     ],
     views: [
         'RecordForm',
-        'MainViewport'
+        'MainView'
     ],
     autoCreateViewport: true,
     controllers: [

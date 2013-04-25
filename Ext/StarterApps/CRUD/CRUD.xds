@@ -55,12 +55,12 @@
         },
         "698b7864-df89-4b9c-959f-0212282d4ead": {
             "paths": [
-                "metadata/view/MainViewport",
-                "app/view/override/MainViewport.js",
-                "app/view/MainViewport.js",
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MainViewport"
+            "className": "MainView"
         }
     },
     "viewOrderMap": {

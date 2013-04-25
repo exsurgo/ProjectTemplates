@@ -26,7 +26,7 @@ Ext.application({
         'MyStore'
     ],
     views: [
-        'MainViewport'
+        'MainView'
     ],
     autoCreateViewport: true,
     controllers: [

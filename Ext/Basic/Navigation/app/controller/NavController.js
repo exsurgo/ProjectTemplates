@@ -37,7 +37,7 @@ Ext.define('MyApp.controller.NavController', {
 
         //var content = this.getContentPanel();	// Get the content panel
         //active = content.down("#" + view);	// Get the active panel within card layout
-        var c = Ext.getCmp("#mainViewport");
+        var c = Ext.getCmp("#mainView");
         //var cp = this.getContentPanel();
         debugger;
 

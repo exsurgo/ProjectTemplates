@@ -9,12 +9,12 @@
     "topInstanceFileMap": {
         "f9c5ee63-48fe-4ddf-a881-30fc304f00d8": {
             "paths": [
-                "metadata/view/MainViewport",
-                "app/view/override/MainViewport.js",
-                "app/view/MainViewport.js",
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MainViewport"
+            "className": "MainView"
         },
         "9236ef7c-b447-4ff9-ac1e-6e8ec7223450": {
             "paths": [

@@ -47,7 +47,7 @@
                     "\r",
                     "//var content = this.getContentPanel();\t// Get the content panel\r",
                     "//active = content.down(\"#\" + view);\t// Get the active panel within card layout\r",
-                    "var c = Ext.getCmp(\"#mainViewport\");\r",
+                    "var c = Ext.getCmp(\"#mainView\");\r",
                     "//var cp = this.getContentPanel();\r",
                     "debugger;\r",
                     "\r",

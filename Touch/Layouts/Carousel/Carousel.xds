@@ -9,11 +9,11 @@
     "topInstanceFileMap": {
         "60127843-68c1-40fc-be09-e67a6d46b252": {
             "paths": [
-                "metadata/view/MyCarousel",
-                "app/view/override/MyCarousel.js",
-                "app/view/MyCarousel.js"
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
             ],
-            "className": "MyCarousel"
+            "className": "MainView"
         },
         "22faee61-a534-4526-bc58-155b712e2892": {
             "paths": [

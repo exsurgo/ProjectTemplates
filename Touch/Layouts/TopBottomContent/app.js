@@ -20,13 +20,13 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MainContainer'
+        'MainView'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.MainContainer', {fullscreen: true});
+        Ext.create('MyApp.view.MainView', {fullscreen: true});
     }
 
 });
