@@ -7,7 +7,7 @@
     "upgradeVersion": 210000000500,
     "framework": "ext42",
     "topInstanceFileMap": {
-        "f9c5ee63-48fe-4ddf-a881-30fc304f00d8": {
+        "353f0c49-9162-4dc5-8e2d-ffb09f0d3a62": {
             "paths": [
                 "metadata/view/MainView",
                 "app/view/override/MainView.js",
@@ -16,13 +16,13 @@
             ],
             "className": "MainView"
         },
-        "9236ef7c-b447-4ff9-ac1e-6e8ec7223450": {
+        "efa3151d-f411-416b-a78d-276e3b22783a": {
             "paths": [
                 "metadata/resource/Library"
             ],
             "className": "Library"
         },
-        "eba8ad4e-66a2-4819-a9ee-cb718b031af7": {
+        "02e19093-9c6b-4222-8b96-2632f82d7303": {
             "paths": [
                 "metadata/controller/NavController",
                 "app/controller/override/NavController.js",
@@ -33,15 +33,15 @@
     },
     "viewOrderMap": {
         "view": [
-            "f9c5ee63-48fe-4ddf-a881-30fc304f00d8"
+            "353f0c49-9162-4dc5-8e2d-ffb09f0d3a62"
         ],
         "store": [],
         "controller": [
-            "eba8ad4e-66a2-4819-a9ee-cb718b031af7"
+            "02e19093-9c6b-4222-8b96-2632f82d7303"
         ],
         "model": [],
         "resource": [
-            "9236ef7c-b447-4ff9-ac1e-6e8ec7223450"
+            "efa3151d-f411-416b-a78d-276e3b22783a"
         ],
         "app": [
             "application"

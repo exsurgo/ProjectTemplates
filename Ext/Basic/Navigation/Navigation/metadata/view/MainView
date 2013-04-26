@@ -11,7 +11,7 @@
         "designer|initialView": true,
         "layout": "border"
     },
-    "designerId": "f9c5ee63-48fe-4ddf-a881-30fc304f00d8",
+    "designerId": "353f0c49-9162-4dc5-8e2d-ffb09f0d3a62",
     "cn": [
         {
             "type": "Ext.panel.Panel",
@@ -21,27 +21,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "north",
-                "height": 150,
-                "itemId": "headerPanel",
-                "title": "Header"
-            },
-            "designerId": "3bb8e657-16d5-4bd6-8bac-aa46aa5d28e5"
-        },
-        {
-            "type": "Ext.panel.Panel",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "layout|region": "west",
+                "layout|split": true,
                 "itemId": "menuPanel",
                 "width": 150,
                 "title": "Menu"
             },
-            "designerId": "667cec8d-735d-4ea4-8eca-3688ddf79c05",
+            "designerId": "70e4bdc2-8c21-4da3-b357-bdac73847e65",
             "cn": [
                 {
                     "type": "Ext.menu.Menu",
@@ -53,9 +39,9 @@
                     "userConfig": {
                         "floating": false,
                         "itemId": "menu",
-                        "width": 120
+                        "width": null
                     },
-                    "designerId": "e9493b9d-de34-4c59-bbb8-1d1daf98fcae",
+                    "designerId": "25abbee3-e977-4e92-bc3a-73fcf2aea764",
                     "cn": [
                         {
                             "type": "Ext.menu.Item",
@@ -68,7 +54,7 @@
                                 "href": "#home",
                                 "text": "Home"
                             },
-                            "designerId": "cfbe9387-35bf-49e5-aeb6-546a9bd51029"
+                            "designerId": "2d21cd52-2bd4-4f26-99f8-ecb1b8453ece"
                         },
                         {
                             "type": "Ext.menu.Item",
@@ -81,7 +67,7 @@
                                 "href": "#about",
                                 "text": "About Us"
                             },
-                            "designerId": "5a61bb7f-67f3-46b4-90e4-4dbe88688cd0"
+                            "designerId": "a9c5c2c5-e485-4719-a39d-1f3df3d72393"
                         },
                         {
                             "type": "Ext.menu.Item",
@@ -92,9 +78,9 @@
                             "codeClass": null,
                             "userConfig": {
                                 "href": "#contact",
-                                "text": "Contact Us"
+                                "text": "Contact us"
                             },
-                            "designerId": "56161fc1-c8f0-48bf-b0e1-01f06f7026d6"
+                            "designerId": "9f67ea74-e63c-4b04-b4c2-4130f7cbd1f8"
                         }
                     ]
                 }
@@ -111,9 +97,9 @@
                 "layout|region": "center",
                 "itemId": "contentPanel",
                 "layout": "card",
-                "title": "Content"
+                "title": null
             },
-            "designerId": "36f0c1e0-4993-4d0c-a189-1f50a905d5a5",
+            "designerId": "c98c4f91-6f66-4054-8e31-2ccc2ab4f975",
             "cn": [
                 {
                     "type": "Ext.panel.Panel",
@@ -124,9 +110,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "itemId": "home",
+                        "width": null,
                         "title": "Home"
                     },
-                    "designerId": "5f13e542-36d7-49ed-8bbb-8540b03fa3a5"
+                    "designerId": "6e0310e2-3829-40e2-acea-c3d80afea341"
                 },
                 {
                     "type": "Ext.panel.Panel",
@@ -139,7 +126,7 @@
                         "itemId": "about",
                         "title": "About Us"
                     },
-                    "designerId": "150d8f19-c252-4229-afa5-aa5afa586991"
+                    "designerId": "daf95a82-9e4f-4afd-b806-c2cc1b902fad"
                 },
                 {
                     "type": "Ext.panel.Panel",
@@ -152,7 +139,7 @@
                         "itemId": "contact",
                         "title": "Contact Us"
                     },
-                    "designerId": "b04cf1e0-2060-4978-899e-b7165719c5a6"
+                    "designerId": "bdce8a33-1e17-42fa-bdbd-f2e50d0d22da"
                 }
             ]
         }

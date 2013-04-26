@@ -1,0 +1,34 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "mainView",
+        "designer|userClassName": "MainView",
+        "designer|initialView": true
+    },
+    "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "05453f76-0a1c-49d7-ae52-ba024576ad79"
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "1d9950ce-b93f-4bb0-860d-6252f37afe68"
+        }
+    ]
+}

@@ -28,14 +28,8 @@ Ext.define('MyApp.view.MainView', {
             items: [
                 {
                     xtype: 'panel',
-                    region: 'north',
-                    height: 150,
-                    itemId: 'headerPanel',
-                    title: 'Header'
-                },
-                {
-                    xtype: 'panel',
                     region: 'west',
+                    split: true,
                     itemId: 'menuPanel',
                     width: 150,
                     title: 'Menu',
@@ -44,7 +38,6 @@ Ext.define('MyApp.view.MainView', {
                             xtype: 'menu',
                             floating: false,
                             itemId: 'menu',
-                            width: 120,
                             items: [
                                 {
                                     xtype: 'menuitem',
@@ -59,7 +52,7 @@ Ext.define('MyApp.view.MainView', {
                                 {
                                     xtype: 'menuitem',
                                     href: '#contact',
-                                    text: 'Contact Us'
+                                    text: 'Contact us'
                                 }
                             ]
                         }
@@ -72,7 +65,6 @@ Ext.define('MyApp.view.MainView', {
                     layout: {
                         type: 'card'
                     },
-                    title: 'Content',
                     items: [
                         {
                             xtype: 'panel',

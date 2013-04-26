@@ -1,0 +1,39 @@
+{
+    "name": "Navigation",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "faa0b672-f068-471f-a6d3-46b660667fb3": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "7eae204a-be3d-4966-b623-783dfbc7286d": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "faa0b672-f068-471f-a6d3-46b660667fb3"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "7eae204a-be3d-4966-b623-783dfbc7286d"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
