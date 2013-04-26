@@ -20,6 +20,10 @@ Ext.define('MyApp.controller.NavController', {
         {
             ref: 'contentPanel',
             selector: '#contentPanel'
+        },
+        {
+            ref: 'menu',
+            selector: '#menu'
         }
     ],
 
@@ -55,15 +59,34 @@ Ext.define('MyApp.controller.NavController', {
     navigate: function(id) {
 
         // Remove # from id if present
-        if (id[0] == "#") id = id.slice(1);
+        if (id[0] == '#') id = id.slice(1);
 
-        // Get content view
-        var content = this.getContentPanel();
+        // Get views
+        var menu = this.getMenu(),
+            content = this.getContentPanel();
 
         // Set active view
         content.layout.setActiveItem(id);
 
-        // TODO: Set active menu item
+        // Set menu and page title
+        // Iterate through each menu item
+        this.getMenu().items.each(function(item) {
+
+            // Active 
+            if (item.href == '#' + id) {
+                // Disable
+                item.disable();
+                // Set page title to menu item text
+                window.document.title = item.text;
+            }
+
+            // Inactive
+            else {
+                item.enable();
+            }
+
+        });
+
 
     }
 
