@@ -72,7 +72,7 @@ Ext.define('MyApp.controller.NavController', {
         // Iterate through each menu item
         this.getMenu().items.each(function(item) {
 
-            // Active 
+            // Active
             if (item.href == '#' + id) {
                 // Disable
                 item.disable();
@@ -86,7 +86,6 @@ Ext.define('MyApp.controller.NavController', {
             }
 
         });
-
 
     }
 

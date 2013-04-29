@@ -13,22 +13,32 @@
     "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
     "cn": [
         {
-            "type": "Ext.Panel",
+            "type": "Ext.navigation.Bar",
             "reference": {
-                "name": "items",
-                "type": "array"
+                "name": "navigationBar",
+                "type": "object"
             },
             "codeClass": null,
-            "designerId": "05453f76-0a1c-49d7-ae52-ba024576ad79"
-        },
-        {
-            "type": "Ext.Panel",
-            "reference": {
-                "name": "items",
-                "type": "array"
+            "userConfig": {
+                "docked": "top",
+                "itemId": "navBar"
             },
-            "codeClass": null,
-            "designerId": "1d9950ce-b93f-4bb0-860d-6252f37afe68"
+            "designerId": "c2c1a7e0-11fe-45a2-858b-57545a664ca7",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "aboutButton",
+                        "text": "MyButton"
+                    },
+                    "designerId": "1d305f74-4030-42d0-8da8-85439e8f70d4"
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "homePanel",
+        "designer|userClassName": "HomePanel",
+        "designer|userAlias": "homepanel"
+    },
+    "designerId": "f610c5fa-4fce-4191-96af-0f0acc8a1ffa",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": true,
+                "html": "Home"
+            },
+            "designerId": "f0392fd5-f6dc-4a96-9646-8a37966ab212"
+        }
+    ]
+}

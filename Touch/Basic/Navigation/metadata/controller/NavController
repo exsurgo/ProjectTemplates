@@ -1,0 +1,54 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NavController"
+    },
+    "designerId": "b65f72c1-bee5-4e5a-9fed-ce939650a75c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "navigate",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Main navigation view\r",
+                    "var mainView = this.getMainView();\r",
+                    "\r",
+                    "//mainView.push({\r",
+                    "//    xtype: \"homePanel\",\r",
+                    "//    title: \"Home\"\r",
+                    "//});"
+                ],
+                "name": "tap",
+                "designer|controlQuery": "#aboutButton"
+            },
+            "designerId": "fe22427c-a354-40f0-8d92-56a11d4a9c45"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "#mainView"
+            },
+            "designerId": "890fc24b-394b-4158-9a36-29f49a8466ed"
+        }
+    ]
+}
