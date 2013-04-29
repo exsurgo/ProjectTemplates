@@ -23,7 +23,8 @@ Ext.define('MyApp.view.AboutPanel', {
             {
                 xtype: 'label',
                 centered: true,
-                html: 'Panel 2'
+                html: 'About Us',
+                itemId: 'aboutLabel'
             }
         ]
     }

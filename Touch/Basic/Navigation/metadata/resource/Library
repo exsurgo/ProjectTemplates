@@ -5,5 +5,8 @@
         "type": "array"
     },
     "codeClass": null,
-    "designerId": "7eae204a-be3d-4966-b623-783dfbc7286d"
+    "userConfig": {
+        "designer|userClassName": "Library"
+    },
+    "designerId": "01dfa91f-d7fa-4c86-8272-a99995dea3d2"
 }

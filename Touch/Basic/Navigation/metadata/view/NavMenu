@@ -1,0 +1,66 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "hidden": false,
+        "itemId": "navMenu",
+        "padding": 10,
+        "designer|userClassName": "NavMenu",
+        "designer|userAlias": "navmenu",
+        "hideOnMaskTap": true,
+        "modal": true
+    },
+    "designerId": "7efc3499-ca50-45f4-a198-be818d5e8aa7",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "home",
+                "margin": 15,
+                "iconCls": "home",
+                "text": "Home"
+            },
+            "designerId": "2c4d259f-7209-431d-b20f-fdbe6210042f"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "about",
+                "margin": 15,
+                "iconCls": "info",
+                "text": "About Us"
+            },
+            "designerId": "87b9d312-f2da-4139-9ff0-cf82a9e65ca4"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "contact",
+                "margin": 15,
+                "iconCls": "compose",
+                "text": "Contact Us"
+            },
+            "designerId": "2f7996be-3019-4db7-88bf-0d5eabbb3536"
+        }
+    ]
+}

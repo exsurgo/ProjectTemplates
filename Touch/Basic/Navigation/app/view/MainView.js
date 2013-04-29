@@ -15,17 +15,33 @@
 
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.navigation.View',
+    alias: 'widget.mainview',
+
+    requires: [
+        'MyApp.view.HomePanel'
+    ],
 
     config: {
         itemId: 'mainView',
+        items: [
+            {
+                xtype: 'homepanel'
+            }
+        ],
         navigationBar: {
+            centered: false,
             docked: 'top',
             itemId: 'navBar',
+            layout: {
+                align: 'center',
+                type: 'hbox'
+            },
             items: [
                 {
                     xtype: 'button',
-                    itemId: 'aboutButton',
-                    text: 'MyButton'
+                    itemId: 'menuButton',
+                    iconCls: 'action',
+                    text: 'Menu'
                 }
             ]
         }

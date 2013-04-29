@@ -23,7 +23,8 @@ Ext.define('MyApp.view.ContactPanel', {
             {
                 xtype: 'label',
                 centered: true,
-                html: 'Contact Us'
+                html: 'Contact Us',
+                itemId: 'contactLabel'
             }
         ]
     }

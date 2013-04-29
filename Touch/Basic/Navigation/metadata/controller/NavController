@@ -11,33 +11,6 @@
     "designerId": "b65f72c1-bee5-4e5a-9fed-ce939650a75c",
     "cn": [
         {
-            "type": "controlleraction",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "navigate",
-                "designer|params": [
-                    "target"
-                ],
-                "implHandler": [
-                    "\r",
-                    "// Main navigation view\r",
-                    "var mainView = this.getMainView();\r",
-                    "\r",
-                    "//mainView.push({\r",
-                    "//    xtype: \"homePanel\",\r",
-                    "//    title: \"Home\"\r",
-                    "//});"
-                ],
-                "name": "tap",
-                "designer|controlQuery": "#aboutButton"
-            },
-            "designerId": "fe22427c-a354-40f0-8d92-56a11d4a9c45"
-        },
-        {
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -49,6 +22,80 @@
                 "selector": "#mainView"
             },
             "designerId": "890fc24b-394b-4158-9a36-29f49a8466ed"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showMenu",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Get or create navigation menu\r",
+                    "var menu = this.menu;\r",
+                    "if (!menu) {\r",
+                    "    menu = Ext.create('MyApp.view.NavMenu');\r",
+                    "}\r",
+                    "\r",
+                    "// Show menu by menu button\r",
+                    "menu.showBy(target);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|controlQuery": "mainview #menuButton"
+            },
+            "designerId": "beb8e73c-976d-4842-a233-effc11685cea"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "navigate",
+                "implHandler": [
+                    "\r",
+                    "var text = button.getText(),\r",
+                    "mainView = this.getMainView();\r",
+                    "\r",
+                    "switch (text) {\r",
+                    "\r",
+                    "    case \"About Us\":\r",
+                    "        mainView.push({\r",
+                    "            xtype: \"aboutpanel\",\r",
+                    "            title: text\r",
+                    "        });        \r",
+                    "        break;\r",
+                    "\r",
+                    "    case \"Contact Us\":\r",
+                    "        mainView.push({\r",
+                    "            xtype: \"contactpanel\",\r",
+                    "            title: text\r",
+                    "        });\r",
+                    "        break;\r",
+                    "\r",
+                    "    default:\r",
+                    "        mainView.push({\r",
+                    "            xtype: \"homepanel\",\r",
+                    "            title: text\r",
+                    "        });\r",
+                    "        \r",
+                    "}"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "navmenu button"
+            },
+            "designerId": "7d2ec394-96f9-46bd-afc0-b4bea517cc08"
         }
     ]
 }

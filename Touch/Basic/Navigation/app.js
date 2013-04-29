@@ -23,7 +23,8 @@ Ext.application({
         'MainView',
         'HomePanel',
         'AboutPanel',
-        'ContactPanel'
+        'ContactPanel',
+        'NavMenu'
     ],
     controllers: [
         'NavController'

@@ -21,7 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "centered": true,
-                "html": "Panel 2"
+                "html": "About Us",
+                "itemId": "aboutLabel"
             },
             "designerId": "c8a26905-561a-48d4-9306-20cae515702f"
         }

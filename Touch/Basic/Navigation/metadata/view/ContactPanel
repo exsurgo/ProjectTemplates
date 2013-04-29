@@ -21,7 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "centered": true,
-                "html": "Contact Us"
+                "html": "Contact Us",
+                "itemId": "contactLabel"
             },
             "designerId": "aa06bfc6-ca2c-485c-bb27-5d31e9af4d36"
         }

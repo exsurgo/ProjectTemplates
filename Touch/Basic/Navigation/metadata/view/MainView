@@ -8,10 +8,21 @@
     "userConfig": {
         "itemId": "mainView",
         "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
         "designer|initialView": true
     },
     "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
     "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "498cac42-a8ff-45b0-8824-6cd6462aa473",
+            "masterInstanceId": "12fcc33d-36a7-475b-8792-6b6c96745316"
+        },
         {
             "type": "Ext.navigation.Bar",
             "reference": {
@@ -20,10 +31,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "container|align": "center",
+                "centered": false,
                 "docked": "top",
                 "itemId": "navBar"
             },
-            "designerId": "c2c1a7e0-11fe-45a2-858b-57545a664ca7",
+            "designerId": "0f1bbba6-fd7c-4481-b01a-5619bf8837f8",
             "cn": [
                 {
                     "type": "Ext.Button",
@@ -33,10 +46,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "aboutButton",
-                        "text": "MyButton"
+                        "itemId": "menuButton",
+                        "iconCls": "action",
+                        "text": "Menu"
                     },
-                    "designerId": "1d305f74-4030-42d0-8da8-85439e8f70d4"
+                    "designerId": "4e669aad-cf0b-4bd8-bc1b-a90720ca5001"
                 }
             ]
         }

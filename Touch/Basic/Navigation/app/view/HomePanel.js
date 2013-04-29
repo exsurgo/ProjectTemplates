@@ -23,7 +23,8 @@ Ext.define('MyApp.view.HomePanel', {
             {
                 xtype: 'label',
                 centered: true,
-                html: 'Home'
+                html: 'Home',
+                itemId: 'homeLabel'
             }
         ]
     }

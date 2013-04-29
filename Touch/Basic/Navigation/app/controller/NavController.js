@@ -22,21 +22,57 @@ Ext.define('MyApp.controller.NavController', {
         },
 
         control: {
-            "#aboutButton": {
+            "mainview #menuButton": {
+                tap: 'showMenu'
+            },
+            "navmenu button": {
                 tap: 'navigate'
             }
         }
     },
 
-    navigate: function(target) {
+    showMenu: function(target) {
 
-        // Main navigation view
-        var mainView = this.getMainView();
+        // Get or create navigation menu
+        var menu = this.menu;
+        if (!menu) {
+            menu = Ext.create('MyApp.view.NavMenu');
+        }
 
-        //mainView.push({
-        //    xtype: "homePanel",
-        //    title: "Home"
-        //});
+        // Show menu by menu button
+        menu.showBy(target);
+
+
+    },
+
+    navigate: function(button, e, eOpts) {
+
+        var text = button.getText(),
+            mainView = this.getMainView();
+
+        switch (text) {
+
+            case "About Us":
+            mainView.push({
+                xtype: "aboutpanel",
+                title: text
+            });        
+            break;
+
+            case "Contact Us":
+            mainView.push({
+                xtype: "contactpanel",
+                title: text
+            });
+            break;
+
+            default:
+            mainView.push({
+                xtype: "homepanel",
+                title: text
+            });
+
+        }
     }
 
 });
