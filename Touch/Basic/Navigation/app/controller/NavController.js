@@ -72,8 +72,8 @@ Ext.define('MyApp.controller.NavController', {
 
         /**
         *	The following code enables navigation 
-        * by checking the custom attribute 'navView',
-        * which is the alias of the view to show
+        *	by checking the custom attribute 'navView',
+        *	which is the alias of the view to show
         */ 
 
         var text = button.getText(),						// Button text

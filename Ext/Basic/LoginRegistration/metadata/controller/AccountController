@@ -1,0 +1,68 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AccountController"
+    },
+    "designerId": "d1cc0c66-0a94-4c48-95da-b7881bbec645",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "login",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Create new login form window\r",
+                    "var login = Ext.create(\"MyApp.view.LoginForm\");\r",
+                    "\r",
+                    "// Show window\r",
+                    "login.show();\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "mainview #loginButton"
+            },
+            "designerId": "248ef2ec-21bb-4597-827d-8f1f852a0cd0"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "register",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Create new register form window\r",
+                    "var register = Ext.create(\"MyApp.view.Register\");\r",
+                    "\r",
+                    "// Show window\r",
+                    "register.show();\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "mainview #registerForm"
+            },
+            "designerId": "05ccfad2-d354-47d2-9951-9c2fabe80946"
+        }
+    ]
+}
