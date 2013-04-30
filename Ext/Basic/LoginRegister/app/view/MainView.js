@@ -37,7 +37,7 @@ Ext.define('MyApp.view.MainView', {
                         {
                             xtype: 'panel',
                             dock: 'right',
-                            itemId: 'userPanel',
+                            itemId: 'loginPanel',
                             items: [
                                 {
                                     xtype: 'button',
@@ -50,6 +50,20 @@ Ext.define('MyApp.view.MainView', {
                                     itemId: 'registerButton',
                                     margin: 5,
                                     text: 'Register'
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'panel',
+                            dock: 'right',
+                            hidden: true,
+                            itemId: 'logoutPanel',
+                            items: [
+                                {
+                                    xtype: 'button',
+                                    itemId: 'logoutButton',
+                                    margin: 6,
+                                    text: 'Logout'
                                 }
                             ]
                         }

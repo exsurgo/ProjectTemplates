@@ -38,7 +38,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "dock": "right",
-                        "itemId": "userPanel"
+                        "itemId": "loginPanel"
                     },
                     "designerId": "c12c2f13-e2ba-4905-af03-2e595c920e65",
                     "cn": [
@@ -69,6 +69,36 @@
                                 "text": "Register"
                             },
                             "designerId": "e137362f-bf61-46ee-a1cf-75589c9ec918"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "right",
+                        "hidden": true,
+                        "itemId": "logoutPanel"
+                    },
+                    "designerId": "a86d27c8-3d38-4c68-80b1-a99f0244beda",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "logoutButton",
+                                "margin": 6,
+                                "text": "Logout"
+                            },
+                            "designerId": "3cbad9b7-f07c-471d-a81f-3163e00e7ff1"
                         }
                     ]
                 }

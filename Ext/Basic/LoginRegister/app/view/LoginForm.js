@@ -39,22 +39,31 @@ Ext.define('MyApp.view.LoginForm', {
                             margin: '0 0 20 0',
                             fieldLabel: 'Username',
                             labelAlign: 'right',
-                            name: 'identity'
+                            msgTarget: 'title',
+                            name: 'identity',
+                            allowBlank: false,
+                            blankText: 'Enter your Username.',
+                            regexText: 'Enter your username.'
                         },
                         {
                             xtype: 'textfield',
                             margin: '0 0 10 0',
                             fieldLabel: 'Password',
                             labelAlign: 'right',
+                            msgTarget: 'title',
                             name: 'password',
-                            inputType: 'password'
+                            inputType: 'password',
+                            allowBlank: false,
+                            blankText: 'Enter your password.'
                         },
                         {
                             xtype: 'button',
+                            formBind: true,
                             itemId: 'loginButton',
                             margin: '0 15 0 0',
                             scale: 'medium',
-                            text: 'Login'
+                            text: 'Login',
+                            type: 'submit'
                         }
                     ]
                 }

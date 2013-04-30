@@ -42,7 +42,11 @@
                         "layout|anchor": "100%",
                         "margin": "0 0 10 0",
                         "fieldLabel": "Name",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "msgTarget": "title",
+                        "name": "name",
+                        "allowBlank": false,
+                        "blankText": "Enter your full name."
                     },
                     "designerId": "6bd751cd-c8ad-4c0d-9a19-2710ea5bc48a"
                 },
@@ -57,7 +61,13 @@
                         "layout|anchor": "100%",
                         "margin": "0 0 10 0",
                         "fieldLabel": "Email",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "msgTarget": "title",
+                        "name": "email",
+                        "allowBlank": false,
+                        "blankText": "Enter your email.",
+                        "regex": null,
+                        "regexText": null
                     },
                     "designerId": "19d10e9d-e48b-414e-bff7-5d9375014e2d"
                 },
@@ -72,7 +82,11 @@
                         "layout|anchor": "100%",
                         "margin": "0 0 10 0",
                         "fieldLabel": "Username",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "msgTarget": "title",
+                        "name": "username",
+                        "allowBlank": false,
+                        "blankText": "Choose a password."
                     },
                     "designerId": "e581400b-6ffc-46bb-a568-02a972d76f0b"
                 },
@@ -87,7 +101,11 @@
                         "layout|anchor": "100%",
                         "margin": "0 0 10 0",
                         "fieldLabel": "Password",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "msgTarget": "title",
+                        "name": "password",
+                        "allowBlank": false,
+                        "blankText": "Choose a password."
                     },
                     "designerId": "496b291d-72ec-4066-a0bd-af7d060d7b8d"
                 },
@@ -99,9 +117,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "formBind": true,
                         "itemId": "registerButton",
                         "scale": "medium",
-                        "text": "Register"
+                        "text": "Register",
+                        "type": "submit"
                     },
                     "designerId": "fade9dce-5a0f-45f0-85ab-d36ec43e621d"
                 }

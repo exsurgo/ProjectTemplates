@@ -44,7 +44,11 @@
                         "margin": "0 0 20 0",
                         "fieldLabel": "Username",
                         "labelAlign": "right",
-                        "name": "identity"
+                        "msgTarget": "title",
+                        "name": "identity",
+                        "allowBlank": false,
+                        "blankText": "Enter your Username.",
+                        "regexText": "Enter your username."
                     },
                     "designerId": "e8b40321-2cc1-4d68-829b-6a070d777f68"
                 },
@@ -59,8 +63,11 @@
                         "margin": "0 0 10 0",
                         "fieldLabel": "Password",
                         "labelAlign": "right",
+                        "msgTarget": "title",
                         "name": "password",
-                        "inputType": "password"
+                        "inputType": "password",
+                        "allowBlank": false,
+                        "blankText": "Enter your password."
                     },
                     "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1"
                 },
@@ -72,10 +79,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "formBind": true,
                         "itemId": "loginButton",
                         "margin": "0 15 0 0",
                         "scale": "medium",
-                        "text": "Login"
+                        "text": "Login",
+                        "type": "submit"
                     },
                     "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e"
                 }
