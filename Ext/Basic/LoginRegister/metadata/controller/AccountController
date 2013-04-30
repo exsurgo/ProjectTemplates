@@ -52,7 +52,7 @@
                 "implHandler": [
                     "\r",
                     "// Create new register form window\r",
-                    "var register = Ext.create(\"MyApp.view.Register\");\r",
+                    "var register = Ext.create(\"MyApp.view.RegisterForm\");\r",
                     "\r",
                     "// Show window\r",
                     "register.show();\r",
@@ -60,7 +60,7 @@
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "mainview #registerForm"
+                "designer|controlQuery": "mainview #registerButton"
             },
             "designerId": "05ccfad2-d354-47d2-9951-9c2fabe80946"
         }

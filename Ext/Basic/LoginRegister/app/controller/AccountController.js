@@ -29,7 +29,7 @@ Ext.define('MyApp.controller.AccountController', {
     register: function(target) {
 
         // Create new register form window
-        var register = Ext.create("MyApp.view.Register");
+        var register = Ext.create("MyApp.view.RegisterForm");
 
         // Show window
         register.show();
@@ -41,7 +41,7 @@ Ext.define('MyApp.controller.AccountController', {
             "mainview #loginButton": {
                 click: this.login
             },
-            "mainview #registerForm": {
+            "mainview #registerButton": {
                 click: this.register
             }
         });
