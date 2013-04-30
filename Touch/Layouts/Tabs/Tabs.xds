@@ -1,0 +1,39 @@
+{
+    "name": "Tabs",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "6ff421e4-b183-4a75-a035-b579678217fa": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "70760bbc-9363-4de6-bb8d-935eb11d0b3e": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "6ff421e4-b183-4a75-a035-b579678217fa"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "70760bbc-9363-4de6-bb8d-935eb11d0b3e"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
