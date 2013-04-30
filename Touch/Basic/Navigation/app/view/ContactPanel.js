@@ -15,7 +15,7 @@
 
 Ext.define('MyApp.view.ContactPanel', {
     extend: 'Ext.Panel',
-    alias: 'widget.contactPanel',
+    alias: 'widget.contactpanel',
 
     config: {
         itemId: 'contactPanel',

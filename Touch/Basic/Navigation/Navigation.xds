@@ -45,14 +45,6 @@
             ],
             "className": "NavController"
         },
-        "7efc3499-ca50-45f4-a198-be818d5e8aa7": {
-            "paths": [
-                "metadata/view/NavMenu",
-                "app/view/override/NavMenu.js",
-                "app/view/NavMenu.js"
-            ],
-            "className": "NavMenu"
-        },
         "12fcc33d-36a7-475b-8792-6b6c96745316": {
             "paths": [
                 "metadata/view/HomePanel",
@@ -60,12 +52,20 @@
                 "app/view/HomePanel.js"
             ],
             "className": "HomePanel"
+        },
+        "6b1d9070-b093-4ef5-9404-8efed4679c79": {
+            "paths": [
+                "metadata/view/NavMenu",
+                "app/view/override/NavMenu.js",
+                "app/view/NavMenu.js"
+            ],
+            "className": "NavMenu"
         }
     },
     "viewOrderMap": {
         "view": [
             "faa0b672-f068-471f-a6d3-46b660667fb3",
-            "7efc3499-ca50-45f4-a198-be818d5e8aa7",
+            "6b1d9070-b093-4ef5-9404-8efed4679c79",
             "12fcc33d-36a7-475b-8792-6b6c96745316",
             "f122b302-f33f-44cd-90af-3a9292063adf",
             "38f5b40f-a150-4b5c-aef0-c51c4eb05f73"

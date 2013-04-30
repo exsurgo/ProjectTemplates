@@ -8,7 +8,7 @@
     "userConfig": {
         "itemId": "contactPanel",
         "designer|userClassName": "ContactPanel",
-        "designer|userAlias": "contactPanel"
+        "designer|userAlias": "contactpanel"
     },
     "designerId": "38f5b40f-a150-4b5c-aef0-c51c4eb05f73",
     "cn": [

@@ -19,7 +19,7 @@ Ext.define('MyApp.view.NavMenu', {
 
     config: {
         centered: true,
-        hidden: false,
+        hidden: true,
         itemId: 'navMenu',
         padding: 10,
         hideOnMaskTap: true,
@@ -27,21 +27,21 @@ Ext.define('MyApp.view.NavMenu', {
         items: [
             {
                 xtype: 'button',
-                itemId: 'home',
+                navView: 'homepanel',
                 margin: 15,
                 iconCls: 'home',
                 text: 'Home'
             },
             {
                 xtype: 'button',
-                itemId: 'about',
+                navView: 'aboutpanel',
                 margin: 15,
                 iconCls: 'info',
                 text: 'About Us'
             },
             {
                 xtype: 'button',
-                itemId: 'contact',
+                navView: 'contactpanel',
                 margin: 15,
                 iconCls: 'compose',
                 text: 'Contact Us'

@@ -11,6 +11,13 @@
         "designer|userAlias": "homepanel"
     },
     "designerId": "12fcc33d-36a7-475b-8792-6b6c96745316",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "config",
+            "type": "string"
+        }
+    ],
     "cn": [
         {
             "type": "Ext.Label",

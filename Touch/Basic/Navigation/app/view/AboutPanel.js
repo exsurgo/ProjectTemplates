@@ -15,7 +15,7 @@
 
 Ext.define('MyApp.view.AboutPanel', {
     extend: 'Ext.Panel',
-    alias: 'widget.aboutPanel',
+    alias: 'widget.aboutpanel',
 
     config: {
         itemId: 'aboutPanel',

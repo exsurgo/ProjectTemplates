@@ -18,7 +18,11 @@ Ext.define('MyApp.controller.NavController', {
 
     config: {
         refs: {
-            mainView: '#mainView'
+            mainView: '#mainView',
+            navMenu: {
+                selector: '#navMenu',
+                xtype: 'navmenu'
+            }
         },
 
         control: {
@@ -34,45 +38,61 @@ Ext.define('MyApp.controller.NavController', {
     showMenu: function(target) {
 
         // Get or create navigation menu
-        var menu = this.menu;
+        var menu = this.getNavMenu();
         if (!menu) {
             menu = Ext.create('MyApp.view.NavMenu');
         }
 
+        // Disable active view's button
+        var menuItems = menu.getItems().items,				// Menu buttons
+        currentView = this.currentView || "homepanel";	// Current view alias, default to home
+        menuItems.forEach(function(button) {
+
+            // Get custom navView attribute
+            var navView = button.config.navView;
+
+            // Active button, disable
+            if (currentView == navView) {
+                button.disable();
+            }
+
+            // Enable all others
+            else {
+                button.enable();   
+            }
+
+        });
+
         // Show menu by menu button
         menu.showBy(target);
-
 
     },
 
     navigate: function(button, e, eOpts) {
 
-        var text = button.getText(),
-            mainView = this.getMainView();
+        /**
+        *	The following code enables navigation 
+        * by checking the custom attribute 'navView',
+        * which is the alias of the view to show
+        */ 
 
-        switch (text) {
+        var text = button.getText(),						// Button text
+        navView = button.getInitialConfig().navView,	// Get custom attribute 'navView'
+        mainView = this.getMainView(),					// Main navigation view
+        navMenu = this.getNavMenu();					// Navigation menu
 
-            case "About Us":
-            mainView.push({
-                xtype: "aboutpanel",
-                title: text
-            });        
-            break;
+        // Add view to main view
+        mainView.push({
+            xtype: navView,
+            title: text
+        });   
 
-            case "Contact Us":
-            mainView.push({
-                xtype: "contactpanel",
-                title: text
-            });
-            break;
+        // Remember current view alias
+        this.currentView = navView;
 
-            default:
-            mainView.push({
-                xtype: "homepanel",
-                title: text
-            });
+        // Hide menu
+        navMenu.hide();
 
-        }
     }
 
 });
