@@ -14,14 +14,16 @@ These templates are divided into the following categories for the **Ext** and **
 
 - All templates should be as usable as possible
 - Use the least amount of code possible.
+- Use camelCase for all functions, local vars, and clientId's
 - Use PascalCase/TitleCase for all classes (top-level views, not instances).
-- Use lowercase for class aliases.
+- Use all lowercase for class aliases.
 - Assign itemId to all components.  
 - All classes should be assigned aliases.
 - Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton"
 - Custom CSS/Styles should be avoided.  
 - Use detailed comments in controller code for new user education.
 - All main view classes should be named MainView and have it's itemId set to mainView.
+- Strings should use single quotes instead of double
 
 **Rules for Ext templates**
 - A viewport should always be used as the top-level views for Ext.  

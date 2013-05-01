@@ -92,10 +92,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dock": null,
                         "layout|flex": 1,
                         "layout|region": "west",
                         "layout|split": true,
+                        "dock": null,
                         "border": "2 2 2 2",
                         "id": "",
                         "itemId": "gridPanel",

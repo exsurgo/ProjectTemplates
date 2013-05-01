@@ -4,7 +4,7 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000500,
+    "upgradeVersion": 210000000501,
     "framework": "touch22",
     "topInstanceFileMap": {
         "1ac43aed-5822-42ae-bb49-db141af6328f": {
@@ -39,7 +39,7 @@
             ],
             "className": "MyModel"
         },
-        "7ba7ede6-07f8-48f9-9454-ed618a6db20a": {
+        "df645ce3-b253-4151-8547-881708989006": {
             "paths": [
                 "metadata/resource/Library"
             ],
@@ -60,7 +60,7 @@
             "ac49528a-95b9-40b4-b060-0b13705d5d73"
         ],
         "resource": [
-            "7ba7ede6-07f8-48f9-9454-ed618a6db20a"
+            "df645ce3-b253-4151-8547-881708989006"
         ],
         "app": [
             "application"

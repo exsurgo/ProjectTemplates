@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.carousel.Carousel',
+    alias: 'widget.mainview',
 
     config: {
         itemId: 'mainView',

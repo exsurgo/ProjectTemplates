@@ -34,8 +34,8 @@
                 }
             ]
         },
-        "22faee61-a534-4526-bc58-155b712e2892": {
-            "id": "22faee61-a534-4526-bc58-155b712e2892"
+        "fa3304bb-17ae-446e-8152-d2b449263c4f": {
+            "id": "fa3304bb-17ae-446e-8152-d2b449263c4f"
         }
     },
     "tabState": {
@@ -48,7 +48,7 @@
     },
     "inspectorState": {
         "topInstance": "60127843-68c1-40fc-be09-e67a6d46b252",
-        "selectedInstance": "7b7c340e-01d7-4f8a-a1a3-718478c1b8aa"
+        "selectedInstance": "60127843-68c1-40fc-be09-e67a6d46b252"
     },
     "codeState": {
         "topInstance": null

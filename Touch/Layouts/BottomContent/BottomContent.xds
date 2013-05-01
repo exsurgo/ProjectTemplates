@@ -1,5 +1,5 @@
 {
-    "name": "TopContent",
+    "name": "BottomContent",
     "settings": {},
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
@@ -15,7 +15,7 @@
             ],
             "className": "MainView"
         },
-        "25456b3e-1809-4cde-a04c-a7a57e28d2b9": {
+        "8c2f2555-c96e-46ed-a6aa-b5af658d883d": {
             "paths": [
                 "metadata/resource/Library"
             ],
@@ -30,7 +30,7 @@
         "controller": [],
         "model": [],
         "resource": [
-            "25456b3e-1809-4cde-a04c-a7a57e28d2b9"
+            "8c2f2555-c96e-46ed-a6aa-b5af658d883d"
         ],
         "app": [
             "application"

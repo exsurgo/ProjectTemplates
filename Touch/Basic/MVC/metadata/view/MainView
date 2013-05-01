@@ -8,6 +8,7 @@
     "userConfig": {
         "itemId": "mainView",
         "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
         "designer|initialView": true
     },
     "designerId": "1ac43aed-5822-42ae-bb49-db141af6328f",

@@ -44,7 +44,7 @@ Ext.define('MyApp.controller.NavController', {
         }
 
         // Disable active view's button
-        var menuItems = menu.getItems().items,				// Menu buttons
+        var menuItems = menu.getItems().items,			// Menu buttons
         currentView = this.currentView || "homepanel";	// Current view alias, default to home
         menuItems.forEach(function(button) {
 
@@ -76,7 +76,7 @@ Ext.define('MyApp.controller.NavController', {
         *	which is the alias of the view to show
         */ 
 
-        var text = button.getText(),						// Button text
+        var text = button.getText(),					// Button text
         navView = button.getInitialConfig().navView,	// Get custom attribute 'navView'
         mainView = this.getMainView(),					// Main navigation view
         navMenu = this.getNavMenu();					// Navigation menu

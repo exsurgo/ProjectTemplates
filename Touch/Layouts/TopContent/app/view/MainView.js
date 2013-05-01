@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.Container',
+    alias: 'widget.mainview',
 
     config: {
         itemId: 'mainView',

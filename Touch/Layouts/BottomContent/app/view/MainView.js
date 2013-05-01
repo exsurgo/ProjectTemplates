@@ -24,11 +24,6 @@ Ext.define('MyApp.view.MainView', {
         },
         items: [
             {
-                xtype: 'titlebar',
-                docked: 'top',
-                itemId: 'topBar'
-            },
-            {
                 xtype: 'panel',
                 itemId: 'contentPanel'
             },
