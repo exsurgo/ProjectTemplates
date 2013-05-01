@@ -29,7 +29,7 @@
                 "implHandler": [
                     "",
                     "var details = this.getDetailsPanel(),\t// Get detail panel via controller ref",
-                    "\ttoolbar = this.getDetailsToolbar();\t// Get detail panel toolbar via controller ref",
+                    "toolbar = this.getDetailsToolbar();\t\t// Get detail panel toolbar via controller ref",
                     "",
                     "// Update the detail panel with the selected row's data",
                     "details.update(record.data);",

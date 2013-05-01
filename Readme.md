@@ -24,6 +24,9 @@ These templates are divided into the following categories for the **Ext** and **
 - Use detailed comments in controller code for new user education.
 - All main view classes should be named MainView and have it's itemId set to mainView.
 - Strings should use single quotes instead of double
+- Variables should be hoisted where appropriate. Proper tabbed formatting should be used and comments should be appended to end of line.  Ex
+	var x = 1,	// First
+		y = 2;	// Second
 
 **Rules for Ext templates**
 - A viewport should always be used as the top-level views for Ext.  

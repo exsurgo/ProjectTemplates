@@ -34,7 +34,7 @@ Ext.define('MyApp.controller.RecordController', {
     view: function(target, record) {
 
         var details = this.getDetailsPanel(),	// Get detail panel via controller ref
-        toolbar = this.getDetailsToolbar();	// Get detail panel toolbar via controller ref
+        toolbar = this.getDetailsToolbar();		// Get detail panel toolbar via controller ref
 
         // Update the detail panel with the selected row's data
         details.update(record.data);
