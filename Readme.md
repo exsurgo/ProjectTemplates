@@ -26,8 +26,8 @@ These templates are divided into the following categories for the **Ext** and **
 - Strings should use single quotes instead of double
 - Variables should be hoisted where appropriate. Proper tabbed formatting should be used and comments should be appended to end of line.  Ex
 	<code>
-	var x = 1,	// First
-		y = 2;	// Second
+	var x = 1,	// First<br/>
+		y = 2;	// Second<br/>
 	</code>
 	
 **Rules for Ext templates**
