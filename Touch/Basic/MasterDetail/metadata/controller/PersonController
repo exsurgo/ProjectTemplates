@@ -1,0 +1,65 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Person"
+        ],
+        "stores": [
+            "People"
+        ],
+        "designer|userClassName": "PersonController"
+    },
+    "designerId": "2e108d17-aa43-4245-ab88-7c58bd477077",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "view",
+                "implHandler": [
+                    "\r",
+                    "var mainView = this.getMainView(),\t\t\t\t\t\t// Main navigation view\r",
+                    "details = Ext.create('MyApp.view.DetailPanel');\t\t// Create new details panel\r",
+                    "\r",
+                    "mainView.push({\r",
+                    "    xtype: 'detailpanel'\r",
+                    "    data: record.data\r",
+                    "});\r",
+                    "\r",
+                    "// Update panel with data\r",
+                    "//details.setData(record.data);\r",
+                    "\r",
+                    "// Add panel to navigation view\r",
+                    "//mainView.push(details);\r",
+                    ""
+                ],
+                "name": "select",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "mainview #list"
+            },
+            "designerId": "afbfe47e-f5cc-4b00-a68c-d3739574ebfc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "mainview"
+            },
+            "designerId": "b3ec987b-29bb-4374-bf72-78beea5d6700"
+        }
+    ]
+}

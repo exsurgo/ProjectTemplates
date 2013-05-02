@@ -14,10 +14,10 @@ These templates are divided into the following categories for the **Ext** and **
 
 - All templates should be as usable as possible
 - Use the least amount of code possible.
-- Use camelCase for all functions, local vars, and clientId's
+- Use camelCase for all functions, local vars, ref's, and clientId's
 - Use PascalCase/TitleCase for all classes (top-level views, not instances).
-- Use all lowercase for class aliases.
-- Assign itemId to all components.  
+- Use all lowercase for aliases.
+- Assign itemId to all components that need to be referenced.
 - All classes should be assigned aliases.
 - Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton"
 - Custom CSS/Styles should be avoided.  
