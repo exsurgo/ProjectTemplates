@@ -37,19 +37,14 @@ Ext.define('MyApp.controller.PersonController', {
 
     view: function(dataview, record, eOpts) {
 
-        var mainView = this.getMainView(),						// Main navigation view
-        details = Ext.create('MyApp.view.DetailPanel');		// Create new details panel
+        // Main navigation view
+        var mainView = this.getMainView();
 
         mainView.push({
             xtype: 'detailpanel',
+            title: "Details",
             data: record.data
         });
-
-        // Update panel with data
-        //details.setData(record.data);
-
-        // Add panel to navigation view
-        //mainView.push(details);
 
     }
 

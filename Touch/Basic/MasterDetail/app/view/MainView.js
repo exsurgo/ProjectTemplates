@@ -18,18 +18,14 @@ Ext.define('MyApp.view.MainView', {
     alias: 'widget.mainview',
 
     requires: [
-        'MyApp.view.List'
+        'MyApp.view.PersonList'
     ],
 
     config: {
         itemId: 'mainView',
-        navigationBar: {
-            docked: 'top',
-            itemId: 'navBar'
-        },
         items: [
             {
-                xtype: 'list'
+                xtype: 'personlist'
             }
         ]
     }

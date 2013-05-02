@@ -18,10 +18,14 @@ Ext.define('MyApp.view.DetailPanel', {
     alias: 'widget.detailpanel',
 
     config: {
-        docked: 'top',
+        centered: false,
         id: 'detailPanel',
+        padding: 10,
+        layout: {
+            type: 'fit'
+        },
         tpl: [
-            '<h1>{firstName} {lastName}</h1>'
+            '<h1>Hello! {firstName} {lastName}</h1>'
         ]
     }
 

@@ -55,11 +55,11 @@
         },
         "3fd09888-7815-486a-8d9a-949949008923": {
             "paths": [
-                "metadata/view/List",
-                "app/view/override/List.js",
-                "app/view/List.js"
+                "metadata/view/PersonList",
+                "app/view/override/PersonList.js",
+                "app/view/PersonList.js"
             ],
-            "className": "List"
+            "className": "PersonList"
         }
     },
     "viewOrderMap": {

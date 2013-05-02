@@ -27,7 +27,7 @@ These templates are divided into the following categories for the **Ext** and **
 	<br/>
 	<code>
 		var x = 1,	// First<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;y = 2;	// Second
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 2;	// Second
 	</code>
 - Strings should use single quotes instead of double
 

@@ -14,19 +14,6 @@
     "designerId": "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc",
     "cn": [
         {
-            "type": "Ext.navigation.Bar",
-            "reference": {
-                "name": "navigationBar",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "docked": "top",
-                "itemId": "navBar"
-            },
-            "designerId": "31a123aa-8210-4d58-8817-aae19e54b94f"
-        },
-        {
             "type": "linkedinstance",
             "reference": {
                 "name": "items",

@@ -28,7 +28,7 @@ Ext.application({
     views: [
         'MainView',
         'DetailPanel',
-        'List'
+        'PersonList'
     ],
     controllers: [
         'PersonController'
