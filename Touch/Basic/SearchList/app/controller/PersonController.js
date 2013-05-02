@@ -17,6 +17,13 @@ Ext.define('MyApp.controller.PersonController', {
     extend: 'Ext.app.Controller',
 
     config: {
+        models: [
+            'Person'
+        ],
+        stores: [
+            'People'
+        ],
+
         control: {
             "mainview #searchField": {
                 keyup: 'search'
@@ -26,7 +33,58 @@ Ext.define('MyApp.controller.PersonController', {
 
     search: function(textfield, e, eOpts) {
 
-        Ext.Msg.alert('works');
+        var value = textfield.getValue(),	// Search value
+        store = Ext.getStore('People');	// People store
+
+        // Search term must be at least 2 characters
+        if (value.length < 2) return;
+
+        // Clear any current filters
+        store.clearFilter();
+
+        // Check if a value is provided
+        if (value) {
+
+
+            // Spit value to get multiple terms
+            var terms = value.split(' ');
+
+            // Convert each search string into regex
+            var regexps = [];
+            Ext.each(terms, function(term) {       
+
+                // Ensure term is not space and at least 2 characters
+                if (term && term.length > 1) { 
+                    regexps.push(new RegExp(term, 'i')); // Case-insensitive regex
+                }
+
+            });
+
+
+            // Filter records
+            store.filter(function(record) {
+
+                var matches = [];
+
+                // Check each of the regular expressions
+                Ext.each(regexps, function(regex) {
+
+                    var match = record.get('firstName').match(regex) || record.get('lastName').match(regex);
+                    matches.push(match);    
+
+                });
+
+                // If nothing was found, return false to not show
+                if (regexps.length > 1 && matches.indexOf(false) != -1) {
+                    return false;
+                } else {
+                    // Else return to show
+                    return matches[0];
+                }
+
+            });
+
+        }
     }
 
 });
