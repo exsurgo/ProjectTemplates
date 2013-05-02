@@ -27,6 +27,9 @@ Ext.define('MyApp.controller.PersonController', {
         control: {
             "mainview #searchField": {
                 keyup: 'search'
+            },
+            "searchfield": {
+                clearicontap: 'clearSearch'
             }
         }
     },
@@ -85,6 +88,17 @@ Ext.define('MyApp.controller.PersonController', {
             });
 
         }
+
+    },
+
+    clearSearch: function(textfield, e, eOpts) {
+
+        // Get store
+        var store = Ext.getStore('People');
+
+        // Clear filter
+        store.clearFilter();
+
     }
 
 });

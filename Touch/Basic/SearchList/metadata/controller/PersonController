@@ -78,13 +78,38 @@
                     "\r",
                     "    });\r",
                     "    \r",
-                    "}"
+                    "}\r",
+                    ""
                 ],
                 "name": "keyup",
                 "designer|targetType": "Ext.field.Search",
                 "designer|controlQuery": "mainview #searchField"
             },
             "designerId": "871fecb7-7797-4cf0-bbbf-5e6031308e3d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "clearSearch",
+                "implHandler": [
+                    "\r",
+                    "// Get store\r",
+                    "var store = Ext.getStore('People');\r",
+                    "\r",
+                    "// Clear filter\r",
+                    "store.clearFilter();\r",
+                    ""
+                ],
+                "name": "clearicontap",
+                "designer|targetType": "Ext.field.Search",
+                "designer|controlQuery": "searchfield"
+            },
+            "designerId": "dc6e678b-1f90-4063-94ad-5689ccf6f1a3"
         }
     ]
 }
