@@ -1,0 +1,58 @@
+{
+    "name": "MultiRowCarousel",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "b38732f4-6362-469b-93f1-9e1c49445371": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "7b70a5a8-8a98-4ee1-b199-111c00718aa7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "74dab547-9cde-4462-8ed5-815e85aacf83": {
+            "paths": [
+                "metadata/view/Slide",
+                "app/view/override/Slide.js",
+                "app/view/Slide.js"
+            ],
+            "className": "Slide"
+        },
+        "2244a5b7-0d9b-441f-ad44-36d0838fd3f9": {
+            "paths": [
+                "metadata/controller/AppController",
+                "app/controller/override/AppController.js",
+                "app/controller/AppController.js"
+            ],
+            "className": "AppController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "b38732f4-6362-469b-93f1-9e1c49445371",
+            "74dab547-9cde-4462-8ed5-815e85aacf83"
+        ],
+        "store": [],
+        "controller": [
+            "2244a5b7-0d9b-441f-ad44-36d0838fd3f9"
+        ],
+        "model": [],
+        "resource": [
+            "7b70a5a8-8a98-4ee1-b199-111c00718aa7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

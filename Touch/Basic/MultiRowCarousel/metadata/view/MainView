@@ -1,0 +1,15 @@
+{
+    "type": "Ext.carousel.Carousel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "mainView",
+        "designer|userClassName": "MainView",
+        "designer|initialView": true,
+        "direction": "vertical"
+    },
+    "designerId": "b38732f4-6362-469b-93f1-9e1c49445371"
+}
