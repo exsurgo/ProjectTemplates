@@ -1,0 +1,66 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AppController"
+    },
+    "designerId": "2244a5b7-0d9b-441f-ad44-36d0838fd3f9",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "\r",
+                    "var store = Ext.getStore('Records'),\r",
+                    "    mainView = this.getMainView();\r",
+                    "\r",
+                    "store.each(function(record) {\r",
+                    "    \r",
+                    "    var carousel = Ext.create('Ext.carousel.Carousel', {\r",
+                    "\t\tdirection: 'horizontal'\r",
+                    "    });\r",
+                    "\r",
+                    "    Ext.each(record.get('values'), function(item) {\r",
+                    "        \r",
+                    "        carousel.add({\r",
+                    "            xtype: 'slide',\r",
+                    "            data: {\r",
+                    "                category: record.get('category'),\r",
+                    "                value: item\r",
+                    "            }\r",
+                    "        });\r",
+                    "\r",
+                    "    });\r",
+                    "    \r",
+                    "    mainView.add(carousel);\r",
+                    "    \r",
+                    "});"
+                ]
+            },
+            "designerId": "8017ce1d-ac67-4f33-8560-658026be78b2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "mainview"
+            },
+            "designerId": "48b6c6ca-2424-4b69-8d93-4a3db13452eb"
+        }
+    ]
+}

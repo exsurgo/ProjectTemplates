@@ -8,6 +8,7 @@
     "userConfig": {
         "itemId": "mainView",
         "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
         "designer|initialView": true,
         "direction": "vertical"
     },

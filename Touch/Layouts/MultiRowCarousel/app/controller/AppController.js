@@ -17,10 +17,37 @@ Ext.define('MyApp.controller.AppController', {
     extend: 'Ext.app.Controller',
 
     config: {
+        refs: {
+            mainView: 'mainview'
+        }
     },
 
     launch: function() {
 
+        var store = Ext.getStore('Records'),
+            mainView = this.getMainView();
+
+        store.each(function(record) {
+
+            var carousel = Ext.create('Ext.carousel.Carousel', {
+                direction: 'horizontal'
+            });
+
+            Ext.each(record.get('values'), function(item) {
+
+                carousel.add({
+                    xtype: 'slide',
+                    data: {
+                        category: record.get('category'),
+                        value: item
+                    }
+                });
+
+            });
+
+            mainView.add(carousel);
+
+        });
     }
 
 });
