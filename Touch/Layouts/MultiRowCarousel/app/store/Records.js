@@ -33,7 +33,7 @@ Ext.define('MyApp.store.Records', {
             },
             {
                 category: 'Fruits',
-                items: [
+                values: [
                     'Apple',
                     'Fruit',
                     'Pear',
@@ -42,7 +42,7 @@ Ext.define('MyApp.store.Records', {
             },
             {
                 category: 'Clothing',
-                items: [
+                values: [
                     'Shirt',
                     'Pants',
                     'Jacket'

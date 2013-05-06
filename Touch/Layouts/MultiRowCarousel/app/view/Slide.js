@@ -18,16 +18,11 @@ Ext.define('MyApp.view.Slide', {
     alias: 'widget.slide',
 
     config: {
+        centered: false,
         itemId: 'slide',
-        items: [
-            {
-                xtype: 'label',
-                centered: true,
-                tpl: [
-                    '{category} - {value}'
-                ]
-            }
-        ]
+        layout: {
+            type: 'fit'
+        }
     }
 
 });

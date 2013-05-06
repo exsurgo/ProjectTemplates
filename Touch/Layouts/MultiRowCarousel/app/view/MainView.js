@@ -18,6 +18,7 @@ Ext.define('MyApp.view.MainView', {
     alias: 'widget.mainview',
 
     config: {
+        directionLock: true,
         itemId: 'mainView',
         direction: 'vertical'
     }

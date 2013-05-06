@@ -14,11 +14,11 @@
             "    },\r",
             "    { \r",
             "        category: \"Fruits\",\r",
-            "        items: [\"Apple\", \"Fruit\", \"Pear\", \"Bannana\"]\r",
+            "        values: [\"Apple\", \"Fruit\", \"Pear\", \"Bannana\"]\r",
             "    },\r",
             "    { \r",
             "        category: \"Clothing\",\r",
-            "        items: [\"Shirt\", \"Pants\", \"Jacket\"]\r",
+            "        values: [\"Shirt\", \"Pants\", \"Jacket\"]\r",
             "    }\r",
             "]"
         ],

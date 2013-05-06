@@ -6,40 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
+        "centered": false,
         "itemId": "slide",
         "designer|userClassName": "Slide",
-        "designer|userAlias": "slide"
+        "designer|userAlias": "slide",
+        "layout": "fit"
     },
-    "designerId": "74dab547-9cde-4462-8ed5-815e85aacf83",
-    "cn": [
-        {
-            "type": "Ext.Label",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "centered": true
-            },
-            "designerId": "d5444f2d-17bb-4fd8-ae19-e6065671d43a",
-            "cn": [
-                {
-                    "type": "Ext.XTemplate",
-                    "reference": {
-                        "name": "tpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "implHandler": [
-                            "{category} - {value}"
-                        ],
-                        "designer|displayName": "tpl"
-                    },
-                    "designerId": "b72eca0e-a200-4ab4-a8cb-c3e4f0d7f63b"
-                }
-            ]
-        }
-    ]
+    "designerId": "74dab547-9cde-4462-8ed5-815e85aacf83"
 }
