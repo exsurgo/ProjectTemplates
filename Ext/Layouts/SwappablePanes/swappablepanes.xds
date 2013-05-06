@@ -1,0 +1,53 @@
+{
+    "name": "swappablepanes",
+    "settings": {
+        "urlPrefix": "http://localhost/architect/swappablepanes",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 971,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "0ec68286-9c37-4624-99e4-e485f78b39c1": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainView"
+        },
+        "a14f42fa-786f-48ba-92ed-01ded1bc7cdf": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "d4201dc3-e849-475b-9a30-5b3767f9fb7c": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "0ec68286-9c37-4624-99e4-e485f78b39c1"
+        ],
+        "store": [],
+        "controller": [
+            "d4201dc3-e849-475b-9a30-5b3767f9fb7c"
+        ],
+        "model": [],
+        "resource": [
+            "a14f42fa-786f-48ba-92ed-01ded1bc7cdf"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
