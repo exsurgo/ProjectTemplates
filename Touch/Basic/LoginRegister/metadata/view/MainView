@@ -1,0 +1,61 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": null,
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true
+    },
+    "designerId": "ed028afd-d71b-4509-b56c-0ed684fd01e1",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "loginPanel"
+            },
+            "designerId": "6085d3bd-289c-4b10-a35a-a7e16d8f35a1",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "loginButton",
+                        "margin": 20,
+                        "padding": 8,
+                        "text": "Login"
+                    },
+                    "designerId": "165fcac7-2a2f-4427-9de6-8bb50444905b"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "registerButton",
+                        "margin": 20,
+                        "padding": 8,
+                        "text": "Register"
+                    },
+                    "designerId": "87d07c59-f761-4de5-ab26-d2d9f9d82c05"
+                }
+            ]
+        }
+    ]
+}

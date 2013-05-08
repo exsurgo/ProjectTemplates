@@ -1,0 +1,20 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MyNavigationView",
+            "MyFormPanel",
+            "MyFormPanel1"
+        ],
+        "controllers": [
+            "Account"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

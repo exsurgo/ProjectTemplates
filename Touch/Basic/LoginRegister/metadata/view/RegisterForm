@@ -1,0 +1,53 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RegisterForm",
+        "designer|userAlias": "registerform"
+    },
+    "designerId": "62ee9761-4c3f-444d-9653-931250a2298a",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "MyFieldSet1"
+            },
+            "designerId": "a78ce03a-f002-4ef5-ab08-d3c6000e7522",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Field"
+                    },
+                    "designerId": "059d89ee-f844-4dbf-a6de-6bd8f01607f4"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Field"
+                    },
+                    "designerId": "c591a084-a530-4821-ab87-aee228ea9664"
+                }
+            ]
+        }
+    ]
+}

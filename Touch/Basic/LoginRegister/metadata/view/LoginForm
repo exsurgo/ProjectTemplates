@@ -1,0 +1,53 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LoginForm",
+        "designer|userAlias": "loginform"
+    },
+    "designerId": "5f766276-5fd4-4afa-8cf9-aad3c3c41eee",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "MyFieldSet"
+            },
+            "designerId": "354aa8a0-f4d5-4424-a241-2c71090e7625",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Field"
+                    },
+                    "designerId": "993768d2-880a-47bd-b1cd-abd256b4795c"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Field"
+                    },
+                    "designerId": "ed11b1e7-37ae-485f-a7fe-ee06690cbb76"
+                }
+            ]
+        }
+    ]
+}
