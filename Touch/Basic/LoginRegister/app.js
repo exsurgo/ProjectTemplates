@@ -21,8 +21,8 @@ Ext.Loader.setConfig({
 Ext.application({
     views: [
         'MainView',
-        'RegisterForm',
-        'LoginForm'
+        'LoginForm',
+        'RegisterForm'
     ],
     controllers: [
         'Account'
@@ -31,7 +31,7 @@ Ext.application({
 
     launch: function() {
 
-                Ext.create('MyApp.view.MainView', {fullscreen: true});
+        Ext.create('MyApp.view.MainView', {fullscreen: true});
     }
 
 });

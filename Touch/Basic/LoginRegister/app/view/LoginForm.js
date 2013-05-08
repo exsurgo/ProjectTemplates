@@ -21,17 +21,28 @@ Ext.define('MyApp.view.LoginForm', {
         items: [
             {
                 xtype: 'fieldset',
-                title: 'MyFieldSet',
+                title: 'Login',
                 items: [
                     {
                         xtype: 'textfield',
-                        label: 'Field'
+                        label: 'Username',
+                        labelWidth: '40%',
+                        name: 'username'
                     },
                     {
                         xtype: 'textfield',
-                        label: 'Field'
+                        label: 'Password',
+                        labelWidth: '40%',
+                        name: 'password'
                     }
                 ]
+            },
+            {
+                xtype: 'button',
+                itemId: 'loginButton',
+                margin: 20,
+                padding: 8,
+                text: 'Login'
             }
         ]
     }

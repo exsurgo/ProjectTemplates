@@ -19,7 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "MyFieldSet"
+                "title": "Login"
             },
             "designerId": "354aa8a0-f4d5-4424-a241-2c71090e7625",
             "cn": [
@@ -31,7 +31,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Field"
+                        "label": "Username",
+                        "labelWidth": "40%",
+                        "name": "username"
                     },
                     "designerId": "993768d2-880a-47bd-b1cd-abd256b4795c"
                 },
@@ -43,11 +45,28 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "Field"
+                        "label": "Password",
+                        "labelWidth": "40%",
+                        "name": "password"
                     },
                     "designerId": "ed11b1e7-37ae-485f-a7fe-ee06690cbb76"
                 }
             ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "loginButton",
+                "margin": 20,
+                "padding": 8,
+                "text": "Login"
+            },
+            "designerId": "e7d2af5c-d435-4ffc-8e17-fb2affa59d82"
         }
     ]
 }

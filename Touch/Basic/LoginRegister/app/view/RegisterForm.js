@@ -21,17 +21,41 @@ Ext.define('MyApp.view.RegisterForm', {
         items: [
             {
                 xtype: 'fieldset',
-                title: 'MyFieldSet1',
+                title: 'Register',
                 items: [
                     {
                         xtype: 'textfield',
-                        label: 'Field'
+                        label: 'Name',
+                        labelWidth: '40%',
+                        name: 'name'
                     },
                     {
                         xtype: 'textfield',
-                        label: 'Field'
+                        label: 'Username',
+                        labelWidth: '40%',
+                        name: 'username'
+                    },
+                    {
+                        xtype: 'emailfield',
+                        label: 'Email',
+                        labelWidth: '40%',
+                        name: 'email',
+                        placeHolder: 'email@example.com'
+                    },
+                    {
+                        xtype: 'passwordfield',
+                        label: 'Password',
+                        labelWidth: '40%',
+                        name: 'password'
                     }
                 ]
+            },
+            {
+                xtype: 'button',
+                itemId: 'registerButton',
+                margin: 20,
+                padding: 8,
+                text: 'Register'
             }
         ]
     }

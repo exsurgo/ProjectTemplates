@@ -7,9 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "views": [
-            "MyNavigationView",
-            "MyFormPanel",
-            "MyFormPanel1"
+            "MainView",
+            "LoginForm",
+            "RegisterForm"
         ],
         "controllers": [
             "Account"

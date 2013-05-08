@@ -21,21 +21,43 @@ Ext.define('MyApp.view.MainView', {
         items: [
             {
                 xtype: 'panel',
-                itemId: 'loginPanel',
+                itemId: 'homePanel',
+                layout: {
+                    type: 'fit'
+                },
                 items: [
                     {
-                        xtype: 'button',
-                        itemId: 'loginButton',
-                        margin: 20,
-                        padding: 8,
-                        text: 'Login'
+                        xtype: 'panel',
+                        itemId: 'loginPanel',
+                        items: [
+                            {
+                                xtype: 'button',
+                                itemId: 'showLoginButton',
+                                margin: 20,
+                                padding: 8,
+                                text: 'Login'
+                            },
+                            {
+                                xtype: 'button',
+                                itemId: 'showRegisterButton',
+                                margin: 20,
+                                padding: 8,
+                                text: 'Register'
+                            }
+                        ]
                     },
                     {
-                        xtype: 'button',
-                        itemId: 'registerButton',
-                        margin: 20,
-                        padding: 8,
-                        text: 'Register'
+                        xtype: 'panel',
+                        hidden: true,
+                        itemId: 'welcomePanel',
+                        items: [
+                            {
+                                xtype: 'label',
+                                centered: true,
+                                html: 'Welcome!',
+                                itemId: 'welcomeLabel'
+                            }
+                        ]
                     }
                 ]
             }
