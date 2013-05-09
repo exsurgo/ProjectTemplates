@@ -1,0 +1,29 @@
+{
+    "name": "Subnavigation",
+    "settings": {},
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000502,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
