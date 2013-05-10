@@ -15,16 +15,17 @@
 
 Ext.define('MyApp.view.NavView', {
     extend: 'Ext.navigation.View',
+    alias: 'widget.navview',
 
     requires: [
-        'MyApp.view.TopPanel'
+        'MyApp.view.OutsideHousePanel'
     ],
 
     config: {
         ui: 'light',
         items: [
             {
-                xtype: 'toppanel'
+                xtype: 'outsidehousepanel'
             }
         ]
     }

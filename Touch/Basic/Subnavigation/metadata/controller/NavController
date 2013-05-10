@@ -1,0 +1,34 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NavController"
+    },
+    "designerId": "1db8cbc1-0a6a-484f-9106-b35e802fcba5",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "changePanel",
+                "designer|params": [
+                    "button"
+                ],
+                "implHandler": [
+                    "var destinationID = button.getInitialConfig().navigateTo;"
+                ],
+                "name": "tap",
+                "designer|controlQuery": "navview button"
+            },
+            "designerId": "fe099619-51df-4c03-a80d-092a03892065"
+        }
+    ]
+}

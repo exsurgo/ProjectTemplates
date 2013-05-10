@@ -1,6 +1,9 @@
 {
     "name": "Subnavigation",
-    "settings": {},
+    "settings": {
+        "urlPrefix": "http://localhost:8000/",
+        "exportPath": ""
+    },
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
@@ -52,6 +55,14 @@
                 "app/view/OpenMailboxPanel.js"
             ],
             "className": "OpenMailboxPanel"
+        },
+        "1db8cbc1-0a6a-484f-9106-b35e802fcba5": {
+            "paths": [
+                "metadata/controller/NavController",
+                "app/controller/override/NavController.js",
+                "app/controller/NavController.js"
+            ],
+            "className": "NavController"
         }
     },
     "viewOrderMap": {
@@ -63,7 +74,9 @@
             "de4129d5-b167-42d1-9740-e19c43562a87"
         ],
         "store": [],
-        "controller": [],
+        "controller": [
+            "1db8cbc1-0a6a-484f-9106-b35e802fcba5"
+        ],
         "model": [],
         "resource": [
             "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4"

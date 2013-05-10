@@ -13,6 +13,9 @@
             "DescriptionLabel",
             "OpenMailboxPanel"
         ],
+        "controllers": [
+            "NavController"
+        ],
         "name": "MyApp"
     },
     "designerId": "application"
