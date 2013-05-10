@@ -35,7 +35,7 @@
                     "userConfig": {
                         "icon": null,
                         "iconAlign": null,
-                        "text": "Go to current location"
+                        "text": "Go to Iceland"
                     },
                     "designerId": "09b990a7-2805-488c-b9ef-68dedfb31153"
                 }
@@ -51,7 +51,10 @@
             "userConfig": {
                 "height": "100%",
                 "designer|displayName": "Map",
-                "designer|createAlias": "map"
+                "designer|createAlias": "map",
+                "mapOptions": [
+                    "{}"
+                ]
             },
             "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
         }

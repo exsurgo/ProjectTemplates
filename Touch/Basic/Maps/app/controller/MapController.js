@@ -25,8 +25,10 @@ Ext.define('MyApp.controller.MapController', {
     },
 
     onCurrentTap: function(button, e, eOpts) {
-        button.up('mainpanel').child('map').getMap(); // ?
-        debugger;
+        button.up('mainpanel').child('map').setMapOptions({
+            center: new google.maps.LatLng(65, -18),
+            zoom: 7
+        });
     }
 
 });

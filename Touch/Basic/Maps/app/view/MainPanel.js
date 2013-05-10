@@ -25,13 +25,16 @@ Ext.define('MyApp.view.MainPanel', {
                 items: [
                     {
                         xtype: 'button',
-                        text: 'Go to current location'
+                        text: 'Go to Iceland'
                     }
                 ]
             },
             {
                 xtype: 'map',
-                height: '100%'
+                height: '100%',
+                mapOptions: {
+                    
+                }
             }
         ]
     }
