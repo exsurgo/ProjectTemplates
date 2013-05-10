@@ -17,12 +17,20 @@ Ext.define('MyApp.view.Step1Panel', {
     extend: 'Ext.Panel',
     alias: 'widget.step1',
 
+    requires: [
+        'MyApp.view.HelpButton'
+    ],
+
     config: {
         items: [
             {
                 xtype: 'button',
+                id: 'step2button',
                 ui: 'forward',
                 text: 'Step 2'
+            },
+            {
+                xtype: 'helpbutton'
             }
         ]
     }

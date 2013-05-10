@@ -18,6 +18,27 @@
             },
             "codeClass": null,
             "userConfig": {
+                "fn": "onHelpTap",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'help',",
+                    "    title: 'Help'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "HelpButton",
+                "designer|controlQuery": "helpbutton"
+            },
+            "designerId": "cf7cd0ff-b6c4-4cbe-9929-8f19a51f404e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "fn": "onClickStep2",
                 "implHandler": [
                     "button.up('navigationview').push({",
@@ -27,7 +48,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "step1 button"
+                "designer|controlQuery": "button#step2button"
             },
             "designerId": "43232f94-0f85-4cd7-806a-337801f24c38"
         },
@@ -48,7 +69,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "step2 button"
+                "designer|controlQuery": "button#step3button"
             },
             "designerId": "00838f35-6413-4fe1-87bb-40f036462634"
         }

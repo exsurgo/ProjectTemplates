@@ -1,0 +1,15 @@
+{
+    "type": "Ext.Button",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "round",
+        "designer|userClassName": "HelpButton",
+        "designer|userAlias": "helpbutton",
+        "text": "Help"
+    },
+    "designerId": "ec05016b-2ed6-4977-88e7-460cc14a33d6"
+}

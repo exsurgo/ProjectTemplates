@@ -18,13 +18,23 @@ Ext.define('MyApp.controller.MainNavController', {
 
     config: {
         control: {
-            "step1 button": {
+            "helpbutton": {
+                tap: 'onHelpTap'
+            },
+            "button#step2button": {
                 tap: 'onClickStep2'
             },
-            "step2 button": {
+            "button#step3button": {
                 tap: 'onClickStep3'
             }
         }
+    },
+
+    onHelpTap: function(button, e, eOpts) {
+        button.up('navigationview').push({
+            xtype: 'help',
+            title: 'Help'
+        });
     },
 
     onClickStep2: function(button, e, eOpts) {

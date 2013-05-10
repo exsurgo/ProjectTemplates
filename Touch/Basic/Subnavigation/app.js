@@ -23,7 +23,9 @@ Ext.application({
         'Step1Panel',
         'Step2Panel',
         'Step3Panel',
-        'MainNav'
+        'MainNav',
+        'HelpPanel',
+        'HelpButton'
     ],
     controllers: [
         'MainNavController'

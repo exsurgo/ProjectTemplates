@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Step3Panel",
-        "designer|userAlias": "step3"
+        "designer|userClassName": "HelpPanel",
+        "designer|userAlias": "help"
     },
-    "designerId": "1ae4b0af-65db-4bb9-87d7-5396673e75d7",
+    "designerId": "b5057357-79df-45df-858c-98980bddf68e",
     "cn": [
         {
             "type": "Ext.Label",
@@ -19,10 +19,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "html": "Welcome to the final panel!",
-                "designer|displayName": "Step3Label"
+                "html": "This is the help page.",
+                "designer|displayName": "HelpLabel"
             },
-            "designerId": "6d8aa868-c29d-48b2-8765-853564c1fb4e"
+            "designerId": "665f43ff-c91a-4b90-9ec3-da0e5a5cee5a"
         }
     ]
 }
