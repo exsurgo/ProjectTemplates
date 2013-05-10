@@ -18,7 +18,7 @@
         ],
         "autoCreateViewport": true,
         "controllers": [
-            "RecordController"
+            "Records"
         ],
         "name": "MyApp"
     },

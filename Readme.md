@@ -12,15 +12,18 @@ These templates are divided into the following categories for the **Ext** and **
 
 **Rules for all templates**
 
-- All templates should be as usable as possible
+- All templates should be as usable as possible.
 - Use the least amount of code possible.
-- Use camelCase for all functions, local vars, ref's, and clientId's
+- Use camelCase for all functions, local vars, ref's, and clientId's.
 - Use PascalCase/TitleCase for all classes (top-level views, not instances).
 - Use all lowercase for aliases.
 - Assign itemId to all components that need to be referenced.
 - All classes should be assigned aliases.
-- Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton"
+- Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton".
 - Custom CSS/Styles should be avoided.  
+- Models should be single terms, such as Task, Person or Record.
+- Stores and Controllers should be plural terms such as Tasks, People, Records.
+- View should use verbose naming, such as TaskGrid, RecordForm, etc.
 - Use detailed comments in controller code for new user education.
 - All main view classes should be named MainView and have it's itemId set to mainView.
 - Variables should be hoisted where appropriate. Proper tabbed formatting should be used and comments should be appended to end of line.  Example:
@@ -29,12 +32,12 @@ These templates are divided into the following categories for the **Ext** and **
 		var x = 1,	// First<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 2;	// Second
 	</code>
-- Strings should use single quotes instead of double
+- Strings should use single quotes instead of double.
 
 **Rules for Ext templates**
 - A viewport should always be used as the top-level views for Ext.  
 
 **Rules for Ext layout templates**
-- Header and Footer should have height set to 100 and NOT resizable
-- Left, Right, Center, Top, Bottom, etc, panels should be resizable
+- Header and Footer should have height set to 100 and NOT resizable.
+- Left, Right, Center, Top, Bottom, etc, panels should be resizable.
 

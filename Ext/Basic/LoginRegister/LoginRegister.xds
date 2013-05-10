@@ -40,11 +40,11 @@
         },
         "d1cc0c66-0a94-4c48-95da-b7881bbec645": {
             "paths": [
-                "metadata/controller/AccountController",
-                "app/controller/override/AccountController.js",
-                "app/controller/AccountController.js"
+                "metadata/controller/Account",
+                "app/controller/override/Account.js",
+                "app/controller/Account.js"
             ],
-            "className": "AccountController"
+            "className": "Account"
         }
     },
     "viewOrderMap": {

@@ -17,7 +17,7 @@
             "Slide"
         ],
         "controllers": [
-            "AppController"
+            "App"
         ],
         "name": "MyApp"
     },

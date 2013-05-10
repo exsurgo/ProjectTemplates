@@ -29,7 +29,7 @@ Ext.application({
         'MainView'
     ],
     controllers: [
-        'PersonController'
+        'People'
     ],
     name: 'MyApp',
 

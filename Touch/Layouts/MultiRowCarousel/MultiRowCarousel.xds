@@ -31,11 +31,11 @@
         },
         "2244a5b7-0d9b-441f-ad44-36d0838fd3f9": {
             "paths": [
-                "metadata/controller/AppController",
-                "app/controller/override/AppController.js",
-                "app/controller/AppController.js"
+                "metadata/controller/App",
+                "app/controller/override/App.js",
+                "app/controller/App.js"
             ],
-            "className": "AppController"
+            "className": "App"
         },
         "88692f58-6851-4b8b-af66-1fbbb08d4bc5": {
             "paths": [

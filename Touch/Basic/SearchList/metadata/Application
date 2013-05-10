@@ -16,7 +16,7 @@
             "MainView"
         ],
         "controllers": [
-            "PersonController"
+            "People"
         ],
         "name": "MyApp"
     },

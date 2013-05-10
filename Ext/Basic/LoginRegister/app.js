@@ -26,7 +26,7 @@ Ext.application({
     ],
     autoCreateViewport: true,
     controllers: [
-        'AccountController'
+        'Account'
     ],
     name: 'MyApp'
 });

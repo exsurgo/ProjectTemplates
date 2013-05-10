@@ -12,7 +12,7 @@
         "stores": [
             "People"
         ],
-        "designer|userClassName": "PersonController"
+        "designer|userClassName": "People"
     },
     "designerId": "2e108d17-aa43-4245-ab88-7c58bd477077",
     "cn": [
@@ -30,6 +30,7 @@
                     "// Main navigation view\r",
                     "var mainView = this.getMainView();\r",
                     "\r",
+                    "// Navigate to details\r",
                     "mainView.push({\r",
                     "    xtype: 'detailpanel',\r",
                     "    title: \"Details\",\r",

@@ -30,11 +30,11 @@
         },
         "2856dba3-c512-4b02-8986-a3e844ab0885": {
             "paths": [
-                "metadata/controller/RecordController",
-                "app/controller/override/RecordController.js",
-                "app/controller/RecordController.js"
+                "metadata/controller/Records",
+                "app/controller/override/Records.js",
+                "app/controller/Records.js"
             ],
-            "className": "RecordController"
+            "className": "Records"
         },
         "23afc0a3-a1b1-4f10-9622-02ebe055e576": {
             "paths": [

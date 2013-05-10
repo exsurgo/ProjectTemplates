@@ -39,11 +39,11 @@
         },
         "2e108d17-aa43-4245-ab88-7c58bd477077": {
             "paths": [
-                "metadata/controller/PersonController",
-                "app/controller/override/PersonController.js",
-                "app/controller/PersonController.js"
+                "metadata/controller/People",
+                "app/controller/override/People.js",
+                "app/controller/People.js"
             ],
-            "className": "PersonController"
+            "className": "People"
         },
         "b9679d04-5d75-4d0d-a8cd-d624d5897566": {
             "paths": [

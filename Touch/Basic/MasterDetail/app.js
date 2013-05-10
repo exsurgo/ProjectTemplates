@@ -31,7 +31,7 @@ Ext.application({
         'PersonList'
     ],
     controllers: [
-        'PersonController'
+        'People'
     ],
     name: 'MyApp',
 
