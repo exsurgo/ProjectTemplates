@@ -1,0 +1,59 @@
+{
+    "name": "Maps",
+    "settings": {
+        "urlPrefix": "http://localhost:8000/",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "55560256-07cc-4d6d-9b9e-2bba2eba51f7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "304a1802-d197-4038-aaed-1d1e62c47ea5": {
+            "paths": [
+                "metadata/view/MainPanel",
+                "app/view/override/MainPanel.js",
+                "app/view/MainPanel.js"
+            ],
+            "className": "MainPanel"
+        },
+        "89dad240-cf68-4050-b2ee-c700a3fff8b2": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d": {
+            "paths": [
+                "metadata/controller/MapController",
+                "app/controller/override/MapController.js",
+                "app/controller/MapController.js"
+            ],
+            "className": "MapController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "304a1802-d197-4038-aaed-1d1e62c47ea5"
+        ],
+        "store": [],
+        "controller": [
+            "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d"
+        ],
+        "model": [],
+        "resource": [
+            "55560256-07cc-4d6d-9b9e-2bba2eba51f7",
+            "89dad240-cf68-4050-b2ee-c700a3fff8b2"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

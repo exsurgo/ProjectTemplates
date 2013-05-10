@@ -1,0 +1,33 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MapController"
+    },
+    "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCurrentTap",
+                "implHandler": [
+                    "button.up('mainpanel').child('map').getMap(); // ?",
+                    "debugger;"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button"
+            },
+            "designerId": "7f001c89-3e41-435f-ae22-c9a8b7abd272"
+        }
+    ]
+}

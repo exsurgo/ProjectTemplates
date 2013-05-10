@@ -1,0 +1,59 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainPanel",
+        "designer|userAlias": "mainpanel",
+        "designer|initialView": true
+    },
+    "designerId": "304a1802-d197-4038-aaed-1d1e62c47ea5",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|displayName": "Toolbar"
+            },
+            "designerId": "5333f262-672e-4454-b65d-e2ba379595ea",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": null,
+                        "iconAlign": null,
+                        "text": "Go to current location"
+                    },
+                    "designerId": "09b990a7-2805-488c-b9ef-68dedfb31153"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "designer|displayName": "Map",
+                "designer|createAlias": "map"
+            },
+            "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
+        }
+    ]
+}
