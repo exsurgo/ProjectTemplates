@@ -20,7 +20,9 @@
             "userConfig": {
                 "fn": "changePanel",
                 "designer|params": [
-                    "button"
+                    "button",
+                    "e",
+                    "eOpts"
                 ],
                 "implHandler": [
                     "var destinationID = button.getInitialConfig().navigateTo;"

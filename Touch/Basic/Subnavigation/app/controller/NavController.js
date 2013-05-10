@@ -24,7 +24,7 @@ Ext.define('MyApp.controller.NavController', {
         }
     },
 
-    changePanel: function(button) {
+    changePanel: function(button, e, eOpts) {
         var destinationID = button.getInitialConfig().navigateTo;
     }
 
