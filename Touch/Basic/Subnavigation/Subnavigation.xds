@@ -12,10 +12,20 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "53ec0145-7362-4ce9-8e97-284ac7262cd0": {
+            "paths": [
+                "metadata/view/NavView",
+                "app/view/override/NavView.js",
+                "app/view/NavView.js"
+            ],
+            "className": "NavView"
         }
     },
     "viewOrderMap": {
-        "view": [],
+        "view": [
+            "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+        ],
         "store": [],
         "controller": [],
         "model": [],

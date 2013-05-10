@@ -5,6 +5,9 @@
         "component": true,
         "controller": true,
         "resource": true,
+        "53ec0145-7362-4ce9-8e97-284ac7262cd0": {
+            "id": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+        },
         "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4": {
             "id": "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4"
         }
@@ -13,11 +16,11 @@
         "openTabs": []
     },
     "canvasState": {
-        "topInstance": null
+        "topInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
     },
     "inspectorState": {
-        "topInstance": null,
-        "selectedInstance": null
+        "topInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0",
+        "selectedInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
     },
     "codeState": {
         "topInstance": null
