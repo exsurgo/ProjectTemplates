@@ -32,21 +32,21 @@ Ext.define('MyApp.view.TopPanel', {
             },
             {
                 xtype: 'button',
-                text: 'Go up the stairs'
+                text: 'Open mailbox'
             },
             {
                 xtype: 'myspacer'
             },
             {
                 xtype: 'button',
-                text: 'Open the mailbox'
+                text: 'Open door'
             },
             {
                 xtype: 'myspacer'
             },
             {
                 xtype: 'button',
-                text: 'Eat a cake'
+                text: 'Go to house'
             }
         ]
     }

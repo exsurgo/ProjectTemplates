@@ -36,7 +36,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "Go up the stairs"
+                "text": "Open mailbox"
             },
             "designerId": "9a8536ab-836a-49fb-9a1a-7e66d0e54c14"
         },
@@ -58,7 +58,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "Open the mailbox"
+                "text": "Open door"
             },
             "designerId": "54df9ad0-da48-4aaa-9b95-46d9b9aa6a8e"
         },
@@ -80,7 +80,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "Eat a cake"
+                "text": "Go to house"
             },
             "designerId": "96bb3a1e-fd68-43be-8e41-131ee280ee56"
         }

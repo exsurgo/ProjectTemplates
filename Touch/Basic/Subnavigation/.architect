@@ -54,8 +54,8 @@
         "topInstance": "866cafb9-343d-458f-8e82-0892f53c8551"
     },
     "inspectorState": {
-        "topInstance": "866cafb9-343d-458f-8e82-0892f53c8551",
-        "selectedInstance": "866cafb9-343d-458f-8e82-0892f53c8551"
+        "topInstance": null,
+        "selectedInstance": null
     },
     "codeState": {
         "topInstance": null
