@@ -9,8 +9,8 @@
         "centered": false,
         "minHeight": null,
         "minWidth": null,
-        "designer|userClassName": "TopPanel",
-        "designer|userAlias": "toppanel",
+        "designer|userClassName": "OutsideHousePanel",
+        "designer|userAlias": "outsidehousepanel",
         "scrollable": "vertical"
     },
     "designerId": "866cafb9-343d-458f-8e82-0892f53c8551",
@@ -36,9 +36,17 @@
             },
             "codeClass": null,
             "userConfig": {
+                "navigateTo": "openmailboxpanel",
                 "text": "Open mailbox"
             },
-            "designerId": "9a8536ab-836a-49fb-9a1a-7e66d0e54c14"
+            "designerId": "9a8536ab-836a-49fb-9a1a-7e66d0e54c14",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "navigateTo",
+                    "type": "string"
+                }
+            ]
         },
         {
             "type": "linkedinstance",

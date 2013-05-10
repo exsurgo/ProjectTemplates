@@ -6,7 +6,8 @@
         "controller": true,
         "resource": true,
         "1d68aa7a-a1a1-49c8-91b5-013f4e89e666": {
-            "id": "1d68aa7a-a1a1-49c8-91b5-013f4e89e666"
+            "id": "1d68aa7a-a1a1-49c8-91b5-013f4e89e666",
+            "expanded": false
         },
         "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e": {
             "id": "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e",
@@ -43,6 +44,14 @@
                 }
             ]
         },
+        "de4129d5-b167-42d1-9740-e19c43562a87": {
+            "id": "de4129d5-b167-42d1-9740-e19c43562a87",
+            "cn": [
+                {
+                    "id": "8c594ca8-0b52-4755-bdcf-c24bf906e3c6"
+                }
+            ]
+        },
         "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4": {
             "id": "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4"
         }
@@ -51,7 +60,7 @@
         "openTabs": []
     },
     "canvasState": {
-        "topInstance": "866cafb9-343d-458f-8e82-0892f53c8551"
+        "topInstance": "de4129d5-b167-42d1-9740-e19c43562a87"
     },
     "inspectorState": {
         "topInstance": null,

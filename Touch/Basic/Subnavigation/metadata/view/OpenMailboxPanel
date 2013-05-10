@@ -1,0 +1,28 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "OpenMailboxPanel",
+        "designer|userAlias": "openmailboxpanel"
+    },
+    "designerId": "de4129d5-b167-42d1-9740-e19c43562a87",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "You open the mailbox, revealing a leaflet. It reads \"Welcome to Sencha Zork!\""
+            },
+            "designerId": "8c594ca8-0b52-4755-bdcf-c24bf906e3c6",
+            "masterInstanceId": "1d68aa7a-a1a1-49c8-91b5-013f4e89e666"
+        }
+    ]
+}

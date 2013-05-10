@@ -8,9 +8,10 @@
     "userConfig": {
         "views": [
             "NavView",
-            "TopPanel",
+            "OutsideHousePanel",
             "ButtonSpacer",
-            "DescriptionLabel"
+            "DescriptionLabel",
+            "OpenMailboxPanel"
         ],
         "name": "MyApp"
     },
