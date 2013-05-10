@@ -31,7 +31,7 @@ Ext.application({
     ],
     autoCreateViewport: true,
     controllers: [
-        'RecordController'
+        'Records'
     ],
     name: 'MyApp'
 });

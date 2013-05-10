@@ -1,16 +1,15 @@
 {
     "expandedState": {
-        "data": false,
-        "model": false,
-        "component": false,
-        "controller": false,
-        "resource": false,
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true,
         "51664173-3dd3-4c65-bc8c-fcec064068ab": {
             "id": "51664173-3dd3-4c65-bc8c-fcec064068ab",
             "cn": [
                 {
                     "id": "b2bfdcc4-67b8-4a2b-9bd0-eb9ff64cebb4",
-                    "expanded": false,
                     "cn": [
                         {
                             "id": "040b85b8-4836-4e01-90a5-25fc43f12d8c"
@@ -19,7 +18,6 @@
                 },
                 {
                     "id": "ad0d6ecc-a95a-4fa2-9119-59342137596a",
-                    "expanded": false,
                     "cn": [
                         {
                             "id": "2b2289e6-ece8-4394-ba0e-0c7187105e12"
@@ -29,7 +27,8 @@
             ]
         },
         "c46caa31-c4c3-4048-970e-5c952f6447b6": {
-            "id": "c46caa31-c4c3-4048-970e-5c952f6447b6"
+            "id": "c46caa31-c4c3-4048-970e-5c952f6447b6",
+            "expanded": false
         },
         "de8b28f6-fdb4-4d1b-8ba6-0a23b93be027": {
             "id": "de8b28f6-fdb4-4d1b-8ba6-0a23b93be027",
@@ -60,20 +59,17 @@
         }
     },
     "tabState": {
-        "openTabs": [
-            "83c0d72e-5e47-4a99-a928-d22605955ef2",
-            "51664173-3dd3-4c65-bc8c-fcec064068ab"
-        ]
+        "openTabs": []
     },
     "canvasState": {
-        "topInstance": null
+        "topInstance": "51664173-3dd3-4c65-bc8c-fcec064068ab"
     },
     "inspectorState": {
-        "topInstance": "application",
-        "selectedInstance": "application"
+        "topInstance": "51664173-3dd3-4c65-bc8c-fcec064068ab",
+        "selectedInstance": "b2bfdcc4-67b8-4a2b-9bd0-eb9ff64cebb4"
     },
     "codeState": {
-        "topInstance": "application"
+        "topInstance": null
     },
-    "editMode": "code"
+    "editMode": "design"
 }

@@ -27,7 +27,7 @@ Ext.application({
         'NavMenu'
     ],
     controllers: [
-        'NavController'
+        'Navigation'
     ],
     name: 'MyApp',
 

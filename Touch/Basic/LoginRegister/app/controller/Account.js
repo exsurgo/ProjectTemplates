@@ -40,111 +40,113 @@ Ext.define('MyApp.controller.Account', {
     },
 
     showLogin: function(button, e, eOpts) {
-
-        var loginForm = Ext.create('MyApp.view.LoginForm'),
-            mainView = this.getMainView();
-
+        
+        var loginForm = Ext.create('MyApp.view.LoginForm'),	// Login form
+            mainView = this.getMainView();					// Main view
+        
+        // Navigate to login
         mainView.push({
             xtype: "loginform",
             title: "Login"
         });
-
+        
     },
 
     showRegister: function(button, e, eOpts) {
-
-        var registerForm = Ext.create('MyApp.view.RegisterForm'),
-            mainView = this.getMainView();
-
+        
+        var registerForm = Ext.create('MyApp.view.RegisterForm'),	// Registration form
+            mainView = this.getMainView();							// Main view
+        
+        // Navigate to register
         mainView.push({
             xtype: "registerform",
             title: "Register"
         });
-
+        
     },
 
     login: function(button, e, eOpts) {
-
+        
         var form = button.up('formpanel'),			// Login form
-        values = form.getValues(),				// Form values
-        mainView = this.getMainView(),			// Main view
-        loginPanel = this.getLoginPanel(),		// Login and register buttons
-        welcomePanel = this.getWelcomePanel();	// Welcome panel
-
+        	values = form.getValues(),				// Form values
+        	mainView = this.getMainView(),			// Main view
+        	loginPanel = this.getLoginPanel(),		// Login and register buttons
+        	welcomePanel = this.getWelcomePanel();	// Welcome panel
+        
         // Success
         var successCallback = function(resp, ops) {
-
+        
             // Go back
             mainView.pop();
-
+        
             // Hide login panel
             loginPanel.hide();
-
+        
             // Show welcome panel
             welcomePanel.show();
-
+        
         };
-
+        
         // Failure
         var failureCallback = function(resp, ops) {
-
+        
             // Show login failure error
             Ext.Msg.alert("Login Failure", resp);
-
+        
         };
-
-
+        
+        
         // TODO: Login using server-side authentication service
         // Ext.Ajax.request({
         //		url: "/api/login",
-        //		params: values, 
+        //		params: values,
         //		success: successCallback,
         //		failure: failureCallback
         // });
-
+        
         // Just run success for now
         successCallback();
     },
 
     register: function(button, e, eOpts) {
-
+        
         var form = button.up('formpanel'),			// Login form
-        values = form.getValues(),				// Form values
-        mainView = this.getMainView(),			// Main view
-        loginPanel = this.getLoginPanel(),		// Login and register buttons
-        welcomePanel = this.getWelcomePanel();	// Welcome panel
-
+            values = form.getValues(),				// Form values
+            mainView = this.getMainView(),			// Main view
+            loginPanel = this.getLoginPanel(),		// Login and register buttons
+            welcomePanel = this.getWelcomePanel();	// Welcome panel
+        
         // Success
         var successCallback = function(resp, ops) {
-
+        
             // Go back
             mainView.pop();
-
+        
             // Hide login panel
             loginPanel.hide();
-
+        
             // Show welcome panel
             welcomePanel.show();
-
+        
         };
-
+        
         // Failure
         var failureCallback = function(resp, ops) {
-
+        
             // Show login failure error
             Ext.Msg.alert("Registration Failure", resp);
-
+        
         };
-
-
+        
+        
         // TODO: Register using server-side authentication service
         // Ext.Ajax.request({
         //		url: "/api/register",
-        //		params: values, 
+        //		params: values,
         //		success: successCallback,
         //		failure: failureCallback
         // });
-
+        
         // Just run success for now
         successCallback();
     }

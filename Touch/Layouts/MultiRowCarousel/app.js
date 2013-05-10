@@ -30,7 +30,7 @@ Ext.application({
         'Slide'
     ],
     controllers: [
-        'AppController'
+        'App'
     ],
     name: 'MyApp',
 

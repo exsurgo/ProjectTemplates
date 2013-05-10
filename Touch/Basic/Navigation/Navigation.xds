@@ -39,11 +39,11 @@
         },
         "b65f72c1-bee5-4e5a-9fed-ce939650a75c": {
             "paths": [
-                "metadata/controller/NavController",
-                "app/controller/override/NavController.js",
-                "app/controller/NavController.js"
+                "metadata/controller/Navigation",
+                "app/controller/override/Navigation.js",
+                "app/controller/Navigation.js"
             ],
-            "className": "NavController"
+            "className": "Navigation"
         },
         "12fcc33d-36a7-475b-8792-6b6c96745316": {
             "paths": [

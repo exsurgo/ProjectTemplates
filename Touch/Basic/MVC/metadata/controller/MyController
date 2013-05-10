@@ -22,6 +22,9 @@
                 "designer|params": [
                     "target"
                 ],
+                "implHandler": [
+                    ""
+                ],
                 "name": "click",
                 "designer|controlQuery": "#runButton"
             },
