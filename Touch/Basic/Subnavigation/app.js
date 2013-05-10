@@ -20,20 +20,19 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'NavView',
-        'OutsideHousePanel',
-        'ButtonSpacer',
-        'DescriptionLabel',
-        'OpenMailboxPanel'
+        'Step1Panel',
+        'Step2Panel',
+        'Step3Panel',
+        'MainNav'
     ],
     controllers: [
-        'NavController'
+        'MainNavController'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.NavView', {fullscreen: true});
+        Ext.create('MyApp.view.MainNav', {fullscreen: true});
     }
 
 });

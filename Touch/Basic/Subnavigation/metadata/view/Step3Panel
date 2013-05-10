@@ -1,0 +1,13 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Step3Panel",
+        "designer|userAlias": "step3"
+    },
+    "designerId": "1ae4b0af-65db-4bb9-87d7-5396673e75d7"
+}

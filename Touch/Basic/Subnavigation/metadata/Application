@@ -7,14 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "views": [
-            "NavView",
-            "OutsideHousePanel",
-            "ButtonSpacer",
-            "DescriptionLabel",
-            "OpenMailboxPanel"
+            "Step1Panel",
+            "Step2Panel",
+            "Step3Panel",
+            "MainNav"
         ],
         "controllers": [
-            "NavController"
+            "MainNavController"
         ],
         "name": "MyApp"
     },

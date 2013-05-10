@@ -6,12 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "ui": "light",
-        "designer|userClassName": "NavView",
-        "designer|userAlias": "navview",
+        "designer|userClassName": "MainNav",
         "designer|initialView": true
     },
-    "designerId": "53ec0145-7362-4ce9-8e97-284ac7262cd0",
+    "designerId": "bc2f8785-c73d-41cb-aa83-1b66a1f200e4",
     "cn": [
         {
             "type": "linkedinstance",
@@ -20,8 +18,11 @@
                 "type": "array"
             },
             "codeClass": null,
-            "designerId": "bcf8ad4a-c1e3-4d91-80f2-0da1b595223a",
-            "masterInstanceId": "866cafb9-343d-458f-8e82-0892f53c8551"
+            "userConfig": {
+                "title": "Step 1"
+            },
+            "designerId": "c86ffd54-e5be-464e-aab2-21431fb73584",
+            "masterInstanceId": "5d489618-1f1b-48ce-8334-625776e73c4d"
         }
     ]
 }

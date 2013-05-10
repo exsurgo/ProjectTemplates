@@ -1,0 +1,56 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNavController"
+    },
+    "designerId": "62c6c40d-cbc9-47cd-a3c8-8ab37f4a44eb",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickStep2",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'step2',",
+                    "    title: 'Step 2'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "step1 button"
+            },
+            "designerId": "43232f94-0f85-4cd7-806a-337801f24c38"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickStep3",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'step3',",
+                    "    title: 'Step 3'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "step2 button"
+            },
+            "designerId": "00838f35-6413-4fe1-87bb-40f036462634"
+        }
+    ]
+}
