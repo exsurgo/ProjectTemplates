@@ -20,11 +20,38 @@
                 "app/view/NavView.js"
             ],
             "className": "NavView"
+        },
+        "866cafb9-343d-458f-8e82-0892f53c8551": {
+            "paths": [
+                "metadata/view/TopPanel",
+                "app/view/override/TopPanel.js",
+                "app/view/TopPanel.js"
+            ],
+            "className": "TopPanel"
+        },
+        "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e": {
+            "paths": [
+                "metadata/view/ButtonSpacer",
+                "app/view/override/ButtonSpacer.js",
+                "app/view/ButtonSpacer.js"
+            ],
+            "className": "ButtonSpacer"
+        },
+        "1d68aa7a-a1a1-49c8-91b5-013f4e89e666": {
+            "paths": [
+                "metadata/view/DescriptionLabel",
+                "app/view/override/DescriptionLabel.js",
+                "app/view/DescriptionLabel.js"
+            ],
+            "className": "DescriptionLabel"
         }
     },
     "viewOrderMap": {
         "view": [
-            "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+            "1d68aa7a-a1a1-49c8-91b5-013f4e89e666",
+            "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e",
+            "53ec0145-7362-4ce9-8e97-284ac7262cd0",
+            "866cafb9-343d-458f-8e82-0892f53c8551"
         ],
         "store": [],
         "controller": [],

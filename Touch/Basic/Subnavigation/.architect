@@ -5,8 +5,43 @@
         "component": true,
         "controller": true,
         "resource": true,
+        "1d68aa7a-a1a1-49c8-91b5-013f4e89e666": {
+            "id": "1d68aa7a-a1a1-49c8-91b5-013f4e89e666"
+        },
+        "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e": {
+            "id": "8d0e1f25-fbff-463a-b06e-0cc1dd0bae7e",
+            "expanded": false
+        },
         "53ec0145-7362-4ce9-8e97-284ac7262cd0": {
-            "id": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+            "id": "53ec0145-7362-4ce9-8e97-284ac7262cd0",
+            "cn": [
+                {
+                    "id": "bcf8ad4a-c1e3-4d91-80f2-0da1b595223a"
+                }
+            ]
+        },
+        "866cafb9-343d-458f-8e82-0892f53c8551": {
+            "id": "866cafb9-343d-458f-8e82-0892f53c8551",
+            "cn": [
+                {
+                    "id": "896ed3d3-30e5-4097-9c18-df760a6ff2a1"
+                },
+                {
+                    "id": "9a8536ab-836a-49fb-9a1a-7e66d0e54c14"
+                },
+                {
+                    "id": "ef5356c0-a692-461c-8bf5-8b6b461bcd3b"
+                },
+                {
+                    "id": "54df9ad0-da48-4aaa-9b95-46d9b9aa6a8e"
+                },
+                {
+                    "id": "8d18e7a0-8aa1-40f9-b533-c4f5652740c6"
+                },
+                {
+                    "id": "96bb3a1e-fd68-43be-8e41-131ee280ee56"
+                }
+            ]
         },
         "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4": {
             "id": "bb76c96f-dd3c-4ff4-b47a-bc2a36efcef4"
@@ -16,11 +51,11 @@
         "openTabs": []
     },
     "canvasState": {
-        "topInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+        "topInstance": "866cafb9-343d-458f-8e82-0892f53c8551"
     },
     "inspectorState": {
-        "topInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0",
-        "selectedInstance": "53ec0145-7362-4ce9-8e97-284ac7262cd0"
+        "topInstance": "866cafb9-343d-458f-8e82-0892f53c8551",
+        "selectedInstance": "866cafb9-343d-458f-8e82-0892f53c8551"
     },
     "codeState": {
         "topInstance": null

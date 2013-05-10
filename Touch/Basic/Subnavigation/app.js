@@ -20,7 +20,10 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'NavView'
+        'NavView',
+        'TopPanel',
+        'ButtonSpacer',
+        'DescriptionLabel'
     ],
     name: 'MyApp',
 
