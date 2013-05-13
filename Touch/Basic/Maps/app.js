@@ -20,7 +20,7 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MainPanel'
+        'MainView'
     ],
     controllers: [
         'MapController'
@@ -29,7 +29,7 @@ Ext.application({
 
     launch: function() {
 
-        Ext.create('MyApp.view.MainPanel', {fullscreen: true});
+        Ext.create('MyApp.view.MainView', {fullscreen: true});
     }
 
 });

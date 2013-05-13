@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainPanel",
-        "designer|userAlias": "mainpanel",
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
         "designer|initialView": true
     },
     "designerId": "304a1802-d197-4038-aaed-1d1e62c47ea5",

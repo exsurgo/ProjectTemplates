@@ -18,11 +18,11 @@
         },
         "304a1802-d197-4038-aaed-1d1e62c47ea5": {
             "paths": [
-                "metadata/view/MainPanel",
-                "app/view/override/MainPanel.js",
-                "app/view/MainPanel.js"
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
             ],
-            "className": "MainPanel"
+            "className": "MainView"
         },
         "89dad240-cf68-4050-b2ee-c700a3fff8b2": {
             "paths": [
