@@ -17,6 +17,13 @@ Ext.define('MyApp.controller.Maps', {
     extend: 'Ext.app.Controller',
 
     config: {
+        refs: {
+            map: {
+                selector: 'mainview map',
+                xtype: 'Ext.Map'
+            }
+        },
+
         control: {
             "button": {
                 tap: 'onCurrentTap'
@@ -25,7 +32,8 @@ Ext.define('MyApp.controller.Maps', {
     },
 
     onCurrentTap: function(button, e, eOpts) {
-        button.up('mainview').child('map').setMapOptions({
+        var map = this.getMap();
+        map.setMapOptions({
             center: new google.maps.LatLng(65, -18),
             zoom: 7
         });

@@ -51,10 +51,7 @@
             "userConfig": {
                 "height": "100%",
                 "designer|displayName": "Map",
-                "designer|createAlias": "map",
-                "mapOptions": [
-                    "{}"
-                ]
+                "designer|createAlias": "map"
             },
             "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
         }

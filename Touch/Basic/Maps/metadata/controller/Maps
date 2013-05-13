@@ -20,7 +20,10 @@
             "userConfig": {
                 "fn": "onCurrentTap",
                 "implHandler": [
-                    "button.up('mainview').child('map').setMapOptions({",
+                    "debugger;",
+                    "",
+                    "var map = this.getMap();",
+                    "map.setMapOptions({",
                     "    center: new google.maps.LatLng(65, -18),",
                     "    zoom: 7",
                     "});"
@@ -30,6 +33,20 @@
                 "designer|controlQuery": "button"
             },
             "designerId": "7f001c89-3e41-435f-ae22-c9a8b7abd272"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "map",
+                "selector": "mainview map",
+                "xtype": "Ext.Map"
+            },
+            "designerId": "01471434-5c16-4948-b7df-affd8c6e2d20"
         }
     ]
 }

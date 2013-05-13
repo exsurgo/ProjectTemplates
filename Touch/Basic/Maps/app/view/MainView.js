@@ -31,10 +31,7 @@ Ext.define('MyApp.view.MainView', {
             },
             {
                 xtype: 'map',
-                height: '100%',
-                mapOptions: {
-                    
-                }
+                height: '100%'
             }
         ]
     }
