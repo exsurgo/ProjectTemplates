@@ -23,7 +23,7 @@ Ext.application({
         'MainView'
     ],
     controllers: [
-        'MapController'
+        'Maps'
     ],
     name: 'MyApp',
 

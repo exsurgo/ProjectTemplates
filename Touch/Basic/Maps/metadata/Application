@@ -10,7 +10,7 @@
             "MainPanel"
         ],
         "controllers": [
-            "MapController"
+            "Maps"
         ],
         "name": "MyApp"
     },

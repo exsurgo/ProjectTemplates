@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MapController"
+        "designer|userClassName": "Maps"
     },
     "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
     "cn": [
@@ -20,11 +20,10 @@
             "userConfig": {
                 "fn": "onCurrentTap",
                 "implHandler": [
-                    "button.up('mainpanel').child('map').setMapOptions({",
+                    "button.up('mainview').child('map').setMapOptions({",
                     "    center: new google.maps.LatLng(65, -18),",
-                    "    zoom: 1",
-                    "});",
-                    "//debugger;"
+                    "    zoom: 7",
+                    "});"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",

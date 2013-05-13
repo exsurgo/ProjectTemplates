@@ -32,11 +32,11 @@
         },
         "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d": {
             "paths": [
-                "metadata/controller/MapController",
-                "app/controller/override/MapController.js",
-                "app/controller/MapController.js"
+                "metadata/controller/Maps",
+                "app/controller/override/Maps.js",
+                "app/controller/Maps.js"
             ],
-            "className": "MapController"
+            "className": "Maps"
         }
     },
     "viewOrderMap": {
