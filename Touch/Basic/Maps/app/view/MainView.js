@@ -25,6 +25,7 @@ Ext.define('MyApp.view.MainView', {
                 items: [
                     {
                         xtype: 'button',
+                        itemId: 'icelandbutton',
                         text: 'Go to Iceland'
                     }
                 ]

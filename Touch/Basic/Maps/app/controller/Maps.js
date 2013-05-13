@@ -25,7 +25,7 @@ Ext.define('MyApp.controller.Maps', {
         },
 
         control: {
-            "button": {
+            "mainview #icelandbutton": {
                 tap: 'onCurrentTap'
             }
         }

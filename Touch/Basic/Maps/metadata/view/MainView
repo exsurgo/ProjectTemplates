@@ -33,6 +33,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "icelandbutton",
+                        "designer|createAlias": null,
                         "icon": null,
                         "iconAlign": null,
                         "text": "Go to Iceland"
