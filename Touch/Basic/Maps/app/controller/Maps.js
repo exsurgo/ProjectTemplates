@@ -17,25 +17,87 @@ Ext.define('MyApp.controller.Maps', {
     extend: 'Ext.app.Controller',
 
     config: {
+        models: [
+            'Location'
+        ],
+        stores: [
+            'Locations'
+        ],
+
         refs: {
-            map: {
-                selector: 'mainview map',
+            mapView: {
+                selector: 'mainview #map',
                 xtype: 'Ext.Map'
+            },
+            mainView: {
+                selector: 'mainview',
+                xtype: 'Ext.navigation.View'
+            },
+            mapPanel: {
+                selector: 'mainview #mapPanel',
+                xtype: 'Ext.Panel'
             }
         },
 
         control: {
-            "mainview #icelandbutton": {
-                tap: 'onCurrentTap'
+            "mainview #dropPin": {
+                tap: 'onDropPinTap'
+            },
+            "mainview #listPanel list": {
+                disclose: 'onLocationTap'
+            },
+            "mainview #listPins": {
+                tap: 'onListPinsTap'
             }
         }
     },
 
-    onCurrentTap: function(button, e, eOpts) {
-        var map = this.getMap();
+    onDropPinTap: function(button, e, eOpts) {
+        var mainView = this.getMainView();
+        
+        var inMapView = true;
+        
+        if (inMapView) {
+        
+        	var map = this.getMapView().getMap();
+        
+        	var position = map.getCenter();
+        
+        	var marker = new google.maps.Marker({
+        	    position: position,
+        	    map: map
+        	});
+        
+        	var store = Ext.getStore('Locations');
+        	store.add({
+        	    latitude: position.lat(),
+        	    longitude: position.lng()
+        	});
+        
+        } else {
+        
+            debugger;
+        
+        }
+    },
+
+    onLocationTap: function(list, record, target, index, e, eOpts) {
+        var latitude = record.get('latitude');
+        var longitude = record.get('longitude');
+        
+        var map = this.getMapView();
+        var location = new google.maps.LatLng(latitude, longitude);
         map.setMapOptions({
-            center: new google.maps.LatLng(65, -18),
-            zoom: 7
+            center: location
+        });
+        
+        this.getMainView().pop();
+    },
+
+    onListPinsTap: function(button, e, eOpts) {
+        this.getMainView().push({
+            xtype: 'listpanel',
+            title: 'Pin list'
         });
     }
 

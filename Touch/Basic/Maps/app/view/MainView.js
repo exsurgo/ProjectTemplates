@@ -14,27 +14,40 @@
  */
 
 Ext.define('MyApp.view.MainView', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.navigation.View',
     alias: 'widget.mainview',
 
     config: {
         items: [
             {
-                xtype: 'toolbar',
-                docked: 'top',
+                xtype: 'panel',
+                title: 'Map',
+                itemId: 'mapPanel',
                 items: [
                     {
-                        xtype: 'button',
-                        itemId: 'icelandbutton',
-                        text: 'Go to Iceland'
+                        xtype: 'map',
+                        height: '100%',
+                        itemId: 'map'
                     }
                 ]
-            },
-            {
-                xtype: 'map',
-                height: '100%'
             }
-        ]
+        ],
+        navigationBar: {
+            docked: 'top',
+            items: [
+                {
+                    xtype: 'button',
+                    itemId: 'dropPin',
+                    text: 'Drop'
+                },
+                {
+                    xtype: 'button',
+                    align: 'right',
+                    itemId: 'listPins',
+                    text: 'Pins'
+                }
+            ]
+        }
     }
 
 });

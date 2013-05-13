@@ -1,5 +1,5 @@
 {
-    "type": "Ext.Panel",
+    "type": "Ext.navigation.View",
     "reference": {
         "name": "items",
         "type": "array"
@@ -10,20 +10,52 @@
         "designer|userAlias": "mainview",
         "designer|initialView": true
     },
-    "designerId": "304a1802-d197-4038-aaed-1d1e62c47ea5",
+    "designerId": "aa5f2478-a4ed-46b3-b81d-83caf843d652",
     "cn": [
         {
-            "type": "Ext.Toolbar",
+            "type": "Ext.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "docked": "top",
-                "designer|displayName": "Toolbar"
+                "title": "Map",
+                "itemId": "mapPanel",
+                "designer|displayName": "Map panel",
+                "designer|createAlias": null
             },
-            "designerId": "5333f262-672e-4454-b65d-e2ba379595ea",
+            "designerId": "304a1802-d197-4038-aaed-1d1e62c47ea5",
+            "cn": [
+                {
+                    "type": "Ext.Map",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": "100%",
+                        "itemId": "map",
+                        "designer|displayName": "Map",
+                        "designer|createAlias": null
+                    },
+                    "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
+                }
+            ]
+        },
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|displayName": "Navigation bar"
+            },
+            "designerId": "ec89cb14-cd2e-47a5-9b25-7fc715d4353d",
             "cn": [
                 {
                     "type": "Ext.Button",
@@ -33,29 +65,28 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "icelandbutton",
-                        "designer|createAlias": null,
-                        "icon": null,
-                        "iconAlign": null,
-                        "text": "Go to Iceland"
+                        "docked": null,
+                        "itemId": "dropPin",
+                        "designer|displayName": "\"Drop pin\" button",
+                        "text": "Drop"
                     },
-                    "designerId": "09b990a7-2805-488c-b9ef-68dedfb31153"
+                    "designerId": "5e3e0e39-98de-414a-b924-302be2dee9b0"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "itemId": "listPins",
+                        "text": "Pins"
+                    },
+                    "designerId": "7de169a1-7091-43ae-9f09-f2652d1bdc38"
                 }
             ]
-        },
-        {
-            "type": "Ext.Map",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "height": "100%",
-                "designer|displayName": "Map",
-                "designer|createAlias": "map"
-            },
-            "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
         }
     ]
 }

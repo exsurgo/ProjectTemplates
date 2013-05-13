@@ -1,0 +1,31 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "\t{",
+            "    \tid: 1,",
+            "\t    latitude: 50,",
+            "    \tlongitude: 50",
+            "\t},",
+            "    {",
+            "        id: 2,",
+            "        latitude: 49,",
+            "        longitude: 49",
+            "    }",
+            "]"
+        ],
+        "model": "Location",
+        "storeId": "Locations",
+        "designer|userClassName": "Locations"
+    },
+    "mockCfgs": [
+        "data"
+    ],
+    "designerId": "00771e58-a2da-453c-9809-8e821e3a3c2b"
+}
