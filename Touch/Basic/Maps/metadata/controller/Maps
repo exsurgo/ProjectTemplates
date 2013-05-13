@@ -106,6 +106,9 @@
                     "    center: location",
                     "});",
                     "",
+                    "this.getDropPin().show();",
+                    "this.getListPins().show();",
+                    "",
                     "this.getMainView().pop();"
                 ],
                 "name": "disclose",
@@ -141,13 +144,63 @@
                     "this.getMainView().push({",
                     "    xtype: 'listpanel',",
                     "    title: 'Pin list'",
-                    "});"
+                    "});",
+                    "",
+                    "this.getDropPin().hide();",
+                    "this.getListPins().hide();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "mainview #listPins"
             },
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "dropPin",
+                "selector": "mainview #dropPin",
+                "xtype": "Ext.Button"
+            },
+            "designerId": "dd8a5f0f-c15b-455a-8d7f-b2368dd052fe"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "listPins",
+                "selector": "mainview #listPins",
+                "xtype": "Ext.Button"
+            },
+            "designerId": "2029ba1b-926c-4f1d-91b2-0cd3ee088744"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBack",
+                "implHandler": [
+                    "this.getDropPin().show();",
+                    "this.getListPins().show();"
+                ],
+                "name": "back",
+                "designer|targetType": "Ext.navigation.View",
+                "designer|controlQuery": "mainview"
+            },
+            "designerId": "3fde3618-8489-4b14-96c8-406218dc292a"
         }
     ]
 }

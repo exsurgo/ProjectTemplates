@@ -82,6 +82,7 @@
                     "userConfig": {
                         "align": "right",
                         "itemId": "listPins",
+                        "designer|displayName": "\"List pins\" button",
                         "text": "Pins"
                     },
                     "designerId": "7de169a1-7091-43ae-9f09-f2652d1bdc38"

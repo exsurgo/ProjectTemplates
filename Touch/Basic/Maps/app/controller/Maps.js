@@ -36,6 +36,14 @@ Ext.define('MyApp.controller.Maps', {
             mapPanel: {
                 selector: 'mainview #mapPanel',
                 xtype: 'Ext.Panel'
+            },
+            dropPin: {
+                selector: 'mainview #dropPin',
+                xtype: 'Ext.Button'
+            },
+            listPins: {
+                selector: 'mainview #listPins',
+                xtype: 'Ext.Button'
             }
         },
 
@@ -48,6 +56,9 @@ Ext.define('MyApp.controller.Maps', {
             },
             "mainview #listPins": {
                 tap: 'onListPinsTap'
+            },
+            "mainview": {
+                back: 'onBack'
             }
         }
     },
@@ -91,6 +102,9 @@ Ext.define('MyApp.controller.Maps', {
             center: location
         });
         
+        this.getDropPin().show();
+        this.getListPins().show();
+        
         this.getMainView().pop();
     },
 
@@ -99,6 +113,14 @@ Ext.define('MyApp.controller.Maps', {
             xtype: 'listpanel',
             title: 'Pin list'
         });
+        
+        this.getDropPin().hide();
+        this.getListPins().hide();
+    },
+
+    onBack: function(navigationview, eOpts) {
+        this.getDropPin().show();
+        this.getListPins().show();
     }
 
 });
