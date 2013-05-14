@@ -29,7 +29,8 @@ Ext.define('MyApp.view.FormPanel', {
                         required: true,
                         autoCapitalize: true,
                         autoComplete: false,
-                        autoCorrect: true
+                        autoCorrect: true,
+                        placeHolder: 'My house'
                     },
                     {
                         xtype: 'textfield',
@@ -37,7 +38,7 @@ Ext.define('MyApp.view.FormPanel', {
                         label: 'Location',
                         labelWrap: true,
                         required: true,
-                        placeHolder: '8 Fake Ave, Faketown USA'
+                        placeHolder: '8 Fake Ave, Faketown, USA'
                     },
                     {
                         xtype: 'textareafield',
