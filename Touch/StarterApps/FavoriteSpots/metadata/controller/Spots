@@ -56,6 +56,34 @@
             "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
         },
         {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "geocodeString",
+                "designer|params": [
+                    "str",
+                    "callback"
+                ],
+                "implHandler": [
+                    "var geocoder = new google.maps.Geocoder,",
+                    "    options = { address: str };",
+                    "",
+                    "geocoder.geocode(options, function(results, status) {",
+                    "    if (status == \"OK\") {",
+                    "        callback(results[0].geometry.location);",
+                    "    } else {",
+                    "        callback(null);",
+                    "    }",
+                    "});"
+                ]
+            },
+            "designerId": "a48111dd-be37-4284-b902-4f5f8c517833"
+        },
+        {
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -259,9 +287,8 @@
             "userConfig": {
                 "fn": "onNewSpotLocationChange",
                 "implHandler": [
-                    "var geocoder = new google.maps.Geocoder,     // Prepare geocoder object",
-                    "    geocodeOptions = { address: newValue },",
-                    "    map = this.getNewSpotMap().getMap();     // Find the map",
+                    "// Find the map",
+                    "var map = this.getNewSpotMap().getMap();",
                     "",
                     "// Build a marker if there isn't one",
                     "if (!this.newSpotMapMarker) {",
@@ -271,30 +298,23 @@
                     "// Hide the map marker",
                     "this.newSpotMapMarker.setMap(null);",
                     "",
-                    "// Geocode the location",
+                    "// Geocode the string",
                     "var me = this;",
-                    "geocoder.geocode(geocodeOptions, function(results, status) {",
-                    "",
-                    "    if (status == \"OK\") {",
-                    "        ",
-                    "        // Get the position",
-                    "        var position = results[0].geometry.location;",
-                    "        ",
-                    "        // Move the map to the position",
-                    "        map.setOptions({",
-                    "            center: position,",
-                    "            zoom: 15",
-                    "        });",
-                    "        ",
-                    "        // Drop the pin there",
-                    "        me.newSpotMapMarker.setOptions({",
-                    "            map: map,",
-                    "            position: position,",
-                    "            animation: google.maps.Animation.DROP",
-                    "        });",
-                    "        ",
-                    "    }",
-                    "",
+                    "this.geocodeString(newValue, function(position) {",
+                    "    ",
+                    "    // Move the map to the position",
+                    "    map.setOptions({",
+                    "        center: position,",
+                    "        zoom: 15",
+                    "    });",
+                    "    ",
+                    "    // Drop a marker there",
+                    "    me.newSpotMapMarker.setOptions({",
+                    "        map: map,",
+                    "        position: position,",
+                    "        animation: google.maps.Animation.DROP",
+                    "    });",
+                    "    ",
                     "});"
                 ],
                 "name": "change",

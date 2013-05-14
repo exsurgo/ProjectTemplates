@@ -110,9 +110,8 @@ Ext.define('MyApp.controller.Spots', {
     },
 
     onNewSpotLocationChange: function(textfield, newValue, oldValue, eOpts) {
-        var geocoder = new google.maps.Geocoder,     // Prepare geocoder object
-            geocodeOptions = { address: newValue },
-            map = this.getNewSpotMap().getMap();     // Find the map
+        // Find the map
+        var map = this.getNewSpotMap().getMap();
         
         // Build a marker if there isn't one
         if (!this.newSpotMapMarker) {
@@ -122,29 +121,22 @@ Ext.define('MyApp.controller.Spots', {
         // Hide the map marker
         this.newSpotMapMarker.setMap(null);
         
-        // Geocode the location
+        // Geocode the string
         var me = this;
-        geocoder.geocode(geocodeOptions, function(results, status) {
+        this.geocodeString(newValue, function(position) {
         
-            if (status == "OK") {
+            // Move the map to the position
+            map.setOptions({
+                center: position,
+                zoom: 15
+            });
         
-                // Get the position
-                var position = results[0].geometry.location;
-        
-                // Move the map to the position
-                map.setOptions({
-                    center: position,
-                    zoom: 15
-                });
-        
-                // Drop the pin there
-                me.newSpotMapMarker.setOptions({
-                    map: map,
-                    position: position,
-                    animation: google.maps.Animation.DROP
-                });
-        
-            }
+            // Drop a marker there
+            me.newSpotMapMarker.setOptions({
+                map: map,
+                position: position,
+                animation: google.maps.Animation.DROP
+            });
         
         });
     },
@@ -164,6 +156,19 @@ Ext.define('MyApp.controller.Spots', {
     hideButtons: function() {
         this.getAddSpotButton().hide();
         this.getListSpotsButton().hide();
+    },
+
+    geocodeString: function(str, callback) {
+        var geocoder = new google.maps.Geocoder,
+            options = { address: str };
+        
+        geocoder.geocode(options, function(results, status) {
+            if (status == "OK") {
+                callback(results[0].geometry.location);
+            } else {
+                callback(null);
+            }
+        });
     }
 
 });
