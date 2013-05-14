@@ -52,8 +52,7 @@ Ext.define('MyApp.view.FormPanel', {
                     {
                         xtype: 'map',
                         height: 200,
-                        itemId: 'newSpotMap',
-                        modal: false
+                        itemId: 'newSpotMap'
                     }
                 ]
             }
