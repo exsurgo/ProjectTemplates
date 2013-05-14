@@ -1,0 +1,52 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "listPanel",
+        "designer|userClassName": "ListPanel",
+        "designer|userAlias": "listpanel"
+    },
+    "designerId": "8efebdd9-8334-4ec4-b483-b2f50f56f064",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "designer|displayName": "Spots list",
+                "store": "Spots",
+                "onItemDisclosure": true
+            },
+            "designerId": "736598d4-966f-48c9-b942-4617ddc2262b",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>",
+                            "    {location}",
+                            "    <br>",
+                            "    {description}",
+                            "</div>"
+                        ],
+                        "designer|displayName": "Location template"
+                    },
+                    "designerId": "f37e1c08-3a87-4f08-9115-4628df76dd60"
+                }
+            ]
+        }
+    ]
+}
