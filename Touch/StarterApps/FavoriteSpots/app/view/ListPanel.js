@@ -25,7 +25,7 @@ Ext.define('MyApp.view.ListPanel', {
                 height: '100%',
                 itemTpl: [
                     '<div>',
-                    '    {location}',
+                    '    {name}',
                     '    <br>',
                     '    {description}',
                     '</div>'

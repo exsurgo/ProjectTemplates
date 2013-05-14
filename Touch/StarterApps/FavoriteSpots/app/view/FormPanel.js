@@ -18,14 +18,18 @@ Ext.define('MyApp.view.FormPanel', {
     alias: 'widget.formpanel',
 
     config: {
+        id: 'formPanel',
         items: [
             {
                 xtype: 'fieldset',
+                itemId: 'formFieldSet',
                 items: [
                     {
                         xtype: 'textfield',
                         itemId: 'nameTextField',
                         label: 'Name',
+                        labelWrap: true,
+                        name: 'name',
                         required: true,
                         autoCapitalize: true,
                         autoComplete: false,
@@ -37,6 +41,7 @@ Ext.define('MyApp.view.FormPanel', {
                         itemId: 'locationTextField',
                         label: 'Location',
                         labelWrap: true,
+                        name: 'location',
                         required: true,
                         placeHolder: '8 Fake Ave, Faketown, USA'
                     },
@@ -44,10 +49,12 @@ Ext.define('MyApp.view.FormPanel', {
                         xtype: 'textareafield',
                         itemId: 'descriptionTextArea',
                         label: 'Description',
-                        labelWrap: true
+                        labelWrap: true,
+                        name: 'description'
                     },
                     {
                         xtype: 'button',
+                        itemId: 'saveSpotButton',
                         margin: 10,
                         text: 'Add spot'
                     },
