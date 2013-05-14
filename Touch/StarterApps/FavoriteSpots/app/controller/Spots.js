@@ -99,7 +99,7 @@ Ext.define('MyApp.controller.Spots', {
     onListSpotsTap: function(button, e, eOpts) {
         this.getMainView().push({   // Show the list panel view
             xtype: 'listpanel',
-            title: 'Pin list'
+            title: 'Favorites list'
         });
         
         this.hideButtons();
