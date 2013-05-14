@@ -20,7 +20,7 @@ These templates are divided into the following categories for the **Ext** and **
 - Assign itemId to all components that need to be referenced.
 - All classes should be assigned aliases.
 - Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton".
-- Custom CSS/Styles should be avoided.  
+- Custom CSS/Styles should be avoided.
 - Models should be single terms, such as Task, Person or Record.
 - Stores and Controllers should be plural terms such as Tasks, People, Records.
 - View should use verbose naming, such as TaskGrid, RecordForm, etc.
@@ -28,14 +28,12 @@ These templates are divided into the following categories for the **Ext** and **
 - All main view classes should be named MainView and have it's itemId set to mainView.
 - Variables should be hoisted where appropriate. Proper tabbed formatting should be used and comments should be appended to end of line.  Example:
 	<br/>
-	<code>
-		var x = 1,	// First<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 2;	// Second
-	</code>
+	<pre>var x = 1,  // First
+        y = 2;  // Second</pre>
 - Strings should use single quotes instead of double.
 
 **Rules for Ext templates**
-- A viewport should always be used as the top-level views for Ext.  
+- A viewport should always be used as the top-level views for Ext.
 
 **Rules for Ext layout templates**
 - Header and Footer should have height set to 100 and NOT resizable.
