@@ -24,6 +24,11 @@ Ext.define('MyApp.view.FormPanel', {
                 items: [
                     {
                         xtype: 'textfield',
+                        label: 'Name',
+                        required: true
+                    },
+                    {
+                        xtype: 'textfield',
                         itemId: 'locationTextField',
                         label: 'Location',
                         labelWrap: true,
