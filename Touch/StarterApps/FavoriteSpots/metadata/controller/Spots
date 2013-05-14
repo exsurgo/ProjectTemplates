@@ -322,6 +322,75 @@
                 "designer|controlQuery": "mainview #locationTextField"
             },
             "designerId": "ba174bd0-c111-428a-981c-0c52b9321fc6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSaveSpotButtonTap",
+                "implHandler": [
+                    "var form = this.getNewSpotForm(),",
+                    "    values = form.getValues(),",
+                    "    store = Ext.getStore('Spots'),",
+                    "    map = this.getMapView().getMap();",
+                    "",
+                    "var me = this;",
+                    "this.geocodeString(values.location, function(position) {",
+                    "",
+                    "    if (position) {",
+                    "",
+                    "        // Add this to the store",
+                    "        store.add({",
+                    "            name: values.name,",
+                    "            description: values.description,",
+                    "            latitude: position.lat(),",
+                    "            longitude: position.lng()",
+                    "        });",
+                    "        ",
+                    "        // Drop a pin",
+                    "        new google.maps.Marker({",
+                    "            position: position,",
+                    "            map: map,",
+                    "            animation: google.maps.Animation.DROP",
+                    "        });",
+                    "        ",
+                    "        // Move the map there",
+                    "        map.setOptions({",
+                    "            center: position",
+                    "        });",
+                    "",
+                    "        // Go back to the map view",
+                    "        me.getMainView().pop();",
+                    "        ",
+                    "        // Show the navbar buttons",
+                    "        me.showButtons();",
+                    "",
+                    "    }",
+                    "",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "mainview #saveSpotButton"
+            },
+            "designerId": "9903e3bb-24e6-494f-a84c-05ac85be9b9b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "newSpotForm",
+                "selector": "mainview #formPanel"
+            },
+            "designerId": "14208b4e-2bd9-40e4-9dc2-c6de7e54e546"
         }
     ]
 }

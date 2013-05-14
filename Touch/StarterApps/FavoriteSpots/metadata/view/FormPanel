@@ -6,10 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "record": null,
+        "id": "formPanel",
         "designer|userClassName": "FormPanel",
         "designer|userAlias": "formpanel"
     },
     "designerId": "f5b37c5a-f3e2-4ede-8b3c-35668f9ac337",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "record",
+            "type": "string"
+        }
+    ],
     "cn": [
         {
             "type": "Ext.form.FieldSet",
@@ -19,6 +28,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "itemId": "formFieldSet",
                 "designer|displayName": "Form fieldset",
                 "title": null
             },
@@ -34,6 +44,8 @@
                     "userConfig": {
                         "itemId": "nameTextField",
                         "label": "Name",
+                        "labelWrap": true,
+                        "name": "name",
                         "required": true,
                         "autoCapitalize": true,
                         "autoComplete": false,
@@ -55,6 +67,7 @@
                         "labelCls": null,
                         "labelWidth": null,
                         "labelWrap": true,
+                        "name": "location",
                         "required": true,
                         "placeHolder": "8 Fake Ave, Faketown, USA"
                     },
@@ -71,7 +84,8 @@
                         "itemId": "descriptionTextArea",
                         "label": "Description",
                         "labelWidth": null,
-                        "labelWrap": true
+                        "labelWrap": true,
+                        "name": "description"
                     },
                     "designerId": "d46f4c7c-0715-471b-abac-29f489c3c5a1"
                 },
@@ -83,6 +97,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "saveSpotButton",
                         "margin": 10,
                         "text": "Add spot"
                     },
