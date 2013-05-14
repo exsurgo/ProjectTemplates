@@ -64,62 +64,48 @@ Ext.define('MyApp.controller.Maps', {
     },
 
     onDropPinTap: function(button, e, eOpts) {
-        var mainView = this.getMainView();
-        
-        var inMapView = true;
-        
-        if (inMapView) {
-        
-        	var map = this.getMapView().getMap();
-        
-        	var position = map.getCenter();
-        
-        	var marker = new google.maps.Marker({
-        	    position: position,
-        	    map: map
-        	});
-        
-        	var store = Ext.getStore('Locations');
-        	store.add({
-        	    latitude: position.lat(),
-        	    longitude: position.lng()
-        	});
-        
-        } else {
-        
-            debugger;
-        
-        }
+        var map = this.getMapView().getMap(),  // Get the Map
+            position = map.getCenter(),        // Find the center
+            marker = new google.maps.Marker({  // Build the marker
+                position: position,
+                map: map
+            }),
+            store = Ext.getStore('Locations'); // Find the store
+
+        store.add({                            // Add lat/long to store
+            latitude: position.lat(),
+            longitude: position.lng()
+        });
     },
 
     onLocationTap: function(list, record, target, index, e, eOpts) {
-        var latitude = record.get('latitude');
-        var longitude = record.get('longitude');
-        
-        var map = this.getMapView();
-        var location = new google.maps.LatLng(latitude, longitude);
-        map.setMapOptions({
+        var latitude = record.get('latitude'),    // Build the location
+            longitude = record.get('longitude'),
+            location = new google.maps.LatLng(latitude, longitude),
+            map = this.getMapView();              // Find the map
+
+        map.setMapOptions({   // Move to the center
             center: location
         });
-        
-        this.getDropPin().show();
+
+        this.getDropPin().show();   // Show buttons
         this.getListPins().show();
-        
-        this.getMainView().pop();
+
+        this.getMainView().pop();   // Remove the pin list panel
     },
 
     onListPinsTap: function(button, e, eOpts) {
-        this.getMainView().push({
+        this.getMainView().push({   // Show the list panel view
             xtype: 'listpanel',
             title: 'Pin list'
         });
-        
-        this.getDropPin().hide();
+
+        this.getDropPin().hide();   // Hide the buttons
         this.getListPins().hide();
     },
 
     onBack: function(navigationview, eOpts) {
-        this.getDropPin().show();
+        this.getDropPin().show();   // Show the buttons
         this.getListPins().show();
     }
 
