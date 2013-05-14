@@ -17,6 +17,45 @@
     "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
     "cn": [
         {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showButtons",
+                "implHandler": [
+                    "var spotCount = Ext.getStore('Spots').getCount(),",
+                    "    hasSpots = spotCount != 0;",
+                    "",
+                    "this.getAddSpotButton().show();",
+                    "if (hasSpots) {",
+                    "    this.getListSpotsButton().show();",
+                    "} else {",
+                    "    this.getListSpotsButton().hide();",
+                    "}"
+                ]
+            },
+            "designerId": "abcccb9e-4798-4e28-850d-3daa3ddf1a71"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "hideButtons",
+                "implHandler": [
+                    "this.getAddSpotButton().hide();",
+                    "this.getListSpotsButton().hide();"
+                ]
+            },
+            "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
+        },
+        {
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -180,43 +219,17 @@
             "designerId": "85b85329-4652-4739-80dc-89be9616302e"
         },
         {
-            "type": "basicfunction",
+            "type": "controllerref",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "showButtons",
-                "implHandler": [
-                    "var spotCount = Ext.getStore('Spots').getCount(),",
-                    "    hasSpots = spotCount != 0;",
-                    "",
-                    "this.getAddSpotButton().show();",
-                    "if (hasSpots) {",
-                    "    this.getListSpotsButton().show();",
-                    "} else {",
-                    "    this.getListSpotsButton().hide();",
-                    "}"
-                ]
+                "ref": "newSpotMap",
+                "selector": "mainview #newSpotMap"
             },
-            "designerId": "abcccb9e-4798-4e28-850d-3daa3ddf1a71"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "hideButtons",
-                "implHandler": [
-                    "this.getAddSpotButton().hide();",
-                    "this.getListSpotsButton().hide();"
-                ]
-            },
-            "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
+            "designerId": "5666b552-9296-43d0-bd66-01489c68d83e"
         },
         {
             "type": "controlleraction",
@@ -235,6 +248,60 @@
                 "designer|controlQuery": "mainview"
             },
             "designerId": "3f8a40a1-3579-48de-b854-73f37b43b9af"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNewSpotLocationChange",
+                "implHandler": [
+                    "var geocoder = new google.maps.Geocoder,     // Prepare geocoder object",
+                    "    geocodeOptions = { address: newValue },",
+                    "    map = this.getNewSpotMap().getMap();     // Find the map",
+                    "",
+                    "// Build a marker if there isn't one",
+                    "if (!this.newSpotMapMarker) {",
+                    "    this.newSpotMapMarker = new google.maps.Marker;",
+                    "}",
+                    "",
+                    "// Hide the map marker",
+                    "this.newSpotMapMarker.setMap(null);",
+                    "",
+                    "// Geocode the location",
+                    "var me = this;",
+                    "geocoder.geocode(geocodeOptions, function(results, status) {",
+                    "",
+                    "    if (status == \"OK\") {",
+                    "        ",
+                    "        // Get the position",
+                    "        var position = results[0].geometry.location;",
+                    "        ",
+                    "        // Move the map to the position",
+                    "        map.setOptions({",
+                    "            center: position,",
+                    "            zoom: 15",
+                    "        });",
+                    "        ",
+                    "        // Drop the pin there",
+                    "        me.newSpotMapMarker.setOptions({",
+                    "            map: map,",
+                    "            position: position,",
+                    "            animation: google.maps.Animation.DROP",
+                    "        });",
+                    "        ",
+                    "    }",
+                    "",
+                    "});"
+                ],
+                "name": "change",
+                "designer|targetType": "Ext.field.Text",
+                "designer|controlQuery": "mainview #locationTextField"
+            },
+            "designerId": "ba174bd0-c111-428a-981c-0c52b9321fc6"
         }
     ]
 }

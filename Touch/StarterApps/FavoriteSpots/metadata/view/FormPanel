@@ -32,6 +32,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "nameTextField",
                         "label": "Name",
                         "required": true,
                         "autoCapitalize": true,
@@ -94,7 +95,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "height": 200,
+                        "height": 250,
                         "itemId": "newSpotMap",
                         "modal": null
                     },
