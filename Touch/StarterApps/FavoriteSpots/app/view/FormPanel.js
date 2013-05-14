@@ -25,7 +25,10 @@ Ext.define('MyApp.view.FormPanel', {
                     {
                         xtype: 'textfield',
                         label: 'Name',
-                        required: true
+                        required: true,
+                        autoCapitalize: true,
+                        autoComplete: false,
+                        autoCorrect: true
                     },
                     {
                         xtype: 'textfield',
@@ -49,7 +52,8 @@ Ext.define('MyApp.view.FormPanel', {
                     {
                         xtype: 'map',
                         height: 200,
-                        itemId: 'newSpotMap'
+                        itemId: 'newSpotMap',
+                        modal: false
                     }
                 ]
             }

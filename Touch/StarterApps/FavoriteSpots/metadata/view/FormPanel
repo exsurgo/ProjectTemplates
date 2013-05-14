@@ -33,7 +33,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": "Name",
-                        "required": true
+                        "required": true,
+                        "autoCapitalize": true,
+                        "autoComplete": false,
+                        "autoCorrect": true
                     },
                     "designerId": "834b169f-b434-4837-aad6-c4aa9e8b711b"
                 },
@@ -92,7 +95,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "height": 200,
-                        "itemId": "newSpotMap"
+                        "itemId": "newSpotMap",
+                        "modal": false
                     },
                     "designerId": "ce0316d3-60b6-42d0-8c14-83aa238d6e67"
                 }
