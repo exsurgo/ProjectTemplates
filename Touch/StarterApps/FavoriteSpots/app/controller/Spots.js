@@ -44,7 +44,8 @@ Ext.define('MyApp.controller.Spots', {
             listSpotsButton: {
                 selector: 'mainview #listSpotsButton',
                 xtype: 'Ext.Button'
-            }
+            },
+            newSpotMap: 'mainview #newSpotMap'
         },
 
         control: {
@@ -60,6 +61,9 @@ Ext.define('MyApp.controller.Spots', {
             "mainview": {
                 back: 'onBack',
                 activate: 'onStart'
+            },
+            "mainview #locationTextField": {
+                change: 'onNewSpotLocationChange'
             }
         }
     },
@@ -103,6 +107,46 @@ Ext.define('MyApp.controller.Spots', {
 
     onStart: function(newActiveItem, container, oldActiveItem, eOpts) {
         this.showButtons();
+    },
+
+    onNewSpotLocationChange: function(textfield, newValue, oldValue, eOpts) {
+        var geocoder = new google.maps.Geocoder,     // Prepare geocoder object
+            geocodeOptions = { address: newValue },
+            map = this.getNewSpotMap().getMap();     // Find the map
+        
+        // Build a marker if there isn't one
+        if (!this.newSpotMapMarker) {
+            this.newSpotMapMarker = new google.maps.Marker;
+        }
+        
+        // Hide the map marker
+        this.newSpotMapMarker.setMap(null);
+        
+        // Geocode the location
+        var me = this;
+        geocoder.geocode(geocodeOptions, function(results, status) {
+        
+            if (status == "OK") {
+        
+                // Get the position
+                var position = results[0].geometry.location;
+        
+                // Move the map to the position
+                map.setOptions({
+                    center: position,
+                    zoom: 15
+                });
+        
+                // Drop the pin there
+                me.newSpotMapMarker.setOptions({
+                    map: map,
+                    position: position,
+                    animation: google.maps.Animation.DROP
+                });
+        
+            }
+        
+        });
     },
 
     showButtons: function() {
