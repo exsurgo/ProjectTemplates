@@ -1,0 +1,137 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Tasks"
+    },
+    "designerId": "2733923a-f012-4fc8-8e51-034b2e4115e3",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "view",
+                "implHandler": [
+                    "\r",
+                    "// Prevent the default select action\r",
+                    "if (this.holdSelect) {\r",
+                    "\r",
+                    "    // Remove current hold\r",
+                    "    this.holdSelect = false;\r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    "else {\r",
+                    "\r",
+                    "\r",
+                    "    // Navigate to details\r",
+                    "    this.getMainView().push({\r",
+                    "        xtype: 'detailpanel',\r",
+                    "        title: \"Task Details\",\r",
+                    "        data: record.data\r",
+                    "    });\r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    ""
+                ],
+                "name": "select",
+                "designer|targetType": "TaskList",
+                "designer|controlQuery": "tasklist"
+            },
+            "designerId": "0605f28f-c8d4-4d2f-b9df-b3d868fc474d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "add",
+                "implHandler": [
+                    "\r",
+                    "// Navigate to form\r",
+                    "this.getMainView().push({\r",
+                    "    xtype: 'formpanel',\r",
+                    "    title: \"Edit Task\"\r",
+                    "});\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "mainview #addButton"
+            },
+            "designerId": "4f84813c-6e46-4fe3-b20d-94176fe522ca"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "edit",
+                "implHandler": [
+                    "\r",
+                    "// Navigate to form\r",
+                    "this.getMainView().push({\r",
+                    "    xtype: 'formpanel',\r",
+                    "    title: \"Edit Task\"\r",
+                    "});\r",
+                    "\r",
+                    "this.holdSelect = true;"
+                ],
+                "name": "itemtaphold",
+                "designer|targetType": "TaskList",
+                "designer|controlQuery": "list"
+            },
+            "designerId": "c22ef67f-57dd-4d84-be23-5cc6b3d25fad"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "save",
+                "implHandler": [
+                    "\r",
+                    "var mainView = this.getMainView();\r",
+                    "\r",
+                    "// Navigate back to list\r",
+                    "mainView.pop();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "formpanel #saveButton"
+            },
+            "designerId": "5878c17a-f4d1-41df-9b54-9bb9f34dfdd1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "mainview"
+            },
+            "designerId": "359761db-20d2-41e7-b6fe-c0629136513f"
+        }
+    ]
+}

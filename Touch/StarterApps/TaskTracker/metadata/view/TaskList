@@ -1,0 +1,31 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TaskList",
+        "designer|userAlias": "tasklist",
+        "store": "Tasks"
+    },
+    "designerId": "1f2aa174-7fca-4eb5-9083-a68ef92560e7",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div>{priority} - {description}</div>"
+                ],
+                "designer|displayName": "tpl"
+            },
+            "designerId": "b0251509-2f65-49fa-9148-a6360bc05749"
+        }
+    ]
+}
