@@ -96,7 +96,7 @@
                     "userConfig": {
                         "height": 200,
                         "itemId": "newSpotMap",
-                        "modal": false
+                        "modal": null
                     },
                     "designerId": "ce0316d3-60b6-42d0-8c14-83aa238d6e67"
                 }
