@@ -1,0 +1,22 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    { id: 1, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },    \r",
+            "    { id: 2, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },    \r",
+            "    { id: 3, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },     \r",
+            "    { id: 4, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" }\r",
+            "]     "
+        ],
+        "model": "Task",
+        "storeId": "Tasks",
+        "designer|userClassName": "Tasks"
+    },
+    "designerId": "36a9fdfe-c40c-4ed6-8fd8-c9180e7d31a7"
+}
