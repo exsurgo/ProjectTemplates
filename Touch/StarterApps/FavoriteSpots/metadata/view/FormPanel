@@ -19,10 +19,24 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|displayName": "Form fieldset",
                 "title": null
             },
             "designerId": "4c345b19-57cc-445d-9ccd-2c152d9a55f6",
             "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name",
+                        "required": true
+                    },
+                    "designerId": "834b169f-b434-4837-aad6-c4aa9e8b711b"
+                },
                 {
                     "type": "Ext.field.Text",
                     "reference": {
