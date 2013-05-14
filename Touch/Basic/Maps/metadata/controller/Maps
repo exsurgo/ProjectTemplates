@@ -56,7 +56,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #dropPin"
+                "designer|controlQuery": "mainview #dropPinButton"
             },
             "designerId": "ea3d7a3c-2862-4e38-87ba-f42acfc579f1"
         },
@@ -93,8 +93,8 @@
                     "    center: location",
                     "});",
                     "",
-                    "this.getDropPin().show();   // Show buttons",
-                    "this.getListPins().show();",
+                    "this.getDropPinButton().show();   // Show buttons",
+                    "this.getListPinsButton().show();",
                     "",
                     "this.getMainView().pop();   // Remove the pin list panel"
                 ],
@@ -133,12 +133,12 @@
                     "    title: 'Pin list'",
                     "});",
                     "",
-                    "this.getDropPin().hide();   // Hide the buttons",
-                    "this.getListPins().hide();"
+                    "this.getDropPinButton().hide();   // Hide the buttons",
+                    "this.getListPinsButton().hide();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #listPins"
+                "designer|controlQuery": "mainview #listPinsButton"
             },
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
         },
@@ -150,8 +150,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "dropPin",
-                "selector": "mainview #dropPin",
+                "ref": "dropPinButton",
+                "selector": "mainview #dropPinButton",
                 "xtype": "Ext.Button"
             },
             "designerId": "dd8a5f0f-c15b-455a-8d7f-b2368dd052fe"
@@ -164,8 +164,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "listPins",
-                "selector": "mainview #listPins",
+                "ref": "listPinsButton",
+                "selector": "mainview #listPinsButton",
                 "xtype": "Ext.Button"
             },
             "designerId": "2029ba1b-926c-4f1d-91b2-0cd3ee088744"
@@ -180,8 +180,8 @@
             "userConfig": {
                 "fn": "onBack",
                 "implHandler": [
-                    "this.getDropPin().show();   // Show the buttons",
-                    "this.getListPins().show();"
+                    "this.getDropPinButton().show();   // Show the buttons",
+                    "this.getListPinsButton().show();"
                 ],
                 "name": "back",
                 "designer|targetType": "Ext.navigation.View",

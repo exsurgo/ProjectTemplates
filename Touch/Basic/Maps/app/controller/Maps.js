@@ -37,24 +37,24 @@ Ext.define('MyApp.controller.Maps', {
                 selector: 'mainview #mapPanel',
                 xtype: 'Ext.Panel'
             },
-            dropPin: {
-                selector: 'mainview #dropPin',
+            dropPinButton: {
+                selector: 'mainview #dropPinButton',
                 xtype: 'Ext.Button'
             },
-            listPins: {
-                selector: 'mainview #listPins',
+            listPinsButton: {
+                selector: 'mainview #listPinsButton',
                 xtype: 'Ext.Button'
             }
         },
 
         control: {
-            "mainview #dropPin": {
+            "mainview #dropPinButton": {
                 tap: 'onDropPinTap'
             },
             "mainview #listPanel list": {
                 disclose: 'onLocationTap'
             },
-            "mainview #listPins": {
+            "mainview #listPinsButton": {
                 tap: 'onListPinsTap'
             },
             "mainview": {
@@ -89,8 +89,8 @@ Ext.define('MyApp.controller.Maps', {
             center: location
         });
         
-        this.getDropPin().show();   // Show buttons
-        this.getListPins().show();
+        this.getDropPinButton().show();   // Show buttons
+        this.getListPinsButton().show();
         
         this.getMainView().pop();   // Remove the pin list panel
     },
@@ -101,13 +101,13 @@ Ext.define('MyApp.controller.Maps', {
             title: 'Pin list'
         });
         
-        this.getDropPin().hide();   // Hide the buttons
-        this.getListPins().hide();
+        this.getDropPinButton().hide();   // Hide the buttons
+        this.getListPinsButton().hide();
     },
 
     onBack: function(navigationview, eOpts) {
-        this.getDropPin().show();   // Show the buttons
-        this.getListPins().show();
+        this.getDropPinButton().show();   // Show the buttons
+        this.getListPinsButton().show();
     }
 
 });

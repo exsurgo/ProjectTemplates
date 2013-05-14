@@ -37,13 +37,13 @@ Ext.define('MyApp.view.MainView', {
             items: [
                 {
                     xtype: 'button',
-                    itemId: 'dropPin',
+                    itemId: 'dropPinButton',
                     text: 'Drop'
                 },
                 {
                     xtype: 'button',
                     align: 'right',
-                    itemId: 'listPins',
+                    itemId: 'listPinsButton',
                     text: 'Pins'
                 }
             ]

@@ -66,7 +66,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "docked": null,
-                        "itemId": "dropPin",
+                        "itemId": "dropPinButton",
                         "designer|displayName": "\"Drop pin\" button",
                         "text": "Drop"
                     },
@@ -81,7 +81,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": "right",
-                        "itemId": "listPins",
+                        "itemId": "listPinsButton",
                         "designer|displayName": "\"List pins\" button",
                         "text": "Pins"
                     },
