@@ -45,8 +45,7 @@
                     "    title: 'New favorite spot'",
                     "});",
                     "",
-                    "this.getAddSpotButton().hide();",
-                    "this.getListSpotsButton().hide();"
+                    "this.hideButtons();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -83,14 +82,11 @@
                     "    location = new google.maps.LatLng(latitude, longitude),",
                     "    map = this.getMapView();              // Find the map",
                     "",
-                    "debugger;",
-                    "",
                     "map.setMapOptions({   // Move to the center",
                     "    center: location",
                     "});",
                     "",
-                    "this.getDropPinButton().show();   // Show buttons",
-                    "this.getListPinsButton().show();",
+                    "this.showButtons();",
                     "",
                     "this.getMainView().pop();   // Remove the pin list panel"
                 ],
@@ -129,8 +125,7 @@
                     "    title: 'Pin list'",
                     "});",
                     "",
-                    "this.getAddSpotButton().hide();   // Hide the buttons",
-                    "this.getListPinsButton().hide();"
+                    "this.hideButtons();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -176,14 +171,70 @@
             "userConfig": {
                 "fn": "onBack",
                 "implHandler": [
-                    "this.getAddSpotButton().show();",
-                    "this.getListSpotsButton().show();"
+                    "this.showButtons();"
                 ],
                 "name": "back",
                 "designer|targetType": "Ext.navigation.View",
                 "designer|controlQuery": "mainview"
             },
             "designerId": "85b85329-4652-4739-80dc-89be9616302e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showButtons",
+                "implHandler": [
+                    "var spotCount = Ext.getStore('Spots').getCount(),",
+                    "    hasSpots = spotCount != 0;",
+                    "",
+                    "this.getAddSpotButton().show();",
+                    "if (hasSpots) {",
+                    "    this.getListSpotsButton().show();",
+                    "} else {",
+                    "    this.getListSpotsButton().hide();",
+                    "}"
+                ]
+            },
+            "designerId": "abcccb9e-4798-4e28-850d-3daa3ddf1a71"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "hideButtons",
+                "implHandler": [
+                    "this.getAddSpotButton().hide();",
+                    "this.getListSpotsButton().hide();"
+                ]
+            },
+            "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStart",
+                "implHandler": [
+                    "this.showButtons();"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.navigation.View",
+                "designer|controlQuery": "mainview"
+            },
+            "designerId": "3f8a40a1-3579-48de-b854-73f37b43b9af"
         }
     ]
 }

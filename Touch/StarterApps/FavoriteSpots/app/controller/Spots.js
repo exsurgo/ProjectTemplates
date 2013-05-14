@@ -58,7 +58,8 @@ Ext.define('MyApp.controller.Spots', {
                 tap: 'onListSpotsTap'
             },
             "mainview": {
-                back: 'onBack'
+                back: 'onBack',
+                activate: 'onStart'
             }
         }
     },
@@ -69,8 +70,7 @@ Ext.define('MyApp.controller.Spots', {
             title: 'New favorite spot'
         });
         
-        this.getAddSpotButton().hide();
-        this.getListSpotsButton().hide();
+        this.hideButtons();
     },
 
     onLocationTap: function(list, record, target, index, e, eOpts) {
@@ -79,14 +79,11 @@ Ext.define('MyApp.controller.Spots', {
             location = new google.maps.LatLng(latitude, longitude),
             map = this.getMapView();              // Find the map
         
-        debugger;
-        
         map.setMapOptions({   // Move to the center
             center: location
         });
         
-        this.getDropPinButton().show();   // Show buttons
-        this.getListPinsButton().show();
+        this.showButtons();
         
         this.getMainView().pop();   // Remove the pin list panel
     },
@@ -97,13 +94,32 @@ Ext.define('MyApp.controller.Spots', {
             title: 'Pin list'
         });
         
-        this.getAddSpotButton().hide();   // Hide the buttons
-        this.getListSpotsButton().hide();
+        this.hideButtons();
     },
 
     onBack: function(navigationview, eOpts) {
+        this.showButtons();
+    },
+
+    onStart: function(newActiveItem, container, oldActiveItem, eOpts) {
+        this.showButtons();
+    },
+
+    showButtons: function() {
+        var spotCount = Ext.getStore('Spots').getCount(),
+            hasSpots = spotCount != 0;
+        
         this.getAddSpotButton().show();
-        this.getListSpotsButton().show();
+        if (hasSpots) {
+            this.getListSpotsButton().show();
+        } else {
+            this.getListSpotsButton().hide();
+        }
+    },
+
+    hideButtons: function() {
+        this.getAddSpotButton().hide();
+        this.getListSpotsButton().hide();
     }
 
 });
