@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "Step1Panel",
+            "Step2Panel",
+            "Step3Panel",
+            "MainNav",
+            "HelpPanel",
+            "HelpButton"
+        ],
+        "controllers": [
+            "MainNavController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

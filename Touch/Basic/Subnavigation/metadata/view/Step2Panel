@@ -1,0 +1,39 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Step2Panel",
+        "designer|userAlias": "step2"
+    },
+    "designerId": "ffa9a695-d7a1-4479-b054-242afcd58ed8",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "step3button",
+                "ui": "forward",
+                "text": "Step 3"
+            },
+            "designerId": "ca4d7714-8ace-4da3-ae4d-26062a49c7da"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "45ba7175-ec8a-42cb-b51e-6e3bf4f8416c",
+            "masterInstanceId": "ec05016b-2ed6-4977-88e7-460cc14a33d6"
+        }
+    ]
+}

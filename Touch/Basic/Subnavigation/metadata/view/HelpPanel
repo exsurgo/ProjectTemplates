@@ -1,0 +1,28 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "HelpPanel",
+        "designer|userAlias": "help"
+    },
+    "designerId": "b5057357-79df-45df-858c-98980bddf68e",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "This is the help page.",
+                "designer|displayName": "HelpLabel"
+            },
+            "designerId": "665f43ff-c91a-4b90-9ec3-da0e5a5cee5a"
+        }
+    ]
+}

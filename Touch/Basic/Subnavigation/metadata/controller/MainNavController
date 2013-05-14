@@ -1,0 +1,77 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNavController"
+    },
+    "designerId": "62c6c40d-cbc9-47cd-a3c8-8ab37f4a44eb",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onHelpTap",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'help',",
+                    "    title: 'Help'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "HelpButton",
+                "designer|controlQuery": "helpbutton"
+            },
+            "designerId": "cf7cd0ff-b6c4-4cbe-9929-8f19a51f404e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickStep2",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'step2',",
+                    "    title: 'Step 2'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#step2button"
+            },
+            "designerId": "43232f94-0f85-4cd7-806a-337801f24c38"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickStep3",
+                "implHandler": [
+                    "button.up('navigationview').push({",
+                    "    xtype: 'step3',",
+                    "    title: 'Step 3'",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#step3button"
+            },
+            "designerId": "00838f35-6413-4fe1-87bb-40f036462634"
+        }
+    ]
+}
