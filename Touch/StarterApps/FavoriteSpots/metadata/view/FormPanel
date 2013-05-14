@@ -37,7 +37,8 @@
                         "required": true,
                         "autoCapitalize": true,
                         "autoComplete": false,
-                        "autoCorrect": true
+                        "autoCorrect": true,
+                        "placeHolder": "My house"
                     },
                     "designerId": "834b169f-b434-4837-aad6-c4aa9e8b711b"
                 },
@@ -55,7 +56,7 @@
                         "labelWidth": null,
                         "labelWrap": true,
                         "required": true,
-                        "placeHolder": "8 Fake Ave, Faketown USA"
+                        "placeHolder": "8 Fake Ave, Faketown, USA"
                     },
                     "designerId": "64d1f147-6dcf-4385-be18-a9c5021664a3"
                 },
