@@ -32,10 +32,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "location",
+                "allowNull": false,
+                "name": "name",
                 "type": "string"
             },
-            "designerId": "1d2b7331-9c4a-43ee-a16d-f54a625ccd00"
+            "designerId": "410f6576-08f5-40ea-a0b2-148a3af0ff79"
         },
         {
             "type": "Ext.data.Field",
@@ -49,6 +50,34 @@
                 "type": "string"
             },
             "designerId": "f9275904-e252-4bf5-830d-af28cc177106"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": false,
+                "name": "latitude",
+                "type": "float"
+            },
+            "designerId": "b3f68cb1-02c6-4ca0-871e-b037d9d1b34b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": false,
+                "name": "longitude",
+                "type": "float"
+            },
+            "designerId": "c516cdf6-bda5-4bf2-b47f-30d755007af4"
         }
     ]
 }

@@ -24,12 +24,23 @@ Ext.define('MyApp.model.Spot', {
                 type: 'int'
             },
             {
-                name: 'location',
+                allowNull: false,
+                name: 'name',
                 type: 'string'
             },
             {
                 name: 'description',
                 type: 'string'
+            },
+            {
+                allowNull: false,
+                name: 'latitude',
+                type: 'float'
+            },
+            {
+                allowNull: false,
+                name: 'longitude',
+                type: 'float'
             }
         ]
     }
