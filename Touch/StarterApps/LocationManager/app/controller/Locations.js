@@ -54,7 +54,8 @@ Ext.define('MyApp.controller.Locations', {
                 tap: 'onAddLocationTap'
             },
             "mainview #listPanel list": {
-                disclose: 'onLocationTap'
+                disclose: 'onLocationTap',
+                itemswipe: 'onLocationSwipe'
             },
             "mainview #listLocationsButton": {
                 tap: 'onListLocationsTap'
@@ -183,12 +184,18 @@ Ext.define('MyApp.controller.Locations', {
                     longitude: position.lng()
                 });
         
+                // Build a list of markers if we don't have one
+                if (!me.markers) {
+                    me.markers = [];
+                }
+        
                 // Drop a marker
-                new google.maps.Marker({
+                var marker = new google.maps.Marker({
                     position: position,
                     map: map,
                     animation: google.maps.Animation.DROP
                 });
+                me.markers.push(marker);
         
                 // Move the map there
                 map.setOptions({
@@ -200,6 +207,54 @@ Ext.define('MyApp.controller.Locations', {
         
                 // Show the navbar buttons
                 me.showButtons();
+        
+            }
+        
+        });
+    },
+
+    onLocationSwipe: function(dataview, index, target, record, e, eOpts) {
+        // Build the title and message
+        var title = 'Delete',
+            message = 'Delete ' + record.get('name') + '?';
+        
+        // Confirm the deletion, and then...
+        var messageBox = new Ext.MessageBox();
+        var me = this;
+        messageBox.confirm(title, message, function(response) {
+        
+            // If we get a "yes"...
+            if (response == 'yes') {
+        
+                // Get the store
+                var store = Ext.getStore('Locations');
+        
+                // Do the deletion from the store
+                store.remove(record);
+        
+                // Find and remove the marker
+                me.markers.forEach(function(marker, index) {
+        
+                    // Get the values to compare
+                    var markerLat = marker.getPosition().lat(),
+                        markerLng = marker.getPosition().lng(),
+                        removedLat = record.get('latitude'),
+                        removedLng = record.get('longitude');
+        
+                    // Should we remove them?
+                    // This will remove two markers at the same location.
+                    if ((markerLat == removedLat) && (markerLng == removedLng)) {
+                        marker.setMap(null);
+                        me.markers.splice(index, 1);
+                    }
+        
+                });
+        
+                // If we've removed the last one, go back to the main menu
+                if (store.getCount() == 0) {
+                    me.getMainView().pop();
+                    me.showButtons();
+                }
         
             }
         
