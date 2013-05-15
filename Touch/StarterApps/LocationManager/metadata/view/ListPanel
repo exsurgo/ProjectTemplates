@@ -21,8 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "height": "100%",
-                "designer|displayName": "Spots list",
-                "store": "Spots",
+                "designer|displayName": "Locations list",
+                "store": "Locations",
                 "onItemDisclosure": true
             },
             "designerId": "736598d4-966f-48c9-b942-4617ddc2262b",

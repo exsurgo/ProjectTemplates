@@ -30,7 +30,7 @@ Ext.define('MyApp.view.ListPanel', {
                     '    {description}',
                     '</div>'
                 ],
-                store: 'Spots',
+                store: 'Locations',
                 onItemDisclosure: true
             }
         ]
