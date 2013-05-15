@@ -13,6 +13,22 @@
     "designerId": "8efebdd9-8334-4ec4-b483-b2f50f56f064",
     "cn": [
         {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "html": "Swipe to remove a location.",
+                "padding": 10,
+                "style": "color: #999; text-align: center;",
+                "designer|displayName": "List instruction label"
+            },
+            "designerId": "58f17ac0-4bd9-421c-ba1b-c17f8e32e878"
+        },
+        {
             "type": "Ext.dataview.List",
             "reference": {
                 "name": "items",
