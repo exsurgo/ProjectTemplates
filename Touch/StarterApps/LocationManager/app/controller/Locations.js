@@ -158,14 +158,21 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onSaveLocationButtonTap: function(button, e, eOpts) {
+        // Get the form and its values
         var form = this.getNewLocationForm(),
-            values = form.getValues(),
-            store = Ext.getStore('Locations'),
-            map = this.getMapView().getMap();
+            values = form.getValues();
         
+        // Get the locations store
+        var store = Ext.getStore('Locations'),
+        
+        // Get the map object
+        var map = this.getMapView().getMap();
+        
+        // Geocode the string, and then...
         var me = this;
         this.geocodeString(values.location, function(position) {
         
+            // If there's a valid position...
             if (position) {
         
                 // Add this to the store
@@ -176,7 +183,7 @@ Ext.define('MyApp.controller.Locations', {
                     longitude: position.lng()
                 });
         
-                // Drop a pin
+                // Drop a marker
                 new google.maps.Marker({
                     position: position,
                     map: map,
