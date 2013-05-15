@@ -248,6 +248,7 @@
             "userConfig": {
                 "fn": "onBack",
                 "implHandler": [
+                    "// Show toolbar buttons",
                     "this.showButtons();"
                 ],
                 "name": "back",
@@ -279,6 +280,7 @@
             "userConfig": {
                 "fn": "onStart",
                 "implHandler": [
+                    "// Show toolbar buttons",
                     "this.showButtons();"
                 ],
                 "name": "activate",

@@ -121,6 +121,7 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onStart: function(newActiveItem, container, oldActiveItem, eOpts) {
+        // Show toolbar buttons
         this.showButtons();
     },
 
