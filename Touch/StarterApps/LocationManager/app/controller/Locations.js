@@ -200,10 +200,14 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     showButtons: function() {
+        // Do we have any locations to show?
         var locationCount = Ext.getStore('Locations').getCount(),
             hasLocations = (locationCount != 0);
         
+        // Show the "add location" button
         this.getAddLocationButton().show();
+        
+        // Show the "list locations" button if we should
         if (hasLocations) {
             this.getListLocationsButton().show();
         } else {
@@ -212,6 +216,7 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     hideButtons: function() {
+        // Show both buttons on the toolbar
         this.getAddLocationButton().hide();
         this.getListLocationsButton().hide();
     },
