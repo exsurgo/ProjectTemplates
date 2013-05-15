@@ -195,11 +195,13 @@
             "userConfig": {
                 "fn": "onListLocationsTap",
                 "implHandler": [
-                    "this.getMainView().push({   // Show the list panel view",
+                    "// Show the list panel view",
+                    "this.getMainView().push({",
                     "    xtype: 'listpanel',",
                     "    title: 'List spot'",
                     "});",
                     "",
+                    "// Hide toolbar buttons",
                     "this.hideButtons();"
                 ],
                 "name": "tap",

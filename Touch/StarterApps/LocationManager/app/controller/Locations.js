@@ -105,11 +105,13 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onListLocationsTap: function(button, e, eOpts) {
-        this.getMainView().push({   // Show the list panel view
+        // Show the list panel view
+        this.getMainView().push({
             xtype: 'listpanel',
             title: 'List spot'
         });
         
+        // Hide toolbar buttons
         this.hideButtons();
     },
 
