@@ -20,10 +20,10 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Location'
+        'Spot'
     ],
     stores: [
-        'Locations'
+        'Spots'
     ],
     views: [
         'MainView',

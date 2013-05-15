@@ -84,18 +84,24 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onLocationTap: function(list, record, target, index, e, eOpts) {
-        var latitude = record.get('latitude'),    // Build the location
+        // Build the location
+        var latitude = record.get('latitude'),
             longitude = record.get('longitude'),
-            location = new google.maps.LatLng(latitude, longitude),
-            map = this.getMapView();              // Find the map
+            location = new google.maps.LatLng(latitude, longitude);
         
-        map.setMapOptions({   // Move to the center
+        // Find the map
+        var map = this.getMapView();
+        
+        // Center the map at the location
+        map.setMapOptions({
             center: location
         });
         
+        // Show toolbar buttons
         this.showButtons();
         
-        this.getMainView().pop();   // Remove the pin list panel
+        // Remove the location list panel
+        this.getMainView().pop();
     },
 
     onListLocationsTap: function(button, e, eOpts) {
