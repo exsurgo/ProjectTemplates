@@ -73,11 +73,13 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onAddLocationTap: function(button, e, eOpts) {
+        // Show the "add new location" panel
         this.getMainView().push({
             xtype: 'formpanel',
             title: 'New location'
         });
         
+        // Hide the toolbar buttons
         this.hideButtons();
     },
 
