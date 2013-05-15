@@ -19,6 +19,7 @@ Ext.define('MyApp.view.FormPanel', {
 
     config: {
         id: 'formPanel',
+        scrollable: false,
         items: [
             {
                 xtype: 'fieldset',
