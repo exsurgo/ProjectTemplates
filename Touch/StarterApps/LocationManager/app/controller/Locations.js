@@ -116,6 +116,7 @@ Ext.define('MyApp.controller.Locations', {
     },
 
     onBack: function(navigationview, eOpts) {
+        // Show toolbar buttons
         this.showButtons();
     },
 
