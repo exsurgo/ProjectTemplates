@@ -74,9 +74,11 @@
                     "callback"
                 ],
                 "implHandler": [
+                    "// Build a Google Maps geocoder and its options",
                     "var geocoder = new google.maps.Geocoder,",
                     "    options = { address: str };",
                     "",
+                    "// Turn the string into a location",
                     "geocoder.geocode(options, function(results, status) {",
                     "    if (status == \"OK\") {",
                     "        callback(results[0].geometry.location);",
