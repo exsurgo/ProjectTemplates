@@ -12,10 +12,20 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "04b3ce3f-3430-414d-b170-eacda58a02a6": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
         }
     },
     "viewOrderMap": {
-        "view": [],
+        "view": [
+            "04b3ce3f-3430-414d-b170-eacda58a02a6"
+        ],
         "store": [],
         "controller": [],
         "model": [],

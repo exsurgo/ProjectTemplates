@@ -19,5 +19,14 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-    name: 'MyApp'
+    views: [
+        'MainView'
+    ],
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainView', {fullscreen: true});
+    }
+
 });

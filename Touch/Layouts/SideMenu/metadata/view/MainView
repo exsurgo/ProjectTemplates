@@ -1,0 +1,94 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true,
+        "layout": "hbox"
+    },
+    "designerId": "04b3ce3f-3430-414d-b170-eacda58a02a6",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|displayName": "Toolbar",
+                "title": "App"
+            },
+            "designerId": "024f5b5a-e4fe-40da-9097-5a5202d8f302"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "border": null,
+                "style": "background-color: #ddf;",
+                "ui": "dark",
+                "designer|displayName": "Sidebar"
+            },
+            "designerId": "73273ae8-24a4-4278-97a7-945a8a6d7188",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": true,
+                        "html": "Sidebar",
+                        "designer|displayName": "Sidebar label"
+                    },
+                    "designerId": "3baeb712-05dc-4583-8d9a-5d043e067e30"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 3,
+                "height": null,
+                "designer|displayName": "Content",
+                "scrollable": null
+            },
+            "designerId": "7f52d294-4783-4281-8191-8995143675bc",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": true,
+                        "html": "Content",
+                        "designer|displayName": "Content label"
+                    },
+                    "designerId": "56402d8b-975f-42ff-967e-46196b9d2806"
+                }
+            ]
+        }
+    ]
+}
