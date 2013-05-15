@@ -163,7 +163,7 @@ Ext.define('MyApp.controller.Locations', {
             values = form.getValues();
         
         // Get the locations store
-        var store = Ext.getStore('Locations'),
+        var store = Ext.getStore('Locations');
         
         // Get the map object
         var map = this.getMapView().getMap();

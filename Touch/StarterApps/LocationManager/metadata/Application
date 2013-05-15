@@ -7,10 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Spot"
+            "Location"
         ],
         "stores": [
-            "Spots"
+            "Locations"
         ],
         "views": [
             "MainView",
