@@ -21,6 +21,13 @@ Ext.define('MyApp.view.ListPanel', {
         id: 'listPanel',
         items: [
             {
+                xtype: 'label',
+                centered: false,
+                html: 'Swipe to remove a location.',
+                padding: 10,
+                style: 'color: #999; text-align: center;'
+            },
+            {
                 xtype: 'list',
                 height: '100%',
                 itemTpl: [
