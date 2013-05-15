@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Favorite spots",
+                "title": "Locations",
                 "itemId": "mapPanel",
                 "designer|displayName": "Map panel",
                 "designer|createAlias": null
@@ -65,8 +65,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "listSpotsButton",
-                        "designer|displayName": "\"List spots\" button",
+                        "itemId": "listLocationsButton",
+                        "designer|displayName": "\"List locations\" button",
                         "icon": null,
                         "iconCls": "more",
                         "text": null
@@ -83,8 +83,8 @@
                     "userConfig": {
                         "align": "right",
                         "docked": null,
-                        "itemId": "addSpotButton",
-                        "designer|displayName": "\"Add spot\" button",
+                        "itemId": "addLocationButton",
+                        "designer|displayName": "\"Add location\" button",
                         "iconCls": "add",
                         "text": null
                     },

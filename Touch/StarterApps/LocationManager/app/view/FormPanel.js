@@ -54,14 +54,14 @@ Ext.define('MyApp.view.FormPanel', {
                     },
                     {
                         xtype: 'button',
-                        itemId: 'saveSpotButton',
+                        itemId: 'saveLocationButton',
                         margin: 10,
-                        text: 'Add spot'
+                        text: 'Add location'
                     },
                     {
                         xtype: 'map',
                         height: 250,
-                        itemId: 'newSpotMap'
+                        itemId: 'newLocationMap'
                     }
                 ]
             }

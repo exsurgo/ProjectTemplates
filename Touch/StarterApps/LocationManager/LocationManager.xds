@@ -1,5 +1,5 @@
 {
-    "name": "FavoriteSpots",
+    "name": "LocationManager",
     "settings": {
         "urlPrefix": "http://localhost:8000/",
         "exportPath": ""
@@ -24,27 +24,27 @@
         },
         "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d": {
             "paths": [
-                "metadata/controller/Spots",
-                "app/controller/override/Spots.js",
-                "app/controller/Spots.js"
+                "metadata/controller/Locations",
+                "app/controller/override/Locations.js",
+                "app/controller/Locations.js"
             ],
-            "className": "Spots"
+            "className": "Locations"
         },
         "00771e58-a2da-453c-9809-8e821e3a3c2b": {
             "paths": [
-                "metadata/store/Spots",
-                "app/store/override/Spots.js",
-                "app/store/Spots.js"
+                "metadata/store/Locations",
+                "app/store/override/Locations.js",
+                "app/store/Locations.js"
             ],
-            "className": "Spots"
+            "className": "Locations"
         },
         "8928b0c6-6806-4a3e-8238-3778dd96d75c": {
             "paths": [
-                "metadata/model/Spot",
-                "app/model/override/Spot.js",
-                "app/model/Spot.js"
+                "metadata/model/Location",
+                "app/model/override/Location.js",
+                "app/model/Location.js"
             ],
-            "className": "Spot"
+            "className": "Location"
         },
         "aa5f2478-a4ed-46b3-b81d-83caf843d652": {
             "paths": [

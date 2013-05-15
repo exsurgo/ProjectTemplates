@@ -7,12 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Spot"
+            "Location"
         ],
         "stores": [
-            "Spots"
+            "Locations"
         ],
-        "designer|userClassName": "Spots"
+        "designer|userClassName": "Locations"
     },
     "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
     "cn": [
@@ -26,14 +26,14 @@
             "userConfig": {
                 "fn": "showButtons",
                 "implHandler": [
-                    "var spotCount = Ext.getStore('Spots').getCount(),",
-                    "    hasSpots = spotCount != 0;",
+                    "var locationCount = Ext.getStore('Locations').getCount(),",
+                    "    hasLocations = (locationCount != 0);",
                     "",
-                    "this.getAddSpotButton().show();",
-                    "if (hasSpots) {",
-                    "    this.getListSpotsButton().show();",
+                    "this.getAddLocationButton().show();",
+                    "if (hasLocations) {",
+                    "    this.getListLocationsButton().show();",
                     "} else {",
-                    "    this.getListSpotsButton().hide();",
+                    "    this.getListLocationsButton().hide();",
                     "}"
                 ]
             },
@@ -49,8 +49,8 @@
             "userConfig": {
                 "fn": "hideButtons",
                 "implHandler": [
-                    "this.getAddSpotButton().hide();",
-                    "this.getListSpotsButton().hide();"
+                    "this.getAddLocationButton().hide();",
+                    "this.getListLocationsButton().hide();"
                 ]
             },
             "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
@@ -105,18 +105,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onAddSpotTap",
+                "fn": "onAddLocationTap",
                 "implHandler": [
                     "this.getMainView().push({",
                     "    xtype: 'formpanel',",
-                    "    title: 'New favorite spot'",
+                    "    title: 'New location'",
                     "});",
                     "",
                     "this.hideButtons();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #addSpotButton"
+                "designer|controlQuery": "mainview #addLocationButton"
             },
             "designerId": "ea3d7a3c-2862-4e38-87ba-f42acfc579f1"
         },
@@ -185,18 +185,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onListSpotsTap",
+                "fn": "onListLocationsTap",
                 "implHandler": [
                     "this.getMainView().push({   // Show the list panel view",
                     "    xtype: 'listpanel',",
-                    "    title: 'Pin list'",
+                    "    title: 'List spot'",
                     "});",
                     "",
                     "this.hideButtons();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #listSpotsButton"
+                "designer|controlQuery": "mainview #listLocationsButton"
             },
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
         },
@@ -208,8 +208,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "addSpotButton",
-                "selector": "mainview #addSpotButton",
+                "ref": "addLocationButton",
+                "selector": "mainview #addLocationButton",
                 "xtype": "Ext.Button"
             },
             "designerId": "dd8a5f0f-c15b-455a-8d7f-b2368dd052fe"
@@ -222,8 +222,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "listSpotsButton",
-                "selector": "mainview #listSpotsButton",
+                "ref": "listLocationsButton",
+                "selector": "mainview #listLocationsButton",
                 "xtype": "Ext.Button"
             },
             "designerId": "2029ba1b-926c-4f1d-91b2-0cd3ee088744"
@@ -254,8 +254,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "newSpotMap",
-                "selector": "mainview #newSpotMap"
+                "ref": "newLocationMap",
+                "selector": "mainview #newLocationMap"
             },
             "designerId": "5666b552-9296-43d0-bd66-01489c68d83e"
         },
@@ -285,36 +285,36 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onNewSpotLocationChange",
+                "fn": "onNewLocationPositionChange",
                 "implHandler": [
                     "// Find the map",
-                    "var map = this.getNewSpotMap().getMap();",
+                    "var map = this.getNewLocationMap().getMap();",
                     "",
                     "// Build a marker if there isn't one",
-                    "if (!this.newSpotMapMarker) {",
-                    "    this.newSpotMapMarker = new google.maps.Marker;",
+                    "if (!this.newLocationMapMarker) {",
+                    "    this.newLocationMapMarker = new google.maps.Marker;",
                     "}",
                     "",
                     "// Hide the map marker",
-                    "this.newSpotMapMarker.setMap(null);",
+                    "this.newLocationMapMarker.setMap(null);",
                     "",
                     "// Geocode the string",
                     "var me = this;",
                     "this.geocodeString(newValue, function(position) {",
-                    "    ",
+                    "",
                     "    // Move the map to the position",
                     "    map.setOptions({",
                     "        center: position,",
                     "        zoom: 15",
                     "    });",
-                    "    ",
+                    "",
                     "    // Drop a marker there",
-                    "    me.newSpotMapMarker.setOptions({",
+                    "    me.newLocationMapMarker.setOptions({",
                     "        map: map,",
                     "        position: position,",
                     "        animation: google.maps.Animation.DROP",
                     "    });",
-                    "    ",
+                    "",
                     "});"
                 ],
                 "name": "change",
@@ -331,11 +331,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onSaveSpotButtonTap",
+                "fn": "onSaveLocationButtonTap",
                 "implHandler": [
-                    "var form = this.getNewSpotForm(),",
+                    "var form = this.getNewLocationForm(),",
                     "    values = form.getValues(),",
-                    "    store = Ext.getStore('Spots'),",
+                    "    store = Ext.getStore('Locations'),",
                     "    map = this.getMapView().getMap();",
                     "",
                     "var me = this;",
@@ -350,14 +350,14 @@
                     "            latitude: position.lat(),",
                     "            longitude: position.lng()",
                     "        });",
-                    "        ",
+                    "",
                     "        // Drop a pin",
                     "        new google.maps.Marker({",
                     "            position: position,",
                     "            map: map,",
                     "            animation: google.maps.Animation.DROP",
                     "        });",
-                    "        ",
+                    "",
                     "        // Move the map there",
                     "        map.setOptions({",
                     "            center: position",
@@ -365,7 +365,7 @@
                     "",
                     "        // Go back to the map view",
                     "        me.getMainView().pop();",
-                    "        ",
+                    "",
                     "        // Show the navbar buttons",
                     "        me.showButtons();",
                     "",
@@ -375,7 +375,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #saveSpotButton"
+                "designer|controlQuery": "mainview #saveLocationButton"
             },
             "designerId": "9903e3bb-24e6-494f-a84c-05ac85be9b9b"
         },
@@ -387,7 +387,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "newSpotForm",
+                "ref": "newLocationForm",
                 "selector": "mainview #formPanel"
             },
             "designerId": "14208b4e-2bd9-40e4-9dc2-c6de7e54e546"

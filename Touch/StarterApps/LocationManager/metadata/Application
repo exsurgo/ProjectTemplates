@@ -18,7 +18,7 @@
             "FormPanel"
         ],
         "controllers": [
-            "Spots"
+            "Locations"
         ],
         "name": "MyApp"
     },

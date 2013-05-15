@@ -21,7 +21,7 @@ Ext.define('MyApp.view.MainView', {
         items: [
             {
                 xtype: 'panel',
-                title: 'Favorite spots',
+                title: 'Locations',
                 itemId: 'mapPanel',
                 items: [
                     {
@@ -37,13 +37,13 @@ Ext.define('MyApp.view.MainView', {
             items: [
                 {
                     xtype: 'button',
-                    itemId: 'listSpotsButton',
+                    itemId: 'listLocationsButton',
                     iconCls: 'more'
                 },
                 {
                     xtype: 'button',
                     align: 'right',
-                    itemId: 'addSpotButton',
+                    itemId: 'addLocationButton',
                     iconCls: 'add'
                 }
             ]

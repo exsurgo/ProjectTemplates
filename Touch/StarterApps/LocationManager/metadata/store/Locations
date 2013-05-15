@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "Spot",
-        "storeId": "Spots",
-        "designer|userClassName": "Spots"
+        "model": "Location",
+        "storeId": "Locations",
+        "designer|userClassName": "Locations"
     },
     "mockCfgs": [
         "data"

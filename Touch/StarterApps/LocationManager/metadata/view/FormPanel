@@ -97,9 +97,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "saveSpotButton",
+                        "itemId": "saveLocationButton",
                         "margin": 10,
-                        "text": "Add spot"
+                        "text": "Add location"
                     },
                     "designerId": "44cd3552-2a6b-49f1-8b61-47004e62234e"
                 },
@@ -112,7 +112,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "height": 250,
-                        "itemId": "newSpotMap",
+                        "itemId": "newLocationMap",
                         "modal": null
                     },
                     "designerId": "ce0316d3-60b6-42d0-8c14-83aa238d6e67"

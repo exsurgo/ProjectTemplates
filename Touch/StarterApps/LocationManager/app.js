@@ -20,10 +20,10 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Spot'
+        'Location'
     ],
     stores: [
-        'Spots'
+        'Locations'
     ],
     views: [
         'MainView',
@@ -31,7 +31,7 @@ Ext.application({
         'FormPanel'
     ],
     controllers: [
-        'Spots'
+        'Locations'
     ],
     name: 'MyApp',
 
