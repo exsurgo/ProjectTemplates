@@ -39,7 +39,7 @@
                 "border": null,
                 "style": "background-color: #ddf;",
                 "ui": "dark",
-                "designer|displayName": "Sidebar"
+                "designer|displayName": "SideMenu"
             },
             "designerId": "73273ae8-24a4-4278-97a7-945a8a6d7188",
             "cn": [
