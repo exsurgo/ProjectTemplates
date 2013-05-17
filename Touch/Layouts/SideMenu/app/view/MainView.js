@@ -34,9 +34,16 @@ Ext.define('MyApp.view.MainView', {
                 ui: 'dark',
                 items: [
                     {
-                        xtype: 'label',
-                        centered: true,
-                        html: 'Sidebar'
+                        xtype: 'button',
+                        text: 'Menu item 1'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Menu item 2'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Menu item 3'
                     }
                 ]
             },
