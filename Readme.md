@@ -20,7 +20,7 @@ These templates are divided into the following categories for the **Ext** and **
 - Assign itemId to all components that need to be referenced.
 - All classes should be assigned aliases.
 - Selectors should use the parent user alias followed by the clientId where possible.  Ex: "mypanel #myButton".
-- Custom CSS/Styles should be avoided.
+- Custom CSS/styles should be avoided.
 - Models should be single terms, such as Task, Person or Record.
 - Stores and Controllers should be plural terms such as Tasks, People, Records.
 - View should use verbose naming, such as TaskGrid, RecordForm, etc.
