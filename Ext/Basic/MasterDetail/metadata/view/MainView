@@ -47,13 +47,13 @@
                         "layout|region": "west",
                         "layout|split": true,
                         "dock": null,
-                        "border": "2 2 2 2",
+                        "border": null,
                         "id": "",
                         "itemId": "gridPanel",
                         "width": 150,
                         "resizable": false,
                         "resizeHandles": null,
-                        "bodyBorder": true,
+                        "bodyBorder": false,
                         "title": null,
                         "forceFit": true,
                         "store": "Records"
@@ -175,7 +175,7 @@
                         "layout|flex": 1,
                         "layout|region": "center",
                         "layout|split": true,
-                        "border": "2 2 2 2",
+                        "border": null,
                         "data": [
                             "{}"
                         ],
@@ -184,7 +184,7 @@
                         "designer|displayName": null,
                         "resizable": false,
                         "layout": "fit",
-                        "bodyBorder": true,
+                        "bodyBorder": false,
                         "bodyPadding": "10 10 10 10",
                         "manageHeight": false,
                         "title": null

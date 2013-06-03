@@ -11,7 +11,7 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "ext42",
     "topInstanceFileMap": {
         "67363d08-999e-4648-b11d-5d9fe657da91": {

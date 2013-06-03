@@ -42,12 +42,11 @@ Ext.define('MyApp.view.MainView', {
                             flex: 1,
                             region: 'west',
                             split: true,
-                            border: '2 2 2 2',
                             id: '',
                             itemId: 'gridPanel',
                             width: 150,
                             resizable: false,
-                            bodyBorder: true,
+                            bodyBorder: false,
                             forceFit: true,
                             store: 'Records',
                             columns: [
@@ -88,7 +87,6 @@ Ext.define('MyApp.view.MainView', {
                             flex: 1,
                             region: 'center',
                             split: true,
-                            border: '2 2 2 2',
                             data: {
                                 
                             },
@@ -109,7 +107,7 @@ Ext.define('MyApp.view.MainView', {
                             layout: {
                                 type: 'fit'
                             },
-                            bodyBorder: true,
+                            bodyBorder: false,
                             bodyPadding: '10 10 10 10',
                             manageHeight: false
                         }

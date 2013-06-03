@@ -32,10 +32,9 @@ These templates are divided into the following categories for the **Ext** and **
         y = 2;  // Second</pre>
 - Strings should use single quotes instead of double.
 
-**Rules for Ext templates**
+**Ext Specific Rules**
 - A viewport should always be used as the top-level views for Ext.
 
-**Rules for Ext layout templates**
-- Header and Footer should have height set to 100 and NOT resizable.
-- Left, Right, Center, Top, Bottom, etc, panels should be resizable.
+**Touch Specific Rules**
+
 
