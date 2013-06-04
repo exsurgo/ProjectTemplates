@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Navigation"
+        "designer|userClassName": "NavController"
     },
     "designerId": "02e19093-9c6b-4222-8b96-2632f82d7303",
     "cn": [
@@ -32,12 +32,12 @@
                     "// Use var for controller\r",
                     "var ctrl = this;\r",
                     "\r",
-                    "// Init the Ext history utility\r",
+                    "// Init the Ext history utility \r",
                     "Ext.History.init();\r",
                     "\r",
                     "// Navigate on hash change\r",
                     "Ext.History.on('change', function(hash) {\r",
-                    "    ctrl.navigate(hash);\r",
+                    "    ctrl.navigate(hash); \r",
                     "});\r",
                     "\r",
                     "// Navigate if initial hash is provided\r",

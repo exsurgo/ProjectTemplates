@@ -24,7 +24,7 @@ Ext.application({
     ],
     autoCreateViewport: true,
     controllers: [
-        'Navigation'
+        'NavController'
     ],
     name: 'MyApp'
 });
