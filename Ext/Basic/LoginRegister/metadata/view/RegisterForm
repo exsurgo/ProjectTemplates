@@ -120,8 +120,7 @@
                         "formBind": true,
                         "itemId": "registerButton",
                         "scale": "medium",
-                        "text": "Register",
-                        "type": "submit"
+                        "text": "Register"
                     },
                     "designerId": "fade9dce-5a0f-45f0-85ab-d36ec43e621d"
                 }

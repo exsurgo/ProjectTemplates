@@ -4,49 +4,8 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "ext42",
-    "topInstanceFileMap": {
-        "51664173-3dd3-4c65-bc8c-fcec064068ab": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MainView"
-        },
-        "c46caa31-c4c3-4048-970e-5c952f6447b6": {
-            "paths": [
-                "metadata/store/MyStore",
-                "app/store/override/MyStore.js",
-                "app/store/MyStore.js"
-            ],
-            "className": "MyStore"
-        },
-        "83c0d72e-5e47-4a99-a928-d22605955ef2": {
-            "paths": [
-                "metadata/controller/MyController",
-                "app/controller/override/MyController.js",
-                "app/controller/MyController.js"
-            ],
-            "className": "MyController"
-        },
-        "de8b28f6-fdb4-4d1b-8ba6-0a23b93be027": {
-            "paths": [
-                "metadata/model/MyModel",
-                "app/model/override/MyModel.js",
-                "app/model/MyModel.js"
-            ],
-            "className": "MyModel"
-        },
-        "75264284-a491-4126-9048-1f6a847f2feb": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "51664173-3dd3-4c65-bc8c-fcec064068ab"

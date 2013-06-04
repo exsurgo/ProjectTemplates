@@ -4,24 +4,8 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "touch22",
-    "topInstanceFileMap": {
-        "d6960af2-e51e-4b00-9831-1a8c019bca68": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js"
-            ],
-            "className": "MainView"
-        },
-        "8c2f2555-c96e-46ed-a6aa-b5af658d883d": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "d6960af2-e51e-4b00-9831-1a8c019bca68"

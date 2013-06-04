@@ -4,25 +4,8 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "ext42",
-    "topInstanceFileMap": {
-        "92fdd333-e788-4606-885f-61a3fc2501ab": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MainView"
-        },
-        "b075f68f-de02-4a06-afcb-e63703ea4232": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "92fdd333-e788-4606-885f-61a3fc2501ab"

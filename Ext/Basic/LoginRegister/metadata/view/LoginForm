@@ -83,8 +83,7 @@
                         "itemId": "loginButton",
                         "margin": "0 15 0 0",
                         "scale": "medium",
-                        "text": "Login",
-                        "type": "submit"
+                        "text": "Login"
                     },
                     "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e"
                 }

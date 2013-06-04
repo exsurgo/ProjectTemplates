@@ -89,8 +89,7 @@ Ext.define('MyApp.view.RecordForm', {
                                     xtype: 'button',
                                     itemId: 'saveButton',
                                     margin: '5 5 5 5 ',
-                                    text: 'Save',
-                                    type: 'submit'
+                                    text: 'Save'
                                 },
                                 {
                                     xtype: 'button',

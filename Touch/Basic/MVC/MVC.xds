@@ -4,48 +4,8 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "touch22",
-    "topInstanceFileMap": {
-        "1ac43aed-5822-42ae-bb49-db141af6328f": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js"
-            ],
-            "className": "MainView"
-        },
-        "6fff91e7-2b2a-4950-b14e-1d6f7622bf9a": {
-            "paths": [
-                "metadata/store/MyStore",
-                "app/store/override/MyStore.js",
-                "app/store/MyStore.js"
-            ],
-            "className": "MyStore"
-        },
-        "471db61a-4dee-4ae0-8676-29510d9a5d13": {
-            "paths": [
-                "metadata/controller/MyController",
-                "app/controller/override/MyController.js",
-                "app/controller/MyController.js"
-            ],
-            "className": "MyController"
-        },
-        "ac49528a-95b9-40b4-b060-0b13705d5d73": {
-            "paths": [
-                "metadata/model/MyModel",
-                "app/model/override/MyModel.js",
-                "app/model/MyModel.js"
-            ],
-            "className": "MyModel"
-        },
-        "df645ce3-b253-4151-8547-881708989006": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "1ac43aed-5822-42ae-bb49-db141af6328f"

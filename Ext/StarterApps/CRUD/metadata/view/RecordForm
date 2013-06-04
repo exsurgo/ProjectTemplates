@@ -138,8 +138,7 @@
                                 "itemId": "saveButton",
                                 "margin": "5 5 5 5 ",
                                 "designer|displayName": null,
-                                "text": "Save",
-                                "type": "submit"
+                                "text": "Save"
                             },
                             "designerId": "39772e9c-24db-4d10-8653-35a7440591be"
                         },

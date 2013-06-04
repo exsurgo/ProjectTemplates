@@ -4,44 +4,11 @@
         "urlPrefix": "http://localhost/architect/HeaderNavCenter",
         "exportPath": ""
     },
-    "xdsVersion": "2.2.2",
-    "xdsBuild": 971,
+    "xdsVersion": "2.3.0",
+    "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "ext42",
-    "topInstanceFileMap": {
-        "556773c3-ac1f-4e63-9056-9a0492a4fc75": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        },
-        "708ed0c6-de4e-474c-80ff-e7529187a1e9": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MainView"
-        },
-        "ca4c78d1-2708-4953-95bf-531b400eb610": {
-            "paths": [
-                "metadata/controller/Main",
-                "app/controller/override/Main.js",
-                "app/controller/Main.js"
-            ],
-            "className": "Main"
-        },
-        "683f2e27-fa82-4170-8174-011aa0d9e3f1": {
-            "paths": [
-                "metadata/view/CardStack",
-                "app/view/override/CardStack.js",
-                "app/view/CardStack.js"
-            ],
-            "className": "CardStack"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "708ed0c6-de4e-474c-80ff-e7529187a1e9",

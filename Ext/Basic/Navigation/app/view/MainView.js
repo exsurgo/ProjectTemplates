@@ -28,33 +28,16 @@ Ext.define('MyApp.view.MainView', {
             items: [
                 {
                     xtype: 'panel',
-                    region: 'west',
-                    split: true,
-                    itemId: 'menuPanel',
-                    width: 150,
-                    title: 'Menu',
+                    region: 'north',
+                    height: 100,
+                    itemId: 'headerPanel',
+                    title: 'Header',
                     items: [
                         {
-                            xtype: 'menu',
-                            floating: false,
-                            itemId: 'menu',
-                            items: [
-                                {
-                                    xtype: 'menuitem',
-                                    href: '#home',
-                                    text: 'Home'
-                                },
-                                {
-                                    xtype: 'menuitem',
-                                    href: '#about',
-                                    text: 'About Us'
-                                },
-                                {
-                                    xtype: 'menuitem',
-                                    href: '#contact',
-                                    text: 'Contact us'
-                                }
-                            ]
+                            xtype: 'button',
+                            itemId: 'actionButton',
+                            margin: 10,
+                            text: 'Run Controller Action'
                         }
                     ]
                 },
@@ -62,26 +45,12 @@ Ext.define('MyApp.view.MainView', {
                     xtype: 'panel',
                     region: 'center',
                     itemId: 'contentPanel',
-                    layout: {
-                        type: 'card'
-                    },
-                    items: [
-                        {
-                            xtype: 'panel',
-                            itemId: 'home',
-                            title: 'Home'
-                        },
-                        {
-                            xtype: 'panel',
-                            itemId: 'about',
-                            title: 'About Us'
-                        },
-                        {
-                            xtype: 'panel',
-                            itemId: 'contact',
-                            title: 'Contact Us'
-                        }
-                    ]
+                    tpl: [
+                        '<div>ID: {id}</div>',
+                        '<div>Text: {text}</div>'
+                    ],
+                    bodyPadding: 10,
+                    title: 'Content'
                 }
             ]
         });

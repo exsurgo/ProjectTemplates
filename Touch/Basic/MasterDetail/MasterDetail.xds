@@ -4,64 +4,8 @@
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000501,
+    "upgradeVersion": 210000000503,
     "framework": "touch22",
-    "topInstanceFileMap": {
-        "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc": {
-            "paths": [
-                "metadata/view/MainView",
-                "app/view/override/MainView.js",
-                "app/view/MainView.js"
-            ],
-            "className": "MainView"
-        },
-        "d89d0007-cc29-46d5-8eab-f085e4ca16f6": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        },
-        "581b728d-3394-4272-91f1-83ed7a645df2": {
-            "paths": [
-                "metadata/store/People",
-                "app/store/override/People.js",
-                "app/store/People.js"
-            ],
-            "className": "People"
-        },
-        "d8fa6d3b-4852-4139-87db-576815eb250b": {
-            "paths": [
-                "metadata/model/Person",
-                "app/model/override/Person.js",
-                "app/model/Person.js"
-            ],
-            "className": "Person"
-        },
-        "2e108d17-aa43-4245-ab88-7c58bd477077": {
-            "paths": [
-                "metadata/controller/People",
-                "app/controller/override/People.js",
-                "app/controller/People.js"
-            ],
-            "className": "People"
-        },
-        "b9679d04-5d75-4d0d-a8cd-d624d5897566": {
-            "paths": [
-                "metadata/view/DetailPanel",
-                "app/view/override/DetailPanel.js",
-                "app/view/DetailPanel.js"
-            ],
-            "className": "DetailPanel"
-        },
-        "3fd09888-7815-486a-8d9a-949949008923": {
-            "paths": [
-                "metadata/view/PersonList",
-                "app/view/override/PersonList.js",
-                "app/view/PersonList.js"
-            ],
-            "className": "PersonList"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc",

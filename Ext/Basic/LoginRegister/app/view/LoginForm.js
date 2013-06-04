@@ -62,8 +62,7 @@ Ext.define('MyApp.view.LoginForm', {
                             itemId: 'loginButton',
                             margin: '0 15 0 0',
                             scale: 'medium',
-                            text: 'Login',
-                            type: 'submit'
+                            text: 'Login'
                         }
                     ]
                 }
