@@ -10,7 +10,7 @@ These templates are divided into the following categories for the **Ext** and **
 [View Templates Live](http://exsurgo.github.io/ProjectTemplates/index.html)
 
 
-**Rules for all templates**
+**Creating Templates**
 
 - All templates should be as usable as possible.
 - Use the least amount of code possible.
@@ -35,6 +35,32 @@ These templates are divided into the following categories for the **Ext** and **
 **Ext Specific Rules**
 - A viewport should always be used as the top-level views for Ext.
 
-**Touch Specific Rules**
 
+**Preview Images**
 
+Each template should contain a preview image named "preview.png" located in the project folder.
+  
+- For desktop or tablet targeted templates, the size should be roughly 800x600.
+- For phone targeted tempaltes, the size should be roughly 320x480.
+- The browser zoom may need to be ajdusted.
+
+**Template Data**
+
+Each template should contain a data file named "template.json" which describes the template with the following fields.
+
+- title: Short name/description, < 40 characters (required)
+- description: Longe description, < 80 characters (optional)
+- category: "Basic", "Layouts" or "Starter Apps"
+
+**Building Templates** 
+
+Us the following steps to build the templates and include in architect.
+
+1. Open architect locally in dev mode.
+2. Download the template repo to your local machine.
+3. From the chrome debug console, run the following commands.
+<code>
+	Ext4.require('xds.util.ProjectTemplateBuilder');
+	xds.util.ProjectTemplateBuilder.buildAll();
+</code> 
+4. When promted, select the directory of your local templates repo.
