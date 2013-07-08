@@ -1,0 +1,38 @@
+{
+    "name": "TicketTracker",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "viewOrderMap": {
+        "view": [],
+        "store": [
+            "33f50bf6-e17d-4f48-b473-57db285ddbc0"
+        ],
+        "controller": [],
+        "model": [
+            "f289a078-91ae-435f-852f-0d57320e6490"
+        ],
+        "resource": [
+            "f20767ff-990e-4d6e-95d6-561c2e6e22b2",
+            "4dfa8a13-3117-491a-9654-22b10884d331"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

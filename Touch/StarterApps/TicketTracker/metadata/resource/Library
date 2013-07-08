@@ -1,0 +1,13 @@
+{
+    "type": "libraryresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Library",
+        "theme": "MyTouchTheme"
+    },
+    "designerId": "f20767ff-990e-4d6e-95d6-561c2e6e22b2"
+}
