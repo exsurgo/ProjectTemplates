@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Locations",
+                "title": "Locations Test",
                 "itemId": "mapPanel",
                 "designer|displayName": "Map panel",
                 "designer|createAlias": null
