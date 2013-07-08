@@ -1,0 +1,27 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "MainData",
+            "CityData"
+        ],
+        "stores": [
+            "CityData",
+            "DetailData"
+        ],
+        "views": [
+            "MainView"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "Main"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

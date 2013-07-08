@@ -1,0 +1,43 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "CityData",
+        "storeId": "MyJsonStore1",
+        "designer|userClassName": "CityData"
+    },
+    "designerId": "bc4a5350-1dc8-4975-bce4-1c63ad57975a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "citydata.json"
+            },
+            "designerId": "cf46d1f2-272e-4f8e-9ed8-4582271deb67",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "designerId": "e99846c9-10f0-4cbc-9493-42ef951ad0fe"
+                }
+            ]
+        }
+    ]
+}
