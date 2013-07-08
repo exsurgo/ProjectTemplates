@@ -1,0 +1,14 @@
+{"data":[
+	{"month":"January","high":43, "low":30, "avghigh":24, "avglow":40},
+	{"month":"February","high":46, "low":35, "avghigh":24, "avglow":40},
+	{"month":"March","high":56, "low":42, "avghigh":24, "avglow":40},
+	{"month":"April","high":59, "low":50, "avghigh":24, "avglow":40},
+	{"month":"May","high":70, "low":59, "avghigh":24, "avglow":40},
+	{"month":"June","high":80, "low":73, "avghigh":24, "avglow":40},
+	{"month":"July","high":86, "low":71, "avghigh":24, "avglow":40},
+	{"month":"August","high":88, "low":74, "avghigh":24, "avglow":40},
+	{"month":"September","high":79, "low":67, "avghigh":24, "avglow":40},
+	{"month":"October","high":71, "low":59, "avghigh":24, "avglow":40},
+	{"month":"November","high":50, "low":40, "avghigh":24, "avglow":40},
+	{"month":"December","high":45, "low":36, "avghigh":24, "avglow":40}
+]}
