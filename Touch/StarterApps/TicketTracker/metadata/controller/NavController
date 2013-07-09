@@ -81,6 +81,25 @@
                 "selector": "mainview #addTicketButton"
             },
             "designerId": "f8f377d1-fd46-4245-a985-093957b42c8b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTicketListShow",
+                "implHandler": [
+                    "console.log('nippletits');",
+                    "this.getAddTicketButton().show();"
+                ],
+                "name": "show",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "mainview #ticketList"
+            },
+            "designerId": "6845f23b-86e0-4f81-aa3f-66023a29f4dc"
         }
     ]
 }

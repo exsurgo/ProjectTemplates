@@ -28,7 +28,8 @@ Ext.define('TicketTracker.controller.NavController', {
 
         control: {
             "mainview #ticketList": {
-                disclose: 'onTicketDisclose'
+                disclose: 'onTicketDisclose',
+                show: 'onTicketListShow'
             },
             "mainview #addTicketButton": {
                 tap: 'onAddTicketTap'
@@ -50,6 +51,10 @@ Ext.define('TicketTracker.controller.NavController', {
         });
         
         addTicketButton.hide();
+    },
+
+    onTicketListShow: function(component, eOpts) {
+        this.getAddTicketButton().show();
     }
 
 });
