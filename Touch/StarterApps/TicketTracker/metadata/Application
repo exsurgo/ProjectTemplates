@@ -12,6 +12,13 @@
         "stores": [
             "TicketStore"
         ],
+        "views": [
+            "MainView",
+            "TicketView"
+        ],
+        "controllers": [
+            "NavController"
+        ],
         "name": "TicketTracker"
     },
     "designerId": "application"

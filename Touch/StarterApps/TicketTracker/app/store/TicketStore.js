@@ -27,22 +27,39 @@ Ext.define('TicketTracker.store.TicketStore', {
                 title: 'Improve CSS',
                 status: 'Open',
                 description: 'improve site css',
-                importance: 3
+                importance: 4
             },
             {
                 title: 'PHP scripting',
                 status: 'Open',
                 description: 'Perform some PHP scripting',
-                importance: 4
+                importance: 2
             },
             {
                 title: 'PHP Bug',
                 status: 'In Progress',
                 description: 'remove PHP Bug',
-                importance: 4
+                importance: 1
             }
         ],
         model: 'TicketTracker.model.Ticket',
-        storeId: 'ticketStore'
+        storeId: 'ticketStore',
+        sorters: {
+            sorterFn: function(first, second) {
+                // Completed stuff always goes last.
+                if ((first.get("status") === "completed") && (second.get("status") !== "completed")) {
+                    return 1;
+                } else if ((first.get("status") !== "completed") && (second.get("status") === "completed")) {
+                    return -1;
+                }
+
+                // Now let's sort by importance.
+                if (first.get("importance") < second.get("importance")) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
+        }
     }
 });

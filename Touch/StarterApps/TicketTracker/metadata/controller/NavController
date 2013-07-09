@@ -1,0 +1,86 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NavController"
+    },
+    "designerId": "3ca53ca2-43bf-4e41-a743-28aaf04e9291",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTicketDisclose",
+                "implHandler": [
+                    "console.log(record);"
+                ],
+                "name": "disclose",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "mainview #ticketList"
+            },
+            "designerId": "0adde877-feaf-40d1-9946-aa73cbbbe492"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddTicketTap",
+                "implHandler": [
+                    "var mainView = this.getMainView(),",
+                    "    addTicketButton = this.getAddTicketButton();",
+                    "",
+                    "mainView.push({",
+                    "    xtype: 'ticketview',",
+                    "    title: 'New ticket'",
+                    "});",
+                    "",
+                    "addTicketButton.hide();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "mainview #addTicketButton"
+            },
+            "designerId": "23cde0dd-e6ad-4bb5-88d1-026573ef09b5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "mainView",
+                "selector": "mainview",
+                "xtype": "mainview"
+            },
+            "designerId": "89259ec3-2c61-4a62-89fa-15522f23a99f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "addTicketButton",
+                "selector": "mainview #addTicketButton"
+            },
+            "designerId": "f8f377d1-fd46-4245-a985-093957b42c8b"
+        }
+    ]
+}

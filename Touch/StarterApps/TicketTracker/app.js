@@ -26,5 +26,18 @@ Ext.application({
     stores: [
         'TicketStore'
     ],
-    name: 'TicketTracker'
+    views: [
+        'MainView',
+        'TicketView'
+    ],
+    controllers: [
+        'NavController'
+    ],
+    name: 'TicketTracker',
+
+    launch: function() {
+
+        Ext.create('TicketTracker.view.MainView', {fullscreen: true});
+    }
+
 });
