@@ -29,7 +29,8 @@ Ext.define('TicketTracker.view.MainView', {
                     '    {title}: {status}',
                     '</div>'
                 ],
-                store: 'ticketStore'
+                store: 'ticketStore',
+                onItemDisclosure: true
             }
         ],
         navigationBar: {

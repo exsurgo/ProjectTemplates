@@ -24,16 +24,18 @@ Ext.define('TicketTracker.view.TicketView', {
                 items: [
                     {
                         xtype: 'textfield',
-                        id: 'nameField',
-                        label: 'Name',
+                        id: 'titleField',
+                        label: 'Title',
                         labelAlign: 'top',
+                        required: true,
                         placeHolder: 'Save the world'
                     },
                     {
                         xtype: 'sliderfield',
-                        id: 'importanceSlider',
+                        id: 'importanceField',
                         label: 'Importance',
                         labelAlign: 'top',
+                        required: true,
                         value: [
                             3
                         ],
@@ -42,12 +44,25 @@ Ext.define('TicketTracker.view.TicketView', {
                     },
                     {
                         xtype: 'selectfield',
-                        id: 'statusSelect',
+                        id: 'statusField',
                         label: 'Status',
+                        labelAlign: 'top',
+                        required: true,
+                        options: [
+                            'Open',
+                            'In Progress',
+                            'Completed'
+                        ]
+                    },
+                    {
+                        xtype: 'textareafield',
+                        id: 'descriptionField',
+                        label: 'Description',
                         labelAlign: 'top'
                     },
                     {
                         xtype: 'button',
+                        id: 'saveTicketButton',
                         margin: 10,
                         ui: 'action',
                         text: 'Save'

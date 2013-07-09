@@ -22,7 +22,9 @@
             "userConfig": {
                 "title": "Tickets",
                 "id": "ticketList",
-                "store": "ticketStore"
+                "designer|createAlias": null,
+                "store": "ticketStore",
+                "onItemDisclosure": true
             },
             "designerId": "913fe698-48aa-4020-86e0-04c63f6ce4cd",
             "cn": [
