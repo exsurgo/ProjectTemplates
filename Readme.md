@@ -31,6 +31,7 @@ These templates are divided into the following categories for the **Ext** and **
 	<pre>var x = 1,  // First
         y = 2;  // Second</pre>
 - Strings should use single quotes instead of double.
+- Do not include personalized project settings such as URL prefix and indention.
 
 **Ext Specific Rules**
 - A viewport should always be used as the top-level views for Ext.

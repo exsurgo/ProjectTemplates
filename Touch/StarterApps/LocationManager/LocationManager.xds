@@ -1,9 +1,6 @@
 {
     "name": "LocationManager",
-    "settings": {
-        "urlPrefix": "http://localhost:8000/",
-        "exportPath": ""
-    },
+    "settings": {},
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
