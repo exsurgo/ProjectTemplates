@@ -78,8 +78,13 @@
                         "value": null,
                         "options": [
                             "[",
-                            "    'Open', 'In Progress', 'Completed'",
+                            "    { text: 'Open', value: 'Open' },",
+                            "    { text: 'In Progress', value: 'In Progress' },",
+                            "    { text: 'Completed', value: 'Completed' }",
                             "]"
+                        ],
+                        "usePicker": [
+                            "true"
                         ]
                     },
                     "designerId": "27eacd41-35b3-499b-92dc-9078d2a2e99f"

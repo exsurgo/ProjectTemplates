@@ -49,10 +49,20 @@ Ext.define('TicketTracker.view.TicketView', {
                         labelAlign: 'top',
                         required: true,
                         options: [
-                            'Open',
-                            'In Progress',
-                            'Completed'
-                        ]
+                            {
+                                text: 'Open',
+                                value: 'Open'
+                            },
+                            {
+                                text: 'In Progress',
+                                value: 'In Progress'
+                            },
+                            {
+                                text: 'Completed',
+                                value: 'Completed'
+                            }
+                        ],
+                        usePicker: true
                     },
                     {
                         xtype: 'textareafield',

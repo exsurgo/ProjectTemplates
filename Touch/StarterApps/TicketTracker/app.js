@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-//@require @packageOverrides
+// @require @packageOverrides
 Ext.Loader.setConfig({
 
 });
