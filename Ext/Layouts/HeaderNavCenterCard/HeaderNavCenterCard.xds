@@ -1,9 +1,6 @@
 {
     "name": "HeaderNavCenterCard",
-    "settings": {
-        "urlPrefix": "http://localhost/architect/HeaderNavCenter",
-        "exportPath": ""
-    },
+    "settings": {},
     "xdsVersion": "2.3.0",
     "xdsBuild": 0,
     "schemaVersion": 1,

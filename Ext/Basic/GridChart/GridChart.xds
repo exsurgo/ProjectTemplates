@@ -1,8 +1,6 @@
 {
     "name": "GridChart",
     "settings": {
-        "urlPrefix": "http://localhost/architect/GridChart",
-        "exportPath": "",
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",

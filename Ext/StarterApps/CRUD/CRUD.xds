@@ -2,7 +2,6 @@
     "name": "CRUD",
     "settings": {
         "spacesToIndent": 4,
-        "exportPath": "",
         "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,

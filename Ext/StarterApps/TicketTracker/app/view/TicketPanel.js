@@ -21,8 +21,6 @@ Ext.define('TicketTracker.view.TicketPanel', {
         'TicketTracker.view.TicketDataView'
     ],
 
-    height: 500,
-    width: 700,
     title: 'Ticket Tracker',
 
     initComponent: function() {
@@ -68,7 +66,8 @@ Ext.define('TicketTracker.view.TicketPanel', {
             ],
             items: [
                 {
-                    xtype: 'ticketDataView'
+                    xtype: 'ticketDataView',
+                    width: 800
                 }
             ]
         });

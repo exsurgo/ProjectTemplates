@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 500,
-        "width": 700,
+        "height": null,
+        "width": null,
         "designer|userClassName": "TicketPanel",
         "designer|userAlias": "ticketPanel",
         "designer|initialView": true,
@@ -121,6 +121,9 @@
                 "type": "array"
             },
             "codeClass": null,
+            "userConfig": {
+                "width": 800
+            },
             "designerId": "2a431861-98d9-4be9-bd57-d236af66bc57",
             "masterInstanceId": "76d10648-962f-4291-b9ce-507a9fcef315"
         }

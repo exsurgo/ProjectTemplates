@@ -5,8 +5,6 @@
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false,
-        "urlPrefix": "",
-        "exportPath": "",
         "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.3.0",
