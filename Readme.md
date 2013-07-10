@@ -55,7 +55,7 @@ Each template should contain a data file named "template.json" which describes t
 
 **Building Templates** 
 
-Us the following steps to build the templates and include in architect.
+Use the following steps to build the templates and include in architect.
 
 1. Open architect locally in dev mode.
 2. Download the template repo to your local machine.
