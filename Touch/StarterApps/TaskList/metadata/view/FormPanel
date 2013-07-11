@@ -33,7 +33,8 @@
                     "userConfig": {
                         "label": "Description",
                         "labelWidth": "35%",
-                        "name": "description"
+                        "name": "description",
+                        "required": true
                     },
                     "designerId": "b4e249ee-d94c-42cf-9d31-8ee5de161034"
                 },
@@ -48,8 +49,16 @@
                         "label": "Priority",
                         "labelWidth": "35%",
                         "name": "priority",
+                        "required": true,
                         "options": [
-                            "[\"Hight\", \"Normal\", \"Low\"]"
+                            "[",
+                            "    { text: \"Normal\", value: \"Normal\" },",
+                            "    { text: \"High\", value: \"High\" },",
+                            "    { text: \"Low\", value: \"Low\" }",
+                            "]"
+                        ],
+                        "usePicker": [
+                            "true"
                         ]
                     },
                     "designerId": "48258b0e-caff-4e24-8a25-1f42ccdadb78"
