@@ -7,11 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "data": [
-            "[\r",
-            "    { id: 1, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },    \r",
-            "    { id: 2, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },    \r",
-            "    { id: 3, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },     \r",
-            "    { id: 4, description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" }\r",
+            "[",
+            "    { description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },",
+            "    { description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },",
+            "    { description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" },",
+            "    { description: \"Task 1\", priority: \"High\", dueDate: \"1/10/2013\" }",
             "]     "
         ],
         "model": "Task",

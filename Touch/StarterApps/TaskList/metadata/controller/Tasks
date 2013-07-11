@@ -20,27 +20,28 @@
             "userConfig": {
                 "fn": "view",
                 "implHandler": [
-                    "\r",
-                    "// Prevent the default select action\r",
-                    "if (this.holdSelect) {\r",
-                    "\r",
-                    "    // Remove current hold\r",
-                    "    this.holdSelect = false;\r",
-                    "\r",
-                    "}\r",
-                    "\r",
-                    "else {\r",
-                    "\r",
-                    "\r",
-                    "    // Navigate to details\r",
-                    "    this.getMainView().push({\r",
-                    "        xtype: 'detailpanel',\r",
-                    "        title: \"Task Details\",\r",
-                    "        data: record.data\r",
-                    "    });\r",
-                    "\r",
-                    "}\r",
-                    "\r",
+                    "",
+                    "// Prevent the default select action",
+                    "if (this.holdSelect) {",
+                    "",
+                    "    // Remove current hold",
+                    "    this.holdSelect = false;",
+                    "",
+                    "}",
+                    "",
+                    "else {",
+                    "",
+                    "",
+                    "    // Navigate to details",
+                    "    this.getMainView().push({",
+                    "        xtype: 'detailpanel',",
+                    "        title: 'Task Details',",
+                    "        data: record.data",
+                    "    });",
+                    "    this.getAddButton().hide();",
+                    "",
+                    "}",
+                    "",
                     ""
                 ],
                 "name": "select",
@@ -59,13 +60,13 @@
             "userConfig": {
                 "fn": "add",
                 "implHandler": [
-                    "\r",
-                    "// Navigate to form\r",
-                    "this.getMainView().push({\r",
-                    "    xtype: 'formpanel',\r",
-                    "    title: \"Edit Task\"\r",
-                    "});\r",
-                    ""
+                    "// Navigate to form",
+                    "this.getMainView().push({",
+                    "    xtype: 'formpanel',",
+                    "    title: 'Add task'",
+                    "});",
+                    "",
+                    "this.getAddButton().hide();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -83,13 +84,14 @@
             "userConfig": {
                 "fn": "edit",
                 "implHandler": [
-                    "\r",
-                    "// Navigate to form\r",
-                    "this.getMainView().push({\r",
-                    "    xtype: 'formpanel',\r",
-                    "    title: \"Edit Task\"\r",
-                    "});\r",
-                    "\r",
+                    "// Navigate to form",
+                    "this.getMainView().push({",
+                    "    xtype: 'formpanel',",
+                    "    title: 'Edit Task'",
+                    "});",
+                    "",
+                    "this.getAddButton().hide();",
+                    "",
                     "this.holdSelect = true;"
                 ],
                 "name": "itemtaphold",
@@ -108,10 +110,9 @@
             "userConfig": {
                 "fn": "save",
                 "implHandler": [
-                    "\r",
-                    "var mainView = this.getMainView();\r",
-                    "\r",
-                    "// Navigate back to list\r",
+                    "var mainView = this.getMainView();",
+                    "",
+                    "// Navigate back to list",
                     "mainView.pop();"
                 ],
                 "name": "tap",
@@ -132,6 +133,37 @@
                 "selector": "mainview"
             },
             "designerId": "359761db-20d2-41e7-b6fe-c0629136513f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "addButton",
+                "selector": "mainview #addButton"
+            },
+            "designerId": "3e97ad92-d279-4203-972b-358b34dd910d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTaskListShow",
+                "implHandler": [
+                    "this.getAddButton().show();"
+                ],
+                "name": "show",
+                "designer|targetType": "TaskList",
+                "designer|controlQuery": "tasklist"
+            },
+            "designerId": "aee68443-6dca-4247-8862-4912c0554f35"
         }
     ]
 }
