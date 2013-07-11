@@ -50,6 +50,23 @@
                 "type": "date"
             },
             "designerId": "6c1239b4-17e5-4119-92eb-29659566bc40"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": false,
+                "defaultValue": [
+                    "false"
+                ],
+                "name": "completed",
+                "type": "boolean"
+            },
+            "designerId": "949d5585-cda0-4167-b875-24626e367ef3"
         }
     ]
 }

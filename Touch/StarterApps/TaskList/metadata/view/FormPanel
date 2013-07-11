@@ -19,7 +19,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Edit Task"
+                "id": "taskFormField",
+                "title": null
             },
             "designerId": "62c8971d-3b8b-46c9-9b79-64fb1ad86ac8",
             "cn": [
@@ -114,6 +115,20 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.field.Toggle",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Completed",
+                        "labelWidth": "35%",
+                        "name": "completed"
+                    },
+                    "designerId": "2ef477d6-0a58-45ef-86b3-f3905a284467"
                 }
             ]
         },

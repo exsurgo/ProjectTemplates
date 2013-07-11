@@ -84,13 +84,27 @@
             "userConfig": {
                 "fn": "edit",
                 "implHandler": [
+                    "var mainView = this.getMainView();",
+                    "",
                     "// Navigate to form",
-                    "this.getMainView().push({",
+                    "mainView.push({",
                     "    xtype: 'formpanel',",
                     "    title: 'Edit Task'",
                     "});",
-                    "",
                     "this.getAddButton().hide();",
+                    "",
+                    "var taskFormField = this.getTaskFormField(),",
+                    "    fields = taskFormField.getFieldsAsArray();",
+                    "",
+                    "debugger;",
+                    "",
+                    "Ext.each(fields, function(field) {",
+                    "    var key = field.getName(),",
+                    "        value = record.get(key);",
+                    "    field.setValue(value);",
+                    "});",
+                    "",
+                    "mainView.setRecord(record);",
                     "",
                     "this.holdSelect = true;"
                 ],
@@ -110,10 +124,29 @@
             "userConfig": {
                 "fn": "save",
                 "implHandler": [
-                    "var mainView = this.getMainView();",
+                    "// Build up the model's data",
+                    "var fields = this.getTaskFormField().getFieldsAsArray(),",
+                    "    data = {};",
+                    "Ext.each(fields, function(field) {",
+                    "    var key = field.getName(),",
+                    "        value = field.getValue();",
+                    "    data[key] = value;",
+                    "});",
+                    "",
+                    "// Save the model's data",
+                    "var mainView = this.getMainView(),",
+                    "    record = mainView.getRecord(),",
+                    "    store = Ext.getStore('Tasks');",
+                    "if (record) {",
+                    "    record.set(data);",
+                    "    mainView.setRecord(null);",
+                    "} else {",
+                    "    store.add(data);",
+                    "}",
+                    "store.sort();",
                     "",
                     "// Navigate back to list",
-                    "mainView.pop();"
+                    "this.getMainView().pop();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -164,6 +197,19 @@
                 "designer|controlQuery": "tasklist"
             },
             "designerId": "aee68443-6dca-4247-8862-4912c0554f35"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "taskFormField",
+                "selector": "formpanel #taskFormField"
+            },
+            "designerId": "0771fd20-d311-4473-83d0-c276d7e06ff6"
         }
     ]
 }

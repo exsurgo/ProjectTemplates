@@ -21,7 +21,12 @@ Ext.define('MyApp.view.TaskList', {
         title: 'Task List',
         store: 'Tasks',
         itemTpl: [
-            '<div>{priority} - {description}</div>'
+            '<div>',
+            '    <tpl if="completed">COMPLETED:</tpl>',
+            '    {priority} -',
+            '    {description}',
+            '    <tpl if="dueDate">- {dueDate:date}</tpl>',
+            '</div>'
         ]
     }
 

@@ -21,7 +21,7 @@ Ext.define('MyApp.view.FormPanel', {
         items: [
             {
                 xtype: 'fieldset',
-                title: 'Edit Task',
+                id: 'taskFormField',
                 items: [
                     {
                         xtype: 'textfield',
@@ -57,6 +57,12 @@ Ext.define('MyApp.view.FormPanel', {
                         label: 'Due Date',
                         labelWidth: '35%',
                         name: 'dueDate'
+                    },
+                    {
+                        xtype: 'togglefield',
+                        label: 'Completed',
+                        labelWidth: '35%',
+                        name: 'completed'
                     }
                 ]
             },

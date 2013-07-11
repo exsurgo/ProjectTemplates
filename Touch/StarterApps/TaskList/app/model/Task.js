@@ -31,6 +31,12 @@ Ext.define('MyApp.model.Task', {
             {
                 name: 'dueDate',
                 type: 'date'
+            },
+            {
+                allowNull: false,
+                defaultValue: false,
+                name: 'completed',
+                type: 'boolean'
             }
         ]
     }

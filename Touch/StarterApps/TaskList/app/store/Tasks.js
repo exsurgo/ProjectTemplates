@@ -23,27 +23,50 @@ Ext.define('MyApp.store.Tasks', {
     config: {
         data: [
             {
-                description: 'Task 1',
-                priority: 'High',
+                description: 'Sing a song',
+                priority: 'Low',
                 dueDate: '1/10/2013'
             },
             {
-                description: 'Task 1',
+                description: 'Save the world',
                 priority: 'High',
-                dueDate: '1/10/2013'
+                dueDate: '1/12/2013'
             },
             {
-                description: 'Task 1',
-                priority: 'High',
-                dueDate: '1/10/2013'
+                description: 'Start composting',
+                priority: 'Normal',
+                dueDate: '1/24/2013'
             },
             {
-                description: 'Task 1',
+                description: 'Give every Sencha employee $200',
                 priority: 'High',
-                dueDate: '1/10/2013'
+                dueDate: '2/01/2013'
+            },
+            {
+                description: 'Make a convincing Mona Lisa fake',
+                priority: 'Low',
+                dueDate: null
             }
         ],
         model: 'MyApp.model.Task',
-        storeId: 'Tasks'
+        storeId: 'Tasks',
+        sorters: {
+            sorterFn: function(first, second) {
+                // Completed goes last
+                if (first.get('completed') && !second.get('completed')) {
+                    return 1;
+                } else if (!first.get('completed') && second.get('completed')) {
+                    return -1;
+                }
+
+                // And then date
+                if (first.get('dueDate') && !second.get('dueDate')) {
+                    return -1;
+                } else if (!first.get('dueDate') && second.get('dueDate')) {
+                    return 1;
+                }
+                return (first.get('dueDate') > second.get('dueDate') ? 1 : -1);
+            }
+        }
     }
 });

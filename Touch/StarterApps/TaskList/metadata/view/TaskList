@@ -29,7 +29,12 @@
             "codeClass": null,
             "userConfig": {
                 "implHandler": [
-                    "<div>{priority} - {description}</div>"
+                    "<div>",
+                    "    <tpl if=\"completed\">COMPLETED:</tpl>",
+                    "    {priority} -",
+                    "    {description}",
+                    "    <tpl if=\"dueDate\"> - {dueDate:date}</tpl>",
+                    "</div>"
                 ],
                 "designer|displayName": "tpl"
             },
