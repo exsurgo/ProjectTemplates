@@ -13,12 +13,12 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.MainView', {
+Ext.define('TasksList.view.MainView', {
     extend: 'Ext.navigation.View',
     alias: 'widget.mainview',
 
     requires: [
-        'MyApp.view.TaskList'
+        'TasksList.view.TaskList'
     ],
 
     config: {

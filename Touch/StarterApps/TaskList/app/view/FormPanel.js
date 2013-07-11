@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.FormPanel', {
+Ext.define('TasksList.view.FormPanel', {
     extend: 'Ext.form.Panel',
     alias: 'widget.formpanel',
 

@@ -13,11 +13,11 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.Tasks', {
+Ext.define('TasksList.store.Tasks', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.Task'
+        'TasksList.model.Task'
     ],
 
     config: {
@@ -48,7 +48,7 @@ Ext.define('MyApp.store.Tasks', {
                 dueDate: null
             }
         ],
-        model: 'MyApp.model.Task',
+        model: 'TasksList.model.Task',
         storeId: 'Tasks',
         sorters: {
             sorterFn: function(first, second) {

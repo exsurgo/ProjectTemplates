@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.Task', {
+Ext.define('TasksList.model.Task', {
     extend: 'Ext.data.Model',
 
     config: {

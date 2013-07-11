@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.TaskList', {
+Ext.define('TasksList.view.TaskList', {
     extend: 'Ext.dataview.List',
     alias: 'widget.tasklist',
 

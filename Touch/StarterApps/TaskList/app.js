@@ -29,17 +29,16 @@ Ext.application({
     views: [
         'MainView',
         'TaskList',
-        'DetailPanel',
         'FormPanel'
     ],
     controllers: [
         'Tasks'
     ],
-    name: 'MyApp',
+    name: 'TasksList',
 
     launch: function() {
 
-        Ext.create('MyApp.view.MainView', {fullscreen: true});
+        Ext.create('TasksList.view.MainView', {fullscreen: true});
     }
 
 });

@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.controller.Tasks', {
+Ext.define('TasksList.controller.Tasks', {
     extend: 'Ext.app.Controller',
 
     config: {
@@ -24,46 +24,19 @@ Ext.define('MyApp.controller.Tasks', {
         },
 
         control: {
-            "tasklist": {
-                select: 'view',
-                show: 'onTaskListShow'
-            },
             "mainview #addButton": {
                 tap: 'add'
             },
             "list": {
-                itemtaphold: 'edit'
+                itemtouchend: 'edit'
             },
             "formpanel #saveButton": {
                 tap: 'save'
+            },
+            "tasklist": {
+                show: 'onTaskListShow'
             }
         }
-    },
-
-    view: function(dataview, record, eOpts) {
-        
-        // Prevent the default select action
-        if (this.holdSelect) {
-        
-            // Remove current hold
-            this.holdSelect = false;
-        
-        }
-        
-        else {
-        
-        
-            // Navigate to details
-            this.getMainView().push({
-                xtype: 'detailpanel',
-                title: 'Task Details',
-                data: record.data
-            });
-            this.getAddButton().hide();
-        
-        }
-        
-        
     },
 
     add: function(button, e, eOpts) {

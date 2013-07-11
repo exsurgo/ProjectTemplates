@@ -18,46 +18,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "view",
-                "implHandler": [
-                    "",
-                    "// Prevent the default select action",
-                    "if (this.holdSelect) {",
-                    "",
-                    "    // Remove current hold",
-                    "    this.holdSelect = false;",
-                    "",
-                    "}",
-                    "",
-                    "else {",
-                    "",
-                    "",
-                    "    // Navigate to details",
-                    "    this.getMainView().push({",
-                    "        xtype: 'detailpanel',",
-                    "        title: 'Task Details',",
-                    "        data: record.data",
-                    "    });",
-                    "    this.getAddButton().hide();",
-                    "",
-                    "}",
-                    "",
-                    ""
-                ],
-                "name": "select",
-                "designer|targetType": "TaskList",
-                "designer|controlQuery": "tasklist"
-            },
-            "designerId": "0605f28f-c8d4-4d2f-b9df-b3d868fc474d"
-        },
-        {
-            "type": "controlleraction",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "fn": "add",
                 "implHandler": [
                     "// Navigate to form",
@@ -96,8 +56,6 @@
                     "var taskFormField = this.getTaskFormField(),",
                     "    fields = taskFormField.getFieldsAsArray();",
                     "",
-                    "debugger;",
-                    "",
                     "Ext.each(fields, function(field) {",
                     "    var key = field.getName(),",
                     "        value = record.get(key);",
@@ -108,7 +66,7 @@
                     "",
                     "this.holdSelect = true;"
                 ],
-                "name": "itemtaphold",
+                "name": "itemtouchend",
                 "designer|targetType": "TaskList",
                 "designer|controlQuery": "list"
             },
