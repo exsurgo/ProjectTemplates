@@ -142,6 +142,7 @@
             "userConfig": {
                 "itemId": "saveButton",
                 "margin": 10,
+                "ui": "action",
                 "text": "Save"
             },
             "designerId": "80e3f879-569e-4320-892d-bbeab1414e37"

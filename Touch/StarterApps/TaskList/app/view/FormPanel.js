@@ -70,6 +70,7 @@ Ext.define('TasksList.view.FormPanel', {
                 xtype: 'button',
                 itemId: 'saveButton',
                 margin: 10,
+                ui: 'action',
                 text: 'Save'
             }
         ]
