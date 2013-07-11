@@ -20,7 +20,8 @@ Ext.define('TasksList.controller.Tasks', {
         refs: {
             mainView: 'mainview',
             addButton: 'mainview #addButton',
-            taskFormField: 'formpanel #taskFormField'
+            taskFormField: 'formpanel #taskFormField',
+            deleteButton: 'formpanel #deleteButton'
         },
 
         control: {
@@ -35,6 +36,9 @@ Ext.define('TasksList.controller.Tasks', {
             },
             "tasklist": {
                 show: 'onTaskListShow'
+            },
+            "formpanel #deleteButton": {
+                tap: 'delete'
             }
         }
     },
@@ -47,6 +51,7 @@ Ext.define('TasksList.controller.Tasks', {
         });
         
         this.getAddButton().hide();
+        this.getDeleteButton().hide();
     },
 
     edit: function(dataview, index, target, record, e, eOpts) {
@@ -58,6 +63,7 @@ Ext.define('TasksList.controller.Tasks', {
             title: 'Edit Task'
         });
         this.getAddButton().hide();
+        this.getDeleteButton().show();
         
         var taskFormField = this.getTaskFormField(),
             fields = taskFormField.getFieldsAsArray();
@@ -101,6 +107,28 @@ Ext.define('TasksList.controller.Tasks', {
 
     onTaskListShow: function(component, eOpts) {
         this.getAddButton().show();
+    },
+
+    delete: function(button, e, eOpts) {
+        var me = this,
+            title = 'Delete',
+            message = 'Are you sure you want to delete this task?',
+            messageBox = new Ext.MessageBox();
+        
+        messageBox.confirm(title, message, function(response) {
+            if (response == 'yes') {
+        
+        		var mainView = me.getMainView(),
+        		tasks = Ext.getStore('Tasks'),
+        		task = mainView.getRecord();
+        
+        		tasks.remove(task);
+        
+        		// Navigate back to list
+        		mainView.pop();
+        
+            }
+        });
     }
 
 });

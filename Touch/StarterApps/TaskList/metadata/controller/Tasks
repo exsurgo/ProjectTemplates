@@ -26,7 +26,8 @@
                     "    title: 'Add task'",
                     "});",
                     "",
-                    "this.getAddButton().hide();"
+                    "this.getAddButton().hide();",
+                    "this.getDeleteButton().hide();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -52,6 +53,7 @@
                     "    title: 'Edit Task'",
                     "});",
                     "this.getAddButton().hide();",
+                    "this.getDeleteButton().show();",
                     "",
                     "var taskFormField = this.getTaskFormField(),",
                     "    fields = taskFormField.getFieldsAsArray();",
@@ -168,6 +170,55 @@
                 "selector": "formpanel #taskFormField"
             },
             "designerId": "0771fd20-d311-4473-83d0-c276d7e06ff6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "deleteButton",
+                "selector": "formpanel #deleteButton"
+            },
+            "designerId": "56a96f95-7521-4681-a72d-c8763e227ef6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "delete",
+                "implHandler": [
+                    "var me = this,",
+                    "    title = 'Delete',",
+                    "    message = 'Are you sure you want to delete this task?',",
+                    "    messageBox = new Ext.MessageBox();",
+                    "",
+                    "messageBox.confirm(title, message, function(response) {",
+                    "    if (response == 'yes') {",
+                    "",
+                    "\t\tvar mainView = me.getMainView(),",
+                    "\t\ttasks = Ext.getStore('Tasks'),",
+                    "\t\ttask = mainView.getRecord();",
+                    "",
+                    "\t\ttasks.remove(task);",
+                    "",
+                    "\t\t// Navigate back to list",
+                    "\t\tmainView.pop();",
+                    "",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "formpanel #deleteButton"
+            },
+            "designerId": "2b137530-1622-48a6-bbbd-1c489f42864e"
         }
     ]
 }

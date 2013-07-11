@@ -72,6 +72,13 @@ Ext.define('TasksList.view.FormPanel', {
                 margin: 10,
                 ui: 'action',
                 text: 'Save'
+            },
+            {
+                xtype: 'button',
+                id: 'deleteButton',
+                margin: 10,
+                ui: 'decline',
+                text: 'Delete'
             }
         ]
     }

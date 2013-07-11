@@ -146,6 +146,21 @@
                 "text": "Save"
             },
             "designerId": "80e3f879-569e-4320-892d-bbeab1414e37"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "deleteButton",
+                "margin": 10,
+                "ui": "decline",
+                "text": "Delete"
+            },
+            "designerId": "e054a189-69f0-4c90-999c-55b47094928e"
         }
     ]
 }
