@@ -25,7 +25,7 @@ Ext.define('TasksList.view.TaskList', {
             '    <tpl if="completed">COMPLETED:</tpl>',
             '    {priority} -',
             '    {description}',
-            '    <tpl if="dueDate">- {dueDate:date}</tpl>',
+            '    <tpl if="dueDate"> - {dueDate:date}</tpl>',
             '</div>'
         ]
     }

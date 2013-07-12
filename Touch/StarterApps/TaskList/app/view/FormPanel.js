@@ -21,7 +21,7 @@ Ext.define('TasksList.view.FormPanel', {
         items: [
             {
                 xtype: 'fieldset',
-                id: 'taskFormField',
+                itemId: 'taskFormField',
                 items: [
                     {
                         xtype: 'textfield',
@@ -75,7 +75,7 @@ Ext.define('TasksList.view.FormPanel', {
             },
             {
                 xtype: 'button',
-                id: 'deleteButton',
+                itemId: 'deleteButton',
                 margin: 10,
                 ui: 'decline',
                 text: 'Delete'

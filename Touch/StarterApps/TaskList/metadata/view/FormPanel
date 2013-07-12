@@ -19,7 +19,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": "taskFormField",
+                "id": null,
+                "itemId": "taskFormField",
                 "title": null
             },
             "designerId": "62c8971d-3b8b-46c9-9b79-64fb1ad86ac8",
@@ -155,7 +156,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": "deleteButton",
+                "id": null,
+                "itemId": "deleteButton",
                 "margin": 10,
                 "ui": "decline",
                 "text": "Delete"

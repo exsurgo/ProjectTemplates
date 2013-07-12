@@ -28,19 +28,19 @@ Ext.define('TasksList.store.Tasks', {
                 dueDate: '1/10/2013'
             },
             {
+                description: 'Give every Sencha employee $1000',
+                priority: 'High',
+                dueDate: '2/01/2013'
+            },
+            {
                 description: 'Save the world',
                 priority: 'High',
-                dueDate: '1/12/2013'
+                dueDate: '3/12/2013'
             },
             {
                 description: 'Start composting',
                 priority: 'Normal',
-                dueDate: '1/24/2013'
-            },
-            {
-                description: 'Give every Sencha employee $200',
-                priority: 'High',
-                dueDate: '2/01/2013'
+                dueDate: '4/24/2013'
             },
             {
                 description: 'Make a convincing Mona Lisa fake',
