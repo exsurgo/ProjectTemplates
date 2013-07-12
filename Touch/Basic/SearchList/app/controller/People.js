@@ -37,7 +37,7 @@ Ext.define('MyApp.controller.People', {
     search: function(textfield, e, eOpts) {
         
         var value = textfield.getValue(),	// Search value
-            store = Ext.getStore('People');	// People store
+        	store = Ext.getStore('People');	// People store
         
         // Clear current filter if less than 2
         if (value.length === 0) {
@@ -46,7 +46,7 @@ Ext.define('MyApp.controller.People', {
         
         // Search term must be at least 2 characters
         if (value.length < 2) {
-            return;
+        	return;
         }
         
         // Clear any current filters
@@ -54,7 +54,6 @@ Ext.define('MyApp.controller.People', {
         
         // Check if a value is provided
         if (value) {
-        
         
             // Spit value to get multiple terms
             var terms = value.split(' ');
@@ -69,7 +68,6 @@ Ext.define('MyApp.controller.People', {
                 }
         
             });
-        
         
             // Filter records
             store.filter(function(record) {
