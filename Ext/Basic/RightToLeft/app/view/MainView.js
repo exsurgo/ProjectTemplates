@@ -58,7 +58,8 @@ Ext.define('MyApp.view.MainView', {
                                 {
                                     xtype: 'numbercolumn',
                                     dataIndex: 'id',
-                                    text: 'מספר'
+                                    text: 'מספר',
+                                    format: '0,000'
                                 },
                                 {
                                     xtype: 'gridcolumn',
@@ -101,8 +102,33 @@ Ext.define('MyApp.view.MainView', {
                     split: true,
                     itemId: 'rightPanel',
                     width: 200,
+                    bodyPadding: 10,
                     collapsible: true,
-                    title: 'כותרת מכלי'
+                    title: 'כותרת מכלי',
+                    items: [
+                        {
+                            xtype: 'cycle',
+                            showText: true,
+                            menu: {
+                                xtype: 'menu',
+                                width: 120,
+                                items: [
+                                    {
+                                        xtype: 'menucheckitem',
+                                        text: '1 פריט תפריט'
+                                    },
+                                    {
+                                        xtype: 'menucheckitem',
+                                        text: '2 פריט תפריט'
+                                    },
+                                    {
+                                        xtype: 'menucheckitem',
+                                        text: '3 פריט תפריט'
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 },
                 {
                     xtype: 'panel',

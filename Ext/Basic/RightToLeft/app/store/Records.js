@@ -25,13 +25,13 @@ Ext.define('MyApp.store.Records', {
                 {
                     id: 1,
                     title: 'פריט 1',
-                    date: '10-1-2010',
+                    date: '10/1/2013',
                     boolean: 'נכון'
                 },
                 {
                     id: 2,
                     title: 'פריט 2',
-                    date: '10-2-2010',
+                    date: '10/2/2013',
                     boolean: 'שקר'
                 },
                 {
@@ -43,13 +43,13 @@ Ext.define('MyApp.store.Records', {
                 {
                     id: 4,
                     title: 'פריט 4',
-                    date: '10-4-2010',
+                    date: '10/4/2013',
                     boolean: 'נכון'
                 },
                 {
                     id: 5,
                     title: 'פריט 5',
-                    date: '10-5-2010',
+                    date: '10/1/2013',
                     boolean: 'שקר'
                 }
             ],

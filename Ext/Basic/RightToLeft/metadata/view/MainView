@@ -85,7 +85,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dataIndex": "id",
-                                "text": "מספר"
+                                "text": "מספר",
+                                "format": "0,000"
                             },
                             "designerId": "445b2409-292b-4625-a451-a466e512ca99"
                         },
@@ -185,10 +186,77 @@
                 "layout|split": true,
                 "itemId": "rightPanel",
                 "width": 200,
+                "bodyPadding": 10,
                 "collapsible": true,
                 "title": "כותרת מכלי"
             },
-            "designerId": "42591753-568e-44d8-9c7c-937e4e0cd8e7"
+            "designerId": "42591753-568e-44d8-9c7c-937e4e0cd8e7",
+            "cn": [
+                {
+                    "type": "Ext.button.Cycle",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "showText": true
+                    },
+                    "designerId": "57ac7687-954a-471b-8ed7-487c77fe67c8",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120
+                            },
+                            "designerId": "f077a38d-548b-4d0d-b9fc-ad9a97ba5e38",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.CheckItem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "1 פריט תפריט"
+                                    },
+                                    "designerId": "8f99ce19-1e3a-48a7-985d-93ed06832d52"
+                                },
+                                {
+                                    "type": "Ext.menu.CheckItem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "2 פריט תפריט"
+                                    },
+                                    "designerId": "1f3cc31f-8132-4372-9478-6475fc194471"
+                                },
+                                {
+                                    "type": "Ext.menu.CheckItem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "3 פריט תפריט"
+                                    },
+                                    "designerId": "675a0f5d-a023-47c9-b401-cc070045ed79"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "type": "Ext.panel.Panel",
