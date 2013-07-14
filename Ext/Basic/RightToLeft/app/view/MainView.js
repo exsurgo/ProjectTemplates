@@ -72,7 +72,7 @@ Ext.define('MyApp.view.MainView', {
                                     text: 'תאריך'
                                 },
                                 {
-                                    xtype: 'booleancolumn',
+                                    xtype: 'gridcolumn',
                                     dataIndex: 'boolean',
                                     text: 'בוליאני'
                                 }

@@ -117,7 +117,7 @@
                             "designerId": "cde753a0-3c34-48ea-bcf1-d9f8e7026dd2"
                         },
                         {
-                            "type": "Ext.grid.column.Boolean",
+                            "type": "Ext.grid.column.Column",
                             "reference": {
                                 "name": "columns",
                                 "type": "array"
