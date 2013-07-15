@@ -13,11 +13,11 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.Cars', {
+Ext.define('CascadingSelect.store.Cars', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.Car'
+        'CascadingSelect.model.Car'
     ],
 
     config: {
@@ -83,7 +83,7 @@ Ext.define('MyApp.store.Cars', {
                 model: 'SXT R/T'
             }
         ],
-        model: 'MyApp.model.Car',
+        model: 'CascadingSelect.model.Car',
         storeId: 'Cars'
     },
 

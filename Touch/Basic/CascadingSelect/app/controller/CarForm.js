@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.controller.CarForm', {
+Ext.define('CascadingSelect.controller.CarForm', {
     extend: 'Ext.app.Controller',
 
     config: {
