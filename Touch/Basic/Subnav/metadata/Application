@@ -1,0 +1,24 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Car"
+        ],
+        "stores": [
+            "Cars"
+        ],
+        "views": [
+            "FormPanel"
+        ],
+        "controllers": [
+            "CarForm"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}
