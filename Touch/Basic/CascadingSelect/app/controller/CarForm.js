@@ -131,7 +131,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
 
     onModelFieldChange: function(selectfield, newValue, oldValue, eOpts) {
         if (newValue) {
-        	this.getDoneButton().show();
+            this.getDoneButton().show();
         } else {
             this.getDoneButton().hide();
         }

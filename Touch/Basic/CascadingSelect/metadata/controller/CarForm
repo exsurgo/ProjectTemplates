@@ -201,7 +201,7 @@
                 "fn": "onModelFieldChange",
                 "implHandler": [
                     "if (newValue) {",
-                    "\tthis.getDoneButton().show();",
+                    "    this.getDoneButton().show();",
                     "} else {",
                     "    this.getDoneButton().hide();",
                     "}"

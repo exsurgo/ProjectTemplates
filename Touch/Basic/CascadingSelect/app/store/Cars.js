@@ -99,7 +99,7 @@ Ext.define('CascadingSelect.store.Cars', {
         var seriesNames = [];
         this.each(function(car) {
             if (car.get('maker') == maker) {
-        		seriesNames.push(car.get('series'));
+                seriesNames.push(car.get('series'));
             }
         });
         return Ext.Array.unique(seriesNames);
@@ -109,7 +109,7 @@ Ext.define('CascadingSelect.store.Cars', {
         var modelNames = [];
         this.each(function(car) {
             if ((car.get('maker') == maker) && (car.get('series') == series)) {
-        		modelNames.push(car.get('model'));
+                modelNames.push(car.get('model'));
             }
         });
         return modelNames;
