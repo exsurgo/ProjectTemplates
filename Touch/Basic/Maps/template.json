@@ -1,5 +1,6 @@
 {
     "title": "Touch Maps",
     "description": "Simple touch map viewer.",
-    "category": "Basic"
+    "category": "Basic",
+	"useImagePreview": true
 }

@@ -51,6 +51,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "margin": 10,
                         "text": "Menu item 1"
                     },
                     "designerId": "aa9cc4e3-d5b5-45fb-91a4-7c60cb3275be"
@@ -63,6 +64,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "margin": 10,
                         "text": "Menu item 2"
                     },
                     "designerId": "02b7b959-dd1e-4c94-b982-3fc12a9d5d40"
@@ -75,6 +77,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "margin": 10,
                         "text": "Menu item 3"
                     },
                     "designerId": "b4603225-e219-4a27-b26d-83030cb8658f"

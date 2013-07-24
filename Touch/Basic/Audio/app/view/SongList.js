@@ -21,7 +21,6 @@ Ext.define('MyApp.view.SongList', {
         itemId: 'list',
         emptyText: 'No Matching Items',
         store: 'Songs',
-        grouped: true,
         itemTpl: [
             '<b>{name}</b>'
         ]

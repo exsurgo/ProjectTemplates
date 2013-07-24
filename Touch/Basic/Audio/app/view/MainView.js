@@ -33,8 +33,7 @@ Ext.define('MyApp.view.MainView', {
                 },
                 items: [
                     {
-                        xtype: 'songlist',
-                        grouped: false
+                        xtype: 'songlist'
                     }
                 ]
             }

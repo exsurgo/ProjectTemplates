@@ -10,8 +10,7 @@
         "designer|userClassName": "SongList",
         "designer|userAlias": "songlist",
         "emptyText": "No Matching Items",
-        "store": "Songs",
-        "grouped": true
+        "store": "Songs"
     },
     "designerId": "3fd09888-7815-486a-8d9a-949949008923",
     "cn": [
