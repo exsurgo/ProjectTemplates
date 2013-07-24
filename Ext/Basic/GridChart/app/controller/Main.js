@@ -18,31 +18,23 @@ Ext.define('MyApp.controller.Main', {
 
     refs: [
         {
-            ref: 'cityGrid',
-            selector: 'grid#cityGrid'
-        },
-        {
             ref: 'cityChart',
             selector: 'chart#cityChart'
+        },
+        {
+            ref: 'cityGrid',
+            selector: 'grid#cityGrid'
         }
     ],
 
-    init: function(application) {
-        this.control({
-        
-            "grid[itemId=cityGrid]" : {
-                select: this.selectCity
-            },
-            "viewport" : {
-                afterlayout: this.loadData
-            }
-        });
-    },
-
-    selectCity: function(grid, record, index) {
+    selectCity: function(rowmodel, record, index, eOpts) {
         var chart = this.getCityChart();
         
         chart.getStore().loadData(record.data.chartdata);
+    },
+
+    onLaunch: function() {
+        this.loadData();
     },
 
     loadData: function() {
@@ -57,6 +49,14 @@ Ext.define('MyApp.controller.Main', {
             //in the callback, we'll select the first grid row that will fire the select event
             callback: function(records, operation, success) {
         		me.getCityGrid().getSelectionModel().select(0, false, false);
+            }
+        });
+    },
+
+    init: function(application) {
+        this.control({
+            "grid[itemId=cityGrid]": {
+                select: this.selectCity
             }
         });
     }
