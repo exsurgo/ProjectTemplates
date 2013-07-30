@@ -20,12 +20,6 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
-    models: [
-        'Song'
-    ],
-    stores: [
-        'Songs'
-    ],
     views: [
         'MainView',
         'DetailPanel',

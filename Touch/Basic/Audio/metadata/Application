@@ -6,12 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "models": [
-            "Song"
-        ],
-        "stores": [
-            "Songs"
-        ],
         "views": [
             "MainView",
             "DetailPanel",

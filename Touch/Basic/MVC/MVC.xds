@@ -1,7 +1,19 @@
 {
     "name": "MVC",
-    "settings": {},
-    "xdsVersion": "2.3.0",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
     "upgradeVersion": 210000000503,
@@ -10,9 +22,7 @@
         "view": [
             "1ac43aed-5822-42ae-bb49-db141af6328f"
         ],
-        "store": [
-            "6fff91e7-2b2a-4950-b14e-1d6f7622bf9a"
-        ],
+        "store": [],
         "controller": [
             "471db61a-4dee-4ae0-8676-29510d9a5d13"
         ],

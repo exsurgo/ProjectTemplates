@@ -8,6 +8,7 @@
     "userConfig": {
         "itemId": "mainView",
         "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
         "designer|initialView": true,
         "layout": "border"
     },
@@ -38,6 +39,7 @@
                     "userConfig": {
                         "buttonTips": null,
                         "itemId": null,
+                        "padding": null,
                         "width": 150,
                         "designer|displayName": "HtmlEditor",
                         "fieldLabel": null
@@ -51,30 +53,6 @@
                             "group": "(Custom Properties)",
                             "name": "buttonTips",
                             "type": "string"
-                        }
-                    ],
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onHtmleditorBeforeRender",
-                                "implHandler": [
-                                    "//add a width property to the qtips to ensure\r",
-                                    "//a proper display,\r",
-                                    "for (var button in component.buttonTips) {\r",
-                                    "\tcomponent.buttonTips[button].width = 200;\r",
-                                    "}\r",
-                                    ""
-                                ],
-                                "name": "beforerender",
-                                "scope": "me"
-                            },
-                            "designerId": "3349efea-f623-4813-9601-f7ad51c85f7a"
                         }
                     ]
                 },
@@ -90,8 +68,8 @@
                         "buttonTips": null,
                         "dock": "bottom",
                         "container|pack": "end",
-                        "style": "{background-color: #157FCC;}",
-                        "designer|displayName": "HtmlEditorToolbar",
+                        "style": null,
+                        "designer|displayName": "Toolbar",
                         "defaultAlign": null
                     },
                     "configAlternates": {
@@ -121,48 +99,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "action": "reset",
-                                "layout|flex": null,
-                                "text": "Reset"
-                            },
-                            "designerId": "6dd8183a-fd7e-4669-9f2a-def60482be38",
-                            "customConfigs": [
-                                {
-                                    "group": "(Custom Properties)",
-                                    "name": "action",
-                                    "type": "string"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "action": "preview",
-                                "layout|flex": null,
-                                "text": "Preview"
-                            },
-                            "designerId": "25e31ada-85bb-4aae-aeb2-3e7f9ea3b303",
-                            "customConfigs": [
-                                {
-                                    "group": "(Custom Properties)",
-                                    "name": "action",
-                                    "type": "string"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
                                 "action": "submit",
                                 "layout|flex": null,
                                 "id": null,
@@ -177,52 +113,7 @@
                                     "type": "string"
                                 }
                             ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "Ext.panel.Panel",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "layout|region": "west",
-                "layout|split": true,
-                "html": "",
-                "itemId": "previewPane",
-                "padding": null,
-                "width": 300,
-                "bodyPadding": 10,
-                "collapsible": true,
-                "title": "Preview Pane"
-            },
-            "configAlternates": {
-                "html": "string"
-            },
-            "designerId": "baceea83-2641-4d4e-b6ce-69f1aef283f2",
-            "cn": [
-                {
-                    "type": "Ext.toolbar.Toolbar",
-                    "reference": {
-                        "name": "dockedItems",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dock": "bottom",
-                        "container|pack": "end",
-                        "style": "{background-color: #157FCC;}",
-                        "width": 150
-                    },
-                    "configAlternates": {
-                        "style": "string"
-                    },
-                    "designerId": "0104e81c-dfe6-4eb7-b912-78dbbdcb7b02",
-                    "cn": [
+                        },
                         {
                             "type": "Ext.button.Button",
                             "reference": {
@@ -231,11 +122,12 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "action": "resetPreview",
+                                "action": "reset",
                                 "layout|flex": null,
+                                "itemId": "resetButton",
                                 "text": "Reset"
                             },
-                            "designerId": "ef66a788-93ce-49c5-b8dc-19bff9c2b195",
+                            "designerId": "6dd8183a-fd7e-4669-9f2a-def60482be38",
                             "customConfigs": [
                                 {
                                     "group": "(Custom Properties)",

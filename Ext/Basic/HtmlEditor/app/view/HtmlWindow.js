@@ -20,8 +20,8 @@ Ext.define('MyApp.view.HtmlWindow', {
     itemId: 'htmlWindow',
     width: 500,
     bodyPadding: 10,
-    closeAction: 'hide',
     title: 'View HTML',
+    modal: true,
 
     initComponent: function() {
         var me = this;

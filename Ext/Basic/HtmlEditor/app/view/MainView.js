@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.container.Viewport',
+    alias: 'widget.mainview',
 
     itemId: 'mainView',
     layout: {
@@ -37,69 +38,28 @@ Ext.define('MyApp.view.MainView', {
                     items: [
                         {
                             xtype: 'htmleditor',
-                            width: 150,
-                            listeners: {
-                                beforerender: {
-                                    fn: me.onHtmleditorBeforeRender,
-                                    scope: me
-                                }
-                            }
+                            width: 150
                         }
                     ],
                     dockedItems: [
                         {
                             xtype: 'toolbar',
                             dock: 'bottom',
-                            style: '{background-color: #157FCC;}',
                             layout: {
                                 pack: 'end',
                                 type: 'hbox'
                             },
                             items: [
-                                {
-                                    xtype: 'button',
-                                    action: 'reset',
-                                    text: 'Reset'
-                                },
-                                {
-                                    xtype: 'button',
-                                    action: 'preview',
-                                    text: 'Preview'
-                                },
                                 {
                                     xtype: 'button',
                                     action: 'submit',
                                     itemId: 'submitButton',
                                     text: 'Submit'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    xtype: 'panel',
-                    region: 'west',
-                    split: true,
-                    html: '',
-                    itemId: 'previewPane',
-                    width: 300,
-                    bodyPadding: 10,
-                    collapsible: true,
-                    title: 'Preview Pane',
-                    dockedItems: [
-                        {
-                            xtype: 'toolbar',
-                            dock: 'bottom',
-                            style: '{background-color: #157FCC;}',
-                            width: 150,
-                            layout: {
-                                pack: 'end',
-                                type: 'hbox'
-                            },
-                            items: [
+                                },
                                 {
                                     xtype: 'button',
-                                    action: 'resetPreview',
+                                    action: 'reset',
+                                    itemId: 'resetButton',
                                     text: 'Reset'
                                 }
                             ]
@@ -110,15 +70,6 @@ Ext.define('MyApp.view.MainView', {
         });
 
         me.callParent(arguments);
-    },
-
-    onHtmleditorBeforeRender: function(component, eOpts) {
-        //add a width property to the qtips to ensure
-        //a proper display,
-        for (var button in component.buttonTips) {
-        	component.buttonTips[button].width = 200;
-        }
-        
     }
 
 });

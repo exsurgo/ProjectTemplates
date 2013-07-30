@@ -8,6 +8,7 @@
     "userConfig": {
         "centered": false,
         "itemId": "slide",
+        "ui": "",
         "designer|userClassName": "Slide",
         "designer|userAlias": "slide",
         "layout": "fit"

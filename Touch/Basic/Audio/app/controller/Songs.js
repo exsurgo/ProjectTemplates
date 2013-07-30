@@ -43,7 +43,7 @@ Ext.define('MyApp.controller.Songs', {
         // Navigate to details
         var panel = mainView.push({
             xtype: 'detailpanel',
-            title: 'Playing "' + record.data.name + '"',
+            title: '"' + record.data.name + '"',
             data: record.data,
             bodyPadding: 10,
             items: [

@@ -20,89 +20,38 @@ Ext.define('MyApp.controller.Main', {
         {
             ref: 'htmlEditor',
             selector: '#center htmleditor'
-        },
-        {
-            ref: 'previewPane',
-            selector: '#mainView #previewPane'
-        },
-        {
-            ref: 'htmlWindow',
-            selector: 'window#htmlWindow'
-        },
-        {
-            ref: 'submitButton',
-            selector: 'button#submitButton'
         }
     ],
 
-    init: function(application) {
-        Ext.create("MyApp.view.HtmlWindow");
+    onReset: function(button, e, eOpts) {
         
-        this.control({
-            "button[action=reset]": {
-                click: this.reset
-            },
-            "button[action=preview]": {
-                click: this.preview
-            },
-            "button[action=submit]": {
-                click: this.submit
-            },
-            "button[action=resetPreview]": {
-                click: this.resetPreview
-            }
-        })
+        // Clear the HTML editor
+        this.getHtmlEditor().setValue();
     },
 
-    submit: function(evt) {
-        var me = this,
-            htmlEditor = me.getHtmlEditor(),
-            text = htmlEditor.getValue(),
-            htmlWindow = me.getHtmlWindow();
+    onSubmit: function(button, e, eOpts) {
         
-        //upfdate the text in the window
+        var htmlEditor = this.getHtmlEditor(),
+            text = htmlEditor.getValue(),
+            htmlWindow = Ext.create("MyApp.view.HtmlWindow");
+        
+        // Update the text in the window
         htmlWindow.update(text);
         
-        //show the window
+        // Show the window
         htmlWindow.show();
         
-        //now clear the editor and preview values
-        this.reset(evt);
-        this.resetPreview(evt);
     },
 
-    reset: function(evt) {
-        var me = this,
-            previewPane = me.getPreviewPane(),
-            htmlEditor = me.getHtmlEditor(),
-            text = htmlEditor.getValue();
-        
-        //clear the html editor
-        htmlEditor.setValue();
-        
-        //clear the preview pane
-        me.resetPreview(evt);
-    },
-
-    preview: function(evt) {
-        var me = this,
-            previewPane = me.getPreviewPane(),
-            htmlEditor = me.getHtmlEditor(),
-            text = htmlEditor.getValue();
-        
-        //update will append new text without
-        //removing the previoiusly entered text.
-        previewPane.update(text);
-        
-        
-    },
-
-    resetPreview: function(evt) {
-        var me = this,
-            previewPane = me.getPreviewPane();
-        
-        //clear the text in the preview pane
-        previewPane.update();
+    init: function(application) {
+        this.control({
+            "mainview #resetButton": {
+                click: this.onReset
+            },
+            "mainview #submitButton": {
+                click: this.onSubmit
+            }
+        });
     }
 
 });

@@ -7,10 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Station"
+            "Song"
         ],
         "stores": [
-            "Stations"
+            "Songs"
         ],
         "designer|userClassName": "Songs"
     },
@@ -33,7 +33,7 @@
                     "// Navigate to details\r",
                     "var panel = mainView.push({\r",
                     "    xtype: 'detailpanel',\r",
-                    "    title: 'Playing \"' + record.data.name + '\"',\r",
+                    "    title: '\"' + record.data.name + '\"',\r",
                     "    data: record.data,\r",
                     "    bodyPadding: 10,\r",
                     "    items: [\r",
