@@ -11,7 +11,7 @@
         ],
         "autoCreateViewport": true,
         "controllers": [
-            "NavController"
+            "Navigation"
         ],
         "name": "MyApp"
     },

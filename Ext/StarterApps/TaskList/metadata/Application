@@ -7,14 +7,14 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Record"
+            "Task"
         ],
         "stores": [
             "Tasks",
             "Priorities"
         ],
         "views": [
-            "RecordForm",
+            "TaskForm",
             "MainView"
         ],
         "autoCreateViewport": true,

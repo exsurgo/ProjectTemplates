@@ -37,24 +37,29 @@ Ext.define('MyApp.view.MainView', {
                         {
                             xtype: 'menu',
                             floating: false,
-                            itemId: 'menu',
                             items: [
                                 {
                                     xtype: 'menuitem',
-                                    href: '#home',
+                                    itemId: 'home',
                                     text: 'Home'
                                 },
                                 {
                                     xtype: 'menuitem',
-                                    href: '#about',
+                                    itemId: 'about',
                                     text: 'About Us'
                                 },
                                 {
                                     xtype: 'menuitem',
-                                    href: '#contact',
+                                    itemId: 'contact',
                                     text: 'Contact us'
                                 }
-                            ]
+                            ],
+                            listeners: {
+                                click: {
+                                    fn: me.onMenuClick,
+                                    scope: me
+                                }
+                            }
                         }
                     ]
                 },
@@ -68,18 +73,51 @@ Ext.define('MyApp.view.MainView', {
                     items: [
                         {
                             xtype: 'panel',
-                            itemId: 'home',
-                            title: 'Home'
+                            itemId: 'homePanel',
+                            layout: {
+                                align: 'center',
+                                pack: 'center',
+                                type: 'vbox'
+                            },
+                            title: 'Home',
+                            items: [
+                                {
+                                    xtype: 'label',
+                                    text: 'Home View'
+                                }
+                            ]
                         },
                         {
                             xtype: 'panel',
-                            itemId: 'about',
-                            title: 'About Us'
+                            itemId: 'aboutPanel',
+                            layout: {
+                                align: 'center',
+                                pack: 'center',
+                                type: 'vbox'
+                            },
+                            title: 'About Us',
+                            items: [
+                                {
+                                    xtype: 'label',
+                                    text: 'About Us View'
+                                }
+                            ]
                         },
                         {
                             xtype: 'panel',
-                            itemId: 'contact',
-                            title: 'Contact Us'
+                            itemId: 'contactPanel',
+                            layout: {
+                                align: 'center',
+                                pack: 'center',
+                                type: 'vbox'
+                            },
+                            title: 'Contact Us',
+                            items: [
+                                {
+                                    xtype: 'label',
+                                    text: 'Contact Us View'
+                                }
+                            ]
                         }
                     ]
                 }
@@ -87,6 +125,10 @@ Ext.define('MyApp.view.MainView', {
         });
 
         me.callParent(arguments);
+    },
+
+    onMenuClick: function(menu, item, e, eOpts) {
+        location.hash = item.itemId;
     }
 
 });
