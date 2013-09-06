@@ -1,0 +1,57 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "471db61a-4dee-4ae0-8676-29510d9a5d13",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "runAction",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "\r",
+                    "// Create new model\r",
+                    "var model = Ext.ModelManager.create({\r",
+                    "    id: 123,\r",
+                    "    text: 'Hello World'\r",
+                    "}, 'MyApp.model.MyModel');\r",
+                    "\r",
+                    "// Bind model to view\r",
+                    "this.getDetailPanel().setRecord(model);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|controlQuery": "mainview #runButton"
+            },
+            "designerId": "4f67c9ad-20dc-4c29-9f69-30ee94aae98b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "detailPanel",
+                "selector": "mainview #detailPanel"
+            },
+            "designerId": "731c57b5-4ec1-49cd-aae9-3d20c2a95ce7"
+        }
+    ]
+}

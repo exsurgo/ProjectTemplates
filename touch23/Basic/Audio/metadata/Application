@@ -1,0 +1,20 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MainView",
+            "DetailPanel",
+            "SongList"
+        ],
+        "controllers": [
+            "Songs"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}
