@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "url": "resources/countdown.js",
+        "id": "countdown"
+    },
+    "designerId": "cf71c473-7a65-453b-bbf8-84624a1649b8"
+}

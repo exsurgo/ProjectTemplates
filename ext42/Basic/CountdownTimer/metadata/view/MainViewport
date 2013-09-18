@@ -1,0 +1,164 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainViewport",
+        "designer|userAlias": "mainviewport",
+        "designer|initialView": true,
+        "layout": "fit"
+    },
+    "designerId": "e8f0ebab-c80f-495b-ad72-6efa63930c21",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "container|padding": 10,
+                "height": null,
+                "width": null,
+                "layout": "hbox",
+                "manageHeight": false,
+                "title": "Countdown"
+            },
+            "designerId": "648255a0-3c0a-402b-949c-e2086a945c53",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": [
+                            "{}"
+                        ],
+                        "maxWidth": null,
+                        "width": 700,
+                        "designer|displayName": "center"
+                    },
+                    "designerId": "dd63d003-0655-441d-93c0-381910eb9804",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "itemId": "timerDisplay",
+                                "margin": "0 0 20",
+                                "style": [
+                                    "{\r",
+                                    "    \"font-size\": \"1.5em\",\r",
+                                    "    \"border\": \"1px solid #ccc;\",\r",
+                                    "    \"padding\": \"5px\",\r",
+                                    "    \"text-align\": \"center\"\r",
+                                    "}"
+                                ],
+                                "width": null
+                            },
+                            "designerId": "75365882-89bf-4948-b524-2a2d66918b41"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "designer|displayName": "center",
+                                "layout": "hbox"
+                            },
+                            "designerId": "5eb711cd-4209-4abe-ab87-96d72ced9dbd",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "itemId": "dateField",
+                                        "margin": null,
+                                        "fieldLabel": "Date",
+                                        "labelAlign": "right",
+                                        "labelWidth": 60,
+                                        "name": "date"
+                                    },
+                                    "designerId": "8b4ffef0-b97b-405e-b5b0-40c9f72088ab"
+                                },
+                                {
+                                    "type": "Ext.form.field.Time",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "layout|margins": null,
+                                        "itemId": "timeField",
+                                        "margin": "0 10 0 0",
+                                        "fieldLabel": "Time",
+                                        "labelAlign": "right",
+                                        "labelWidth": 50
+                                    },
+                                    "designerId": "bc0731c3-a082-4864-925b-6da914e39e00"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "itemId": "startButton",
+                                        "margin": "0 10 0 0",
+                                        "width": null,
+                                        "text": "Start"
+                                    },
+                                    "designerId": "0fae2274-d8d4-43bb-ad2e-3774d0cc5d54"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "layout|margins": "0 10 0 0",
+                                        "disabled": true,
+                                        "itemId": "resetButton",
+                                        "text": "Reset"
+                                    },
+                                    "designerId": "98920675-747e-4e2c-9bea-d4dee3059a71"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
