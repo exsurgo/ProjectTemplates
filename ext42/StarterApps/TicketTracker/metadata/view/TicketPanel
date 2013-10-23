@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": null,
-        "width": null,
-        "designer|userClassName": "TicketPanel",
-        "designer|userAlias": "ticketPanel",
         "designer|initialView": true,
-        "title": "Ticket Tracker"
+        "designer|userAlias": "ticketPanel",
+        "designer|userClassName": "TicketPanel",
+        "height": null,
+        "title": "Ticket Tracker",
+        "width": null
     },
     "designerId": "8528171f-a626-4448-98da-00cf0fe42ee5",
     "cn": [
@@ -35,14 +35,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "width": 200,
                         "fieldLabel": "Importance",
+                        "layout|flex": null,
                         "name": "status",
                         "queryMode": "local",
                         "store": [
                             "['1', '2', '3', '4', '5']"
-                        ]
+                        ],
+                        "width": 200
                     },
                     "configAlternates": {
                         "store": "array"

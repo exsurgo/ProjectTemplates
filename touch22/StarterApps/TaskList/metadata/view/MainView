@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "ui": null,
-        "designer|userClassName": "MainView",
+        "designer|initialView": true,
         "designer|userAlias": "mainview",
-        "designer|initialView": true
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "ui": null
     },
     "designerId": "077ff75c-1551-4c16-b8b1-6c179ae7abaa",
     "cn": [
@@ -36,8 +36,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": "right",
-                        "itemId": "addButton",
                         "iconCls": "add",
+                        "itemId": "addButton",
                         "text": null
                     },
                     "designerId": "75f1b719-faf7-4409-b018-b956257bef3d"

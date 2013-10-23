@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FormPanel",
-        "designer|userAlias": "formpanel"
+        "designer|userAlias": "formpanel",
+        "designer|userClassName": "FormPanel"
     },
     "designerId": "dc9a4e43-ca0f-4e76-b9bf-ccb94c325c5d",
     "cn": [
@@ -51,7 +51,6 @@
                         "label": "Priority",
                         "labelWidth": "35%",
                         "name": "priority",
-                        "required": true,
                         "options": [
                             "[",
                             "    { text: \"Normal\", value: \"Normal\" },",
@@ -59,6 +58,7 @@
                             "    { text: \"Low\", value: \"Low\" }",
                             "]"
                         ],
+                        "required": true,
                         "usePicker": [
                             "true"
                         ]
@@ -143,8 +143,8 @@
             "userConfig": {
                 "itemId": "saveButton",
                 "margin": 10,
-                "ui": "action",
-                "text": "Save"
+                "text": "Save",
+                "ui": "action"
             },
             "designerId": "80e3f879-569e-4320-892d-bbeab1414e37"
         },
@@ -159,8 +159,8 @@
                 "id": null,
                 "itemId": "deleteButton",
                 "margin": 10,
-                "ui": "decline",
-                "text": "Delete"
+                "text": "Delete",
+                "ui": "decline"
             },
             "designerId": "e054a189-69f0-4c90-999c-55b47094928e"
         }

@@ -38,7 +38,7 @@ Ext.define('TasksList.controller.Tasks', {
                 show: 'onTaskListShow'
             },
             "formpanel #deleteButton": {
-                tap: 'delete'
+                tap: 'remove'
             }
         }
     },
@@ -109,7 +109,7 @@ Ext.define('TasksList.controller.Tasks', {
         this.getAddButton().show();
     },
 
-    delete: function(button, e, eOpts) {
+    remove: function(button, e, eOpts) {
         var me = this,
             title = 'Delete',
             message = 'Are you sure you want to delete this task?',

@@ -15,9 +15,9 @@
             "    { description: \"Make a convincing Mona Lisa fake\", priority: \"Low\", dueDate: null }",
             "]"
         ],
+        "designer|userClassName": "Tasks",
         "model": "Task",
-        "storeId": "Tasks",
-        "designer|userClassName": "Tasks"
+        "storeId": "Tasks"
     },
     "designerId": "36a9fdfe-c40c-4ed6-8fd8-c9180e7d31a7",
     "cn": [
@@ -29,8 +29,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "property": null,
-                "designer|displayName": "Due date sorter"
+                "designer|displayName": "Due date sorter",
+                "property": null
             },
             "designerId": "bf7d5e95-a18a-4c33-8aec-cd5409602bf6",
             "cn": [
@@ -42,11 +42,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "sorterFn",
                         "designer|params": [
                             "first",
                             "second"
                         ],
+                        "fn": "sorterFn",
                         "implHandler": [
                             "// Completed goes last",
                             "if (first.get('completed') && !second.get('completed')) {",

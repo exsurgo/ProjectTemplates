@@ -12,12 +12,12 @@
             "\taction: 'saveTicket'",
             "}]"
         ],
-        "height": 300,
-        "width": 500,
-        "designer|userClassName": "TicketFormWindow",
-        "designer|userAlias": "ticketFormWindow",
         "closeAction": "hide",
-        "title": "Edit Ticket"
+        "designer|userAlias": "ticketFormWindow",
+        "designer|userClassName": "TicketFormWindow",
+        "height": 300,
+        "title": "Edit Ticket",
+        "width": 500
     },
     "configAlternates": {
         "buttons": "array"

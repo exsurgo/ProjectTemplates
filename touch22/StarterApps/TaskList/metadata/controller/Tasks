@@ -18,6 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #addButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "add",
                 "implHandler": [
                     "// Navigate to form",
@@ -29,9 +31,7 @@
                     "this.getAddButton().hide();",
                     "this.getDeleteButton().hide();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #addButton"
+                "name": "tap"
             },
             "designerId": "4f84813c-6e46-4fe3-b20d-94176fe522ca"
         },
@@ -43,6 +43,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "list",
+                "designer|targetType": "TaskList",
                 "fn": "edit",
                 "implHandler": [
                     "var mainView = this.getMainView();",
@@ -68,9 +70,7 @@
                     "",
                     "this.holdSelect = true;"
                 ],
-                "name": "itemtouchend",
-                "designer|targetType": "TaskList",
-                "designer|controlQuery": "list"
+                "name": "itemtouchend"
             },
             "designerId": "c22ef67f-57dd-4d84-be23-5cc6b3d25fad"
         },
@@ -82,6 +82,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel #saveButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "save",
                 "implHandler": [
                     "// Build up the model's data",
@@ -108,9 +110,7 @@
                     "// Navigate back to list",
                     "this.getMainView().pop();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "formpanel #saveButton"
+                "name": "tap"
             },
             "designerId": "5878c17a-f4d1-41df-9b54-9bb9f34dfdd1"
         },
@@ -148,13 +148,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "tasklist",
+                "designer|targetType": "TaskList",
                 "fn": "onTaskListShow",
                 "implHandler": [
                     "this.getAddButton().show();"
                 ],
-                "name": "show",
-                "designer|targetType": "TaskList",
-                "designer|controlQuery": "tasklist"
+                "name": "show"
             },
             "designerId": "aee68443-6dca-4247-8862-4912c0554f35"
         },
@@ -192,7 +192,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "delete",
+                "designer|controlQuery": "formpanel #deleteButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "remove",
                 "implHandler": [
                     "var me = this,",
                     "    title = 'Delete',",
@@ -214,9 +216,7 @@
                     "    }",
                     "});"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "formpanel #deleteButton"
+                "name": "tap"
             },
             "designerId": "2b137530-1622-48a6-bbbd-1c489f42864e"
         }

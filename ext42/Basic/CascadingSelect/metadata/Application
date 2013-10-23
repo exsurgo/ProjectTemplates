@@ -1,0 +1,25 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoCreateViewport": true,
+        "controllers": [
+            "CarForm"
+        ],
+        "models": [
+            "Car"
+        ],
+        "name": "CascadingSelect",
+        "stores": [
+            "Cars"
+        ],
+        "views": [
+            "MainViewport"
+        ]
+    },
+    "designerId": "application"
+}

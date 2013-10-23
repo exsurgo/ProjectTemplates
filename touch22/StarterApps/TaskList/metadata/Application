@@ -6,9 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Tasks"
+        ],
         "models": [
             "Task"
         ],
+        "name": "TasksList",
         "stores": [
             "Tasks"
         ],
@@ -16,11 +20,7 @@
             "MainView",
             "TaskList",
             "FormPanel"
-        ],
-        "controllers": [
-            "Tasks"
-        ],
-        "name": "TasksList"
+        ]
     },
     "designerId": "application"
 }
