@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "contactPanel",
+        "designer|userAlias": "contactpanel",
         "designer|userClassName": "ContactPanel",
-        "designer|userAlias": "contactpanel"
+        "itemId": "contactPanel"
     },
     "designerId": "38f5b40f-a150-4b5c-aef0-c51c4eb05f73",
     "cn": [

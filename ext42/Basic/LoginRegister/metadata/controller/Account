@@ -18,10 +18,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "showLogin",
+                "designer|controlQuery": "mainview #loginButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "showLogin",
                 "implHandler": [
                     "\r",
                     "// Create new login form window\r",
@@ -32,8 +33,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "mainview #loginButton"
+                "scope": "me"
             },
             "designerId": "248ef2ec-21bb-4597-827d-8f1f852a0cd0"
         },
@@ -45,6 +45,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "loginform #loginButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "doLogin",
                 "implHandler": [
                     "\r",
@@ -89,9 +91,7 @@
                     "successCallback();"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "loginform #loginButton"
+                "scope": "me"
             },
             "designerId": "1baa76c5-83ed-4136-8387-f140774b4804"
         },
@@ -103,10 +103,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "showRegister",
+                "designer|controlQuery": "mainview #registerButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "showRegister",
                 "implHandler": [
                     "\r",
                     "// Create new register form window\r",
@@ -117,8 +118,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "mainview #registerButton"
+                "scope": "me"
             },
             "designerId": "05ccfad2-d354-47d2-9951-9c2fabe80946"
         },
@@ -130,6 +130,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "registerform #registerButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "doRegister",
                 "implHandler": [
                     "\r",
@@ -175,9 +177,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "registerform #registerButton"
+                "scope": "me"
             },
             "designerId": "11c4471a-e939-403b-a168-6c5ae153f539"
         },

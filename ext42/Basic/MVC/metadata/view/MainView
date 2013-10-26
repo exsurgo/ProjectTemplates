@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
         "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
         "layout": "border"
     },
     "designerId": "51664173-3dd3-4c65-bc8c-fcec064068ab",
@@ -21,9 +21,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "north",
                 "height": 100,
                 "itemId": "headerPanel",
+                "layout|region": "north",
                 "title": "Header"
             },
             "designerId": "b2bfdcc4-67b8-4a2b-9bd0-eb9ff64cebb4",
@@ -52,9 +52,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "center",
-                "itemId": "contentPanel",
                 "bodyPadding": 10,
+                "itemId": "contentPanel",
+                "layout|region": "center",
                 "title": "Content"
             },
             "designerId": "ad0d6ecc-a95a-4fa2-9119-59342137596a",
@@ -67,11 +67,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "tpl",
                         "implHandler": [
                             "<div>ID: {id}</div>\r",
                             "<div>Text: {text}</div>"
-                        ],
-                        "designer|displayName": "tpl"
+                        ]
                     },
                     "designerId": "2b2289e6-ece8-4394-ba0e-0c7187105e12"
                 }

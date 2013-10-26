@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Records",
         "stores": [
             "Records"
-        ],
-        "designer|userClassName": "Records"
+        ]
     },
     "designerId": "2856dba3-c512-4b02-8986-a3e844ab0885",
     "cn": [
@@ -21,11 +21,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "view",
+                "designer|controlQuery": "#gridPanel",
                 "designer|params": [
                     "target",
                     "record"
                 ],
+                "fn": "view",
                 "implHandler": [
                     "",
                     "var details = this.getDetailsPanel(),\t// Get detail panel via controller ref",
@@ -39,8 +40,7 @@
                     ""
                 ],
                 "name": "select",
-                "scope": "me",
-                "designer|controlQuery": "#gridPanel"
+                "scope": "me"
             },
             "designerId": "df446b75-e4d7-445e-89e4-61f7a5aefeae"
         },
@@ -52,10 +52,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "add",
+                "designer|controlQuery": "#mainPanel #addButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "add",
                 "implHandler": [
                     "",
                     "var formWindow = Ext.create('MyApp.view.RecordForm'),\t// Create new form window",
@@ -70,8 +71,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#mainPanel #addButton"
+                "scope": "me"
             },
             "designerId": "e36d723b-3313-48ef-ac07-dece1e00f055"
         },
@@ -83,10 +83,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "edit",
+                "designer|controlQuery": "#detailsPanel #editButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "edit",
                 "implHandler": [
                     "",
                     "var data = target.up('panel').data,\t\t\t\t\t\t// Get panel's assosiated data",
@@ -103,8 +104,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#detailsPanel #editButton"
+                "scope": "me"
             },
             "designerId": "6c1bbf38-d9cb-47ea-9ac3-355220170579"
         },
@@ -116,10 +116,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "save",
+                "designer|controlQuery": "#recordForm #saveButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "save",
                 "implHandler": [
                     "",
                     "var form = target.up('form').getForm(),\t\t\t// Get parent form",
@@ -172,8 +173,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#recordForm #saveButton"
+                "scope": "me"
             },
             "designerId": "f27cbf84-7243-4479-90a4-df42d4f775ab"
         },
@@ -185,10 +185,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "cancelEdit",
+                "designer|controlQuery": "#recordForm #cancelButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "cancelEdit",
                 "implHandler": [
                     "",
                     "// Get the window and close it",
@@ -197,8 +198,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#recordForm #cancelButton"
+                "scope": "me"
             },
             "designerId": "d0c4a0b7-dfc7-4587-919c-a603c5f4a4ff"
         },
@@ -210,10 +210,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "remove",
+                "designer|controlQuery": "#detailsPanel #removeButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "remove",
                 "implHandler": [
                     "",
                     "var me = this;",
@@ -246,8 +247,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#detailsPanel #removeButton"
+                "scope": "me"
             },
             "designerId": "b98ca3bb-f3ae-4325-bb62-345e81cd9b07"
         },

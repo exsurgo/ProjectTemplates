@@ -16,10 +16,10 @@
             "    { id: 5, name: 'Sencha Blues' }\r",
             "]"
         ],
+        "designer|userClassName": "Songs",
         "groupField": "name",
         "model": "Song",
-        "storeId": "Songs",
-        "designer|userClassName": "Songs"
+        "storeId": "Songs"
     },
     "designerId": "581b728d-3394-4272-91f1-83ed7a645df2",
     "cn": [

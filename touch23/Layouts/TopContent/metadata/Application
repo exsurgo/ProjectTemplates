@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "name": "MyApp",
         "views": [
             "MainView"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

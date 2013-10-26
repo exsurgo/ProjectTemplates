@@ -6,9 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "People"
+        ],
         "models": [
             "Person"
         ],
+        "name": "MyApp",
         "stores": [
             "People"
         ],
@@ -16,11 +20,7 @@
             "MainView",
             "DetailPanel",
             "PersonList"
-        ],
-        "controllers": [
-            "People"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

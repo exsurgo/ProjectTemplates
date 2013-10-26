@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
-        "designer|userAlias": "mainview",
+        "defaultBackButtonText": "Playlist",
         "designer|initialView": true,
-        "defaultBackButtonText": "Playlist"
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView"
     },
     "designerId": "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc",
     "cn": [
@@ -22,8 +22,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Music Player",
-                "layout": "fit"
+                "layout": "fit",
+                "title": "Music Player"
             },
             "designerId": "5453d3c1-8ec8-4176-b3a4-a7e1cc3d0f18",
             "cn": [
@@ -34,9 +34,6 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "grouped": false
-                    },
                     "designerId": "2eaff1b4-1075-4d4d-a9df-8cd95c71ea2b",
                     "masterInstanceId": "3fd09888-7815-486a-8d9a-949949008923"
                 }

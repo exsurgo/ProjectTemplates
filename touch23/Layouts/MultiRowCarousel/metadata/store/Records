@@ -22,9 +22,9 @@
             "    }\r",
             "]"
         ],
+        "designer|userClassName": "Records",
         "model": "Record",
-        "storeId": "Records",
-        "designer|userClassName": "Records"
+        "storeId": "Records"
     },
     "designerId": "88692f58-6851-4b8b-af66-1fbbb08d4bc5"
 }

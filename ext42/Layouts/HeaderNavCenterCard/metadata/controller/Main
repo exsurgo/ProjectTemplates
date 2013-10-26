@@ -18,10 +18,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "this.control({\r",
                     "    \"button[direction]\": {\r",
@@ -43,10 +43,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "swapCard",
                 "designer|params": [
                     "btn, evt"
                 ],
+                "fn": "swapCard",
                 "implHandler": [
                     "var me = this,\r",
                     "    cardStack = me.getCardStack(),\r",
@@ -124,11 +124,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "newCard",
                 "designer|params": [
                     "btn",
                     "evt"
                 ],
+                "fn": "newCard",
                 "implHandler": [
                     "var me = this,\r",
                     "    newCard = Ext.create('Ext.panel.Panel'),\r",

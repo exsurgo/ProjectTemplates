@@ -68,7 +68,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
         
         
             // Update the series dropdown
-            var data = Ext.getStore('Cars').getValues('series'),
+            var data = Ext.getStore('Cars').getValues('series', { maker: newValue }),
                 store = new Ext.data.Store({
                     fields: ['id', 'value'],
                     data: data
@@ -87,7 +87,8 @@ Ext.define('CascadingSelect.controller.CarForm', {
 
     onSeriesFieldChange: function(field, newValue, oldValue, eOpts) {
         // Variables, I do declare
-        var modelField = this.getModelField();
+        var modelField = this.getModelField(),
+            makerField = this.getMakerField();
         
         // Special case: we chose the "choose a series" option
         if (!newValue) {
@@ -96,7 +97,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
         
         } else {
         
-            var data = Ext.getStore('Cars').getValues('model'),
+            var data = Ext.getStore('Cars').getValues('model', { maker: makerField.getValue(), series: newValue }),
                 store = new Ext.data.Store({
                     fields: ['id', 'value'],
                     data: data

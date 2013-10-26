@@ -1,6 +1,7 @@
 {
     "name": "Carousel",
     "settings": {
+        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "iPhone",
@@ -16,7 +17,7 @@
     "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
+    "upgradeVersion": 300000000001,
     "framework": "touch22",
     "viewOrderMap": {
         "view": [

@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
-        "designer|userAlias": "mainview",
         "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
         "layout": "border"
     },
     "designerId": "69af8981-3b11-48c7-8740-fc34e76f474d",
@@ -22,9 +22,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "center",
                 "itemId": "center",
                 "layout": "fit",
+                "layout|region": "center",
                 "title": "HTML Editor"
             },
             "designerId": "ddef7e5f-821b-4a71-9b23-736e4aeb3cee",
@@ -38,11 +38,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "buttonTips": null,
+                        "designer|displayName": "HtmlEditor",
+                        "fieldLabel": null,
                         "itemId": null,
                         "padding": null,
-                        "width": 150,
-                        "designer|displayName": "HtmlEditor",
-                        "fieldLabel": null
+                        "width": 150
                     },
                     "configAlternates": {
                         "buttonTips": "object"
@@ -66,11 +66,11 @@
                     "userConfig": {
                         "buttonTIps": null,
                         "buttonTips": null,
-                        "dock": "bottom",
                         "container|pack": "end",
-                        "style": null,
+                        "defaultAlign": null,
                         "designer|displayName": "Toolbar",
-                        "defaultAlign": null
+                        "dock": "bottom",
+                        "style": null
                     },
                     "configAlternates": {
                         "style": "string",
@@ -100,9 +100,9 @@
                             "codeClass": null,
                             "userConfig": {
                                 "action": "submit",
-                                "layout|flex": null,
                                 "id": null,
                                 "itemId": "submitButton",
+                                "layout|flex": null,
                                 "text": "Submit"
                             },
                             "designerId": "26a82558-f167-43e8-b651-318e5cb2b85f",
@@ -123,8 +123,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "action": "reset",
-                                "layout|flex": null,
                                 "itemId": "resetButton",
+                                "layout|flex": null,
                                 "text": "Reset"
                             },
                             "designerId": "6dd8183a-fd7e-4669-9f2a-def60482be38",

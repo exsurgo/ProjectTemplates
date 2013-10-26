@@ -6,20 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "NavController"
+        ],
         "models": [
             "Ticket"
         ],
+        "name": "TicketTracker",
         "stores": [
             "TicketStore"
         ],
         "views": [
             "MainView",
             "TicketView"
-        ],
-        "controllers": [
-            "NavController"
-        ],
-        "name": "TicketTracker"
+        ]
     },
     "designerId": "application"
 }

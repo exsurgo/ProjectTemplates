@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
-        "designer|userAlias": "mainview",
         "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
         "layout": "fit"
     },
     "designerId": "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc",
@@ -22,10 +22,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "list",
                 "emptyText": "No Matching Items",
-                "store": "People",
-                "grouped": true
+                "grouped": true,
+                "itemId": "list",
+                "store": "People"
             },
             "designerId": "bcc65a2d-d9ec-43a1-b647-7353e0f47e26",
             "cn": [
@@ -68,10 +68,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "itemTpl",
                         "implHandler": [
                             "<div>{firstName} {lastName}</div>"
-                        ],
-                        "designer|displayName": "itemTpl"
+                        ]
                     },
                     "designerId": "dbc4138f-6fe3-4621-9347-c376f8a06da7"
                 }

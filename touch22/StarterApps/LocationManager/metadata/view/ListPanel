@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "listPanel",
+        "designer|userAlias": "listpanel",
         "designer|userClassName": "ListPanel",
-        "designer|userAlias": "listpanel"
+        "id": "listPanel"
     },
     "designerId": "8efebdd9-8334-4ec4-b483-b2f50f56f064",
     "cn": [
@@ -21,10 +21,10 @@
             "codeClass": null,
             "userConfig": {
                 "centered": false,
+                "designer|displayName": "List instruction label",
                 "html": "Swipe to remove a location.",
                 "padding": 10,
-                "style": "color: #999; text-align: center;",
-                "designer|displayName": "List instruction label"
+                "style": "color: #999; text-align: center;"
             },
             "designerId": "58f17ac0-4bd9-421c-ba1b-c17f8e32e878"
         },
@@ -36,10 +36,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": "100%",
                 "designer|displayName": "Locations list",
-                "store": "Locations",
-                "onItemDisclosure": true
+                "height": "100%",
+                "onItemDisclosure": true,
+                "store": "Locations"
             },
             "designerId": "736598d4-966f-48c9-b942-4617ddc2262b",
             "cn": [
@@ -51,14 +51,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "Location template",
                         "implHandler": [
                             "<div>",
                             "    {name}",
                             "    <br>",
                             "    {description}",
                             "</div>"
-                        ],
-                        "designer|displayName": "Location template"
+                        ]
                     },
                     "designerId": "f37e1c08-3a87-4f08-9115-4628df76dd60"
                 }

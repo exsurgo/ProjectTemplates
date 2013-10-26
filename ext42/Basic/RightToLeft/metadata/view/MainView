@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "rtl": true,
-        "designer|userClassName": "MainView",
         "designer|initialView": true,
-        "layout": "border"
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border",
+        "rtl": true
     },
     "designerId": "570ee77a-0bfc-47b0-bb1b-7772ff3b7215",
     "cn": [
@@ -22,11 +22,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "north",
-                "layout|split": false,
+                "collapsible": true,
                 "height": 150,
                 "itemId": "headerPanel",
-                "collapsible": true,
+                "layout|region": "north",
+                "layout|split": false,
                 "title": "כותרת מכלי"
             },
             "designerId": "50c244fe-da31-4fb5-87f9-0ca07b0edb20",
@@ -54,11 +54,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bodyPadding": null,
+                "itemId": "centerPanel",
                 "layout|region": "center",
                 "layout|split": true,
-                "itemId": "centerPanel",
                 "padding": null,
-                "bodyPadding": null,
                 "title": "כותרת מכלי"
             },
             "designerId": "a8ea999e-caee-40aa-aae8-e8bb6cac3932",
@@ -71,8 +71,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "title": "גריד הלוח שלי",
-                        "store": "Records"
+                        "store": "Records",
+                        "title": "גריד הלוח שלי"
                     },
                     "designerId": "cfdfcd92-a910-4003-b34f-ae5517b926fc",
                     "cn": [
@@ -85,8 +85,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dataIndex": "id",
-                                "text": "מספר",
-                                "format": "0,000"
+                                "format": "0,000",
+                                "text": "מספר"
                             },
                             "designerId": "445b2409-292b-4625-a451-a466e512ca99"
                         },
@@ -150,13 +150,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "west",
-                "layout|split": true,
-                "itemId": "leftPanel",
-                "width": 200,
                 "bodyPadding": 10,
                 "collapsible": true,
-                "title": "כותרת מכלי"
+                "itemId": "leftPanel",
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "כותרת מכלי",
+                "width": 200
             },
             "designerId": "4e40eb5a-6ac5-4ebd-a72e-8e52c98fdbf8",
             "cn": [
@@ -182,13 +182,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "east",
-                "layout|split": true,
-                "itemId": "rightPanel",
-                "width": 200,
                 "bodyPadding": 10,
                 "collapsible": true,
-                "title": "כותרת מכלי"
+                "itemId": "rightPanel",
+                "layout|region": "east",
+                "layout|split": true,
+                "title": "כותרת מכלי",
+                "width": 200
             },
             "designerId": "42591753-568e-44d8-9c7c-937e4e0cd8e7",
             "cn": [
@@ -266,11 +266,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "south",
-                "layout|split": false,
+                "collapsible": true,
                 "height": 150,
                 "itemId": "footerPanel",
-                "collapsible": true,
+                "layout|region": "south",
+                "layout|split": false,
                 "title": "כותרת מכלי"
             },
             "designerId": "12aee047-a8ca-4218-ac89-d6543b5a595a"

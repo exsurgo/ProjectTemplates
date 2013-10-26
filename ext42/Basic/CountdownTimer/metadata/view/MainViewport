@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainViewport",
-        "designer|userAlias": "mainviewport",
         "designer|initialView": true,
+        "designer|userAlias": "mainviewport",
+        "designer|userClassName": "MainViewport",
         "layout": "fit"
     },
     "designerId": "e8f0ebab-c80f-495b-ad72-6efa63930c21",
@@ -24,10 +24,10 @@
                 "container|pack": "center",
                 "container|padding": 10,
                 "height": null,
-                "width": null,
                 "layout": "hbox",
                 "manageHeight": false,
-                "title": "Countdown"
+                "title": "Countdown",
+                "width": null
             },
             "designerId": "648255a0-3c0a-402b-949c-e2086a945c53",
             "cn": [
@@ -39,12 +39,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "center",
                         "html": [
                             "{}"
                         ],
                         "maxWidth": null,
-                        "width": 700,
-                        "designer|displayName": "center"
+                        "width": 700
                     },
                     "designerId": "dd63d003-0655-441d-93c0-381910eb9804",
                     "cn": [
@@ -94,12 +94,12 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|flex": 1,
-                                        "itemId": "dateField",
-                                        "margin": null,
                                         "fieldLabel": "Date",
+                                        "itemId": "dateField",
                                         "labelAlign": "right",
                                         "labelWidth": 60,
+                                        "layout|flex": 1,
+                                        "margin": null,
                                         "name": "date"
                                     },
                                     "designerId": "8b4ffef0-b97b-405e-b5b0-40c9f72088ab"
@@ -112,13 +112,13 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "fieldLabel": "Time",
+                                        "itemId": "timeField",
+                                        "labelAlign": "right",
+                                        "labelWidth": 50,
                                         "layout|flex": 1,
                                         "layout|margins": null,
-                                        "itemId": "timeField",
-                                        "margin": "0 10 0 0",
-                                        "fieldLabel": "Time",
-                                        "labelAlign": "right",
-                                        "labelWidth": 50
+                                        "margin": "0 10 0 0"
                                     },
                                     "designerId": "bc0731c3-a082-4864-925b-6da914e39e00"
                                 },
@@ -130,11 +130,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|flex": 1,
                                         "itemId": "startButton",
+                                        "layout|flex": 1,
                                         "margin": "0 10 0 0",
-                                        "width": null,
-                                        "text": "Start"
+                                        "text": "Start",
+                                        "width": null
                                     },
                                     "designerId": "0fae2274-d8d4-43bb-ad2e-3774d0cc5d54"
                                 },
@@ -146,10 +146,10 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|flex": 1,
-                                        "layout|margins": "0 10 0 0",
                                         "disabled": true,
                                         "itemId": "resetButton",
+                                        "layout|flex": 1,
+                                        "layout|margins": "0 10 0 0",
                                         "text": "Reset"
                                     },
                                     "designerId": "98920675-747e-4e2c-9bea-d4dee3059a71"

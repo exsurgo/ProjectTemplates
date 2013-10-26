@@ -6,20 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoCreateViewport": true,
+        "controllers": [
+            "Records"
+        ],
         "models": [
             "Record"
         ],
+        "name": "MyApp",
         "stores": [
             "Records"
         ],
         "views": [
             "MainView"
-        ],
-        "autoCreateViewport": true,
-        "controllers": [
-            "Records"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

@@ -18,10 +18,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "runAction",
+                "designer|controlQuery": "#actionButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "runAction",
                 "implHandler": [
                     "\r",
                     "// Create new model\r",
@@ -36,8 +37,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|controlQuery": "#actionButton"
+                "scope": "me"
             },
             "designerId": "dea74bdf-c659-4862-8669-adb048e5f1ab"
         },

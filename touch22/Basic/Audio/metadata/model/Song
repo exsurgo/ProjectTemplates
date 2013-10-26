@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Song",
-        "designer|userAlias": null
+        "designer|userAlias": null,
+        "designer|userClassName": "Song"
     },
     "designerId": "d8fa6d3b-4852-4139-87db-576815eb250b",
     "cn": [

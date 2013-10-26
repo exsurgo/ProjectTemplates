@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "cardstack",
+        "designer|userClassName": "CardStack",
         "dockedItems": null,
         "itemId": "cardStack",
-        "designer|userClassName": "CardStack",
-        "designer|userAlias": "cardstack",
         "layout": "card",
         "title": "Center / Card Layout"
     },
@@ -39,9 +39,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "margins": "10 10 10 10",
-                "html": "Card 1",
                 "designer|displayName": "Card 1",
+                "html": "Card 1",
+                "margins": "10 10 10 10",
                 "title": null
             },
             "configAlternates": {
@@ -64,9 +64,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "margins": "10 10 10 10",
-                "html": "Card 2",
                 "designer|displayName": "Card 2",
+                "html": "Card 2",
+                "margins": "10 10 10 10",
                 "title": null
             },
             "configAlternates": {
@@ -89,9 +89,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "margins": "10 10 10 10",
-                "html": "Card 3",
                 "designer|displayName": "Card 3",
+                "html": "Card 3",
+                "margins": "10 10 10 10",
                 "title": null
             },
             "configAlternates": {

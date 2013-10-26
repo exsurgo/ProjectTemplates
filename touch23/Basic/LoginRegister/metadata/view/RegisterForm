@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "RegisterForm",
-        "designer|userAlias": "registerform"
+        "designer|userAlias": "registerform",
+        "designer|userClassName": "RegisterForm"
     },
     "designerId": "62ee9761-4c3f-444d-9653-931250a2298a",
     "cn": [

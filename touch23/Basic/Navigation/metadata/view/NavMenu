@@ -7,13 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "centered": true,
-        "hidden": true,
-        "itemId": "navMenu",
-        "padding": 10,
-        "designer|userClassName": "NavMenu",
         "designer|userAlias": "navmenu",
+        "designer|userClassName": "NavMenu",
+        "hidden": true,
         "hideOnMaskTap": true,
-        "modal": true
+        "itemId": "navMenu",
+        "modal": true,
+        "padding": 10
     },
     "designerId": "6b1d9070-b093-4ef5-9404-8efed4679c79",
     "cn": [
@@ -25,11 +25,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "navId": null,
-                "navView": "homepanel",
+                "iconCls": "home",
                 "itemId": null,
                 "margin": 15,
-                "iconCls": "home",
+                "navId": null,
+                "navView": "homepanel",
                 "text": "Home"
             },
             "designerId": "2c4d259f-7209-431d-b20f-fdbe6210042f",
@@ -55,11 +55,11 @@
             "codeClass": null,
             "userConfig": {
                 "config": null,
-                "navId": null,
-                "navView": "aboutpanel",
+                "iconCls": "info",
                 "itemId": null,
                 "margin": 15,
-                "iconCls": "info",
+                "navId": null,
+                "navView": "aboutpanel",
                 "text": "About Us"
             },
             "designerId": "87b9d312-f2da-4139-9ff0-cf82a9e65ca4",
@@ -89,11 +89,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "navId": null,
-                "navView": "contactpanel",
+                "iconCls": "compose",
                 "itemId": null,
                 "margin": 15,
-                "iconCls": "compose",
+                "navId": null,
+                "navView": "contactpanel",
                 "text": "Contact Us"
             },
             "designerId": "2f7996be-3019-4db7-88bf-0d5eabbb3536",

@@ -1,42 +1,23 @@
 {
     "name": "CountdownTimer",
-    "settings": {},
-    "xdsVersion": "2.2.2",
-    "xdsBuild": 991,
-    "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
-    "framework": "ext42",
-    "topInstanceFileMap": {
-        "7809e8b0-fd7d-4dec-aaf5-d114567d5c23": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
         },
-        "bc9ba71e-98b9-45b8-8dcc-184820b30439": {
-            "paths": [
-                "metadata/controller/Countdown",
-                "app/controller/override/Countdown.js",
-                "app/controller/Countdown.js"
-            ],
-            "className": "Countdown"
-        },
-        "cf71c473-7a65-453b-bbf8-84624a1649b8": {
-            "paths": [
-                "metadata/resource/js"
-            ],
-            "className": "js"
-        },
-        "e8f0ebab-c80f-495b-ad72-6efa63930c21": {
-            "paths": [
-                "metadata/view/MainViewport",
-                "app/view/override/MainViewport.js",
-                "app/view/MainViewport.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MainViewport"
-        }
+        "urlPrefix": "",
+        "exportPath": ""
     },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000001,
+    "framework": "ext42",
     "viewOrderMap": {
         "view": [
             "e8f0ebab-c80f-495b-ad72-6efa63930c21"

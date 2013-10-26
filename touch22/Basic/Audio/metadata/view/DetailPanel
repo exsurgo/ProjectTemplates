@@ -7,12 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "centered": false,
+        "designer|userAlias": "detailpanel",
+        "designer|userClassName": "DetailPanel",
         "docked": null,
         "id": "detailPanel",
-        "padding": 10,
-        "designer|userClassName": "DetailPanel",
-        "designer|userAlias": "detailpanel",
-        "layout": "vbox"
+        "layout": "vbox",
+        "padding": 10
     },
     "designerId": "b9679d04-5d75-4d0d-a8cd-d624d5897566"
 }

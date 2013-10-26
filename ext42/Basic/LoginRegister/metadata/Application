@@ -6,16 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
-        "views": [
-            "MainView",
-            "LoginForm",
-            "RegisterForm"
-        ],
         "autoCreateViewport": true,
         "controllers": [
             "Account"
         ],
-        "name": "MyApp"
+        "name": "MyApp",
+        "views": [
+            "MainView",
+            "LoginForm",
+            "RegisterForm"
+        ]
     },
     "designerId": "application"
 }

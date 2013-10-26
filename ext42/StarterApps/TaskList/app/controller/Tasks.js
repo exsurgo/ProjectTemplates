@@ -46,9 +46,11 @@ Ext.define('MyApp.controller.Tasks', {
 
     add: function(target) {
         
-        var formWindow = Ext.create('MyApp.view.TaskForm'),		// Create new form window
-        	form = formWindow.down('form').getForm(),			// Get form within window
-        	model = Ext.create('MyApp.model.Task');			// Create new Task model
+        debugger;
+        
+        var formWindow = Ext.create('taskform'),		// Create new form window
+        	form = formWindow.down('form').getForm(),	// Get form within window
+            model = Ext.create('MyApp.model.Task');					// Create new Task model
         
         // Associate model with form
         form.loadRecord(model);
@@ -63,7 +65,7 @@ Ext.define('MyApp.controller.Tasks', {
         var data = target.up('panel').data,						// Get panel's assosiated data
         	store = this.getTasksStore(),						// Get Tasks store
         	task = store.getById(data.id),						// Get current task
-        	formWindow = Ext.create('MyApp.view.TaskForm'),		// Create new form window
+        	formWindow = Ext.create('taskform'),		// Create new form window
         	form = formWindow.down('form').getForm();			// Get form within window
         
         // Load task model into form

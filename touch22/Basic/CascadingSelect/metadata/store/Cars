@@ -70,9 +70,9 @@
             "    }",
             "]"
         ],
+        "designer|userClassName": "Cars",
         "model": "Car",
-        "storeId": "Cars",
-        "designer|userClassName": "Cars"
+        "storeId": "Cars"
     },
     "designerId": "0715bfe2-d59e-40d6-9849-1b2ca705ba95",
     "cn": [
@@ -103,10 +103,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "getSeriesNames",
                 "designer|params": [
                     "maker"
                 ],
+                "fn": "getSeriesNames",
                 "implHandler": [
                     "var seriesNames = [];",
                     "this.each(function(car) {",
@@ -127,11 +127,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "getModelNames",
                 "designer|params": [
                     "maker",
                     "series"
                 ],
+                "fn": "getModelNames",
                 "implHandler": [
                     "var modelNames = [];",
                     "this.each(function(car) {",

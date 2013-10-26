@@ -7,9 +7,6 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": false,
-        "model": "CityData",
-        "storeId": "CityData",
-        "designer|userClassName": "CityData",
         "data": [
             "[\r",
             "{\"city\":\"City1\",\"avghigh\":64,\"avglow\":40,\"chartdata\":[\r",
@@ -52,7 +49,10 @@
             "\t{\"month\":\"November\",\"high\":30, \"low\":20, \"avghigh\":24, \"avglow\":20},\r",
             "\t{\"month\":\"December\",\"high\":25, \"low\":16, \"avghigh\":24, \"avglow\":20}\r",
             "]}]"
-        ]
+        ],
+        "designer|userClassName": "CityData",
+        "model": "CityData",
+        "storeId": "CityData"
     },
     "designerId": "bc4a5350-1dc8-4975-bce4-1c63ad57975a",
     "cn": [
@@ -76,8 +76,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "root": null,
-                        "designer|displayName": "MyJsonReader"
+                        "designer|displayName": "MyJsonReader",
+                        "root": null
                     },
                     "designerId": "e99846c9-10f0-4cbc-9493-42ef951ad0fe"
                 }

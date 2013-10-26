@@ -31,10 +31,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "showMenu",
+                "designer|controlQuery": "mainview #menuButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "showMenu",
                 "implHandler": [
                     "\r",
                     "// Get or create navigation menu\r",
@@ -68,8 +69,7 @@
                     "menu.showBy(target);\r",
                     ""
                 ],
-                "name": "tap",
-                "designer|controlQuery": "mainview #menuButton"
+                "name": "tap"
             },
             "designerId": "beb8e73c-976d-4842-a233-effc11685cea"
         },
@@ -81,6 +81,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "navmenu button",
+                "designer|targetType": "Ext.Button",
                 "fn": "navigate",
                 "implHandler": [
                     "\r",
@@ -108,9 +110,7 @@
                     "navMenu.hide();\r",
                     ""
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "navmenu button"
+                "name": "tap"
             },
             "designerId": "7d2ec394-96f9-46bd-afc0-b4bea517cc08"
         },

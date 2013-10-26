@@ -6,20 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "App"
+        ],
         "models": [
             "Record"
         ],
+        "name": "MyApp",
         "stores": [
             "Records"
         ],
         "views": [
             "MainView",
             "Slide"
-        ],
-        "controllers": [
-            "App"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

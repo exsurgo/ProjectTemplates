@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainView",
         "designer|initialView": true,
+        "designer|userClassName": "MainView",
         "layout": "border"
     },
     "designerId": "708ed0c6-de4e-474c-80ff-e7529187a1e9",
@@ -20,8 +20,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "north",
                 "height": 100,
+                "layout|region": "north",
                 "title": "Header"
             },
             "designerId": "c66db18e-0e01-4d23-8cdc-20fb54d9398c",
@@ -47,8 +47,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "direction": "prev",
-                                "layout|flex": null,
                                 "itemId": "prevBtn",
+                                "layout|flex": null,
                                 "text": "Previous"
                             },
                             "designerId": "1080a271-882d-4ee7-abc1-496d6a38a6e3",
@@ -69,8 +69,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "direction": "next",
-                                "layout|flex": null,
                                 "itemId": "nextBtn",
+                                "layout|flex": null,
                                 "text": "Next"
                             },
                             "designerId": "b0c11866-0f13-4694-b807-c0d549b905b9",
@@ -102,8 +102,8 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": null,
                                 "itemId": "newCard",
+                                "layout|flex": null,
                                 "text": "New Card"
                             },
                             "designerId": "7c578b6d-df9a-4691-b94b-010287b3c582"

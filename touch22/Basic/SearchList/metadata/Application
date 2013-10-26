@@ -6,19 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "People"
+        ],
         "models": [
             "Person"
         ],
+        "name": "MyApp",
         "stores": [
             "People"
         ],
         "views": [
             "MainView"
-        ],
-        "controllers": [
-            "People"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

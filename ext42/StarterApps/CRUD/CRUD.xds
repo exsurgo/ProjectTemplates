@@ -1,11 +1,7 @@
 {
     "name": "CRUD",
     "settings": {
-        "spacesToIndent": 4,
-        "sdkPath": "",
-        "lineEnding": "LF",
-        "genTimestamps": false,
-        "cacheBust": false,
+        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -20,7 +16,7 @@
     "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
+    "upgradeVersion": 300000000001,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [

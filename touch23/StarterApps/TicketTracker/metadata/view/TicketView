@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "TicketView",
-        "designer|userAlias": "ticketview"
+        "designer|userAlias": "ticketview",
+        "designer|userClassName": "TicketView"
     },
     "designerId": "692146e5-2db1-4df0-ad3e-dbb6703a5aa5",
     "cn": [
@@ -32,12 +32,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "titleField",
                         "designer|displayName": "Title field",
+                        "id": "titleField",
                         "label": "Title",
                         "labelAlign": "top",
-                        "required": true,
-                        "placeHolder": "Save the world"
+                        "placeHolder": "Save the world",
+                        "required": true
                     },
                     "designerId": "ebaf452d-c2c7-4e13-ab52-84689c556964"
                 },
@@ -49,16 +49,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "importanceField",
                         "designer|displayName": "Importance slider",
+                        "id": "importanceField",
                         "label": "Importance",
                         "labelAlign": "top",
+                        "maxValue": 5,
+                        "minValue": 1,
                         "required": true,
                         "value": [
                             3
-                        ],
-                        "maxValue": 5,
-                        "minValue": 1
+                        ]
                     },
                     "designerId": "af0167af-fae6-49a8-8a62-41388ae8885e"
                 },
@@ -70,12 +70,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "statusField",
                         "designer|displayName": "Status chooser",
+                        "id": "statusField",
                         "label": "Status",
                         "labelAlign": "top",
-                        "required": true,
-                        "value": null,
                         "options": [
                             "[",
                             "    { text: 'Open', value: 'Open' },",
@@ -83,9 +81,11 @@
                             "    { text: 'Completed', value: 'Completed' }",
                             "]"
                         ],
+                        "required": true,
                         "usePicker": [
                             "true"
-                        ]
+                        ],
+                        "value": null
                     },
                     "designerId": "27eacd41-35b3-499b-92dc-9078d2a2e99f"
                 },
@@ -97,8 +97,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "descriptionField",
                         "designer|displayName": "Description textarea",
+                        "id": "descriptionField",
                         "label": "Description",
                         "labelAlign": "top"
                     },
@@ -112,11 +112,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "Save ticket button",
                         "id": "saveTicketButton",
                         "margin": 10,
-                        "ui": "action",
-                        "designer|displayName": "Save ticket button",
-                        "text": "Save"
+                        "text": "Save",
+                        "ui": "action"
                     },
                     "designerId": "6a09578c-0d2b-4fff-9124-6db2ca7998a5"
                 }

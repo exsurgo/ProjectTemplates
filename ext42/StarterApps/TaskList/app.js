@@ -15,7 +15,10 @@
 
 // @require @packageOverrides
 Ext.Loader.setConfig({
-    enabled: true
+    enabled: true,
+    paths: {
+        Ext: '.'
+    }
 });
 
 

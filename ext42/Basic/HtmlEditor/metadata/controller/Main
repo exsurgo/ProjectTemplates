@@ -18,6 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #resetButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onReset",
                 "implHandler": [
                     "\r",
@@ -25,9 +27,7 @@
                     "this.getHtmlEditor().setValue();"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "mainview #resetButton"
+                "scope": "me"
             },
             "designerId": "45a4ed15-543f-47c3-b783-d30eb4faed7d"
         },
@@ -52,6 +52,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #submitButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onSubmit",
                 "implHandler": [
                     "\r",
@@ -67,9 +69,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "mainview #submitButton"
+                "scope": "me"
             },
             "designerId": "5166f468-bb01-4c9c-8752-a057751f725f"
         }

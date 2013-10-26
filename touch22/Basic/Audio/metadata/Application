@@ -6,15 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Songs"
+        ],
+        "name": "MyApp",
         "views": [
             "MainView",
             "DetailPanel",
             "SongList"
-        ],
-        "controllers": [
-            "Songs"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

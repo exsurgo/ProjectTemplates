@@ -18,10 +18,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "this.control({\r",
                     "    \"menuitem[opt]\": {\r",
@@ -40,10 +40,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "setPreviewRegion",
                 "designer|params": [
                     "item"
                 ],
+                "fn": "setPreviewRegion",
                 "implHandler": [
                     "var me = this,\r",
                     "    mainRegion = me.getMainRegion(),\r",

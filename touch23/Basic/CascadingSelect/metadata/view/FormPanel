@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FormPanel",
+        "designer|initialView": true,
         "designer|userAlias": "formpanel",
-        "designer|initialView": true
+        "designer|userClassName": "FormPanel"
     },
     "designerId": "00e7d3e8-c0c0-489d-921e-fb2fa6356c17",
     "cn": [
@@ -83,8 +83,8 @@
                     "userConfig": {
                         "id": "doneButton",
                         "margin": 10,
-                        "ui": null,
-                        "text": "Nice choice!"
+                        "text": "Nice choice!",
+                        "ui": null
                     },
                     "designerId": "87cfe0cd-30e3-4063-bf34-77b8d14092cc"
                 }

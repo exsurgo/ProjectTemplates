@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "MyStore",
         "model": "MyModel",
-        "storeId": "MyStore",
-        "designer|userClassName": "MyStore"
+        "storeId": "MyStore"
     },
     "designerId": "6fff91e7-2b2a-4950-b14e-1d6f7622bf9a"
 }

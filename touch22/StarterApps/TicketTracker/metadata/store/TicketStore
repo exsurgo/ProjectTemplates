@@ -29,10 +29,10 @@
             "]",
             ""
         ],
-        "model": "Ticket",
-        "storeId": "ticketStore",
+        "designer|userAlias": "ticketStore",
         "designer|userClassName": "TicketStore",
-        "designer|userAlias": "ticketStore"
+        "model": "Ticket",
+        "storeId": "ticketStore"
     },
     "designerId": "33f50bf6-e17d-4f48-b473-57db285ddbc0",
     "cn": [
@@ -56,11 +56,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "sorterFn",
                         "designer|params": [
                             "first",
                             "second"
                         ],
+                        "fn": "sorterFn",
                         "implHandler": [
                             "// Completed stuff always goes last.",
                             "if ((first.get(\"status\") === \"completed\") && (second.get(\"status\") !== \"completed\")) {",

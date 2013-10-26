@@ -6,15 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "views": [
-            "MainView",
-            "HtmlWindow"
-        ],
         "autoCreateViewport": true,
         "controllers": [
             "Main"
         ],
-        "name": "MyApp"
+        "name": "MyApp",
+        "views": [
+            "MainView",
+            "HtmlWindow"
+        ]
     },
     "designerId": "application"
 }

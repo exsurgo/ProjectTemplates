@@ -6,17 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Navigation"
+        ],
+        "name": "MyApp",
         "views": [
             "MainView",
             "HomePanel",
             "AboutPanel",
             "ContactPanel",
             "NavMenu"
-        ],
-        "controllers": [
-            "Navigation"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

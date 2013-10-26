@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.TaskForm', {
     extend: 'Ext.window.Window',
+    alias: 'widget.taskform',
 
     height: 275,
     itemId: 'recordForm',

@@ -18,6 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #showLoginButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "showLogin",
                 "implHandler": [
                     "\r",
@@ -31,9 +33,7 @@
                     "});\r",
                     ""
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #showLoginButton"
+                "name": "tap"
             },
             "designerId": "382eaa3d-63ef-45db-8f5d-639c2def90f4"
         },
@@ -45,6 +45,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #showRegisterButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "showRegister",
                 "implHandler": [
                     "\r",
@@ -58,9 +60,7 @@
                     "});\r",
                     ""
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #showRegisterButton"
+                "name": "tap"
             },
             "designerId": "25893cb2-9fca-4cb3-b457-2e12b9102711"
         },
@@ -72,6 +72,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "loginform #loginButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "login",
                 "implHandler": [
                     "\r",
@@ -115,9 +117,7 @@
                     "// Just run success for now\r",
                     "successCallback();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "loginform #loginButton"
+                "name": "tap"
             },
             "designerId": "613f385b-036d-4465-acb4-0d48731462d6"
         },
@@ -129,6 +129,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "registerform #registerButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "register",
                 "implHandler": [
                     "\r",
@@ -172,9 +174,7 @@
                     "// Just run success for now\r",
                     "successCallback();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "registerform #registerButton"
+                "name": "tap"
             },
             "designerId": "51e9db8a-f205-4d3a-a624-378ed18bf4f2"
         },

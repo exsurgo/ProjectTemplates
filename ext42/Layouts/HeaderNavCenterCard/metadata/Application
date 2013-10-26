@@ -6,15 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "views": [
-            "MainView",
-            "CardStack"
-        ],
         "autoCreateViewport": true,
         "controllers": [
             "Main"
         ],
-        "name": "MyApp"
+        "name": "MyApp",
+        "views": [
+            "MainView",
+            "CardStack"
+        ]
     },
     "designerId": "application"
 }

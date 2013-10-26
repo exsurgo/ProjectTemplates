@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.model.Task', {
     extend: 'Ext.data.Model',
+    alias: 'model.task',
 
     fields: [
         {

@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
+        "designer|initialView": true,
         "designer|userAlias": "mainview",
-        "designer|initialView": true
+        "designer|userClassName": "MainView",
+        "itemId": "mainView"
     },
     "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
     "cn": [
@@ -31,8 +31,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "container|align": "center",
                 "centered": false,
+                "container|align": "center",
                 "docked": "top",
                 "itemId": "navBar"
             },
@@ -46,8 +46,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "menuButton",
                         "iconCls": "action",
+                        "itemId": "menuButton",
                         "text": "Menu"
                     },
                     "designerId": "4e669aad-cf0b-4bd8-bc1b-a90720ca5001"

@@ -6,21 +6,21 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoCreateViewport": true,
+        "controllers": [
+            "Main"
+        ],
         "models": [
             "CityData"
         ],
+        "name": "MyApp",
         "stores": [
             "CityData",
             "DetailData"
         ],
         "views": [
             "MainView"
-        ],
-        "autoCreateViewport": true,
-        "controllers": [
-            "Main"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

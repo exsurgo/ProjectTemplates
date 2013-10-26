@@ -6,14 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoCreateViewport": true,
+        "name": "MyApp",
         "stores": [
             "MenuStore"
         ],
         "views": [
             "MyViewport"
-        ],
-        "autoCreateViewport": true,
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

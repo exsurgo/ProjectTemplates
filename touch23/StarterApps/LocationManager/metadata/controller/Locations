@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Locations",
         "models": [
             "Location"
         ],
         "stores": [
             "Locations"
-        ],
-        "designer|userClassName": "Locations"
+        ]
     },
     "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
     "cn": [
@@ -68,11 +68,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "geocodeString",
                 "designer|params": [
                     "str",
                     "callback"
                 ],
+                "fn": "geocodeString",
                 "implHandler": [
                     "// Build a Google Maps geocoder and its options",
                     "var geocoder = new google.maps.Geocoder,",
@@ -112,6 +112,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #addLocationButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onAddLocationTap",
                 "implHandler": [
                     "// Show the \"add new location\" panel",
@@ -123,9 +125,7 @@
                     "// Hide the toolbar buttons",
                     "this.hideButtons();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #addLocationButton"
+                "name": "tap"
             },
             "designerId": "ea3d7a3c-2862-4e38-87ba-f42acfc579f1"
         },
@@ -151,6 +151,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #listPanel list",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onLocationTap",
                 "implHandler": [
                     "// Build the location",
@@ -172,9 +174,7 @@
                     "// Remove the location list panel",
                     "this.getMainView().pop();"
                 ],
-                "name": "disclose",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #listPanel list"
+                "name": "disclose"
             },
             "designerId": "6b16e3ac-e415-4444-a270-fe0e11f5d9fe"
         },
@@ -200,6 +200,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #listLocationsButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onListLocationsTap",
                 "implHandler": [
                     "// Show the list panel view",
@@ -211,9 +213,7 @@
                     "// Hide toolbar buttons",
                     "this.hideButtons();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #listLocationsButton"
+                "name": "tap"
             },
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
         },
@@ -253,14 +253,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview",
+                "designer|targetType": "Ext.navigation.View",
                 "fn": "onBack",
                 "implHandler": [
                     "// Show toolbar buttons",
                     "this.showButtons();"
                 ],
-                "name": "back",
-                "designer|targetType": "Ext.navigation.View",
-                "designer|controlQuery": "mainview"
+                "name": "back"
             },
             "designerId": "85b85329-4652-4739-80dc-89be9616302e"
         },
@@ -285,14 +285,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview",
+                "designer|targetType": "Ext.navigation.View",
                 "fn": "onStart",
                 "implHandler": [
                     "// Show toolbar buttons",
                     "this.showButtons();"
                 ],
-                "name": "activate",
-                "designer|targetType": "Ext.navigation.View",
-                "designer|controlQuery": "mainview"
+                "name": "activate"
             },
             "designerId": "3f8a40a1-3579-48de-b854-73f37b43b9af"
         },
@@ -304,6 +304,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #locationTextField",
+                "designer|targetType": "Ext.field.Text",
                 "fn": "onNewLocationPositionChange",
                 "implHandler": [
                     "// Find the map",
@@ -336,9 +338,7 @@
                     "",
                     "});"
                 ],
-                "name": "change",
-                "designer|targetType": "Ext.field.Text",
-                "designer|controlQuery": "mainview #locationTextField"
+                "name": "change"
             },
             "designerId": "ba174bd0-c111-428a-981c-0c52b9321fc6"
         },
@@ -350,6 +350,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #saveLocationButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onSaveLocationButtonTap",
                 "implHandler": [
                     "// Get the form and its values",
@@ -405,9 +407,7 @@
                     "",
                     "});"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #saveLocationButton"
+                "name": "tap"
             },
             "designerId": "9903e3bb-24e6-494f-a84c-05ac85be9b9b"
         },
@@ -432,6 +432,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #listPanel list",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onLocationSwipe",
                 "implHandler": [
                     "// Build the title and message",
@@ -480,9 +482,7 @@
                     "",
                     "});"
                 ],
-                "name": "itemswipe",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #listPanel list"
+                "name": "itemswipe"
             },
             "designerId": "0eee4cf8-7228-44d0-9e5a-4e06320b30df"
         }

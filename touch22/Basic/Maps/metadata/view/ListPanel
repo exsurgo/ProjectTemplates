@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "listPanel",
+        "designer|userAlias": "listpanel",
         "designer|userClassName": "ListPanel",
-        "designer|userAlias": "listpanel"
+        "id": "listPanel"
     },
     "designerId": "8efebdd9-8334-4ec4-b483-b2f50f56f064",
     "cn": [
@@ -20,10 +20,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": "100%",
                 "designer|displayName": "Locations list",
-                "store": "Locations",
-                "onItemDisclosure": true
+                "height": "100%",
+                "onItemDisclosure": true,
+                "store": "Locations"
             },
             "designerId": "736598d4-966f-48c9-b942-4617ddc2262b",
             "cn": [
@@ -35,12 +35,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "Location template",
                         "implHandler": [
                             "<div>",
                             "    {latitude}, {longitude}",
                             "</div>"
-                        ],
-                        "designer|displayName": "Location template"
+                        ]
                     },
                     "designerId": "f37e1c08-3a87-4f08-9115-4628df76dd60"
                 }

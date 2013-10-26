@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "mainView",
-        "designer|userClassName": "MainView",
         "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "id": "mainView",
         "layout": "fit"
     },
     "designerId": "698b7864-df89-4b9c-959f-0212282d4ead",
@@ -22,12 +22,12 @@
             "codeClass": null,
             "userConfig": {
                 "cls": null,
+                "collapsed": false,
                 "id": null,
                 "itemId": "mainPanel",
-                "resizable": false,
                 "layout": "border",
-                "collapsed": false,
                 "manageHeight": false,
+                "resizable": false,
                 "title": "My Tasks"
             },
             "configAlternates": {
@@ -43,12 +43,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dock": "top",
                         "border": null,
+                        "designer|displayName": null,
+                        "dock": "top",
                         "hideMode": null,
                         "id": null,
-                        "itemId": "mainToolbar",
-                        "designer|displayName": null
+                        "itemId": "mainToolbar"
                     },
                     "designerId": "e4d9d8b0-eb3b-4e18-9fb8-e19c2f8cac69",
                     "cn": [
@@ -60,8 +60,8 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": null,
                                 "html": null,
+                                "layout|flex": null,
                                 "text": null
                             },
                             "designerId": "7fb76c5b-6db8-43ae-b260-7ec2cba7ff16"
@@ -74,10 +74,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": null,
+                                "icon": "resources/images/add.png",
                                 "id": null,
                                 "itemId": "addButton",
-                                "icon": "resources/images/add.png",
+                                "layout|flex": null,
                                 "text": "Add Task"
                             },
                             "designerId": "bea93a2e-0317-4e11-8c26-d37ea2ff1afa"
@@ -92,20 +92,20 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "bodyBorder": true,
+                        "border": "2 2 2 2",
+                        "dock": null,
+                        "forceFit": true,
+                        "id": "",
+                        "itemId": "gridPanel",
                         "layout|flex": 1,
                         "layout|region": "west",
                         "layout|split": true,
-                        "dock": null,
-                        "border": "2 2 2 2",
-                        "id": "",
-                        "itemId": "gridPanel",
-                        "width": 150,
                         "resizable": false,
                         "resizeHandles": null,
-                        "bodyBorder": true,
+                        "store": "Tasks",
                         "title": null,
-                        "forceFit": true,
-                        "store": "Tasks"
+                        "width": 150
                     },
                     "configAlternates": {
                         "resizable": "boolean"
@@ -132,10 +132,10 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "designer|displayName": "tpl",
                                         "implHandler": [
                                             "<span style=\"font-size: 1.1em; font-weight: bold\">{title}</span>"
-                                        ],
-                                        "designer|displayName": "tpl"
+                                        ]
                                     },
                                     "designerId": "ee958bca-05fc-4ab0-929e-6375102fb93e"
                                 },
@@ -201,6 +201,7 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "designer|displayName": "tpl",
                                         "implHandler": [
                                             "<table>",
                                             "    <tr>",
@@ -212,8 +213,7 @@
                                             "        </td>",
                                             "    </tr>",
                                             "</table>"
-                                        ],
-                                        "designer|displayName": "tpl"
+                                        ]
                                     },
                                     "designerId": "c851ddb1-9b16-40a6-8215-53306e07d37d"
                                 },
@@ -226,10 +226,10 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|displayName": "PriorityField",
-                                        "name": "priority",
-                                        "emptyText": "Select Priority",
-                                        "editable": false,
                                         "displayField": "priority",
+                                        "editable": false,
+                                        "emptyText": "Select Priority",
+                                        "name": "priority",
                                         "store": "Priorities",
                                         "valueField": "priority"
                                     },
@@ -256,21 +256,21 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": 1,
-                        "layout|region": "center",
-                        "layout|split": true,
+                        "bodyBorder": true,
+                        "bodyPadding": "10 10 10 10",
                         "border": "2 2 2 2",
                         "data": [
                             "{}"
                         ],
+                        "designer|displayName": null,
                         "id": null,
                         "itemId": "detailsPanel",
-                        "designer|displayName": null,
-                        "resizable": false,
                         "layout": "fit",
-                        "bodyBorder": true,
-                        "bodyPadding": "10 10 10 10",
+                        "layout|flex": 1,
+                        "layout|region": "center",
+                        "layout|split": true,
                         "manageHeight": false,
+                        "resizable": false,
                         "title": null
                     },
                     "configAlternates": {
@@ -301,9 +301,9 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|flex": null,
-                                        "itemId": "editButton",
                                         "icon": "resources/images/edit.png",
+                                        "itemId": "editButton",
+                                        "layout|flex": null,
                                         "text": "Edit"
                                     },
                                     "designerId": "293841ee-a56a-4310-b00a-db5d04c805f9"
@@ -328,9 +328,9 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|flex": null,
-                                        "itemId": "removeButton",
                                         "icon": "resources/images/delete.png",
+                                        "itemId": "removeButton",
+                                        "layout|flex": null,
                                         "text": "Delete"
                                     },
                                     "designerId": "6018d89c-f993-4c8e-909e-c2c9c5c2dd5b"
@@ -345,6 +345,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "designer|displayName": null,
                                 "implHandler": [
                                     "<tpl if=\"values.id\">",
                                     "    <h1>{title}</h1>",
@@ -356,8 +357,7 @@
                                     "<tpl if=\"!values.id\">",
                                     "    <h1>Click task to view</h1>",
                                     "</tpl>"
-                                ],
-                                "designer|displayName": null
+                                ]
                             },
                             "designerId": "aff40032-1291-46d8-a893-3a494c39d61b"
                         }

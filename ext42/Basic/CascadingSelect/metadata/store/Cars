@@ -85,7 +85,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|params": [
-                    "field"
+                    "field",
+                    "filter"
                 ],
                 "fn": "getValues",
                 "implHandler": [
@@ -93,6 +94,13 @@
                     "values.push({ id: null, value: 'Select' });\r",
                     "this.each(function(car) {\r",
                     "    var val = car.get(field);\r",
+                    "    if (filter) {\r",
+                    "        for (var key in filter) {\r",
+                    "            if (car.get(key) != filter[key]) {\r",
+                    "                return;\r",
+                    "            }\r",
+                    "        }\r",
+                    "    }\r",
                     "    values.push({ id: val, value: val });\r",
                     "});\r",
                     "return Ext.Array.unique(values);"

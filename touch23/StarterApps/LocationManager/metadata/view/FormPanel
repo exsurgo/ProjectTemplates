@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "record": null,
-        "id": "formPanel",
-        "designer|userClassName": "FormPanel",
         "designer|userAlias": "formpanel",
+        "designer|userClassName": "FormPanel",
+        "id": "formPanel",
+        "record": null,
         "scrollable": false
     },
     "designerId": "f5b37c5a-f3e2-4ede-8b3c-35668f9ac337",
@@ -29,8 +29,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "formFieldSet",
                 "designer|displayName": "Form fieldset",
+                "itemId": "formFieldSet",
                 "scrollable": null,
                 "title": null
             },
@@ -44,15 +44,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "autoCapitalize": true,
+                        "autoComplete": false,
+                        "autoCorrect": true,
                         "itemId": "nameTextField",
                         "label": "Name",
                         "labelWrap": true,
                         "name": "name",
-                        "required": true,
-                        "autoCapitalize": true,
-                        "autoComplete": false,
-                        "autoCorrect": true,
-                        "placeHolder": "My house"
+                        "placeHolder": "My house",
+                        "required": true
                     },
                     "designerId": "834b169f-b434-4837-aad6-c4aa9e8b711b"
                 },
@@ -70,8 +70,8 @@
                         "labelWidth": null,
                         "labelWrap": true,
                         "name": "location",
-                        "required": true,
-                        "placeHolder": "8 Fake Ave, Faketown, USA"
+                        "placeHolder": "8 Fake Ave, Faketown, USA",
+                        "required": true
                     },
                     "designerId": "64d1f147-6dcf-4385-be18-a9c5021664a3"
                 },

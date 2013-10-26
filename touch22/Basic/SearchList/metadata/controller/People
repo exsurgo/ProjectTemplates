@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "People",
         "models": [
             "Person"
         ],
         "stores": [
             "People"
-        ],
-        "designer|userClassName": "People"
+        ]
     },
     "designerId": "2e108d17-aa43-4245-ab88-7c58bd477077",
     "cn": [
@@ -24,6 +24,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #searchField",
+                "designer|targetType": "Ext.field.Search",
                 "fn": "search",
                 "implHandler": [
                     "\r",
@@ -86,9 +88,7 @@
                     "}\r",
                     ""
                 ],
-                "name": "keyup",
-                "designer|targetType": "Ext.field.Search",
-                "designer|controlQuery": "mainview #searchField"
+                "name": "keyup"
             },
             "designerId": "871fecb7-7797-4cf0-bbbf-5e6031308e3d"
         },
@@ -100,6 +100,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "searchfield",
+                "designer|targetType": "Ext.field.Search",
                 "fn": "clearSearch",
                 "implHandler": [
                     "\r",
@@ -110,9 +112,7 @@
                     "store.clearFilter();\r",
                     ""
                 ],
-                "name": "clearicontap",
-                "designer|targetType": "Ext.field.Search",
-                "designer|controlQuery": "searchfield"
+                "name": "clearicontap"
             },
             "designerId": "dc6e678b-1f90-4063-94ad-5689ccf6f1a3"
         }

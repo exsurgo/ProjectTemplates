@@ -7,11 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "centered": false,
-        "itemId": "slide",
-        "ui": "",
-        "designer|userClassName": "Slide",
         "designer|userAlias": "slide",
-        "layout": "fit"
+        "designer|userClassName": "Slide",
+        "itemId": "slide",
+        "layout": "fit",
+        "ui": ""
     },
     "designerId": "74dab547-9cde-4462-8ed5-815e85aacf83"
 }

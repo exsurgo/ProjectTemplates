@@ -91,11 +91,18 @@ Ext.define('CascadingSelect.store.Cars', {
         }, cfg)]);
     },
 
-    getValues: function(field) {
+    getValues: function(field, filter) {
         var values = [];
         values.push({ id: null, value: 'Select' });
         this.each(function(car) {
             var val = car.get(field);
+            if (filter) {
+                for (var key in filter) {
+                    if (car.get(key) != filter[key]) {
+                        return;
+                    }
+                }
+            }
             values.push({ id: val, value: val });
         });
         return Ext.Array.unique(values);

@@ -72,13 +72,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainviewport #startButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "start",
                 "implHandler": [
                     "\r",
                     "var DISPLAY_FORMAT = \"{0} Days, {1} Hours, {2} Minutes, {3} Seconds\";\r",
                     "\r",
                     "var me = this,\r",
-                    "\tdateField = me.getDateField(),\r",
+                    "    dateField = me.getDateField(),\r",
                     "    timeField = me.getTimeField(),\r",
                     "    date = dateField.getValue(),\r",
                     "    time = timeField.getValue(),\r",
@@ -103,7 +105,7 @@
                     "        resetButton.enable();\r",
                     "\r",
                     "        // Variables for time units\r",
-                    "        var days, hours, minutes, seconds; \r",
+                    "        var days, hours, minutes, seconds;\r",
                     "\r",
                     "        // Start timer\r",
                     "        me.interval = setInterval(function() {\r",
@@ -120,13 +122,13 @@
                     "\r",
                     "            // Update state\r",
                     "            days = parseInt(secondsLeft / 86400);\r",
-                    "            secondsLeft = secondsLeft % 86400;     \r",
+                    "            secondsLeft = secondsLeft % 86400;\r",
                     "            hours = parseInt(secondsLeft / 3600);\r",
-                    "            secondsLeft = secondsLeft % 3600;     \r",
+                    "            secondsLeft = secondsLeft % 3600;\r",
                     "            minutes = parseInt(secondsLeft / 60);\r",
-                    "            seconds = parseInt(secondsLeft % 60);        \r",
+                    "            seconds = parseInt(secondsLeft % 60);\r",
                     "\r",
-                    "            // Update display\t\r",
+                    "            // Update display\r",
                     "            timerDisplay.update(Ext.String.format(DISPLAY_FORMAT, days, hours, minutes, seconds));\r",
                     "\r",
                     "\r",
@@ -135,22 +137,20 @@
                     "    }\r",
                     "\r",
                     "    else {\r",
-                    "        Ext.Msg.alert('Alert', 'Date must be in the future.');    \r",
+                    "        Ext.Msg.alert('Alert', 'Date must be in the future.');\r",
                     "    }\r",
                     "\r",
                     "}\r",
                     "\r",
                     "else {\r",
-                    "    Ext.Msg.alert('Alert', 'Please enter a valid start date and time.'); \r",
+                    "    Ext.Msg.alert('Alert', 'Please enter a valid start date and time.');\r",
                     "}\r",
                     "\r",
                     "\r",
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "mainviewport #startButton"
+                "scope": "me"
             },
             "designerId": "3db943bd-20e6-4efe-9eaa-96d0ed5bed34"
         },
@@ -162,6 +162,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainviewport #resetButton",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "reset",
                 "implHandler": [
                     "\r",
@@ -186,9 +188,7 @@
                     "timerDisplay.update('');"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "mainviewport #resetButton"
+                "scope": "me"
             },
             "designerId": "08b37002-4b9e-4f40-8994-0f0fd8bdda3b"
         },

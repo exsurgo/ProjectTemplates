@@ -58,10 +58,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "navigate",
                 "designer|params": [
                     "id"
                 ],
+                "fn": "navigate",
                 "implHandler": [
                     "\r",
                     "// Remove # from id if present\r",

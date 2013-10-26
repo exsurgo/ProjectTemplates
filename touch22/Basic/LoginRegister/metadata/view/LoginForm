@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "LoginForm",
-        "designer|userAlias": "loginform"
+        "designer|userAlias": "loginform",
+        "designer|userClassName": "LoginForm"
     },
     "designerId": "5f766276-5fd4-4afa-8cf9-aad3c3c41eee",
     "cn": [

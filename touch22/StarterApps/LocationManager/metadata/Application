@@ -6,9 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Locations"
+        ],
         "models": [
             "Location"
         ],
+        "name": "MyApp",
         "stores": [
             "Locations"
         ],
@@ -16,11 +20,7 @@
             "MainView",
             "ListPanel",
             "FormPanel"
-        ],
-        "controllers": [
-            "Locations"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

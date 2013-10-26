@@ -1,11 +1,7 @@
 {
     "name": "CascadingSelect",
     "settings": {
-        "cmd": {
-            "license": "gpl",
-            "cmdVersion": "4.0.0.203",
-            "frameworkVersion": "4.2.0.663"
-        },
+        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -15,18 +11,7 @@
             }
         },
         "urlPrefix": "",
-        "exportPath": "",
-        "spacesToIndent": 4,
-        "sdkPath": "",
-        "lineEnding": "CRLF",
-        "genTimestamps": false,
-        "cacheBust": false,
-        "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true,
-        "lastBuildSelection": {
-            "value": "webBuild",
-            "display": "Build web app"
-        }
+        "exportPath": ""
     },
     "xdsVersion": "3.0.0",
     "xdsBuild": 0,

@@ -1,10 +1,23 @@
 {
     "name": "Navigation",
-    "settings": {},
-    "xdsVersion": "2.3.0",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
+    "upgradeVersion": 300000000001,
     "framework": "touch22",
     "viewOrderMap": {
         "view": [

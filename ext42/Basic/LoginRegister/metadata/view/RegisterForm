@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "registerform",
+        "designer|userClassName": "RegisterForm",
         "height": 250,
         "itemId": "registerForm",
-        "width": 400,
-        "designer|userClassName": "RegisterForm",
-        "designer|userAlias": "registerform",
+        "modal": true,
         "title": "Register",
-        "modal": true
+        "width": 400
     },
     "designerId": "d5160550-a745-4763-910a-cd2a336c487c",
     "cn": [
@@ -24,9 +24,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bodyPadding": 10,
                 "height": null,
                 "itemId": "form",
-                "bodyPadding": 10,
                 "title": null
             },
             "designerId": "b20d5c82-ecdd-43d9-8125-a8390c19d6eb",
@@ -39,14 +39,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": "100%",
-                        "margin": "0 0 10 0",
+                        "allowBlank": false,
+                        "blankText": "Enter your full name.",
                         "fieldLabel": "Name",
                         "labelAlign": "right",
+                        "layout|anchor": "100%",
+                        "margin": "0 0 10 0",
                         "msgTarget": "title",
-                        "name": "name",
-                        "allowBlank": false,
-                        "blankText": "Enter your full name."
+                        "name": "name"
                     },
                     "designerId": "6bd751cd-c8ad-4c0d-9a19-2710ea5bc48a"
                 },
@@ -58,14 +58,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": "100%",
-                        "margin": "0 0 10 0",
-                        "fieldLabel": "Email",
-                        "labelAlign": "right",
-                        "msgTarget": "title",
-                        "name": "email",
                         "allowBlank": false,
                         "blankText": "Enter your email.",
+                        "fieldLabel": "Email",
+                        "labelAlign": "right",
+                        "layout|anchor": "100%",
+                        "margin": "0 0 10 0",
+                        "msgTarget": "title",
+                        "name": "email",
                         "regex": null,
                         "regexText": null
                     },
@@ -79,14 +79,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": "100%",
-                        "margin": "0 0 10 0",
+                        "allowBlank": false,
+                        "blankText": "Choose a password.",
                         "fieldLabel": "Username",
                         "labelAlign": "right",
+                        "layout|anchor": "100%",
+                        "margin": "0 0 10 0",
                         "msgTarget": "title",
-                        "name": "username",
-                        "allowBlank": false,
-                        "blankText": "Choose a password."
+                        "name": "username"
                     },
                     "designerId": "e581400b-6ffc-46bb-a568-02a972d76f0b"
                 },
@@ -98,14 +98,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": "100%",
-                        "margin": "0 0 10 0",
+                        "allowBlank": false,
+                        "blankText": "Choose a password.",
                         "fieldLabel": "Password",
                         "labelAlign": "right",
+                        "layout|anchor": "100%",
+                        "margin": "0 0 10 0",
                         "msgTarget": "title",
-                        "name": "password",
-                        "allowBlank": false,
-                        "blankText": "Choose a password."
+                        "name": "password"
                     },
                     "designerId": "496b291d-72ec-4066-a0bd-af7d060d7b8d"
                 },

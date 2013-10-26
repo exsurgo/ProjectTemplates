@@ -6,8 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "storeId": "Records",
-        "designer|userClassName": "Records",
         "data": [
             "[\r",
             "    {\r",
@@ -41,7 +39,9 @@
             "        boolean: 'שקר'\r",
             "    }\r",
             "]"
-        ]
+        ],
+        "designer|userClassName": "Records",
+        "storeId": "Records"
     },
     "designerId": "68c3468a-5bca-45ba-91d8-d7d59e2a5917",
     "cn": [

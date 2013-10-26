@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
-        "designer|userAlias": "mainview",
         "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
         "layout": "border"
     },
     "designerId": "7372b4da-6a89-4a02-a378-f8fe5e5b5b3d",
@@ -22,9 +22,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "north",
                 "height": 100,
                 "itemId": "headerPanel",
+                "layout|region": "north",
                 "title": "Header"
             },
             "designerId": "cabae27a-e354-4813-95e6-249103ca4d1d",
@@ -112,8 +112,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|region": "center",
                 "itemId": "contentPanel",
+                "layout|region": "center",
                 "title": "Content"
             },
             "designerId": "ad57e8bb-cc7f-49f3-a52f-9004f8f71568"

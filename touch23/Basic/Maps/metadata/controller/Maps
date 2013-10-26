@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Maps",
         "models": [
             "Location"
         ],
         "stores": [
             "Locations"
-        ],
-        "designer|userClassName": "Maps"
+        ]
     },
     "designerId": "18d4d1e9-030e-49f3-9c66-d5c8d2e8ff2d",
     "cn": [
@@ -38,6 +38,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #dropPinButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onDropPinTap",
                 "implHandler": [
                     "var map = this.getMapView().getMap(),  // Get the Map",
@@ -54,9 +56,7 @@
                     "    longitude: position.lng()",
                     "});"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #dropPinButton"
+                "name": "tap"
             },
             "designerId": "ea3d7a3c-2862-4e38-87ba-f42acfc579f1"
         },
@@ -82,6 +82,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #listPanel list",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onLocationTap",
                 "implHandler": [
                     "var latitude = record.get('latitude'),    // Build the location",
@@ -98,9 +100,7 @@
                     "",
                     "this.getMainView().pop();   // Remove the pin list panel"
                 ],
-                "name": "disclose",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #listPanel list"
+                "name": "disclose"
             },
             "designerId": "6b16e3ac-e415-4444-a270-fe0e11f5d9fe"
         },
@@ -126,6 +126,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #listPinsButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onListPinsTap",
                 "implHandler": [
                     "this.getMainView().push({   // Show the list panel view",
@@ -136,9 +138,7 @@
                     "this.getDropPinButton().hide();   // Hide the buttons",
                     "this.getListPinsButton().hide();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #listPinsButton"
+                "name": "tap"
             },
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
         },
@@ -178,14 +178,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview",
+                "designer|targetType": "Ext.navigation.View",
                 "fn": "onBack",
                 "implHandler": [
                     "this.getDropPinButton().show();   // Show the buttons",
                     "this.getListPinsButton().show();"
                 ],
-                "name": "back",
-                "designer|targetType": "Ext.navigation.View",
-                "designer|controlQuery": "mainview"
+                "name": "back"
             },
             "designerId": "3fde3618-8489-4b14-96c8-406218dc292a"
         }

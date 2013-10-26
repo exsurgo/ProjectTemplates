@@ -6,20 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Maps"
+        ],
         "models": [
             "Location"
         ],
+        "name": "MyApp",
         "stores": [
             "Locations"
         ],
         "views": [
             "MainView",
             "ListPanel"
-        ],
-        "controllers": [
-            "Maps"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

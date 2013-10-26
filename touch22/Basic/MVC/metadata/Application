@@ -6,16 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
-        "models": [
-            "MyModel"
-        ],
-        "views": [
-            "MainView"
-        ],
         "controllers": [
             "MyController"
         ],
-        "name": "MyApp"
+        "models": [
+            "MyModel"
+        ],
+        "name": "MyApp",
+        "views": [
+            "MainView"
+        ]
     },
     "designerId": "application"
 }

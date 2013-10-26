@@ -6,21 +6,21 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 300,
-        "id": null,
-        "itemId": "recordForm",
-        "width": 475,
-        "designer|userClassName": "RecordForm",
-        "layout": "fit",
         "bodyPadding": null,
         "bodyStyle": [
             "{",
             "    \"background-color\": \"#fff\"",
             "}"
         ],
+        "designer|userClassName": "RecordForm",
+        "height": 300,
+        "id": null,
+        "itemId": "recordForm",
+        "layout": "fit",
         "manageHeight": false,
+        "modal": true,
         "title": "Edit Record",
-        "modal": true
+        "width": 475
     },
     "designerId": "23afc0a3-a1b1-4f10-9622-02ebe055e576",
     "cn": [
@@ -32,12 +32,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "bodyBorder": false,
+                "bodyPadding": 10,
                 "border": 0,
                 "height": null,
                 "itemId": "form",
                 "layout": "auto",
-                "bodyBorder": false,
-                "bodyPadding": 10,
                 "manageHeight": false,
                 "title": ""
             },
@@ -51,10 +51,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "margin": "0 0 10",
                         "designer|displayName": "",
                         "fieldLabel": "Title",
                         "labelAlign": "right",
+                        "margin": "0 0 10",
                         "name": "title",
                         "validateBlank": true
                     },
@@ -68,12 +68,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "height": null,
-                        "margin": "0 0 10",
-                        "fieldLabel": "Description",
-                        "labelAlign": "right",
-                        "name": "description",
                         "cols": 45,
+                        "fieldLabel": "Description",
+                        "height": null,
+                        "labelAlign": "right",
+                        "margin": "0 0 10",
+                        "name": "description",
                         "rows": 3
                     },
                     "designerId": "a35d024a-976b-43b7-bf66-82b3692048c1"
@@ -86,10 +86,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "margin": "0 0 10",
                         "designer|displayName": "",
                         "fieldLabel": "Date",
                         "labelAlign": "right",
+                        "margin": "0 0 10",
                         "name": "date"
                     },
                     "designerId": "c8e51b7c-5854-4909-b8c6-086c4c9d7fcb"
@@ -102,11 +102,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "boxLabel": "",
                         "designer|displayName": "",
                         "fieldLabel": "Is Featured",
                         "labelAlign": "right",
-                        "name": "isFeatured",
-                        "boxLabel": ""
+                        "name": "isFeatured"
                     },
                     "designerId": "512048f9-b49c-4e0d-b3b4-0d07229a9ac8"
                 },
@@ -120,9 +120,9 @@
                     "userConfig": {
                         "container|align": "middle",
                         "container|pack": "center",
-                        "padding": "10 10 10 10",
                         "designer|displayName": "Buttons",
-                        "layout": "hbox"
+                        "layout": "hbox",
+                        "padding": "10 10 10 10"
                     },
                     "designerId": "45147a56-a15e-430d-8923-eca5ae280a30",
                     "cn": [
@@ -134,10 +134,10 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "designer|displayName": null,
                                 "id": null,
                                 "itemId": "saveButton",
                                 "margin": "5 5 5 5 ",
-                                "designer|displayName": null,
                                 "text": "Save"
                             },
                             "designerId": "39772e9c-24db-4d10-8653-35a7440591be"

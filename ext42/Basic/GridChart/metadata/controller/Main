@@ -60,6 +60,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "grid[itemId=cityGrid]",
+                "designer|targetType": "Ext.grid.Panel",
                 "fn": "selectCity",
                 "implHandler": [
                     "var chart = this.getCityChart();\r",
@@ -67,9 +69,7 @@
                     "chart.getStore().loadData(record.data.chartdata);"
                 ],
                 "name": "select",
-                "scope": "me",
-                "designer|targetType": "Ext.grid.Panel",
-                "designer|controlQuery": "grid[itemId=cityGrid]"
+                "scope": "me"
             },
             "designerId": "0c3e81cb-d258-4878-a0fc-828a1e7aa7f0"
         },

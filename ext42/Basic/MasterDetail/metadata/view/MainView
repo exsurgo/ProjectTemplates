@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "mainView",
-        "designer|userClassName": "MainView",
         "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "id": "mainView",
         "layout": "fit"
     },
     "designerId": "698b7864-df89-4b9c-959f-0212282d4ead",
@@ -22,12 +22,12 @@
             "codeClass": null,
             "userConfig": {
                 "cls": null,
+                "collapsed": false,
                 "id": null,
                 "itemId": "mainPanel",
-                "resizable": false,
                 "layout": "border",
-                "collapsed": false,
                 "manageHeight": false,
+                "resizable": false,
                 "title": "My Records"
             },
             "configAlternates": {
@@ -43,20 +43,20 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "bodyBorder": false,
+                        "border": null,
+                        "dock": null,
+                        "forceFit": true,
+                        "id": "",
+                        "itemId": "gridPanel",
                         "layout|flex": 1,
                         "layout|region": "west",
                         "layout|split": true,
-                        "dock": null,
-                        "border": null,
-                        "id": "",
-                        "itemId": "gridPanel",
-                        "width": 150,
                         "resizable": false,
                         "resizeHandles": null,
-                        "bodyBorder": false,
+                        "store": "Records",
                         "title": null,
-                        "forceFit": true,
-                        "store": "Records"
+                        "width": 150
                     },
                     "configAlternates": {
                         "resizable": "boolean"
@@ -84,8 +84,8 @@
                             "codeClass": null,
                             "userConfig": {
                                 "dataIndex": "id",
-                                "text": "ID",
-                                "format": "0"
+                                "format": "0",
+                                "text": "ID"
                             },
                             "designerId": "96e48393-c1ae-4c17-8eef-270b5aa8effb"
                         },
@@ -97,9 +97,9 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "width": null,
                                 "dataIndex": "title",
-                                "text": "Title"
+                                "text": "Title",
+                                "width": null
                             },
                             "designerId": "81a6a31f-46de-42a1-a1d0-f392d8490303",
                             "cn": [
@@ -172,21 +172,21 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": 1,
-                        "layout|region": "center",
-                        "layout|split": true,
+                        "bodyBorder": false,
+                        "bodyPadding": "10 10 10 10",
                         "border": null,
                         "data": [
                             "{}"
                         ],
+                        "designer|displayName": null,
                         "id": null,
                         "itemId": "detailsPanel",
-                        "designer|displayName": null,
-                        "resizable": false,
                         "layout": "fit",
-                        "bodyBorder": false,
-                        "bodyPadding": "10 10 10 10",
+                        "layout|flex": 1,
+                        "layout|region": "center",
+                        "layout|split": true,
                         "manageHeight": false,
+                        "resizable": false,
                         "title": null
                     },
                     "configAlternates": {
@@ -202,6 +202,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "designer|displayName": null,
                                 "implHandler": [
                                     "<tpl if=\"values.id\">",
                                     "    <h1>{title}</h1>",
@@ -213,8 +214,7 @@
                                     "<tpl if=\"!values.id\">",
                                     "    <h1>Please select a record</h1>",
                                     "</tpl>"
-                                ],
-                                "designer|displayName": null
+                                ]
                             },
                             "designerId": "aff40032-1291-46d8-a893-3a494c39d61b"
                         }

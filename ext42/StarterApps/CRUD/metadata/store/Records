@@ -6,9 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "Record",
-        "storeId": "MyStore",
-        "designer|userClassName": "Records",
         "data": [
             "[ ",
             "    { \"id\": 1, \"title\": \"Item 1\", \"description\": \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\", \"date\":  \"10/1/2010\", \"isFeatured\": true },",
@@ -22,7 +19,10 @@
             "    { \"id\": 9, \"title\": \"Item 9\", \"description\": \"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.\", \"date\":  \"10/9/2010\", \"isFeatured\": false  },",
             "    { \"id\": 10, \"title\": \"Item 10\", \"description\": \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\", \"date\":  \"10/10/2010\", \"isFeatured\": false  }",
             "]"
-        ]
+        ],
+        "designer|userClassName": "Records",
+        "model": "Record",
+        "storeId": "MyStore"
     },
     "designerId": "0b3e9ea8-52b8-4463-9375-44b5a27689ff",
     "cn": [

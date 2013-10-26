@@ -1,10 +1,22 @@
 {
     "name": "HeaderContentFooter",
-    "settings": {},
-    "xdsVersion": "2.3.0",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
+    "upgradeVersion": 300000000001,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [

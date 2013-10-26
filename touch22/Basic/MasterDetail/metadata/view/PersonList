@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "list",
-        "designer|userClassName": "PersonList",
         "designer|userAlias": "personlist",
+        "designer|userClassName": "PersonList",
         "emptyText": "No Matching Items",
-        "store": "People",
-        "grouped": true
+        "grouped": true,
+        "itemId": "list",
+        "store": "People"
     },
     "designerId": "3fd09888-7815-486a-8d9a-949949008923",
     "cn": [
@@ -23,10 +23,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|displayName": "itemTpl",
                 "implHandler": [
                     "<div>{firstName} {lastName}</div>"
-                ],
-                "designer|displayName": "itemTpl"
+                ]
             },
             "designerId": "dbc4138f-6fe3-4621-9347-c376f8a06da7"
         }

@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
+        "designer|initialView": true,
         "designer|userAlias": "mainview",
-        "designer|initialView": true
+        "designer|userClassName": "MainView",
+        "itemId": "mainView"
     },
     "designerId": "60127843-68c1-40fc-be09-e67a6d46b252",
     "cn": [

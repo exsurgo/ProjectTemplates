@@ -31,6 +31,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel",
+                "designer|targetType": "FormPanel",
                 "fn": "onCarFormShow",
                 "implHandler": [
                     "// Variables, I do declare",
@@ -51,9 +53,7 @@
                     "this.getModelField().hide();",
                     "this.getDoneButton().hide();"
                 ],
-                "name": "show",
-                "designer|targetType": "FormPanel",
-                "designer|controlQuery": "formpanel"
+                "name": "show"
             },
             "designerId": "7c70ac97-87ee-4d88-9a3d-7d2ea4358b57"
         },
@@ -104,6 +104,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel #makerField",
+                "designer|targetType": "Ext.field.Select",
                 "fn": "onMakerFieldChange",
                 "implHandler": [
                     "// Variables, I do declare",
@@ -137,9 +139,7 @@
                     "this.getModelField().hide();",
                     "this.getDoneButton().hide();"
                 ],
-                "name": "change",
-                "designer|targetType": "Ext.field.Select",
-                "designer|controlQuery": "formpanel #makerField"
+                "name": "change"
             },
             "designerId": "e2f4b4cf-a28c-4181-ab5c-349fc464525c"
         },
@@ -151,6 +151,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel #seriesField",
+                "designer|targetType": "Ext.field.Select",
                 "fn": "onSeriesFieldChange",
                 "implHandler": [
                     "// Variables, I do declare",
@@ -184,9 +186,7 @@
                     "// Hide later parts of the form",
                     "this.getDoneButton().hide();"
                 ],
-                "name": "change",
-                "designer|targetType": "Ext.field.Select",
-                "designer|controlQuery": "formpanel #seriesField"
+                "name": "change"
             },
             "designerId": "4ac198d5-8b30-4209-a124-c86b6aee7c81"
         },
@@ -198,6 +198,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel #modelField",
+                "designer|targetType": "Ext.field.Select",
                 "fn": "onModelFieldChange",
                 "implHandler": [
                     "if (newValue) {",
@@ -206,9 +208,7 @@
                     "    this.getDoneButton().hide();",
                     "}"
                 ],
-                "name": "change",
-                "designer|targetType": "Ext.field.Select",
-                "designer|controlQuery": "formpanel #modelField"
+                "name": "change"
             },
             "designerId": "fc7fc550-e96a-46f0-b14b-d6ec9f614e0d"
         },
@@ -220,6 +220,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "formpanel #doneButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onDoneButtonTap",
                 "implHandler": [
                     "var title = \"That's a great car.\",",
@@ -227,9 +229,7 @@
                     "",
                     "Ext.Msg.alert(title, message, Ext.emptyFn);"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "formpanel #doneButton"
+                "name": "tap"
             },
             "designerId": "38bcedf6-b0b2-487f-b887-258087be0fda"
         }

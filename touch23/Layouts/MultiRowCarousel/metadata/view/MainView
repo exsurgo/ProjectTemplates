@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "directionLock": true,
-        "itemId": "mainView",
-        "designer|userClassName": "MainView",
-        "designer|userAlias": "mainview",
         "designer|initialView": true,
-        "direction": "vertical"
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "direction": "vertical",
+        "directionLock": true,
+        "itemId": "mainView"
     },
     "configAlternates": {
         "directionLock": "boolean"

@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "storeId": "MyTreeStore",
         "designer|userClassName": "MenuStore",
         "root": [
             "{\r",
@@ -69,7 +68,8 @@
             "        }\r",
             "    ]\r",
             "}"
-        ]
+        ],
+        "storeId": "MyTreeStore"
     },
     "designerId": "f91e2760-99f4-4952-873b-a6998ec5c651",
     "cn": [

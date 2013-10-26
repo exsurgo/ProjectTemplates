@@ -18,10 +18,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "runAction",
+                "designer|controlQuery": "mainview #runButton",
                 "designer|params": [
                     "target"
                 ],
+                "fn": "runAction",
                 "implHandler": [
                     "\r",
                     "// Create new model\r",
@@ -35,8 +36,7 @@
                     "\r",
                     ""
                 ],
-                "name": "tap",
-                "designer|controlQuery": "mainview #runButton"
+                "name": "tap"
             },
             "designerId": "4f67c9ad-20dc-4c29-9f69-30ee94aae98b"
         },

@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoCreateViewport": true,
+        "name": "MyApp",
         "views": [
             "MainView"
-        ],
-        "autoCreateViewport": true,
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

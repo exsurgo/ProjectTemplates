@@ -18,6 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #ticketList",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onTicketDisclose",
                 "implHandler": [
                     "var mainView = this.getMainView(),",
@@ -37,9 +39,7 @@
                     "",
                     "addTicketButton.hide();"
                 ],
-                "name": "disclose",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #ticketList"
+                "name": "disclose"
             },
             "designerId": "0adde877-feaf-40d1-9946-aa73cbbbe492"
         },
@@ -51,6 +51,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #addTicketButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onAddTicketTap",
                 "implHandler": [
                     "var mainView = this.getMainView(),",
@@ -63,9 +65,7 @@
                     "",
                     "addTicketButton.hide();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #addTicketButton"
+                "name": "tap"
             },
             "designerId": "23cde0dd-e6ad-4bb5-88d1-026573ef09b5"
         },
@@ -105,13 +105,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #ticketList",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onTicketListShow",
                 "implHandler": [
                     "this.getAddTicketButton().show();"
                 ],
-                "name": "show",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #ticketList"
+                "name": "show"
             },
             "designerId": "6845f23b-86e0-4f81-aa3f-66023a29f4dc"
         },
@@ -123,6 +123,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #saveTicketButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onSaveTap",
                 "implHandler": [
                     "var mainView = this.getMainView(),",
@@ -148,9 +150,7 @@
                     "",
                     "mainView.pop();"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainview #saveTicketButton"
+                "name": "tap"
             },
             "designerId": "95642677-1356-4ecc-b729-983ca977e6f5"
         },

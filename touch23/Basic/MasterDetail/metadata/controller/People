@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "People",
         "models": [
             "Person"
         ],
         "stores": [
             "People"
-        ],
-        "designer|userClassName": "People"
+        ]
     },
     "designerId": "2e108d17-aa43-4245-ab88-7c58bd477077",
     "cn": [
@@ -24,6 +24,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "mainview #list",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "view",
                 "implHandler": [
                     "\r",
@@ -38,9 +40,7 @@
                     "});\r",
                     ""
                 ],
-                "name": "select",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "mainview #list"
+                "name": "select"
             },
             "designerId": "afbfe47e-f5cc-4b00-a68c-d3739574ebfc"
         },

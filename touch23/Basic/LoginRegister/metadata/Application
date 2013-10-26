@@ -6,15 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Account"
+        ],
+        "name": "MyApp",
         "views": [
             "MainView",
             "LoginForm",
             "RegisterForm"
-        ],
-        "controllers": [
-            "Account"
-        ],
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }
