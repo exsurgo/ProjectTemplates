@@ -36,9 +36,9 @@ Ext.define('CascadingSelect.controller.CarForm', {
     ],
 
     onFormRender: function(component, eOpts) {
-        
+
         var makerField = this.getMakerField();
-        
+
         // Populate the maker field
         var data = Ext.getStore('Cars').getValues('maker');
             store = new Ext.data.Store({
@@ -46,27 +46,27 @@ Ext.define('CascadingSelect.controller.CarForm', {
                 data: data
             });
         makerField.bindStore(store);
-        
+
         // Hide later parts of the form
         this.getSeriesField().hide();
         this.getModelField().hide();
         this.getDoneButton().hide();
-        
+
     },
 
     onMakerFieldChange: function(field, newValue, oldValue, eOpts) {
         // Variables, I do declare
         var seriesField = this.getSeriesField();
-        
+
         // Special case: we chose the "choose a maker" option
         if (!newValue) {
-        
+
             seriesField.hide();
-        
+
         } else {
-        
-        
-        
+
+
+
             // Update the series dropdown
             var data = Ext.getStore('Cars').getValues('series', { maker: newValue }),
                 store = new Ext.data.Store({
@@ -74,12 +74,12 @@ Ext.define('CascadingSelect.controller.CarForm', {
                     data: data
                 });
             seriesField.bindStore(store);
-        
+
             // Show the series field
             seriesField.show();
-        
+
         }
-        
+
         // Hide later parts of the form
         this.getModelField().hide();
         this.getDoneButton().hide();
@@ -89,26 +89,26 @@ Ext.define('CascadingSelect.controller.CarForm', {
         // Variables, I do declare
         var modelField = this.getModelField(),
             makerField = this.getMakerField();
-        
+
         // Special case: we chose the "choose a series" option
         if (!newValue) {
-        
+
             modelField.hide();
-        
+
         } else {
-        
+
             var data = Ext.getStore('Cars').getValues('model', { maker: makerField.getValue(), series: newValue }),
                 store = new Ext.data.Store({
                     fields: ['id', 'value'],
                     data: data
                 });
             modelField.bindStore(store);
-        
+
             // Show the series field
             modelField.show();
-        
+
         }
-        
+
         // Hide later parts of the form
         this.getDoneButton().hide();
     },
@@ -124,7 +124,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
     onButtonClick: function(button, e, eOpts) {
         var title = "That's a great car.",
             message = 'You chose a great car. Truly.';
-        
+
         Ext.Msg.alert(title, message, Ext.emptyFn);
     },
 
