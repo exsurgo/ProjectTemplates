@@ -29,9 +29,14 @@ Ext.application({
     views: [
         'MainViewport'
     ],
-    autoCreateViewport: true,
     controllers: [
         'CarForm'
     ],
-    name: 'CascadingSelect'
+    name: 'CascadingSelect',
+
+    launch: function() {
+
+        Ext.create('CascadingSelect.view.MainViewport');
+    }
+
 });

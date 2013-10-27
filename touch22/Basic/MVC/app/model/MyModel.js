@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.model.MyModel', {
     extend: 'Ext.data.Model',
+    alias: 'model.mymodel',
 
     config: {
         fields: [

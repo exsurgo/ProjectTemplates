@@ -25,9 +25,14 @@ Ext.application({
         'LoginForm',
         'RegisterForm'
     ],
-    autoCreateViewport: true,
     controllers: [
         'Account'
     ],
-    name: 'MyApp'
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainView');
+    }
+
 });

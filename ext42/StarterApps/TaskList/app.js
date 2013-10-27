@@ -15,10 +15,7 @@
 
 // @require @packageOverrides
 Ext.Loader.setConfig({
-    enabled: true,
-    paths: {
-        Ext: '.'
-    }
+    enabled: true
 });
 
 
@@ -34,9 +31,14 @@ Ext.application({
         'TaskForm',
         'MainView'
     ],
-    autoCreateViewport: true,
     controllers: [
         'Tasks'
     ],
-    name: 'MyApp'
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainView');
+    }
+
 });

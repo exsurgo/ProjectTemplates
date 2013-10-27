@@ -15,7 +15,7 @@
 
 Ext.define('TicketTracker.view.TicketDataView', {
     extend: 'Ext.view.View',
-    alias: 'widget.ticketDataView',
+    alias: 'widget.ticketdataview',
 
     height: 250,
     width: 400,

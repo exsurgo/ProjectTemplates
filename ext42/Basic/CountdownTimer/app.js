@@ -23,9 +23,14 @@ Ext.application({
     views: [
         'MainViewport'
     ],
-    autoCreateViewport: true,
     controllers: [
         'Countdown'
     ],
-    name: 'MyApp'
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainViewport');
+    }
+
 });

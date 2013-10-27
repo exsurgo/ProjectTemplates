@@ -28,7 +28,7 @@
             "    }",
             "]"
         ],
-        "designer|userAlias": "ticketStore",
+        "designer|userAlias": "ticketstore",
         "designer|userClassName": "TicketStore",
         "model": "Ticket",
         "storeId": "MyStore"

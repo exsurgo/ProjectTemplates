@@ -13,7 +13,7 @@
             "}]"
         ],
         "closeAction": "hide",
-        "designer|userAlias": "ticketFormWindow",
+        "designer|userAlias": "ticketformwindow",
         "designer|userClassName": "TicketFormWindow",
         "height": 300,
         "title": "Edit Ticket",

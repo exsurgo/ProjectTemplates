@@ -32,9 +32,14 @@ Ext.application({
         'TicketForm',
         'TicketFormWindow'
     ],
-    autoCreateViewport: true,
     controllers: [
         'TicketController'
     ],
-    name: 'TicketTracker'
+    name: 'TicketTracker',
+
+    launch: function() {
+
+        Ext.create('TicketTracker.view.TicketPanel', {renderTo: Ext.getBody()});
+    }
+
 });

@@ -12,6 +12,7 @@
             "    \"background-color\": \"#fff\"",
             "}"
         ],
+        "designer|userAlias": "recordform",
         "designer|userClassName": "RecordForm",
         "height": 300,
         "id": null,

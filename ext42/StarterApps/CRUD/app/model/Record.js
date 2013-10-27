@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.model.Record', {
     extend: 'Ext.data.Model',
+    alias: 'model.record',
 
     fields: [
         {

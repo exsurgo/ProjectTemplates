@@ -15,7 +15,7 @@
 
 Ext.define('TicketTracker.view.TicketFormWindow', {
     extend: 'Ext.window.Window',
-    alias: 'widget.ticketFormWindow',
+    alias: 'widget.ticketformwindow',
 
     requires: [
         'TicketTracker.view.TicketForm'
@@ -38,7 +38,7 @@ Ext.define('TicketTracker.view.TicketFormWindow', {
             ],
             items: [
                 {
-                    xtype: 'ticketForm'
+                    xtype: 'ticketform'
                 }
             ]
         });

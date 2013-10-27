@@ -23,24 +23,5 @@
             "MainView"
         ]
     },
-    "designerId": "application",
-    "cn": [
-        {
-            "type": "Ext.Loader",
-            "reference": {
-                "name": "loader",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|displayName": "Loader",
-                "enabled": true,
-                "paths": [
-                    "{\"Ext\":\".\"}\r",
-                    ""
-                ]
-            },
-            "designerId": "ad52e77e-4dba-43a8-b46b-ef8e58f44add"
-        }
-    ]
+    "designerId": "application"
 }

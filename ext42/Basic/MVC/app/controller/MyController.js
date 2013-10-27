@@ -26,10 +26,10 @@ Ext.define('MyApp.controller.MyController', {
     runAction: function(target) {
         
         // Create new model
-        var model = Ext.ModelManager.create({
+        var model = Ext.create('model.mymodel', {
             id: 123,
-            text: 'Hello World',
-        }, 'MyApp.model.MyModel');
+            text: 'Hello World'
+        });
         
         // Bind model to view
         this.getContentPanel().update(model.data);

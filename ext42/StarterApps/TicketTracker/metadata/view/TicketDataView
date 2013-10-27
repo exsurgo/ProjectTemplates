@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "ticketDataView",
+        "designer|userAlias": "ticketdataview",
         "designer|userClassName": "TicketDataView",
         "emptyText": "No records!",
         "height": 250,

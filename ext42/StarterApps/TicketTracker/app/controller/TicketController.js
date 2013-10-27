@@ -19,22 +19,22 @@ Ext.define('TicketTracker.controller.TicketController', {
     refs: [
         {
             ref: 'ticketDataView',
-            selector: 'ticketPanel ticketDataView'
+            selector: 'ticketpanel ticketdataview'
         },
         {
             ref: 'ticketFormPanel',
-            selector: 'ticketFormWindow ticketForm'
+            selector: 'ticketformwindow ticketform'
         },
         {
             ref: 'ticketFormWindow',
-            selector: 'ticketFormWindow'
+            selector: 'ticketformwindow'
         }
     ],
 
     onDataviewItemClick: function(dataview, record, item, index, e, eOpts) {
         var win = this.getTicketFormWindow();
         if(!win){
-            win = Ext.create('TicketTracker.view.TicketFormWindow');
+            win = Ext.create('widget.ticketformwindow');
         }
         win.show();
         this.getTicketFormPanel().loadRecord(record);
@@ -56,9 +56,9 @@ Ext.define('TicketTracker.controller.TicketController', {
     onAddButtonClick: function(button, e, eOpts) {
         var win = this.getTicketFormWindow();
         if(!win){
-            win = Ext.create('TicketTracker.view.TicketFormWindow');
+            win = Ext.create('widget.ticketformwindow');
         }
-        this.getTicketFormPanel().loadRecord(Ext.create('TicketTracker.model.Ticket'));
+        this.getTicketFormPanel().loadRecord(Ext.create('model.ticket'));
         this.adding = true;
         win.show();
     },
@@ -100,23 +100,23 @@ Ext.define('TicketTracker.controller.TicketController', {
 
     init: function(application) {
         this.control({
-            "ticketPanel ticketDataView": {
+            "ticketpanel ticketdataview": {
                 itemclick: this.onDataviewItemClick,
                 itemcontextmenu: this.onDataviewItemContextMenu
             },
-            "ticketPanel button[action='sortByImportance']": {
+            "ticketpanel button[action='sortByImportance']": {
                 click: this.onSortByImportanceButtonClick
             },
-            "ticketPanel combo[name='status']": {
+            "ticketpanel combo[name='status']": {
                 change: this.onComboboxChange
             },
-            "ticketPanel button[action='clearFilter']": {
+            "ticketpanel button[action='clearFilter']": {
                 click: this.onClearFilterButtonClick
             },
-            "ticketPanel button[action='addTicket']": {
+            "ticketpanel button[action='addTicket']": {
                 click: this.onAddButtonClick
             },
-            "ticketFormWindow button[action='saveTicket']": {
+            "ticketformwindow button[action='saveTicket']": {
                 click: this.onSaveButtonClick
             }
         });

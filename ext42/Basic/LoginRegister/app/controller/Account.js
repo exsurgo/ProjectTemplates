@@ -30,7 +30,7 @@ Ext.define('MyApp.controller.Account', {
     showLogin: function(target) {
         
         // Create new login form window
-        var login = Ext.create("MyApp.view.LoginForm");
+        var login = Ext.create("widget.loginform");
         
         // Show window
         login.show();
@@ -83,7 +83,7 @@ Ext.define('MyApp.controller.Account', {
     showRegister: function(target) {
         
         // Create new register form window
-        var register = Ext.create("MyApp.view.RegisterForm");
+        var register = Ext.create("widget.registerform");
         
         // Show window
         register.show();

@@ -37,7 +37,7 @@
                     "    Ext.each(category.get('values'), function(item) {\r",
                     "\r",
                     "        // Create a new slide\r",
-                    "        var slide = Ext.create('MyApp.view.Slide');\r",
+                    "        var slide = Ext.create('widget.slide');\r",
                     "\r",
                     "        // Add an image\r",
                     "        slide.add({\r",

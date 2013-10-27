@@ -19,7 +19,7 @@
             "codeClass": null,
             "userConfig": {
                 "ref": "ticketDataView",
-                "selector": "ticketPanel ticketDataView"
+                "selector": "ticketpanel ticketdataview"
             },
             "designerId": "a5a71d35-ce55-4200-a372-06de595d7001"
         },
@@ -32,7 +32,7 @@
             "codeClass": null,
             "userConfig": {
                 "ref": "ticketFormPanel",
-                "selector": "ticketFormWindow ticketForm"
+                "selector": "ticketformwindow ticketform"
             },
             "designerId": "813fb25a-ab36-4d25-958c-cd634a9696c3"
         },
@@ -45,7 +45,7 @@
             "codeClass": null,
             "userConfig": {
                 "ref": "ticketFormWindow",
-                "selector": "ticketFormWindow"
+                "selector": "ticketformwindow"
             },
             "designerId": "7c94a145-63e8-4fdb-8415-290e3266f5ab",
             "customConfigs": [
@@ -64,15 +64,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel ticketDataView",
+                "designer|controlQuery": "ticketpanel ticketdataview",
                 "designer|targetType": "TicketDataView",
                 "fn": "onDataviewItemClick",
                 "implHandler": [
-                    "var win = this.getTicketFormWindow();",
-                    "if(!win){",
-                    "    win = Ext.create('TicketTracker.view.TicketFormWindow');",
-                    "}",
-                    "win.show();",
+                    "var win = this.getTicketFormWindow();\r",
+                    "if(!win){\r",
+                    "    win = Ext.create('widget.ticketformwindow');\r",
+                    "}\r",
+                    "win.show();\r",
                     "this.getTicketFormPanel().loadRecord(record);"
                 ],
                 "name": "itemclick",
@@ -88,7 +88,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel button[action='sortByImportance']",
+                "designer|controlQuery": "ticketpanel button[action='sortByImportance']",
                 "designer|targetType": "Ext.button.Button",
                 "fn": "onSortByImportanceButtonClick",
                 "implHandler": [
@@ -107,11 +107,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel combo[name='status']",
+                "designer|controlQuery": "ticketpanel combo[name='status']",
                 "designer|targetType": "Ext.form.field.ComboBox",
                 "fn": "onComboboxChange",
                 "implHandler": [
-                    "this.getTicketDataView().getStore().clearFilter();",
+                    "this.getTicketDataView().getStore().clearFilter();\r",
                     "this.getTicketDataView().getStore().filter('importance', newValue);"
                 ],
                 "name": "change",
@@ -127,7 +127,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel button[action='clearFilter']",
+                "designer|controlQuery": "ticketpanel button[action='clearFilter']",
                 "designer|targetType": "Ext.button.Button",
                 "fn": "onClearFilterButtonClick",
                 "implHandler": [
@@ -146,16 +146,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel button[action='addTicket']",
+                "designer|controlQuery": "ticketpanel button[action='addTicket']",
                 "designer|targetType": "Ext.button.Button",
                 "fn": "onAddButtonClick",
                 "implHandler": [
-                    "var win = this.getTicketFormWindow();",
-                    "if(!win){",
-                    "    win = Ext.create('TicketTracker.view.TicketFormWindow');",
-                    "}",
-                    "this.getTicketFormPanel().loadRecord(Ext.create('TicketTracker.model.Ticket'));",
-                    "this.adding = true;",
+                    "var win = this.getTicketFormWindow();\r",
+                    "if(!win){\r",
+                    "    win = Ext.create('widget.ticketformwindow');\r",
+                    "}\r",
+                    "this.getTicketFormPanel().loadRecord(Ext.create('model.ticket'));\r",
+                    "this.adding = true;\r",
                     "win.show();"
                 ],
                 "name": "click",
@@ -171,18 +171,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketFormWindow button[action='saveTicket']",
+                "designer|controlQuery": "ticketformwindow button[action='saveTicket']",
                 "designer|targetType": "Ext.button.Button",
                 "fn": "onSaveButtonClick",
                 "implHandler": [
-                    "var form = this.getTicketFormPanel();",
-                    "var selectedRecord = form.getRecord();",
-                    "if (this.adding) {",
-                    "    this.adding = undefined;",
-                    "    this.getTicketDataView().getStore().add(selectedRecord);",
-                    "}",
-                    "selectedRecord.set(form.getValues());",
-                    "this.getTicketDataView().getStore().filter();",
+                    "var form = this.getTicketFormPanel();\r",
+                    "var selectedRecord = form.getRecord();\r",
+                    "if (this.adding) {\r",
+                    "    this.adding = undefined;\r",
+                    "    this.getTicketDataView().getStore().add(selectedRecord);\r",
+                    "}\r",
+                    "selectedRecord.set(form.getValues());\r",
+                    "this.getTicketDataView().getStore().filter();\r",
                     "this.getTicketFormWindow().close();"
                 ],
                 "name": "click",
@@ -198,29 +198,29 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "ticketPanel ticketDataView",
+                "designer|controlQuery": "ticketpanel ticketdataview",
                 "designer|targetType": "TicketDataView",
                 "fn": "onDataviewItemContextMenu",
                 "implHandler": [
-                    "e.stopEvent();",
-                    "",
-                    "if (!this.ctxMenu) {",
-                    "    this.ctxMenu = Ext.create('Ext.menu.Menu', {",
-                    "        items:[{",
-                    "            text: 'Delete Ticket'",
-                    "        }],",
-                    "        defaults: {",
-                    "            listeners: {",
-                    "                click: function(item) {",
-                    "                    this.getTicketDataView().getStore().remove([record]);",
-                    "                    this.getTicketDataView().getStore().filter();",
-                    "                },",
-                    "                scope: this",
-                    "            }",
-                    "        }",
-                    "    });   ",
-                    "}",
-                    "",
+                    "e.stopEvent();\r",
+                    "\r",
+                    "if (!this.ctxMenu) {\r",
+                    "    this.ctxMenu = Ext.create('Ext.menu.Menu', {\r",
+                    "        items:[{\r",
+                    "            text: 'Delete Ticket'\r",
+                    "        }],\r",
+                    "        defaults: {\r",
+                    "            listeners: {\r",
+                    "                click: function(item) {\r",
+                    "                    this.getTicketDataView().getStore().remove([record]);\r",
+                    "                    this.getTicketDataView().getStore().filter();\r",
+                    "                },\r",
+                    "                scope: this\r",
+                    "            }\r",
+                    "        }\r",
+                    "    });\r",
+                    "}\r",
+                    "\r",
                     "this.ctxMenu.showAt(e.getXY());"
                 ],
                 "name": "itemcontextmenu",

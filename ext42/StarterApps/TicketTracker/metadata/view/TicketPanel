@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|initialView": true,
-        "designer|userAlias": "ticketPanel",
+        "designer|userAlias": "ticketpanel",
         "designer|userClassName": "TicketPanel",
         "height": null,
         "title": "Ticket Tracker",

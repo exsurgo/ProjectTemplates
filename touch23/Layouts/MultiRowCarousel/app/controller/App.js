@@ -40,7 +40,7 @@ Ext.define('MyApp.controller.App', {
             Ext.each(category.get('values'), function(item) {
         
                 // Create a new slide
-                var slide = Ext.create('MyApp.view.Slide');
+                var slide = Ext.create('widget.slide');
         
                 // Add an image
                 slide.add({

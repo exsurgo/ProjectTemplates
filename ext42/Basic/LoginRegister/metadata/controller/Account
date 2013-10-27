@@ -26,7 +26,7 @@
                 "implHandler": [
                     "\r",
                     "// Create new login form window\r",
-                    "var login = Ext.create(\"MyApp.view.LoginForm\");\r",
+                    "var login = Ext.create(\"widget.loginform\");\r",
                     "\r",
                     "// Show window\r",
                     "login.show();\r",
@@ -111,7 +111,7 @@
                 "implHandler": [
                     "\r",
                     "// Create new register form window\r",
-                    "var register = Ext.create(\"MyApp.view.RegisterForm\");\r",
+                    "var register = Ext.create(\"widget.registerform\");\r",
                     "\r",
                     "// Show window\r",
                     "register.show();\r",

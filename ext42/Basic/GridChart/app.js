@@ -30,9 +30,14 @@ Ext.application({
     views: [
         'MainView'
     ],
-    autoCreateViewport: true,
     controllers: [
         'Main'
     ],
-    name: 'MyApp'
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainView');
+    }
+
 });

@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "bodyPadding": 10,
-        "designer|userAlias": "ticketForm",
+        "designer|userAlias": "ticketform",
         "designer|userClassName": "TicketForm",
         "height": 250,
         "title": "My Form",

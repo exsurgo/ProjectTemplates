@@ -132,7 +132,7 @@ Ext.define('MyApp.controller.Locations', {
         
         // Build a marker if there isn't one
         if (!this.newLocationMapMarker) {
-            this.newLocationMapMarker = new google.maps.Marker;
+            this.newLocationMapMarker = new google.maps.Marker();
         }
         
         // Hide the map marker
@@ -251,7 +251,7 @@ Ext.define('MyApp.controller.Locations', {
                 });
         
                 // If we've removed the last one, go back to the main menu
-                if (store.getCount() == 0) {
+                if (store.getCount() === 0) {
                     me.getMainView().pop();
                     me.showButtons();
                 }
@@ -264,7 +264,7 @@ Ext.define('MyApp.controller.Locations', {
     showButtons: function() {
         // Do we have any locations to show?
         var locationCount = Ext.getStore('Locations').getCount(),
-            hasLocations = (locationCount != 0);
+            hasLocations = (locationCount !== 0);
         
         // Show the "add location" button
         this.getAddLocationButton().show();
@@ -285,7 +285,7 @@ Ext.define('MyApp.controller.Locations', {
 
     geocodeString: function(str, callback) {
         // Build a Google Maps geocoder and its options
-        var geocoder = new google.maps.Geocoder,
+        var geocoder = new google.maps.Geocoder(),
             options = { address: str };
         
         // Turn the string into a location

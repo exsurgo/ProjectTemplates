@@ -16,6 +16,10 @@
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.container.Viewport',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     id: 'mainView',
     layout: {
         type: 'fit'

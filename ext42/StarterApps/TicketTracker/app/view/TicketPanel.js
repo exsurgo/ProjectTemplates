@@ -15,7 +15,7 @@
 
 Ext.define('TicketTracker.view.TicketPanel', {
     extend: 'Ext.panel.Panel',
-    alias: 'widget.ticketPanel',
+    alias: 'widget.ticketpanel',
 
     requires: [
         'TicketTracker.view.TicketDataView'
@@ -66,7 +66,7 @@ Ext.define('TicketTracker.view.TicketPanel', {
             ],
             items: [
                 {
-                    xtype: 'ticketDataView',
+                    xtype: 'ticketdataview',
                     width: 800
                 }
             ]

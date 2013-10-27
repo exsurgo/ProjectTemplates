@@ -15,7 +15,7 @@
 
 Ext.define('TicketTracker.store.TicketStore', {
     extend: 'Ext.data.Store',
-    alias: 'store.ticketStore',
+    alias: 'store.ticketstore',
 
     requires: [
         'TicketTracker.model.Ticket'

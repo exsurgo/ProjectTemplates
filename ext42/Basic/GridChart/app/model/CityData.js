@@ -16,6 +16,10 @@
 Ext.define('MyApp.model.CityData', {
     extend: 'Ext.data.Model',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     fields: [
         {
             name: 'city'

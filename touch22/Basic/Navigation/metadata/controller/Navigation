@@ -41,7 +41,7 @@
                     "// Get or create navigation menu\r",
                     "var menu = this.getNavMenu();\r",
                     "if (!menu) {\r",
-                    "    menu = Ext.create('MyApp.view.NavMenu');\r",
+                    "    menu = Ext.create('widget.navmenu');\r",
                     "}\r",
                     "\r",
                     "var menuItems = menu.getItems().items,\t\t\t\t// Menu buttons\r",

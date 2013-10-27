@@ -17,6 +17,7 @@ Ext.define('TasksList.store.Tasks', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'Ext.util.Sorter',
         'TasksList.model.Task'
     ],
 

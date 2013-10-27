@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "basePath": "http://cdn.sencha.com/ext/gpl/4.2.0/",
         "designer|userClassName": "Library",
         "theme": "neptune"
     },

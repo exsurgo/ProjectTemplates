@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "record",
         "designer|userClassName": "Record"
     },
     "designerId": "44284846-393f-4336-9e37-fe0ed78e1e2a",

@@ -17,6 +17,8 @@ Ext.define('MyApp.store.People', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'Ext.data.proxy.Memory',
+        'Ext.util.Sorter',
         'MyApp.model.Person'
     ],
 

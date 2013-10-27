@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "mymodel",
         "designer|userClassName": "MyModel"
     },
     "designerId": "ac49528a-95b9-40b4-b060-0b13705d5d73",

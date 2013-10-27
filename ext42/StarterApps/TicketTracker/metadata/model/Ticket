@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "ticket",
         "designer|userClassName": "Ticket"
     },
     "designerId": "021ed948-8e05-4892-b47e-d2aa05658cb1",

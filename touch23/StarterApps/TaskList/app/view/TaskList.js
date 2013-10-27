@@ -17,6 +17,10 @@ Ext.define('TasksList.view.TaskList', {
     extend: 'Ext.dataview.List',
     alias: 'widget.tasklist',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         title: 'Task List',
         store: 'Tasks',

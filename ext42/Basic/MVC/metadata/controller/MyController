@@ -26,10 +26,10 @@
                 "implHandler": [
                     "\r",
                     "// Create new model\r",
-                    "var model = Ext.ModelManager.create({\r",
+                    "var model = Ext.create('model.mymodel', {\r",
                     "    id: 123,\r",
-                    "    text: 'Hello World',\r",
-                    "}, 'MyApp.model.MyModel');\r",
+                    "    text: 'Hello World'\r",
+                    "});\r",
                     "\r",
                     "// Bind model to view\r",
                     "this.getContentPanel().update(model.data);\r",

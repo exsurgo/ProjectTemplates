@@ -17,6 +17,10 @@ Ext.define('TicketTracker.view.MainView', {
     extend: 'Ext.navigation.View',
     alias: 'widget.mainview',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         items: [
             {

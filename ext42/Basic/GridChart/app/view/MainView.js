@@ -16,6 +16,12 @@
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.container.Viewport',
 
+    requires: [
+        'Ext.chart.axis.Category',
+        'Ext.chart.axis.Numeric',
+        'Ext.chart.Legend'
+    ],
+
     layout: {
         type: 'border'
     },
@@ -94,7 +100,7 @@ Ext.define('MyApp.view.MainView', {
         //by setting up the series object in the process config,
         //we can setup a more complex chart.
         config.series = [{
-        
+
             //setup the area series. we'll use this for the BG
             type: 'area',
             highlight: {
@@ -110,7 +116,7 @@ Ext.define('MyApp.view.MainView', {
                 opacity: 0.50
             }
         },{
-        
+
             //our line series will be in the foreground
             type: 'line',
             highlight: {
@@ -163,7 +169,7 @@ Ext.define('MyApp.view.MainView', {
                 'stroke-width': 0
             }
         }];
-        
+
         return config;
     }
 

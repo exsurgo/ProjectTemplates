@@ -15,7 +15,7 @@
 
 Ext.define('TicketTracker.view.TicketForm', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.ticketForm',
+    alias: 'widget.ticketform',
 
     height: 250,
     width: 500,

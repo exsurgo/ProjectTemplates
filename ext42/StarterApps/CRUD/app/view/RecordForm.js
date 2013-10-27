@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.RecordForm', {
     extend: 'Ext.window.Window',
+    alias: 'widget.recordform',
 
     height: 300,
     itemId: 'recordForm',

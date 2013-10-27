@@ -46,9 +46,9 @@ Ext.define('MyApp.controller.Records', {
 
     add: function(target) {
         
-        var formWindow = Ext.create('MyApp.view.RecordForm'),	// Create new form window
-        	form = formWindow.down('form').getForm(),			// Get form within window
-        	model = Ext.create('MyApp.model.Record');			// Create new Record model
+        var formWindow = Ext.create('widget.recordform'),	// Create new form window
+        	form = formWindow.down('form').getForm(),		// Get form within window
+        	model = Ext.create('model.record');				// Create new Record model
         
         // Associate model with form
         form.loadRecord(model);
@@ -63,7 +63,7 @@ Ext.define('MyApp.controller.Records', {
         var data = target.up('panel').data,						// Get panel's assosiated data
         	store = this.getRecordsStore(),						// Get Records store
         	record = store.getById(data.id),					// Get current record
-        	formWindow = Ext.create('MyApp.view.RecordForm'),	// Create new form window
+        	formWindow = Ext.create('widget.recordform'),		// Create new form window
         	form = formWindow.down('form').getForm();			// Get form within window
         
         // Load record model into form
@@ -145,10 +145,10 @@ Ext.define('MyApp.controller.Records', {
             if (btn == 'yes') {
         
                 var data = target.up('panel').data,				// Get assosiated data
-                	store = me.getRecordsStore(),				// Get Records store
-                	record = store.getById(data.id),			// Get current record
-                	detailsPanel = me.getDetailsPanel(),		// Get details panel
-                	detailsToolbar = me.getDetailsToolbar();	// Get details panel toolbar
+                    store = me.getRecordsStore(),				// Get Records store
+                    record = store.getById(data.id),			// Get current record
+                    detailsPanel = me.getDetailsPanel(),		// Get details panel
+                    detailsToolbar = me.getDetailsToolbar();	// Get details panel toolbar
         
                 // Delete from store
                 store.remove(record);

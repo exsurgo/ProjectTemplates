@@ -23,7 +23,7 @@
                 "fn": "showLogin",
                 "implHandler": [
                     "\r",
-                    "var loginForm = Ext.create('MyApp.view.LoginForm'),\t// Login form\r",
+                    "var loginForm = Ext.create('widget.loginform'),\t// Login form\r",
                     "    mainView = this.getMainView();\t\t\t\t\t// Main view\r",
                     "\r",
                     "// Navigate to login\r",
@@ -50,7 +50,7 @@
                 "fn": "showRegister",
                 "implHandler": [
                     "\r",
-                    "var registerForm = Ext.create('MyApp.view.RegisterForm'),\t// Registration form\r",
+                    "var registerForm = Ext.create('widget.registerform'),\t// Registration form\r",
                     "    mainView = this.getMainView();\t\t\t\t\t\t\t// Main view\r",
                     "\r",
                     "// Navigate to register\r",

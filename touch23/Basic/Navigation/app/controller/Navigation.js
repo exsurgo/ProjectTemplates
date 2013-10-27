@@ -40,7 +40,7 @@ Ext.define('MyApp.controller.Navigation', {
         // Get or create navigation menu
         var menu = this.getNavMenu();
         if (!menu) {
-            menu = Ext.create('MyApp.view.NavMenu');
+            menu = Ext.create('widget.navmenu');
         }
         
         var menuItems = menu.getItems().items,				// Menu buttons

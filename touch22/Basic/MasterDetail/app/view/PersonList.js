@@ -17,6 +17,10 @@ Ext.define('MyApp.view.PersonList', {
     extend: 'Ext.dataview.List',
     alias: 'widget.personlist',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         itemId: 'list',
         emptyText: 'No Matching Items',

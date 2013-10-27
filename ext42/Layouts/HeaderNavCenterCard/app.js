@@ -24,9 +24,14 @@ Ext.application({
         'MainView',
         'CardStack'
     ],
-    autoCreateViewport: true,
     controllers: [
         'Main'
     ],
-    name: 'MyApp'
+    name: 'MyApp',
+
+    launch: function() {
+
+        Ext.create('MyApp.view.MainView');
+    }
+
 });
