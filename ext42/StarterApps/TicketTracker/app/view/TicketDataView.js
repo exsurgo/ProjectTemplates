@@ -17,6 +17,10 @@ Ext.define('TicketTracker.view.TicketDataView', {
     extend: 'Ext.view.View',
     alias: 'widget.ticketdataview',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     height: 250,
     width: 400,
     emptyText: 'No records!',

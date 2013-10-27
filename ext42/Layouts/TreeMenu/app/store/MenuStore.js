@@ -16,6 +16,10 @@
 Ext.define('MyApp.store.MenuStore', {
     extend: 'Ext.data.TreeStore',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     constructor: function(cfg) {
         var me = this;
         cfg = cfg || {};

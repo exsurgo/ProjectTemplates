@@ -17,6 +17,10 @@ Ext.define('TicketTracker.model.Ticket', {
     extend: 'Ext.data.Model',
     alias: 'model.ticket',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     fields: [
         {
             name: 'title'

@@ -17,6 +17,7 @@ Ext.define('MyApp.store.Tasks', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'Ext.data.proxy.Memory',
         'MyApp.model.Task'
     ],
 

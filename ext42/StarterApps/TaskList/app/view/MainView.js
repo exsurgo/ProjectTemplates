@@ -16,6 +16,11 @@
 Ext.define('MyApp.view.MainView', {
     extend: 'Ext.container.Viewport',
 
+    requires: [
+        'Ext.XTemplate',
+        'Ext.grid.plugin.RowEditing'
+    ],
+
     id: 'mainView',
     layout: {
         type: 'fit'

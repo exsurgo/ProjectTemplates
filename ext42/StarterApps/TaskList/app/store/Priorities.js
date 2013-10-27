@@ -16,6 +16,10 @@
 Ext.define('MyApp.store.Priorities', {
     extend: 'Ext.data.Store',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     constructor: function(cfg) {
         var me = this;
         cfg = cfg || {};

@@ -17,6 +17,10 @@ Ext.define('MyApp.view.MainView', {
     extend: 'Ext.Panel',
     alias: 'widget.mainview',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         itemId: 'mainView',
         padding: 10,

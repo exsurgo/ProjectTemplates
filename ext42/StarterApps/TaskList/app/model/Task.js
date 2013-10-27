@@ -17,6 +17,10 @@ Ext.define('MyApp.model.Task', {
     extend: 'Ext.data.Model',
     alias: 'model.task',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     fields: [
         {
             name: 'id',

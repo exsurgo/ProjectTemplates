@@ -16,6 +16,10 @@
 Ext.define('MyApp.model.Song', {
     extend: 'Ext.data.Model',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     config: {
         fields: [
             {

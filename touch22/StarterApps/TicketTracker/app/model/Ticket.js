@@ -16,6 +16,10 @@
 Ext.define('TicketTracker.model.Ticket', {
     extend: 'Ext.data.Model',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     config: {
         fields: [
             {
