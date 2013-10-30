@@ -66,6 +66,9 @@ Ext.define('CascadingSelect.controller.CarForm', {
         } else {
 
 
+            // Clear selected series value
+            seriesField.setValue('');
+
 
             // Update the series dropdown
             var data = Ext.getStore('Cars').getValues('series', { maker: newValue }),
@@ -97,6 +100,10 @@ Ext.define('CascadingSelect.controller.CarForm', {
 
         } else {
 
+            // Clear selected model value
+            modelField.setValue('');
+
+            // Update the model dropdown
             var data = Ext.getStore('Cars').getValues('model', { maker: makerField.getValue(), series: newValue }),
                 store = new Ext.data.Store({
                     fields: ['id', 'value'],

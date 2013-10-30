@@ -32,50 +32,50 @@ Ext.define('MyApp.controller.Tasks', {
     ],
 
     view: function(target, record) {
-        
+
         var details = this.getDetailsPanel(),	// Get detail panel via controller ref
         	toolbar = this.getDetailsToolbar();	// Get detail panel toolbar via controller ref
-        
+
         // Update the detail panel with the selected row's data
         details.update(record.data);
-        
+
         // Show toolbar
         toolbar.show();
-        
+
     },
 
     add: function(target) {
-        
+
         var formWindow = Ext.create('widget.taskform'),	// Create new form window
         	form = formWindow.down('form').getForm(),	// Get form within window
             model = Ext.create('model.task');		// Create new Task model
-        
+
         // Associate model with form
         form.loadRecord(model);
-        
+
         // Show window
         formWindow.show();
-        
+
     },
 
     edit: function(target) {
-        
+
         var data = target.up('panel').data,						// Get panel's assosiated data
         	store = this.getTasksStore(),						// Get Tasks store
         	task = store.getById(data.id),						// Get current task
             formWindow = Ext.create('widget.taskform'),			// Create new form window
         	form = formWindow.down('form').getForm();			// Get form within window
-        
+
         // Load task model into form
         form.loadRecord(task);
-        
+
         // Show window
         formWindow.show();
-        
+
     },
 
     save: function(target) {
-        
+
         var form = target.up('form').getForm(),			// Get parent form
         	formWindow = target.up('window'),			// Get parent window
         	detailsPanel = this.getDetailsPanel(),		// Get details panel
@@ -83,87 +83,87 @@ Ext.define('MyApp.controller.Tasks', {
         	task = form.getRecord(),					// Get task associated with form
         	store = this.getTasksStore(),				// Get Records store
         	isNew = !task.get('id');					// Is new if no task ID exists
-        
-        
+
+
         // Update associated task with form values
         var errors = form.updateRecord();
-        
+
         // Valid
         if (form.isValid()) {
-        
+
             // Add to store if new task
             if (isNew) {
-        
+
                 // Assign the task ID
                 // Normally, this would be a generated ID
                 var id = store.getTotalCount() + 1;
                 task.set("id", id);
-        
+
                 // Add to store
                 store.add(task);
-        
+
             }
-        
+
             // Commit changes
             store.commitChanges();
-        
+
             // Update detail panel
             detailsPanel.update(task.getData());
-        
+
             // Close window
             formWindow.destroy();
-        
+
         }
-        
-        
+
+
         // Invalid
         else {
-        
+
             // Show errors on form
             form.markInvalid(errors);
-        
+
         }
-        
+
     },
 
     cancelEdit: function(target) {
-        
+
         // Get the window and close it
         var formWindow = target.up("window");
         	formWindow.destroy();
-        
+
     },
 
     remove: function(target) {
-        
+
         var me = this;
-        
+
         // Confirm this delete
         Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this task?', function(btn) {
-        
+
             // User confirmed yes
             if (btn == 'yes') {
-        
+
                 var data = target.up('panel').data,				// Get assosiated data
-                    store = me.getRecordsStore(),				// Get Records store
+                    store = me.getTasksStore(),					// Get tasks store
                     task = store.getById(data.id),				// Get current task
                     detailsPanel = me.getDetailsPanel(),		// Get details panel
                     detailsToolbar = me.getDetailsToolbar();	// Get details panel toolbar
-        
+
                 // Delete from store
                 store.remove(task);
-        
+
                 // Clear panel content
                 detailsPanel.update(null);
-        
+
                 // Hide toolbar
                 detailsToolbar.hide();
-        
+
             }
-        
-        
+
+
         });
-        
+
     },
 
     init: function(application) {

@@ -226,7 +226,7 @@
                     "    if (btn == 'yes') {\r",
                     "\r",
                     "        var data = target.up('panel').data,\t\t\t\t// Get assosiated data\r",
-                    "            store = me.getRecordsStore(),\t\t\t\t// Get Records store\r",
+                    "            store = me.getTasksStore(),\t\t\t\t\t// Get tasks store\r",
                     "            task = store.getById(data.id),\t\t\t\t// Get current task\r",
                     "            detailsPanel = me.getDetailsPanel(),\t\t// Get details panel\r",
                     "            detailsToolbar = me.getDetailsToolbar();\t// Get details panel toolbar\r",
