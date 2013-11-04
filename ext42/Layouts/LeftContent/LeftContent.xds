@@ -16,7 +16,7 @@
     "xdsVersion": "3.0.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000001,
+    "upgradeVersion": 300000000002,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [

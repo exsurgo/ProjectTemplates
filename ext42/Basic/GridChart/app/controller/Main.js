@@ -29,7 +29,7 @@ Ext.define('MyApp.controller.Main', {
 
     selectCity: function(rowmodel, record, index, eOpts) {
         var chart = this.getCityChart();
-        
+
         chart.getStore().loadData(record.data.chartdata);
     },
 
@@ -41,11 +41,11 @@ Ext.define('MyApp.controller.Main', {
         var me = this,
             cityGrid = this.getCityGrid(),
             cityChart = this.getCityChart();
-        
+
         //load the grid data and setup a callback to ensure our timing is correct
         this.getCityGrid().getStore().load({
             scope: this,
-        
+
             //in the callback, we'll select the first grid row that will fire the select event
             callback: function(records, operation, success) {
         		me.getCityGrid().getSelectionModel().select(0, false, false);

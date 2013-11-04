@@ -50,11 +50,11 @@ Ext.define('MyApp.controller.Main', {
         var me = this,
             cardStack = me.getCardStack(),
             layout = cardStack.getLayout();
-        
+
         //custome property on the button defines
         //which direction we want the layout to move
         layout[btn.direction]();
-        
+
         //disable the appropriate button if we are at
         //the end or the beginning of the card stack
         me.getPrevBtn().setDisabled(!layout.getPrev());
@@ -66,17 +66,17 @@ Ext.define('MyApp.controller.Main', {
             newCard = Ext.create('Ext.panel.Panel'),
             cardStack = me.getCardStack(),
             layout = cardStack.getLayout();
-        
+
         //set some properties for the newly created card
         newCard.html = 'Card ' + (cardStack.items.length + 1);
         newCard.margins = '10 10 10 10';
-        
+
         //add the card to the cardStack panel
         cardStack.add(newCard);
-        
+
         //activate the newly created card
         layout.setActiveItem(newCard);
-        
+
         //if we're at the end of the stack, we want
         //to disable the next button
         me.getNextBtn().setDisabled(!layout.getNext());

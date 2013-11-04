@@ -72,7 +72,7 @@ Ext.define('MyApp.controller.Maps', {
                 animation: google.maps.Animation.DROP
             }),
             store = Ext.getStore('Locations'); // Find the store
-        
+
         store.add({                            // Add lat/long to store
             latitude: position.lat(),
             longitude: position.lng()
@@ -84,14 +84,14 @@ Ext.define('MyApp.controller.Maps', {
             longitude = record.get('longitude'),
             location = new google.maps.LatLng(latitude, longitude),
             map = this.getMapView();              // Find the map
-        
+
         map.setMapOptions({   // Move to the center
             center: location
         });
-        
+
         this.getDropPinButton().show();   // Show buttons
         this.getListPinsButton().show();
-        
+
         this.getMainView().pop();   // Remove the pin list panel
     },
 
@@ -100,7 +100,7 @@ Ext.define('MyApp.controller.Maps', {
             xtype: 'listpanel',
             title: 'Pin list'
         });
-        
+
         this.getDropPinButton().hide();   // Hide the buttons
         this.getListPinsButton().hide();
     },

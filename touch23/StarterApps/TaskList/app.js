@@ -31,6 +31,9 @@ Ext.application({
         'TaskList',
         'FormPanel'
     ],
+    requires: [
+        'Ext.MessageBox'
+    ],
     controllers: [
         'Tasks'
     ],

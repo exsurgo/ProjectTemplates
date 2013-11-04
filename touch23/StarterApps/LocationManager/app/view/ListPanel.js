@@ -17,6 +17,10 @@ Ext.define('MyApp.view.ListPanel', {
     extend: 'Ext.Panel',
     alias: 'widget.listpanel',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         id: 'listPanel',
         items: [

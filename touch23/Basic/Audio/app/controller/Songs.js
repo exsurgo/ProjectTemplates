@@ -36,10 +36,10 @@ Ext.define('MyApp.controller.Songs', {
     },
 
     view: function(dataview, record, eOpts) {
-        
+
         // Main navigation view
         var mainView = this.getMainView();
-        
+
         // Navigate to details
         var panel = mainView.push({
             xtype: 'detailpanel',
@@ -73,10 +73,10 @@ Ext.define('MyApp.controller.Songs', {
                 }
             ]
         });
-        
-        
-        
-        
+
+
+
+
     }
 
 });

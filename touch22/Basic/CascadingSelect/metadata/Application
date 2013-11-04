@@ -13,6 +13,9 @@
             "Car"
         ],
         "name": "CascadingSelect",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "Cars"
         ],

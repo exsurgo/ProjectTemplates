@@ -17,9 +17,9 @@ Ext.define('MyApp.store.CityData', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'MyApp.model.CityData',
         'Ext.data.proxy.Memory',
-        'Ext.data.reader.Json',
-        'MyApp.model.CityData'
+        'Ext.data.reader.Json'
     ],
 
     constructor: function(cfg) {

@@ -13,6 +13,9 @@
             "Location"
         ],
         "name": "MyApp",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "Locations"
         ],

@@ -13,6 +13,9 @@
             "Task"
         ],
         "name": "TasksList",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "Tasks"
         ],

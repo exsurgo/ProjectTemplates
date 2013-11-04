@@ -17,6 +17,10 @@ Ext.define('MyApp.view.DetailPanel', {
     extend: 'Ext.Panel',
     alias: 'widget.detailpanel',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         centered: false,
         id: 'detailPanel',

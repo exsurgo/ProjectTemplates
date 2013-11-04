@@ -17,8 +17,8 @@ Ext.define('MyApp.store.Records', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'Ext.data.proxy.Memory',
-        'MyApp.model.Record'
+        'MyApp.model.Record',
+        'Ext.data.proxy.Memory'
     ],
 
     constructor: function(cfg) {

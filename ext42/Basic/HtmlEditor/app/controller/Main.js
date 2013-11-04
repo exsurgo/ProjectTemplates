@@ -24,23 +24,23 @@ Ext.define('MyApp.controller.Main', {
     ],
 
     onReset: function(button, e, eOpts) {
-        
+
         // Clear the HTML editor
         this.getHtmlEditor().setValue();
     },
 
     onSubmit: function(button, e, eOpts) {
-        
+
         var htmlEditor = this.getHtmlEditor(),
             text = htmlEditor.getValue(),
             htmlWindow = Ext.create("MyApp.view.HtmlWindow");
-        
+
         // Update the text in the window
         htmlWindow.update(text);
-        
+
         // Show the window
         htmlWindow.show();
-        
+
     },
 
     init: function(application) {

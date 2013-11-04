@@ -77,7 +77,7 @@ Ext.define('TicketTracker.controller.TicketController', {
 
     onDataviewItemContextMenu: function(dataview, record, item, index, e, eOpts) {
         e.stopEvent();
-        
+
         if (!this.ctxMenu) {
             this.ctxMenu = Ext.create('Ext.menu.Menu', {
                 items:[{
@@ -94,7 +94,7 @@ Ext.define('TicketTracker.controller.TicketController', {
                 }
             });
         }
-        
+
         this.ctxMenu.showAt(e.getXY());
     },
 

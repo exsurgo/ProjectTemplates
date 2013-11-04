@@ -32,50 +32,50 @@ Ext.define('MyApp.controller.Records', {
     ],
 
     view: function(target, record) {
-        
+
         var details = this.getDetailsPanel(),	// Get detail panel via controller ref
         	toolbar = this.getDetailsToolbar();	// Get detail panel toolbar via controller ref
-        
+
         // Update the detail panel with the selected row's data
         details.update(record.data);
-        
+
         // Show toolbar
         toolbar.show();
-        
+
     },
 
     add: function(target) {
-        
+
         var formWindow = Ext.create('widget.recordform'),	// Create new form window
         	form = formWindow.down('form').getForm(),		// Get form within window
         	model = Ext.create('model.record');				// Create new Record model
-        
+
         // Associate model with form
         form.loadRecord(model);
-        
+
         // Show window
         formWindow.show();
-        
+
     },
 
     edit: function(target) {
-        
+
         var data = target.up('panel').data,						// Get panel's assosiated data
         	store = this.getRecordsStore(),						// Get Records store
         	record = store.getById(data.id),					// Get current record
         	formWindow = Ext.create('widget.recordform'),		// Create new form window
         	form = formWindow.down('form').getForm();			// Get form within window
-        
+
         // Load record model into form
         form.loadRecord(record);
-        
+
         // Show window
         formWindow.show();
-        
+
     },
 
     save: function(target) {
-        
+
         var form = target.up('form').getForm(),			// Get parent form
         	formWindow = target.up('window'),			// Get parent window
         	detailsPanel = this.getDetailsPanel(),		// Get details panel
@@ -83,87 +83,87 @@ Ext.define('MyApp.controller.Records', {
         	record = form.getRecord(),					// Get record associated with form
         	store = this.getRecordsStore(),				// Get Records store
         	isNew = !record.get('id');					// Is new if no record ID exists
-        
-        
+
+
         // Update associated record with form values
         var errors = form.updateRecord();
-        
+
         // Valid
         if (form.isValid()) {
-        
+
             // Add to store if new record
             if (isNew) {
-        
+
                 // Assign the record ID
                 // Normally, this would be a generated ID
                 var id = store.getTotalCount() + 1;
                 record.set("id", id);
-        
+
                 // Add to store
                 store.add(record);
-        
+
             }
-        
+
             // Commit changes
             store.commitChanges();
-        
+
             // Update detail panel
             detailsPanel.update(record.getData());
-        
+
             // Close window
             formWindow.destroy();
-        
+
         }
-        
-        
+
+
         // Invalid
         else {
-        
+
             // Show errors on form
             form.markInvalid(errors);
-        
+
         }
-        
+
     },
 
     cancelEdit: function(target) {
-        
+
         // Get the window and close it
         var formWindow = target.up("window");
         	formWindow.destroy();
-        
+
     },
 
     remove: function(target) {
-        
+
         var me = this;
-        
+
         // Confirm this delete
         Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete this record?', function(btn) {
-        
+
             // User confirmed yes
             if (btn == 'yes') {
-        
+
                 var data = target.up('panel').data,				// Get assosiated data
                     store = me.getRecordsStore(),				// Get Records store
                     record = store.getById(data.id),			// Get current record
                     detailsPanel = me.getDetailsPanel(),		// Get details panel
                     detailsToolbar = me.getDetailsToolbar();	// Get details panel toolbar
-        
+
                 // Delete from store
                 store.remove(record);
-        
+
                 // Clear panel content
                 detailsPanel.update(null);
-        
+
                 // Hide toolbar
                 detailsToolbar.hide();
-        
+
             }
-        
-        
+
+
         });
-        
+
     },
 
     init: function(application) {

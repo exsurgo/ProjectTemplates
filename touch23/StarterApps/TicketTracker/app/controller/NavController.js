@@ -47,31 +47,31 @@ Ext.define('TicketTracker.controller.NavController', {
     onTicketDisclose: function(list, record, target, index, e, eOpts) {
         var mainView = this.getMainView(),
             addTicketButton = this.getAddTicketButton();
-        
+
         mainView.push({
             xtype: 'ticketview',
             title: record.get('title')
         });
-        
+
         this.getTitleField().setValue(record.get('title'));
         this.getDescriptionField().setValue(record.get('description'));
         this.getImportanceField().setValue(record.get('importance'));
         this.getStatusField().setValue(record.get('status'));
-        
+
         mainView.setRecord(record);
-        
+
         addTicketButton.hide();
     },
 
     onAddTicketTap: function(button, e, eOpts) {
         var mainView = this.getMainView(),
             addTicketButton = this.getAddTicketButton();
-        
+
         mainView.push({
             xtype: 'ticketview',
             title: 'New ticket'
         });
-        
+
         addTicketButton.hide();
     },
 
@@ -93,14 +93,14 @@ Ext.define('TicketTracker.controller.NavController', {
                 importance: importance,
                 status: status
             };
-        
+
         if (record) {
             record.set(properties);
             mainView.setRecord(null);
         } else {
             store.add(properties);
         }
-        
+
         mainView.pop();
     }
 

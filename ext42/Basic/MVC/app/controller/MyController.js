@@ -24,17 +24,17 @@ Ext.define('MyApp.controller.MyController', {
     ],
 
     runAction: function(target) {
-        
+
         // Create new model
         var model = Ext.create('model.mymodel', {
             id: 123,
             text: 'Hello World'
         });
-        
+
         // Bind model to view
         this.getContentPanel().update(model.data);
-        
-        
+
+
     },
 
     init: function(application) {

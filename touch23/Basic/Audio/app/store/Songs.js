@@ -17,7 +17,8 @@ Ext.define('MyApp.store.Songs', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.Song'
+        'MyApp.model.Song',
+        'Ext.data.proxy.Memory'
     ],
 
     config: {

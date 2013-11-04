@@ -21,7 +21,7 @@ Ext.define('MyApp.view.MainView', {
         items: [
             {
                 xtype: 'panel',
-                title: 'Locations Test',
+                title: 'Locations',
                 itemId: 'mapPanel',
                 items: [
                     {

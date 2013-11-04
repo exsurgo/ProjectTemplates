@@ -45,7 +45,7 @@ Ext.define('MyApp.controller.Main', {
             previewPane = me.getPreviewPane(),
             previewButton = me.getPreviewButton(),
             previewText = 'Preview: ' + item.text;
-        
+
         //evalute the items custom "opt" property to dictate
         //the preview pane view state.
         if (item.opt !== 'hide') {
@@ -64,7 +64,7 @@ Ext.define('MyApp.controller.Main', {
         		previewPane.hide();
             }
         }
-        
+
         previewButton.setText(previewText);
     }
 

@@ -25,6 +25,9 @@ Ext.application({
         'LoginForm',
         'RegisterForm'
     ],
+    requires: [
+        'Ext.MessageBox'
+    ],
     controllers: [
         'Account'
     ],

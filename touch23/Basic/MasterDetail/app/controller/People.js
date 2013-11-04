@@ -36,17 +36,17 @@ Ext.define('MyApp.controller.People', {
     },
 
     view: function(dataview, record, eOpts) {
-        
+
         // Main navigation view
         var mainView = this.getMainView();
-        
+
         // Navigate to details
         mainView.push({
             xtype: 'detailpanel',
             title: "Details",
             data: record.data
         });
-        
+
     }
 
 });

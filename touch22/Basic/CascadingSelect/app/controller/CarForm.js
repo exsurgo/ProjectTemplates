@@ -48,7 +48,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
         var makerField = this.getMakerField(),
             makerNames,
             makerOptions;
-        
+
         // Populate the maker field
         makerNames = Ext.getStore('Cars').getMakerNames();
         makerOptions = makerNames.map(function(makerName) {
@@ -56,7 +56,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
         });
         makerOptions.unshift({ text: 'Choose a maker', value: null });
         makerField.setOptions(makerOptions);
-        
+
         // Hide later parts of the form
         this.getSeriesField().hide();
         this.getModelField().hide();
@@ -66,31 +66,31 @@ Ext.define('CascadingSelect.controller.CarForm', {
     onMakerFieldChange: function(selectfield, newValue, oldValue, eOpts) {
         // Variables, I do declare
         var seriesField = this.getSeriesField();
-        
+
         // Special case: we chose the "choose a maker" option
         if (!newValue) {
-        
+
             seriesField.hide();
-        
+
         } else {
-        
+
             // More variables to declare
             var store = Ext.getStore('Cars'),
                 seriesNames = store.getSeriesNames(newValue),
                 seriesOptions;
-        
+
             // Update the series dropdown
             seriesOptions = seriesNames.map(function(seriesName) {
                 return { text: seriesName, value: seriesName };
             });
             seriesOptions.unshift({ text: 'Choose a series', value: null });
             seriesField.setOptions(seriesOptions);
-        
+
             // Show the series field
             seriesField.show();
-        
+
         }
-        
+
         // Hide later parts of the form
         this.getModelField().hide();
         this.getDoneButton().hide();
@@ -99,32 +99,32 @@ Ext.define('CascadingSelect.controller.CarForm', {
     onSeriesFieldChange: function(selectfield, newValue, oldValue, eOpts) {
         // Variables, I do declare
         var modelField = this.getModelField();
-        
+
         // Special case: we chose the "choose a series" option
         if (!newValue) {
-        
+
             modelField.hide();
-        
+
         } else {
-        
+
             // More variables to declare
             var store = Ext.getStore('Cars'),
                 makerName = this.getMakerField().getValue(),
                 modelNames = store.getModelNames(makerName, newValue),
                 modelOptions;
-        
+
             // Update the series dropdown
             modelOptions = modelNames.map(function(modelName) {
                 return { text: modelName, value: modelName };
             });
             modelOptions.unshift({ text: 'Choose a model', value: null });
             modelField.setOptions(modelOptions);
-        
+
             // Show the series field
             modelField.show();
-        
+
         }
-        
+
         // Hide later parts of the form
         this.getDoneButton().hide();
     },
@@ -140,7 +140,7 @@ Ext.define('CascadingSelect.controller.CarForm', {
     onDoneButtonTap: function(button, e, eOpts) {
         var title = "That's a great car.",
             message = 'You chose a great car. Truly.';
-        
+
         Ext.Msg.alert(title, message, Ext.emptyFn);
     }
 

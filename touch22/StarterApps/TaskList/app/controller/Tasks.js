@@ -49,14 +49,14 @@ Ext.define('TasksList.controller.Tasks', {
             xtype: 'formpanel',
             title: 'Add task'
         });
-        
+
         this.getAddButton().hide();
         this.getDeleteButton().hide();
     },
 
     edit: function(dataview, index, target, record, e, eOpts) {
         var mainView = this.getMainView();
-        
+
         // Navigate to form
         mainView.push({
             xtype: 'formpanel',
@@ -64,18 +64,18 @@ Ext.define('TasksList.controller.Tasks', {
         });
         this.getAddButton().hide();
         this.getDeleteButton().show();
-        
+
         var taskFormField = this.getTaskFormField(),
             fields = taskFormField.getFieldsAsArray();
-        
+
         Ext.each(fields, function(field) {
             var key = field.getName(),
                 value = record.get(key);
             field.setValue(value);
         });
-        
+
         mainView.setRecord(record);
-        
+
         this.holdSelect = true;
     },
 
@@ -88,7 +88,7 @@ Ext.define('TasksList.controller.Tasks', {
                 value = field.getValue();
             data[key] = value;
         });
-        
+
         // Save the model's data
         var mainView = this.getMainView(),
             record = mainView.getRecord(),
@@ -100,7 +100,7 @@ Ext.define('TasksList.controller.Tasks', {
             store.add(data);
         }
         store.sort();
-        
+
         // Navigate back to list
         this.getMainView().pop();
     },
@@ -114,19 +114,19 @@ Ext.define('TasksList.controller.Tasks', {
             title = 'Delete',
             message = 'Are you sure you want to delete this task?',
             messageBox = new Ext.MessageBox();
-        
+
         messageBox.confirm(title, message, function(response) {
             if (response == 'yes') {
-        
+
         		var mainView = me.getMainView(),
         		tasks = Ext.getStore('Tasks'),
         		task = mainView.getRecord();
-        
+
         		tasks.remove(task);
-        
+
         		// Navigate back to list
         		mainView.pop();
-        
+
             }
         });
     }

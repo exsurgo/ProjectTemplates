@@ -16,6 +16,10 @@
 Ext.define('MyApp.model.MyModel', {
     extend: 'Ext.data.Model',
 
+    requires: [
+        'Ext.data.Field'
+    ],
+
     config: {
         fields: [
             {

@@ -35,53 +35,53 @@ Ext.define('MyApp.controller.People', {
     },
 
     search: function(textfield, e, eOpts) {
-        
+
         var value = textfield.getValue(),	// Search value
         	store = Ext.getStore('People');	// People store
-        
+
         // Clear current filter if less than 2
         if (value.length === 0) {
         	store.clearFilter();
         }
-        
+
         // Search term must be at least 2 characters
         if (value.length < 2) {
         	return;
         }
-        
+
         // Clear any current filters
         store.clearFilter();
-        
+
         // Check if a value is provided
         if (value) {
-        
+
             // Spit value to get multiple terms
             var terms = value.split(' ');
-        
+
             // Convert each search string into regex
             var regexps = [];
             Ext.each(terms, function(term) {
-        
+
                 // Ensure term is not space and at least 2 characters
                 if (term && term.length > 1) {
                     regexps.push(new RegExp(term, 'i')); // Case-insensitive regex
                 }
-        
+
             });
-        
+
             // Filter records
             store.filter(function(record) {
-        
+
                 var matches = [];
-        
+
                 // Check each of the regular expressions
                 Ext.each(regexps, function(regex) {
-        
+
         			var match = record.get('firstName').match(regex) || record.get('lastName').match(regex);
                     matches.push(match);
-        
+
                 });
-        
+
                 // If nothing was found, return false to not show
                 if (regexps.length > 1 && matches.indexOf(false) != -1) {
                     return false;
@@ -89,21 +89,21 @@ Ext.define('MyApp.controller.People', {
                     // Else return to show
                     return matches[0];
                 }
-        
+
             });
-        
+
         }
-        
+
     },
 
     clearSearch: function(textfield, e, eOpts) {
-        
+
         // Get store
         var store = Ext.getStore('People');
-        
+
         // Clear filter
         store.clearFilter();
-        
+
     }
 
 });

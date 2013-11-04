@@ -23,47 +23,47 @@ Ext.define('MyApp.controller.App', {
     },
 
     launch: function() {
-        
+
         var store = Ext.getStore('Records'),	// Record store
         	mainView = this.getMainView();		// Main view
-        
+
         // Loop through each category in the store
         store.each(function(category) {
-        
+
             // Create a horizontal carousel
             var carousel = Ext.create('Ext.carousel.Carousel', {
                 direction: 'horizontal',
                 directionLock: true
             });
-        
+
             // Loop through each value in the record
             Ext.each(category.get('values'), function(item) {
-        
+
                 // Create a new slide
                 var slide = Ext.create('widget.slide');
-        
+
                 // Add an image
                 slide.add({
                     xtype: 'image',
                     src: 'images/sencha.png'
                 });
-        
+
                 // Add a label to the slide displaying the category and value
                 slide.add({
                     xtype: 'label',
                     centered: true,
                     html: category.get('category') + " - " + item
                 });
-        
-        
+
+
                 // Add slide to horizontal carousel
                 carousel.add(slide);
-        
+
             });
-        
+
             //  Add horizontal carousel to the main vertical carousel
             mainView.add(carousel);
-        
+
         });
     }
 

@@ -28,14 +28,14 @@ Ext.define('MyApp.controller.Records', {
     ],
 
     view: function(target, record) {
-        
+
         // Get detail panel via controller ref
         var details = this.getDetailsPanel();
-        
+
         // Update the detail panel with the selected row's data
         details.update(record.data);
-        
-        
+
+
     },
 
     init: function(application) {

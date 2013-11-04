@@ -31,6 +31,9 @@ Ext.application({
         'ListPanel',
         'FormPanel'
     ],
+    requires: [
+        'Ext.MessageBox'
+    ],
     controllers: [
         'Locations'
     ],

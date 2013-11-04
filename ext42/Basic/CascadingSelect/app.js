@@ -35,7 +35,6 @@ Ext.application({
     name: 'CascadingSelect',
 
     launch: function() {
-
         Ext.create('CascadingSelect.view.MainViewport');
     }
 

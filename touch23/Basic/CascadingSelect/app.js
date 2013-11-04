@@ -29,6 +29,9 @@ Ext.application({
     views: [
         'FormPanel'
     ],
+    requires: [
+        'Ext.MessageBox'
+    ],
     controllers: [
         'CarForm'
     ],

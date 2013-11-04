@@ -17,6 +17,10 @@ Ext.define('MyApp.view.SongList', {
     extend: 'Ext.dataview.List',
     alias: 'widget.songlist',
 
+    requires: [
+        'Ext.XTemplate'
+    ],
+
     config: {
         itemId: 'list',
         emptyText: 'No Matching Items',
