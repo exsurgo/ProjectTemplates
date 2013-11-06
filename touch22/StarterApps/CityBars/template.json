@@ -1,0 +1,6 @@
+{
+    "title": "City Bars",
+    "description": "App that uses the Yelp API to display local bars in your current location.",
+    "category": "Starter Apps",
+	"useImagePreview": true
+}
