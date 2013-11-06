@@ -19,6 +19,8 @@ Ext.define('MyApp.view.MainView', {
     requires: [
         'Ext.chart.axis.Category',
         'Ext.chart.axis.Numeric',
+        'Ext.chart.series.Area',
+        'Ext.chart.series.Line',
         'Ext.chart.Legend'
     ],
 
@@ -31,7 +33,7 @@ Ext.define('MyApp.view.MainView', {
 
         Ext.applyIf(me, {
             items: [
-                me.processCityChart({
+                {
                     xtype: 'chart',
                     region: 'center',
                     splitterResize: false,
@@ -58,10 +60,87 @@ Ext.define('MyApp.view.MainView', {
                             position: 'left'
                         }
                     ],
+                    series: [
+                        {
+                            type: 'area',
+                            highlight: {
+                                size: 7,
+                                radius: 7
+                            },
+                            title: [
+                                'Avg Low',
+                                'Avg High'
+                            ],
+                            axis: 'left',
+                            xField: 'month',
+                            yField: [
+                                'avglow',
+                                'avghigh'
+                            ],
+                            style: {
+                                lineWidth: 1,
+                                opacity: 0.50
+                            }
+                        },
+                        {
+                            type: 'line',
+                            highlight: {
+                                size: 7,
+                                radius: 7
+                            },
+                            tips: {
+                                trackMouse: true,
+                                width: 160,
+                                height: 25,
+                                //add a custom message to the tooltip
+                                renderer: function(storeItem, item) {
+                                    this.setTitle('Avg High: ' + storeItem.get('high') + ' Degrees');
+                                }
+                            },
+                            title: 'High',
+                            axis: 'left',
+                            xField: 'month',
+                            yField: 'high',
+                            markerConfig: {
+                                type: 'cross',
+                                size: 4,
+                                radius: 4,
+                                'stroke-width': 0
+                            },
+                            smooth: 3
+                        },
+                        {
+                            type: 'line',
+                            highlight: {
+                                size: 7,
+                                radius: 7
+                            },
+                            tips: {
+                                trackMouse: true,
+                                width: 160,
+                                height: 25,
+                                //add a custom message to the tooltip
+                                renderer: function(storeItem, item) {
+                                    this.setTitle('Avg Low: ' + storeItem.get('low') + ' Degrees');
+                                }
+                            },
+                            title: 'Low',
+                            axis: 'left',
+                            xField: 'month',
+                            yField: 'low',
+                            markerConfig: {
+                                type: 'circle',
+                                size: 4,
+                                radius: 4,
+                                'stroke-width': 0
+                            },
+                            smooth: true
+                        }
+                    ],
                     legend: {
 
                     }
-                }),
+                },
                 {
                     xtype: 'gridpanel',
                     collapseMode: 'mini',
@@ -94,83 +173,6 @@ Ext.define('MyApp.view.MainView', {
         });
 
         me.callParent(arguments);
-    },
-
-    processCityChart: function(config) {
-        //by setting up the series object in the process config,
-        //we can setup a more complex chart.
-        config.series = [{
-
-            //setup the area series. we'll use this for the BG
-            type: 'area',
-            highlight: {
-                size: 7,
-                radius: 7
-            },
-            axis: 'left',
-            smooth: true,
-            xField: 'month',
-            yField: ['avglow','avghigh'],
-            style: {
-                lineWidth: 1,
-                opacity: 0.50
-            }
-        },{
-
-            //our line series will be in the foreground
-            type: 'line',
-            highlight: {
-                size: 7,
-                radius: 7
-            },
-            axis: 'left',
-            xField: 'month',
-            yField: 'high',
-            tips: {
-                trackMouse: true,
-                width: 160,
-                height: 25,
-                //add a custom message to the tooltip
-                renderer: function(storeItem, item) {
-                    this.setTitle('Avg High: ' + storeItem.get('high') + ' Degrees');
-                }
-            },
-            //assign our own marker
-            markerConfig: {
-                type: 'cross',
-                size: 4,
-                radius: 4,
-                'stroke-width': 0
-            }
-        }, {
-            type: 'line',
-            highlight: {
-                size: 7,
-                radius: 7
-            },
-            axis: 'left',
-            smooth: true,
-            xField: 'month',
-            yField: 'low',
-            tips: {
-                trackMouse: true,
-                width: 160,
-                height: 25,
-                //add a custom message to the tooltip
-                renderer: function(storeItem, item) {
-                    this.setTitle('Avg Low: ' + storeItem.get('low') + ' Degrees');
-                }
-            },
-            //assign our own marker
-            markerConfig: {
-                type: 'circle',
-                size: 4,
-                radius: 4,
-                'stroke-width': 0
-            }
-        }];
-
-        return config;
     }
 
 });
