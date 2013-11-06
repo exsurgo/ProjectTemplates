@@ -78,95 +78,137 @@
                     "designerId": "c8663e96-523d-473e-a5d3-c7fa278347a0"
                 },
                 {
-                    "type": "processcfgfunction",
+                    "type": "Ext.chart.series.Area",
                     "reference": {
-                        "name": "items",
+                        "name": "series",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|params": [
-                            "config"
+                        "axis": [
+                            "left"
                         ],
-                        "fn": "processCityChart",
-                        "implHandler": [
-                            "//by setting up the series object in the process config,\r",
-                            "//we can setup a more complex chart.\r",
-                            "config.series = [{\r",
-                            "    \r",
-                            "    //setup the area series. we'll use this for the BG\r",
-                            "    type: 'area',\r",
-                            "    highlight: {\r",
-                            "        size: 7,\r",
-                            "        radius: 7\r",
-                            "    },\r",
-                            "    axis: 'left',\r",
-                            "    smooth: true,\r",
-                            "    xField: 'month',\r",
-                            "    yField: ['avglow','avghigh'],\r",
-                            "    style: {\r",
-                            "        lineWidth: 1,\r",
-                            "        opacity: 0.50\r",
-                            "    }\r",
-                            "},{\r",
-                            "    \r",
-                            "    //our line series will be in the foreground\r",
-                            "    type: 'line',\r",
-                            "    highlight: {\r",
-                            "        size: 7,\r",
-                            "        radius: 7\r",
-                            "    },\r",
-                            "    axis: 'left',\r",
-                            "    xField: 'month',\r",
-                            "    yField: 'high',\r",
-                            "    tips: {\r",
-                            "        trackMouse: true,\r",
-                            "        width: 160,\r",
-                            "        height: 25,\r",
-                            "        //add a custom message to the tooltip\r",
-                            "        renderer: function(storeItem, item) {\r",
-                            "            this.setTitle('Avg High: ' + storeItem.get('high') + ' Degrees');\r",
-                            "        }\r",
-                            "    },\r",
-                            "    //assign our own marker\r",
-                            "    markerConfig: {\r",
-                            "        type: 'cross',\r",
-                            "        size: 4,\r",
-                            "        radius: 4,\r",
-                            "        'stroke-width': 0\r",
-                            "    }\r",
-                            "}, {\r",
-                            "    type: 'line',\r",
-                            "    highlight: {\r",
-                            "        size: 7,\r",
-                            "        radius: 7\r",
-                            "    },\r",
-                            "    axis: 'left',\r",
-                            "    smooth: true,\r",
-                            "    xField: 'month',\r",
-                            "    yField: 'low',\r",
-                            "    tips: {\r",
-                            "        trackMouse: true,\r",
-                            "        width: 160,\r",
-                            "        height: 25,\r",
-                            "        //add a custom message to the tooltip\r",
-                            "        renderer: function(storeItem, item) {\r",
-                            "            this.setTitle('Avg Low: ' + storeItem.get('low') + ' Degrees');\r",
-                            "        }\r",
-                            "    },\r",
-                            "    //assign our own marker\r",
-                            "    markerConfig: {\r",
-                            "        type: 'circle',\r",
-                            "        size: 4,\r",
-                            "        radius: 4,\r",
-                            "        'stroke-width': 0\r",
-                            "    }\r",
-                            "}];\r",
-                            "\r",
-                            "return config;"
+                        "highlight": [
+                            "{",
+                            "    size: 7,",
+                            "    radius: 7",
+                            "}"
+                        ],
+                        "style": [
+                            "{",
+                            "    lineWidth: 1,",
+                            "    opacity: 0.50",
+                            "}"
+                        ],
+                        "title": [
+                            "Avg Low",
+                            "Avg High"
+                        ],
+                        "xField": "month",
+                        "yField": [
+                            "avglow",
+                            "avghigh"
                         ]
                     },
-                    "designerId": "c8055b74-a7a0-4778-9654-52425de201a1"
+                    "designerId": "ce38965d-2696-4c62-bd37-32d341d033a6"
+                },
+                {
+                    "type": "Ext.chart.series.Line",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "axis": [
+                            "left"
+                        ],
+                        "highlight": [
+                            "{",
+                            "    size: 7,",
+                            "    radius: 7",
+                            "}"
+                        ],
+                        "markerConfig": [
+                            "{",
+                            "    type: 'cross',",
+                            "    size: 4,",
+                            "    radius: 4,",
+                            "    'stroke-width': 0",
+                            "}"
+                        ],
+                        "smooth": 3,
+                        "tips": [
+                            "{",
+                            "    trackMouse: true,",
+                            "    width: 160,",
+                            "    height: 25,",
+                            "    //add a custom message to the tooltip",
+                            "    renderer: function(storeItem, item) {",
+                            "        this.setTitle('Avg High: ' + storeItem.get('high') + ' Degrees');",
+                            "    }",
+                            "}"
+                        ],
+                        "title": [
+                            "High"
+                        ],
+                        "xField": "month",
+                        "yField": [
+                            "high"
+                        ]
+                    },
+                    "designerId": "d050addb-7e33-4897-9867-c66d2e318b25"
+                },
+                {
+                    "type": "Ext.chart.series.Line",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "axis": [
+                            "left"
+                        ],
+                        "highlight": [
+                            "{",
+                            "    size: 7,",
+                            "    radius: 7",
+                            "}"
+                        ],
+                        "markerConfig": [
+                            "{",
+                            "    type: 'circle',",
+                            "    size: 4,",
+                            "    radius: 4,",
+                            "    'stroke-width': 0",
+                            "}",
+                            ""
+                        ],
+                        "smooth": true,
+                        "tips": [
+                            "{",
+                            "    trackMouse: true,",
+                            "    width: 160,",
+                            "    height: 25,",
+                            "    //add a custom message to the tooltip",
+                            "    renderer: function(storeItem, item) {",
+                            "        this.setTitle('Avg Low: ' + storeItem.get('low') + ' Degrees');",
+                            "    }",
+                            "}"
+                        ],
+                        "title": [
+                            "Low"
+                        ],
+                        "xField": "month",
+                        "yField": [
+                            "low"
+                        ]
+                    },
+                    "configAlternates": {
+                        "smooth": "boolean"
+                    },
+                    "designerId": "a7f35413-aae2-442f-b126-b2e988f9f623"
                 },
                 {
                     "type": "Ext.chart.Legend",
