@@ -1,0 +1,25 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "UserController"
+        ],
+        "models": [
+            "RedditPost"
+        ],
+        "name": "MyApp",
+        "stores": [
+            "redditHomepage"
+        ],
+        "views": [
+            "SettingsPanel",
+            "MainViewport"
+        ]
+    },
+    "designerId": "application"
+}

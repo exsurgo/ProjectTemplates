@@ -1,0 +1,35 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Posts",
+            "Feeds"
+        ],
+        "models": [
+            "Post",
+            "Search",
+            "Feed"
+        ],
+        "name": "Feed",
+        "stores": [
+            "Posts",
+            "Searches",
+            "Feed",
+            "Feeds"
+        ],
+        "views": [
+            "TabPanel",
+            "PostsList",
+            "About",
+            "PostsStory",
+            "AddFeed",
+            "FeedsList"
+        ]
+    },
+    "designerId": "application"
+}

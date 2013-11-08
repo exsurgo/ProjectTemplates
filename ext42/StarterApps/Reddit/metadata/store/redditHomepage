@@ -1,0 +1,124 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[",
+            "            {",
+            "                    \"domain\": \"sencha.com\",",
+            "                    \"banned_by\": null,",
+            "                    \"media_embed\": {},",
+            "                    \"subreddit\": \"programming\",",
+            "                    \"selftext_html\": null,",
+            "                    \"selftext\": \"\",",
+            "                    \"likes\": null,",
+            "                    \"link_flair_text\": null,",
+            "                    \"id\": \"180j37\",",
+            "                    \"clicked\": false,",
+            "                    \"title\": \"Build amazing apps with Sencha Architect!\",",
+            "                    \"num_comments\": 473,",
+            "                    \"score\": 3773,",
+            "                    \"approved_by\": null,",
+            "                    \"over_18\": false,",
+            "                    \"hidden\": false,",
+            "                    \"thumbnail\": \"\",",
+            "                    \"subreddit_id\": \"t5_2qh33\",",
+            "                    \"edited\": false,",
+            "                    \"link_flair_css_class\": null,",
+            "                    \"author_flair_css_class\": null,",
+            "                    \"downs\": 7798,",
+            "                    \"saved\": false,",
+            "                    \"is_self\": false,",
+            "                    \"permalink\": \"/r/programming/fakeid/this_is_not_a_real_post\",",
+            "                    \"name\": \"t3_180j37\",",
+            "                    \"created\": 1360206801,",
+            "                    \"url\": \"http://www.sencha.com/products/architect\",",
+            "                    \"author_flair_text\": null,",
+            "                    \"author\": \"SenchaShill\",",
+            "                    \"created_utc\": 1360178001,",
+            "                    \"media\": null,",
+            "                    \"num_reports\": null,",
+            "                    \"ups\": 11571",
+            "            },",
+            "            {",
+            "                    \"domain\": \"imgur.com\",",
+            "                    \"banned_by\": null,",
+            "                    \"media_embed\": {},",
+            "                    \"subreddit\": \"aww\",",
+            "                    \"selftext_html\": null,",
+            "                    \"selftext\": \"\",",
+            "                    \"likes\": null,",
+            "                    \"link_flair_text\": null,",
+            "                    \"id\": \"1809p6\",",
+            "                    \"clicked\": false,",
+            "                    \"title\": \"They think it's their mom.\",",
+            "                    \"num_comments\": 347,",
+            "                    \"score\": 3816,",
+            "                    \"approved_by\": null,",
+            "                    \"over_18\": false,",
+            "                    \"hidden\": false,",
+            "                    \"thumbnail\": \"http://e.thumbs.redditmedia.com/nSRIy6duqWqmAqlp.jpg\",",
+            "                    \"subreddit_id\": \"t5_2qh1o\",",
+            "                    \"edited\": false,",
+            "                    \"link_flair_css_class\": null,",
+            "                    \"author_flair_css_class\": null,",
+            "                    \"downs\": 8702,",
+            "                    \"saved\": false,",
+            "                    \"is_self\": false,",
+            "                    \"permalink\": \"/r/aww/comments/1809p6/they_think_its_their_mom/\",",
+            "                    \"name\": \"t3_1809p6\",",
+            "                    \"created\": 1360199266,",
+            "                    \"url\": \"http://imgur.com/iA0h9qx\",",
+            "                    \"author_flair_text\": null,",
+            "                    \"author\": \"9GAG_IS_FOR_TOOLS\",",
+            "                    \"created_utc\": 1360170466,",
+            "                    \"media\": null,",
+            "                    \"num_reports\": null,",
+            "                    \"ups\": 12518",
+            "            }",
+            "]"
+        ],
+        "designer|userClassName": "redditHomepage",
+        "model": "RedditPost",
+        "storeId": "MyJsonPStore"
+    },
+    "mockCfgs": [
+        "data"
+    ],
+    "designerId": "f0614e19-3c8a-4a65-88b8-617e77db563f",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "callbackKey": "jsonp",
+                "designer|displayName": "redditJSONProxy",
+                "url": "http://www.reddit.com/.json"
+            },
+            "designerId": "7ca6932d-5f47-465e-a1e7-96cb37d05e57",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data.children"
+                    },
+                    "designerId": "a3f6511b-191f-49f9-8b52-c8dea2b51c74"
+                }
+            ]
+        }
+    ]
+}

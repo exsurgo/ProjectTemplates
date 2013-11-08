@@ -1,0 +1,15 @@
+{
+    "type": "Ext.Component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "about",
+        "designer|userClassName": "About",
+        "html": "<p>About page</p>",
+        "styleHtmlContent": true
+    },
+    "designerId": "498dd6ec-4628-4484-877a-b7d33e587689"
+}

@@ -1,0 +1,131 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RedditPost"
+    },
+    "designerId": "55d3ca0b-c7e6-44bc-b786-c9b0f8a2693c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.title",
+                "name": "title"
+            },
+            "designerId": "d830d4b5-b2ac-425b-8cc6-da67ae515325"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.url",
+                "name": "url"
+            },
+            "designerId": "7c1500c4-5a42-4436-bffb-4657c26d6172"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.subreddit",
+                "name": "subreddit"
+            },
+            "designerId": "e8e17a88-c257-4b45-9c11-4fd18b1e9e0e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.selftext_html",
+                "name": "selftext_html"
+            },
+            "designerId": "3ee9ac96-f1ee-4205-8164-5669e6801447"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.ups",
+                "name": "ups"
+            },
+            "designerId": "f80410c5-de05-466d-9523-972d1d7352c6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.downs",
+                "name": "downs"
+            },
+            "designerId": "2fa233f4-32c6-4bbd-a016-4e2205dda05a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.is_self",
+                "name": "is_self"
+            },
+            "designerId": "3398dc7f-a929-43ac-8b88-ad0e967a3f6c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.permalink",
+                "name": "permalink"
+            },
+            "designerId": "56f13129-dd7e-49ea-8a55-301acb974b23"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "data.author",
+                "name": "author"
+            },
+            "designerId": "1b92ee3e-abc2-4e2e-931c-354283dd2cbe"
+        }
+    ]
+}

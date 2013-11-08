@@ -1,0 +1,22 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "designer|userClassName": "SettingsPanel",
+        "floating": true,
+        "height": 250,
+        "html": [
+            "<div style=\"text-align: center; padding: 30px\">\r",
+            "    Add settings here\r",
+            "</div>"
+        ],
+        "title": "Settings",
+        "width": 400
+    },
+    "designerId": "c6f7b539-ff92-43a0-a632-66c94746e3b1"
+}

@@ -1,0 +1,35 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserController"
+    },
+    "designerId": "69acfe15-89f2-44df-afff-6f6cb446320f",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#settingsTool",
+                "designer|targetType": "Ext.panel.Tool",
+                "fn": "onToolClick",
+                "implHandler": [
+                    "var panel = Ext.create('MyApp.view.SettingsPanel');\r",
+                    "\r",
+                    "panel.show();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "36b3729d-ae71-4501-af77-b3b57e3b0a7c"
+        }
+    ]
+}
