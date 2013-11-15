@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "resources/css/contacts.css"
+    },
+    "designerId": "83d5f462-ac48-477a-8b82-5867e132986d"
+}

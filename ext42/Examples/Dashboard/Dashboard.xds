@@ -1,0 +1,42 @@
+{
+    "name": "Dashboard",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "0ba41f05-69d3-4f65-a25f-892e02e1b78d"
+        ],
+        "store": [
+            "a7e7ac9e-b0e1-4ff0-8d02-be62fc1f2108",
+            "5b03c4c1-4aa2-40fe-b2e2-6bf2aa90d268"
+        ],
+        "controller": [
+            "39ec148d-6ba6-47c3-8a97-c8196c2a089c"
+        ],
+        "model": [
+            "4e7c3e36-e884-4709-9086-038710c53491"
+        ],
+        "resource": [
+            "9a78f845-6352-4ac7-b83a-4179296ac504"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

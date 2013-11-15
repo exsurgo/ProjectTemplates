@@ -1,0 +1,15 @@
+.favorite {
+    border: 1px solid #aaa; 
+    padding: 5px; 
+    margin: 5px;
+    text-align: center;
+}
+
+.square {
+    border-radius: 0px;
+}
+
+.contact-name{
+    color:white;
+    padding-left: 4px;
+}

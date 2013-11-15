@@ -1,0 +1,157 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "DashBoard"
+    },
+    "designerId": "39ec148d-6ba6-47c3-8a97-c8196c2a089c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#companyGrid",
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": [
+                    "selected = selected[0];\r",
+                    "if (selected) {\r",
+                    "\r",
+                    "    // get form and fields\r",
+                    "    var form = this.getCompanyForm().getForm();\r",
+                    "        fields = form.getFields();\r",
+                    "\r",
+                    "    // diable fields\r",
+                    "    fields.each(function(field){\r",
+                    "        if (field.name != 'company') {\r",
+                    "            field.setDisabled(false);\r",
+                    "        }\r",
+                    "    });\r",
+                    "\r",
+                    "    // prevent change events from firing\r",
+                    "    form.suspendEvents();\r",
+                    "    form.loadRecord(selected);\r",
+                    "    form.resumeEvents();\r",
+                    "\r",
+                    "    // highlight items\r",
+                    "    this.highlightCompany(selected);\r",
+                    "\r",
+                    "    // update radar\r",
+                    "    this.updateRadarChart(selected);\r",
+                    "    \r",
+                    "}"
+                ],
+                "name": "selectionchange",
+                "scope": "me"
+            },
+            "designerId": "345b24fb-0cc4-47f5-be9b-4008edfd2267"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "selectedItem"
+                ],
+                "fn": "highlightCompany",
+                "implHandler": [
+                    "var name = selectedItem.get('company'),\r",
+                    "    series = this.getCompanyChart().series.get(0),\r",
+                    "    items = series.items;\r",
+                    "\r",
+                    "series.highlight = true;\r",
+                    "series.unHighlightItem();\r",
+                    "series.cleanHighlights();\r",
+                    "\r",
+                    "items.forEach(function(item) {\r",
+                    "    if (name == item.storeItem.get('company')) {\r",
+                    "        series.highlightItem(item);\r",
+                    "    }\r",
+                    "});\r",
+                    "\r",
+                    "series.highlight = false;"
+                ]
+            },
+            "designerId": "2dec2336-65f4-4692-bf89-1729e9a076aa"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRadarChart",
+                "implHandler": [
+                    "Ext.getStore('Radar').loadData(\r",
+                    "    [\r",
+                    "        {\r",
+                    "            'Name': 'Price',\r",
+                    "            'Data': record.get('price')\r",
+                    "        },\r",
+                    "        {\r",
+                    "            'Name': 'Revenue %',\r",
+                    "            'Data': record.get('revenue')\r",
+                    "        },\r",
+                    "        {\r",
+                    "            'Name': 'Growth %',\r",
+                    "            'Data': record.get('growth')\r",
+                    "        },\r",
+                    "        {\r",
+                    "            'Name': 'Product %',\r",
+                    "            'Data': record.get('product')\r",
+                    "        },\r",
+                    "        {\r",
+                    "            'Name': 'Market %',\r",
+                    "            'Data': record.get('market')\r",
+                    "        }\r",
+                    "    ]\r",
+                    ");"
+                ]
+            },
+            "designerId": "bbc9be7c-6419-41e5-9581-6e9ed8abfb35"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "companyForm",
+                "selector": "#companyForm"
+            },
+            "designerId": "f030a565-0695-4658-a53a-9165da64f78c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "companyChart",
+                "selector": "#companyChart"
+            },
+            "designerId": "c2822828-0524-4108-9e97-0bc6aa9a0093"
+        }
+    ]
+}

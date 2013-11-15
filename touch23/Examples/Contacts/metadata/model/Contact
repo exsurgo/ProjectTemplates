@@ -1,0 +1,146 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contact"
+    },
+    "designerId": "218f2c46-69a4-44c6-8b9e-29b8e3d800dc",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "firstName",
+                "type": "string"
+            },
+            "designerId": "44accbac-81b6-4db7-a8c2-8bbc014716b0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lastName",
+                "type": "string"
+            },
+            "designerId": "f2745cf2-9ce2-4f52-8f90-24170d7ce581"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "phoneNumber",
+                "type": "string"
+            },
+            "designerId": "59ed9c71-3621-4403-8a90-2185d73ee0d5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "emailAddress",
+                "type": "string"
+            },
+            "designerId": "26f47a88-c03c-4319-87e3-950fc9f7ac54"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address",
+                "type": "string"
+            },
+            "designerId": "de69310e-aee6-4cfc-b4bf-00e6d4bd9993"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "city",
+                "type": "string"
+            },
+            "designerId": "491fa1b3-17e3-4286-809f-d80d3c99280d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "state",
+                "type": "string"
+            },
+            "designerId": "5e7ab13c-2da8-4816-83d7-b00e20ccb169"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zipcode",
+                "type": "string"
+            },
+            "designerId": "22cf65fe-7906-4b2c-bc83-7e621f96207e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultValue": [
+                    "resources/img/defaultContactPic.png"
+                ],
+                "name": "picture"
+            },
+            "designerId": "1c7403c9-952f-46aa-befe-dccfc6192e1e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isFavorite",
+                "type": "boolean"
+            },
+            "designerId": "947a36fd-fc9d-4ed9-89b0-7e08888c2b5a"
+        }
+    ]
+}

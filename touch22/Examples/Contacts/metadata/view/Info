@@ -1,0 +1,209 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contactinfo",
+        "designer|userClassName": "Info",
+        "id": null,
+        "padding": "10px"
+    },
+    "designerId": "266d5780-ee4a-4dca-a156-841cf77894ee",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top"
+            },
+            "designerId": "b4f1c33c-db01-4a13-9131-db478a8a0b21",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "infoBackBtn",
+                        "text": "Back",
+                        "ui": "back"
+                    },
+                    "designerId": "59364094-80aa-40dc-81a9-6b24a0cf0d09"
+                },
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "contact-name"
+                        ],
+                        "height": null,
+                        "html": "First Name Last Name",
+                        "id": null,
+                        "itemId": "nameTxt",
+                        "layout|flex": 1
+                    },
+                    "designerId": "a8e6751f-5a9a-4f5c-946c-43e2a9282518"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "favorites",
+                        "id": null,
+                        "itemId": "favoriteBtn",
+                        "text": "",
+                        "ui": null
+                    },
+                    "designerId": "5c21c37f-b22a-468b-97e3-8403e28febc2",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFavoriteBtnTap",
+                                "implHandler": [
+                                    "var pressingCls = 'x-button-pressed';",
+                                    "button.element.toggleCls(pressingCls);",
+                                    "var isPressed = button.element.hasCls(pressingCls);",
+                                    "var record = this.getRecord();",
+                                    "record.set('isFavorite', isPressed);"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "de8e3ebb-f46a-4c7d-b4e9-4cf8eebeb66e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "compose",
+                        "id": "",
+                        "itemId": "editContactBtn",
+                        "text": ""
+                    },
+                    "designerId": "672443c1-dc30-4aee-be97-c8468fcab5b1"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "11b52498-1b3f-4cbb-9bda-c4460a0770c8",
+            "masterInstanceId": "b037ea3a-5bcd-4f85-930a-abaa1bdc4dcd"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "clearIcon": false,
+                "disabled": true,
+                "itemId": "phoneNumber",
+                "label": "Phone Number",
+                "labelAlign": "top",
+                "name": "phoneNumber",
+                "readOnly": true
+            },
+            "designerId": "149d2490-d573-478d-94a7-884d2ff9b1e8"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "clearIcon": false,
+                "disabled": true,
+                "itemId": "emailAddress",
+                "label": "Email Address",
+                "labelAlign": "top",
+                "name": "emailAddress",
+                "placeHolder": "Email address not provided",
+                "readOnly": true
+            },
+            "designerId": "e451d8e5-5316-4268-a50c-436141b4e8a6"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "clearIcon": false,
+                "disabled": true,
+                "id": "address",
+                "itemId": null,
+                "label": "Address",
+                "labelAlign": "top",
+                "name": "address",
+                "placeHolder": "Address not provided",
+                "readOnly": true
+            },
+            "designerId": "81714e4d-fcdb-4c2b-a1ca-9fa0ceba62ca"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "setRecord",
+                "implHandler": [
+                    "this.callParent(arguments);",
+                    "if (record) {",
+                    "    var name = record.get('firstName') + ' ' + (record.get('lastName') || '');",
+                    "    var isFavorite = record.get('isFavorite');",
+                    "    this.down('#nameTxt').setHtml(name);",
+                    "    this.down('#favoriteBtn')[isFavorite ? 'addCls' : 'removeCls']('x-button-pressed');",
+                    "    this.down('contactpic').setData(record.data);",
+                    "}"
+                ]
+            },
+            "designerId": "d9797c1a-36ac-4a31-a8b0-01d1ad2a4bbe"
+        }
+    ]
+}
