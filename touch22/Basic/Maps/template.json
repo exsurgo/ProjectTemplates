@@ -1,6 +1,6 @@
 {
     "title": "Touch Maps",
-    "description": "Simple touch map viewer.",
+    "description": "Simple Google Maps mobile viewer",
     "category": "Basic",
 	"useImagePreview": true
 }

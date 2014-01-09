@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|initialView": true,
+        "designer|userAlias": "mainview",
         "designer|userClassName": "MainView",
         "itemId": "mainView",
         "layout": "border"
@@ -27,6 +28,7 @@
                 "title": "Menu",
                 "width": 150
             },
+            "name": "MyPanel1",
             "designerId": "70e4bdc2-8c21-4da3-b357-bdac73847e65",
             "cn": [
                 {
@@ -41,6 +43,7 @@
                         "itemId": null,
                         "width": null
                     },
+                    "name": "MyMenu",
                     "designerId": "25abbee3-e977-4e92-bc3a-73fcf2aea764",
                     "cn": [
                         {
@@ -55,6 +58,7 @@
                                 "itemId": "home",
                                 "text": "Home"
                             },
+                            "name": "MyMenuItem",
                             "designerId": "2d21cd52-2bd4-4f26-99f8-ecb1b8453ece"
                         },
                         {
@@ -69,6 +73,7 @@
                                 "itemId": "about",
                                 "text": "About Us"
                             },
+                            "name": "MyMenuItem1",
                             "designerId": "a9c5c2c5-e485-4719-a39d-1f3df3d72393"
                         },
                         {
@@ -83,6 +88,7 @@
                                 "itemId": "contact",
                                 "text": "Contact us"
                             },
+                            "name": "MyMenuItem2",
                             "designerId": "9f67ea74-e63c-4b04-b4c2-4130f7cbd1f8"
                         },
                         {
@@ -100,6 +106,7 @@
                                 "name": "click",
                                 "scope": "me"
                             },
+                            "name": "onMenuClick",
                             "designerId": "6aabf84c-692c-4a9f-9b11-0d46214a63b5"
                         }
                     ]
@@ -119,6 +126,7 @@
                 "layout|region": "center",
                 "title": null
             },
+            "name": "MyPanel2",
             "designerId": "c98c4f91-6f66-4054-8e31-2ccc2ab4f975",
             "cn": [
                 {
@@ -136,6 +144,7 @@
                         "title": "Home",
                         "width": null
                     },
+                    "name": "MyPanel3",
                     "designerId": "6e0310e2-3829-40e2-acea-c3d80afea341",
                     "cn": [
                         {
@@ -148,6 +157,7 @@
                             "userConfig": {
                                 "text": "Home View"
                             },
+                            "name": "MyLabel",
                             "designerId": "3c8a041c-5502-4ce2-a822-597ddafe4b34"
                         }
                     ]
@@ -166,6 +176,7 @@
                         "layout": "vbox",
                         "title": "About Us"
                     },
+                    "name": "MyPanel4",
                     "designerId": "daf95a82-9e4f-4afd-b806-c2cc1b902fad",
                     "cn": [
                         {
@@ -179,6 +190,7 @@
                                 "layout|flex": null,
                                 "text": "About Us View"
                             },
+                            "name": "MyLabel1",
                             "designerId": "7179b2cc-4d46-4d6f-81d7-7672eac6c1e6"
                         }
                     ]
@@ -197,6 +209,7 @@
                         "layout": "vbox",
                         "title": "Contact Us"
                     },
+                    "name": "MyPanel5",
                     "designerId": "bdce8a33-1e17-42fa-bdbd-f2e50d0d22da",
                     "cn": [
                         {
@@ -210,6 +223,7 @@
                                 "layout|flex": null,
                                 "text": "Contact Us View"
                             },
+                            "name": "MyLabel2",
                             "designerId": "d6c3094e-58c9-4996-a39e-015335bf8746"
                         }
                     ]

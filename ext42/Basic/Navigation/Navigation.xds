@@ -1,22 +1,10 @@
 {
     "name": "Navigation",
-    "settings": {
-        "cmd": {},
-        "canvasControls": {
-            "viewportSize": {
-                "name": "Auto Expand",
-                "builtIn": true,
-                "height": null,
-                "width": null
-            }
-        },
-        "urlPrefix": "",
-        "exportPath": ""
-    },
-    "xdsVersion": "3.0.0",
+    "settings": {},
+    "xdsVersion": "3.1.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000003,
+    "upgradeVersion": 300000000005,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [

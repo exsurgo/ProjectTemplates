@@ -6,7 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Navigation"
+        "designer|userClassName": "Navigation",
+        "requires": [
+            "Ext.util.History"
+        ]
     },
     "designerId": "02e19093-9c6b-4222-8b96-2632f82d7303",
     "cn": [
@@ -48,6 +51,7 @@
                     ""
                 ]
             },
+            "name": "onLaunch",
             "designerId": "87ba2aab-4c6c-4582-a261-5c0f0fb1fac8"
         },
         {
@@ -76,7 +80,7 @@
                     "\r",
                     "// Set menu and page title\r",
                     "// Iterate through each menu item\r",
-                    "this.getMenu().items.each(function(item) {\r",
+                    "Ext.ComponentQuery.query('menu')[0].items.each(function(item) {\r",
                     "\r",
                     "    // Active\r",
                     "    if (item.href == '#' + id) {\r",
@@ -95,6 +99,7 @@
                     ""
                 ]
             },
+            "name": "navigate",
             "designerId": "010efca5-ac49-4bce-9f68-0ddca6bee936"
         },
         {
@@ -108,6 +113,7 @@
                 "ref": "contentPanel",
                 "selector": "#contentPanel"
             },
+            "name": "contentPanel",
             "designerId": "e376e823-b564-494d-ae35-b5c93c355ea7"
         },
         {
@@ -121,6 +127,7 @@
                 "ref": "menu",
                 "selector": "#menu"
             },
+            "name": "menu",
             "designerId": "41f0624a-4a22-408d-8277-bf77cccabf9b"
         }
     ]

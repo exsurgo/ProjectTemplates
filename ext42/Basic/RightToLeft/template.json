@@ -1,5 +1,5 @@
 {
     "title": "Right to Left",
-    "description": "Sample demonstrating the frameworks right-to-left functionality for text, grid's panel's, buttons, menu's, etc.",
+    "description": "Example illustrating a grid view data-bound to a details view template and a bar chart",
     "category": "Basic"
 }

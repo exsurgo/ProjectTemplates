@@ -1,5 +1,5 @@
 {
     "title": "Grid Chart",
-    "description": "Grid view with an associated data chart.",
+    "description": "Grid view bound and bar chart bound to a data store",
     "category": "Basic"
 }

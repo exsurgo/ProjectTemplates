@@ -1,5 +1,5 @@
 {
     "title": "Ticket Tracker",
-    "description": "Fully working ticket tracket app which can read, create, update and delete tickets.",
+    "description": "Simple ticket tracker for viewing and managing work tickets",
     "category": "Starter Apps"
 }

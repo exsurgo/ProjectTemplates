@@ -1,0 +1,33 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        'name': 'Joe',",
+            "        'gender': 'male',",
+            "        'age': 36",
+            "    },",
+            "    {",
+            "        'name': 'Anna',",
+            "        'gender': 'female',",
+            "        'age': 29",
+            "    },",
+            "    {",
+            "        'name': 'Frederick',",
+            "        'gender': 'male',",
+            "        'age': 74",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "peopleStore",
+        "model": "peopleModel",
+        "storeId": "peopleStore"
+    },
+    "designerId": "c03990e1-8b43-4f3d-9e8f-91fbb94c9adf"
+}
