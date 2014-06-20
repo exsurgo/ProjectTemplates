@@ -25,6 +25,7 @@
                 "itemId": "mapPanel",
                 "title": "Map"
             },
+            "name": "MyPanel",
             "designerId": "304a1802-d197-4038-aaed-1d1e62c47ea5",
             "cn": [
                 {
@@ -40,6 +41,7 @@
                         "height": "100%",
                         "itemId": "map"
                     },
+                    "name": "MyMap",
                     "designerId": "74a63222-6afd-48b4-9167-4a2c9265b487"
                 }
             ]
@@ -55,6 +57,7 @@
                 "designer|displayName": "Navigation bar",
                 "docked": "top"
             },
+            "name": "MyNavigationBar",
             "designerId": "ec89cb14-cd2e-47a5-9b25-7fc715d4353d",
             "cn": [
                 {
@@ -70,6 +73,7 @@
                         "itemId": "dropPinButton",
                         "text": "Drop"
                     },
+                    "name": "MyButton",
                     "designerId": "5e3e0e39-98de-414a-b924-302be2dee9b0"
                 },
                 {
@@ -85,6 +89,7 @@
                         "itemId": "listPinsButton",
                         "text": "Pins"
                     },
+                    "name": "MyButton1",
                     "designerId": "7de169a1-7091-43ae-9f09-f2652d1bdc38"
                 }
             ]

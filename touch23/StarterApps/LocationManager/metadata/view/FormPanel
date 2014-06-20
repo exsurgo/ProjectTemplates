@@ -34,6 +34,7 @@
                 "scrollable": null,
                 "title": null
             },
+            "name": "MyFieldSet",
             "designerId": "4c345b19-57cc-445d-9ccd-2c152d9a55f6",
             "cn": [
                 {
@@ -54,6 +55,7 @@
                         "placeHolder": "My house",
                         "required": true
                     },
+                    "name": "MyTextField",
                     "designerId": "834b169f-b434-4837-aad6-c4aa9e8b711b"
                 },
                 {
@@ -73,6 +75,7 @@
                         "placeHolder": "8 Fake Ave, Faketown, USA",
                         "required": true
                     },
+                    "name": "MyTextField1",
                     "designerId": "64d1f147-6dcf-4385-be18-a9c5021664a3"
                 },
                 {
@@ -89,6 +92,7 @@
                         "labelWrap": true,
                         "name": "description"
                     },
+                    "name": "MyTextArea",
                     "designerId": "d46f4c7c-0715-471b-abac-29f489c3c5a1"
                 },
                 {
@@ -103,6 +107,7 @@
                         "margin": 10,
                         "text": "Add location"
                     },
+                    "name": "MyButton2",
                     "designerId": "44cd3552-2a6b-49f1-8b61-47004e62234e"
                 },
                 {
@@ -117,6 +122,7 @@
                         "itemId": "newLocationMap",
                         "modal": null
                     },
+                    "name": "MyMap1",
                     "designerId": "ce0316d3-60b6-42d0-8c14-83aa238d6e67"
                 }
             ]

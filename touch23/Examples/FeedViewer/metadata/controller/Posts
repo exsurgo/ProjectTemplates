@@ -34,6 +34,7 @@
                 "ref": "postsNav",
                 "selector": "#postsNav"
             },
+            "name": "postsNav",
             "designerId": "1d294d9c-f2b2-4437-b1c8-6a3617e621e9"
         },
         {
@@ -47,6 +48,7 @@
                 "ref": "postsList",
                 "selector": "#postsList"
             },
+            "name": "postsList",
             "designerId": "9d4292e3-4cc8-4636-a8ae-4963d5e2ff9b"
         },
         {
@@ -68,6 +70,7 @@
                     ""
                 ]
             },
+            "name": "launch",
             "designerId": "ba81473e-8677-415d-8024-270befc0c87c"
         },
         {
@@ -105,6 +108,7 @@
                     ""
                 ]
             },
+            "name": "loadPostsOnFeedLoad",
             "designerId": "4257c28b-bc15-4254-91cd-28cfbe4ff4c4"
         },
         {
@@ -123,6 +127,7 @@
                 ],
                 "name": "activate"
             },
+            "name": "onPostsListActivate",
             "designerId": "09a681bf-e595-4ec4-9c5a-7f55ebe10c93"
         },
         {
@@ -145,6 +150,7 @@
                 "name": "updateNav",
                 "scope": "this"
             },
+            "name": "onUpdateNav",
             "designerId": "a5a6ba56-e7af-4b35-9b35-c56812aa4e48"
         },
         {
@@ -167,6 +173,7 @@
                 ],
                 "name": "itemtap"
             },
+            "name": "onPostsListItemTap",
             "designerId": "a6fc06e1-c607-4d4b-ae9e-ab88ecb2fc93"
         }
     ]

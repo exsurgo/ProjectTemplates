@@ -83,6 +83,7 @@
             "userConfig": {
                 "name": "text"
             },
+            "name": "MyField",
             "designerId": "27263b1e-3386-4a06-a97f-3c4bc1f75ed9"
         }
     ]

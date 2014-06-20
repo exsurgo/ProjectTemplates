@@ -21,6 +21,7 @@
             "userConfig": {
                 "title": "Login"
             },
+            "name": "MyFieldSet",
             "designerId": "354aa8a0-f4d5-4424-a241-2c71090e7625",
             "cn": [
                 {
@@ -35,6 +36,7 @@
                         "labelWidth": "40%",
                         "name": "username"
                     },
+                    "name": "MyTextField",
                     "designerId": "993768d2-880a-47bd-b1cd-abd256b4795c"
                 },
                 {
@@ -49,6 +51,7 @@
                         "labelWidth": "40%",
                         "name": "password"
                     },
+                    "name": "MyTextField1",
                     "designerId": "ed11b1e7-37ae-485f-a7fe-ee06690cbb76"
                 }
             ]
@@ -66,6 +69,7 @@
                 "padding": 8,
                 "text": "Login"
             },
+            "name": "MyButton2",
             "designerId": "e7d2af5c-d435-4ffc-8e17-fb2affa59d82"
         }
     ]

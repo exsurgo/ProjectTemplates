@@ -1,0 +1,53 @@
+{
+    "name": "TicketTracker",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "8528171f-a626-4448-98da-00cf0fe42ee5",
+            "4c0e9546-a38b-4cb7-802b-1ef6345f12e8",
+            "be0e23f3-47e2-4c05-9bea-e852cb8c98d2",
+            "76d10648-962f-4291-b9ce-507a9fcef315",
+            "04c05d9f-49b1-43c8-ae2d-2c50e15dde8d",
+            "7bc9c36f-5271-4ca0-b74f-6a418d62576d",
+            "50acfcc9-d646-45d6-9376-9e5249e25b47",
+            "3a04ed6b-3f65-4b4d-9063-cc1bfebf9870",
+            "9cdfc666-c54b-46ac-828b-222c84292946",
+            "e45ee073-c01e-4f45-9e5d-af68493c2e5a",
+            "36ab7f40-c114-42e9-858a-956f1fd1e548",
+            "9ce8d0ba-b87c-4048-9705-43f9bd6c65dd"
+        ],
+        "store": [
+            "87797620-cc28-4a7d-bc85-61a1cee8a1fc"
+        ],
+        "controller": [
+            "d7c013f6-c70c-4d00-a01f-91f415bd4328"
+        ],
+        "model": [
+            "021ed948-8e05-4892-b47e-d2aa05658cb1"
+        ],
+        "resource": [
+            "2aa6cb0c-1618-4d82-9ce7-22e8e0675117",
+            "b0156b77-a9e1-4c4c-a735-20919a9cf61c"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "cascadingselect",
+        "designer|userClassName": "CascadingSelectViewController"
+    },
+    "designerId": "7b3dba86-06b6-4742-a678-763fde7160a9"
+}

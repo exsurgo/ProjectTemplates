@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "cardstack",
+        "designer|userClassName": "CardStackViewModel"
+    },
+    "designerId": "a5856374-058e-41db-b599-8b787cf96605"
+}

@@ -38,6 +38,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "runAction",
             "designerId": "4f67c9ad-20dc-4c29-9f69-30ee94aae98b"
         },
         {
@@ -51,6 +52,7 @@
                 "ref": "detailPanel",
                 "selector": "mainview #detailPanel"
             },
+            "name": "detailPanel",
             "designerId": "731c57b5-4ec1-49cd-aae9-3d20c2a95ce7"
         }
     ]

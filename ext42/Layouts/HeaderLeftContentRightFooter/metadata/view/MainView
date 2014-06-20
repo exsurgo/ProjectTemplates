@@ -27,6 +27,7 @@
                 "layout|split": false,
                 "title": "Header"
             },
+            "name": "MyPanel1",
             "designerId": "50c244fe-da31-4fb5-87f9-0ca07b0edb20"
         },
         {
@@ -42,6 +43,7 @@
                 "layout|split": true,
                 "title": "Content"
             },
+            "name": "MyPanel2",
             "designerId": "a8ea999e-caee-40aa-aae8-e8bb6cac3932"
         },
         {
@@ -58,6 +60,7 @@
                 "title": "Left",
                 "width": 200
             },
+            "name": "MyPanel3",
             "designerId": "4e40eb5a-6ac5-4ebd-a72e-8e52c98fdbf8"
         },
         {
@@ -74,6 +77,7 @@
                 "title": "Right",
                 "width": 200
             },
+            "name": "MyPanel4",
             "designerId": "42591753-568e-44d8-9c7c-937e4e0cd8e7"
         },
         {
@@ -90,6 +94,7 @@
                 "layout|split": false,
                 "title": "Footer"
             },
+            "name": "MyPanel5",
             "designerId": "12aee047-a8ca-4218-ac89-d6543b5a595a"
         }
     ]

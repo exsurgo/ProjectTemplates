@@ -29,6 +29,7 @@
                 "layout|split": true,
                 "title": "Dashboard"
             },
+            "name": "MyPanel1",
             "designerId": "6be7277a-e9a9-4c8d-9548-68f84e741644",
             "cn": [
                 {
@@ -48,6 +49,7 @@
                         "store": "Companies",
                         "width": 400
                     },
+                    "name": "ColumnChart1",
                     "designerId": "e2597feb-3b49-44d7-936e-1df9a012c0c5",
                     "isBuiltIn": true,
                     "iconCls": "icon-column-chart",
@@ -68,6 +70,7 @@
                                 "minimum": 0,
                                 "title": "Numeric Axis"
                             },
+                            "name": "MyNumericAxis",
                             "designerId": "e35da4f5-8e24-45eb-93f2-c32b3575dedb"
                         },
                         {
@@ -95,6 +98,7 @@
                                 ],
                                 "title": null
                             },
+                            "name": "MyCategoryAxis",
                             "designerId": "941c1cea-5cbf-42e5-8e69-dff407f2b40a"
                         },
                         {
@@ -134,6 +138,7 @@
                                     "price"
                                 ]
                             },
+                            "name": "MyColumnSeries",
                             "designerId": "212814aa-b810-49e2-9f97-2f7a1bf6c5dd",
                             "cn": [
                                 {
@@ -158,6 +163,7 @@
                                         "name": "itemmouseup",
                                         "scope": "me"
                                     },
+                                    "name": "onColumnItemMouseUp",
                                     "designerId": "33a7c2f5-2004-4c16-8fbf-cc90105225ab"
                                 }
                             ]
@@ -184,6 +190,7 @@
                 "title": "Company Data",
                 "width": 150
             },
+            "name": "MyPanel2",
             "designerId": "9df01c6c-16e4-4a43-bae2-9d564f0d36a1",
             "cn": [
                 {
@@ -199,6 +206,7 @@
                         "store": "Companies",
                         "title": null
                     },
+                    "name": "MyGridPanel",
                     "designerId": "ab77d0c9-9717-4825-9104-2eeee8caba48",
                     "cn": [
                         {
@@ -213,6 +221,7 @@
                                 "text": "Company",
                                 "width": 140
                             },
+                            "name": "MyColumn",
                             "designerId": "6d6cc943-ef34-4ec5-b27f-3b8d51d20221"
                         },
                         {
@@ -226,6 +235,7 @@
                                 "dataIndex": "price",
                                 "text": "Price"
                             },
+                            "name": "MyNumberColumn",
                             "designerId": "839a37c9-c775-4956-90c6-0f7bdc989efe"
                         },
                         {
@@ -239,6 +249,7 @@
                                 "dataIndex": "revenue",
                                 "text": "Revenue"
                             },
+                            "name": "MyNumberColumn1",
                             "designerId": "9c02a971-4d66-454e-8c07-36bae1ad75cd"
                         },
                         {
@@ -252,6 +263,7 @@
                                 "dataIndex": "growth",
                                 "text": "Growth"
                             },
+                            "name": "MyNumberColumn2",
                             "designerId": "3ac8629d-6cac-4398-a23f-c02857870fe6"
                         },
                         {
@@ -265,6 +277,7 @@
                                 "dataIndex": "product",
                                 "text": "Product"
                             },
+                            "name": "MyNumberColumn3",
                             "designerId": "6fa961ea-9251-419e-9eeb-89e5d59e5dd1"
                         },
                         {
@@ -278,6 +291,7 @@
                                 "dataIndex": "market",
                                 "text": "Market"
                             },
+                            "name": "MyNumberColumn4",
                             "designerId": "b3892ee3-e123-4b95-97d8-2cdc650dc829"
                         }
                     ]
@@ -301,6 +315,7 @@
                 "layout|split": true,
                 "title": "Company Details"
             },
+            "name": "MyPanel3",
             "designerId": "5a0d4079-d7a4-487f-8bf8-939eececc032",
             "cn": [
                 {
@@ -317,6 +332,7 @@
                         "layout": "vbox",
                         "title": null
                     },
+                    "name": "MyForm",
                     "designerId": "45c865a0-3700-4fb0-a06c-e4480078e6ce",
                     "cn": [
                         {
@@ -335,6 +351,7 @@
                                 "theme": "Blue",
                                 "width": 400
                             },
+                            "name": "RadarChart1",
                             "configAlternates": {
                                 "animate": "boolean"
                             },
@@ -369,6 +386,7 @@
                                         "xField": "Name",
                                         "yField": "Data"
                                     },
+                                    "name": "MyRadarSeries",
                                     "designerId": "35f4a16e-281c-45fd-8c6b-1137b63bfec7"
                                 },
                                 {
@@ -382,6 +400,7 @@
                                         "maximum": 100,
                                         "steps": 5
                                     },
+                                    "name": "MyRadialAxis",
                                     "designerId": "a2364bf4-c6d8-40e3-af99-c68b3b20fff2"
                                 }
                             ]
@@ -410,6 +429,7 @@
                                 "layout|flex": 1,
                                 "title": "Company Details"
                             },
+                            "name": "MyFieldSet",
                             "designerId": "f13a4a0f-4ba6-4764-8c40-6ff67a037dae",
                             "cn": [
                                 {
@@ -424,6 +444,7 @@
                                         "layout|anchor": "100%",
                                         "name": "company"
                                     },
+                                    "name": "MyTextField",
                                     "designerId": "e081d620-8bca-4d3e-8e22-84152dc26421"
                                 },
                                 {
@@ -438,6 +459,7 @@
                                         "layout|anchor": "100%",
                                         "name": "price"
                                     },
+                                    "name": "MyNumberField",
                                     "designerId": "2ec85ba8-3ad7-4e25-8058-84fd69980adf"
                                 },
                                 {
@@ -452,6 +474,7 @@
                                         "layout|anchor": "100%",
                                         "name": "revenue"
                                     },
+                                    "name": "MyNumberField1",
                                     "designerId": "8a8a2618-798d-44a5-9ef3-33b788e1f232"
                                 },
                                 {
@@ -466,6 +489,7 @@
                                         "layout|anchor": "100%",
                                         "name": "growth"
                                     },
+                                    "name": "MyNumberField2",
                                     "designerId": "133bd64f-5946-4fa7-a039-b9acdc245ef7"
                                 },
                                 {
@@ -480,6 +504,7 @@
                                         "layout|anchor": "100%",
                                         "name": "product"
                                     },
+                                    "name": "MyNumberField3",
                                     "designerId": "8ab3a53d-72a8-4654-bd48-a054259ee02c"
                                 },
                                 {
@@ -494,6 +519,7 @@
                                         "layout|anchor": "100%",
                                         "name": "market"
                                     },
+                                    "name": "MyNumberField4",
                                     "designerId": "04c1dd7b-ecf8-42ff-8002-8e6e8f8f1d0c"
                                 }
                             ]

@@ -24,6 +24,7 @@
                 "html": "About Us",
                 "itemId": "aboutLabel"
             },
+            "name": "MyLabel1",
             "designerId": "c8a26905-561a-48d4-9306-20cae515702f"
         }
     ]

@@ -20,6 +20,7 @@
             "userConfig": {
                 "name": "manufacturer"
             },
+            "name": "MyField",
             "designerId": "1f2a373a-5542-45c1-a073-a19e2f24e573"
         },
         {
@@ -32,6 +33,7 @@
             "userConfig": {
                 "name": "model"
             },
+            "name": "MyField1",
             "designerId": "9457f1d9-cb15-48a2-929e-aba43749eb39"
         },
         {
@@ -44,6 +46,7 @@
             "userConfig": {
                 "name": "price"
             },
+            "name": "MyField2",
             "designerId": "0bdbd53c-a3a3-42e5-af2c-6b664d2f1fa8"
         },
         {
@@ -56,6 +59,7 @@
             "userConfig": {
                 "name": "wiki"
             },
+            "name": "MyField3",
             "designerId": "5772beaa-658d-478c-a8f4-a485e9a4f30e"
         },
         {
@@ -68,6 +72,7 @@
             "userConfig": {
                 "name": "img"
             },
+            "name": "MyField4",
             "designerId": "4a74bdf3-05c6-48b4-871c-159e60950faf"
         },
         {
@@ -80,6 +85,7 @@
             "userConfig": {
                 "name": "quality"
             },
+            "name": "MyField5",
             "designerId": "0846e5f8-7b72-434a-a64c-cb3f88af72d1"
         }
     ]

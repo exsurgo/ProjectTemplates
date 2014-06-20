@@ -27,5 +27,6 @@
             "MainNav"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

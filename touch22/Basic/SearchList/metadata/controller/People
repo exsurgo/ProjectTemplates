@@ -90,6 +90,7 @@
                 ],
                 "name": "keyup"
             },
+            "name": "search",
             "designerId": "871fecb7-7797-4cf0-bbbf-5e6031308e3d"
         },
         {
@@ -114,6 +115,7 @@
                 ],
                 "name": "clearicontap"
             },
+            "name": "clearSearch",
             "designerId": "dc6e678b-1f90-4063-94ad-5689ccf6f1a3"
         }
     ]

@@ -33,6 +33,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "add",
             "designerId": "4f84813c-6e46-4fe3-b20d-94176fe522ca"
         },
         {
@@ -72,6 +73,7 @@
                 ],
                 "name": "itemtouchend"
             },
+            "name": "edit",
             "designerId": "c22ef67f-57dd-4d84-be23-5cc6b3d25fad"
         },
         {
@@ -112,6 +114,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "save",
             "designerId": "5878c17a-f4d1-41df-9b54-9bb9f34dfdd1"
         },
         {
@@ -125,6 +128,7 @@
                 "ref": "mainView",
                 "selector": "mainview"
             },
+            "name": "mainView",
             "designerId": "359761db-20d2-41e7-b6fe-c0629136513f"
         },
         {
@@ -138,6 +142,7 @@
                 "ref": "addButton",
                 "selector": "mainview #addButton"
             },
+            "name": "addButton",
             "designerId": "3e97ad92-d279-4203-972b-358b34dd910d"
         },
         {
@@ -156,6 +161,7 @@
                 ],
                 "name": "show"
             },
+            "name": "onTaskListShow",
             "designerId": "aee68443-6dca-4247-8862-4912c0554f35"
         },
         {
@@ -169,6 +175,7 @@
                 "ref": "taskFormField",
                 "selector": "formpanel #taskFormField"
             },
+            "name": "taskFormField",
             "designerId": "0771fd20-d311-4473-83d0-c276d7e06ff6"
         },
         {
@@ -182,6 +189,7 @@
                 "ref": "deleteButton",
                 "selector": "formpanel #deleteButton"
             },
+            "name": "deleteButton",
             "designerId": "56a96f95-7521-4681-a72d-c8763e227ef6"
         },
         {
@@ -217,6 +225,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "remove",
             "designerId": "2b137530-1622-48a6-bbbd-1c489f42864e"
         }
     ]

@@ -26,6 +26,7 @@
                 "layout|region": "north",
                 "title": "Header"
             },
+            "name": "MyPanel1",
             "designerId": "8c973eb1-c2f4-4efc-a90b-88d510ed381f"
         },
         {
@@ -43,6 +44,7 @@
                 "title": "Panel",
                 "width": 231
             },
+            "name": "MyTreePanel",
             "designerId": "9deb22f3-d8ff-4dda-b704-fc6d8dd6f866",
             "cn": [
                 {
@@ -56,6 +58,7 @@
                         "itemId": "treeMenu",
                         "width": null
                     },
+                    "name": "MyTreeView",
                     "designerId": "a6ea9d5f-6bcb-41f3-88ea-8e374f1c8114"
                 }
             ]
@@ -72,6 +75,7 @@
                 "layout|region": "center",
                 "title": "Content"
             },
+            "name": "MyPanel2",
             "designerId": "03644dfa-0eaf-487e-bfed-a743c77c31e8"
         }
     ]

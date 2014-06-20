@@ -26,6 +26,7 @@
                 "padding": 10,
                 "style": "color: #999; text-align: center;"
             },
+            "name": "MyLabel",
             "designerId": "58f17ac0-4bd9-421c-ba1b-c17f8e32e878"
         },
         {
@@ -41,6 +42,7 @@
                 "onItemDisclosure": true,
                 "store": "Locations"
             },
+            "name": "MyList",
             "designerId": "736598d4-966f-48c9-b942-4617ddc2262b",
             "cn": [
                 {
@@ -60,6 +62,7 @@
                             "</div>"
                         ]
                     },
+                    "name": "tpl",
                     "designerId": "f37e1c08-3a87-4f08-9115-4628df76dd60"
                 }
             ]

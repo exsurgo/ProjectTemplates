@@ -28,6 +28,7 @@
                 "title": "Select Car",
                 "width": 500
             },
+            "name": "MyForm",
             "designerId": "36195c1d-3983-4361-9de3-516a12635eea",
             "cn": [
                 {
@@ -47,6 +48,7 @@
                         "layout|anchor": "100%",
                         "valueField": "id"
                     },
+                    "name": "MyComboBox",
                     "designerId": "6cb9e8a0-85cd-4843-8a44-cacaa9b35146"
                 },
                 {
@@ -66,6 +68,7 @@
                         "layout|anchor": "100%",
                         "valueField": "id"
                     },
+                    "name": "MyComboBox1",
                     "designerId": "9d2be18f-261b-4da7-8eea-b618cb0a8292"
                 },
                 {
@@ -85,6 +88,7 @@
                         "layout|anchor": "100%",
                         "valueField": "id"
                     },
+                    "name": "MyComboBox2",
                     "designerId": "2f5b856e-99f3-4b56-88fd-afaef4832ef0"
                 },
                 {
@@ -100,6 +104,7 @@
                         "layout": "hbox",
                         "margin": "10 0 10 0"
                     },
+                    "name": "MyContainer",
                     "designerId": "eeaab065-fee1-46fb-9ba1-0c921de7fd66",
                     "cn": [
                         {
@@ -113,6 +118,7 @@
                                 "itemId": "doneButton",
                                 "text": "Choose Car"
                             },
+                            "name": "MyButton",
                             "designerId": "dd639517-19d3-492e-a920-fe6be32645b3"
                         }
                     ]

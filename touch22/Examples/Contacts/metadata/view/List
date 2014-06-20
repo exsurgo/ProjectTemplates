@@ -21,6 +21,7 @@
                 "type": "object"
             },
             "codeClass": null,
+            "name": "MyIndexBar",
             "designerId": "62e06e22-c1ef-4c62-a31f-308b64178caa"
         },
         {
@@ -36,6 +37,7 @@
                     "<div>{firstName} {lastName}</div>"
                 ]
             },
+            "name": "tpl2",
             "designerId": "218dddcb-9a35-4f10-8ae0-78a321386a81"
         }
     ]

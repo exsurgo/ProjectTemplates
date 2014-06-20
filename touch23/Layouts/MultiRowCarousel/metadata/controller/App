@@ -64,6 +64,7 @@
                     "});"
                 ]
             },
+            "name": "launch",
             "designerId": "8017ce1d-ac67-4f33-8560-658026be78b2"
         },
         {
@@ -77,6 +78,7 @@
                 "ref": "mainView",
                 "selector": "mainview"
             },
+            "name": "mainView",
             "designerId": "48b6c6ca-2424-4b69-8d93-4a3db13452eb"
         }
     ]

@@ -66,6 +66,7 @@
             "userConfig": {
                 "designer|displayName": "MyAjaxProxy"
             },
+            "name": "MyMemoryProxy",
             "designerId": "cf46d1f2-272e-4f8e-9ed8-4582271deb67",
             "cn": [
                 {
@@ -79,6 +80,7 @@
                         "designer|displayName": "MyJsonReader",
                         "root": null
                     },
+                    "name": "MyJsonReader",
                     "designerId": "e99846c9-10f0-4cbc-9493-42ef951ad0fe"
                 }
             ]

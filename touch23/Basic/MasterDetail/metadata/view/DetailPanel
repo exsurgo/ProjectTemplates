@@ -29,6 +29,7 @@
                     "<h1>Hello! {firstName} {lastName}</h1>"
                 ]
             },
+            "name": "tpl1",
             "designerId": "7b36f5a0-9b33-452d-9f84-bfeff6070bac"
         }
     ]

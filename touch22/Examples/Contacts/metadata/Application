@@ -29,6 +29,7 @@
             "FavoriteView"
         ]
     },
+    "name": "Application",
     "designerId": "application",
     "cn": [
         {
@@ -81,6 +82,7 @@
                     "}"
                 ]
             },
+            "name": "launch",
             "designerId": "ba1fcbb2-e63e-445e-a67c-ec117224b08e"
         }
     ]

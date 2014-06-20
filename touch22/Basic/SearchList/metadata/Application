@@ -20,5 +20,6 @@
             "MainView"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ticketform",
+        "designer|userClassName": "TicketFormViewController"
+    },
+    "designerId": "9cdfc666-c54b-46ac-828b-222c84292946"
+}

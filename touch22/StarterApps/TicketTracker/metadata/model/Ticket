@@ -20,6 +20,7 @@
             "userConfig": {
                 "name": "title"
             },
+            "name": "field",
             "designerId": "77487447-75b2-489d-a0c7-ad944ad366dd"
         },
         {
@@ -32,6 +33,7 @@
             "userConfig": {
                 "name": "status"
             },
+            "name": "field1",
             "designerId": "86158d29-d562-4a02-ba78-ffd8c522d4af"
         },
         {
@@ -44,6 +46,7 @@
             "userConfig": {
                 "name": "description"
             },
+            "name": "field2",
             "designerId": "75bcd12c-32eb-4215-84e9-c58ef276a47b"
         },
         {
@@ -56,6 +59,7 @@
             "userConfig": {
                 "name": "importance"
             },
+            "name": "field3",
             "designerId": "770607dc-5f5b-4ec7-ac59-f2fc512f331e"
         }
     ]

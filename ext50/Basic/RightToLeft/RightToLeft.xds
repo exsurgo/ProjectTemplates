@@ -1,0 +1,39 @@
+{
+    "name": "RightToLeft",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "570ee77a-0bfc-47b0-bb1b-7772ff3b7215",
+            "cf6baa55-864a-411d-85b4-ba43add73cf8",
+            "a2ba57ee-df4c-4eb6-ab75-e87d4235ede4"
+        ],
+        "store": [
+            "68c3468a-5bca-45ba-91d8-d7d59e2a5917"
+        ],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "76d17007-2335-4c00-b7ab-dad9b996582b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

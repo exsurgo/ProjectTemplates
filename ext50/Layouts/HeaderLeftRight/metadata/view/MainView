@@ -1,0 +1,71 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border"
+    },
+    "designerId": "0ba41f05-69d3-4f65-a25f-892e02e1b78d",
+    "viewControllerInstanceId": "874378ee-64b4-4baf-a2d4-a81551e56fa3",
+    "viewModelInstanceId": "29d62ecc-ee99-4d29-a5e8-94261facd88a",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 100,
+                "itemId": "headerPanel",
+                "layout|region": "north",
+                "title": "Header"
+            },
+            "name": "MyPanel1",
+            "designerId": "6be7277a-e9a9-4c8d-9548-68f84e741644"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "leftPanel",
+                "layout|flex": 1,
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "Left",
+                "width": 150
+            },
+            "name": "MyPanel2",
+            "designerId": "9df01c6c-16e4-4a43-bae2-9d564f0d36a1"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "rightPanel",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "layout|split": true,
+                "title": "Right"
+            },
+            "name": "MyPanel3",
+            "designerId": "5a0d4079-d7a4-487f-8bf8-939eececc032"
+        }
+    ]
+}

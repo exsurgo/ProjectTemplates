@@ -46,6 +46,7 @@
             "userConfig": {
                 "designer|displayName": "Ticket sorter"
             },
+            "name": "MySorter",
             "designerId": "5545fbb9-346d-48d3-b267-68005c746a39",
             "cn": [
                 {
@@ -77,6 +78,7 @@
                             "}"
                         ]
                     },
+                    "name": "sorterFn",
                     "designerId": "4512c4b3-f1ea-48b2-8905-e98dfbabee5b"
                 }
             ]

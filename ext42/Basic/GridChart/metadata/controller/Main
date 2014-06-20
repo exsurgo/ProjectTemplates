@@ -23,6 +23,7 @@
                     "this.loadData();"
                 ]
             },
+            "name": "onLaunch",
             "designerId": "e469aed2-ed84-4362-88dd-a96f55ba7f51"
         },
         {
@@ -50,6 +51,7 @@
                     "});"
                 ]
             },
+            "name": "loadData",
             "designerId": "c9a3d0c9-d47b-423c-840d-8e026fea2db0"
         },
         {
@@ -71,6 +73,7 @@
                 "name": "select",
                 "scope": "me"
             },
+            "name": "selectCity",
             "designerId": "0c3e81cb-d258-4878-a0fc-828a1e7aa7f0"
         },
         {
@@ -84,6 +87,7 @@
                 "ref": "cityChart",
                 "selector": "chart#cityChart"
             },
+            "name": "cityChart",
             "designerId": "c91b4f23-ef42-4ebe-b1c2-bed5932d28b4"
         },
         {
@@ -97,6 +101,7 @@
                 "ref": "cityGrid",
                 "selector": "grid#cityGrid"
             },
+            "name": "cityGrid",
             "designerId": "ee3b0f7c-2843-4bdd-9efe-2ac7d535a0f1"
         }
     ]

@@ -1,0 +1,39 @@
+{
+    "name": "CountdownTimer",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "e8f0ebab-c80f-495b-ad72-6efa63930c21",
+            "60873087-b1a4-4d12-97da-41145bada6ec",
+            "8c74fc16-d506-4334-b43f-7645488e77b5"
+        ],
+        "store": [],
+        "controller": [
+            "bc9ba71e-98b9-45b8-8dcc-184820b30439"
+        ],
+        "model": [],
+        "resource": [
+            "7809e8b0-fd7d-4dec-aaf5-d114567d5c23"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

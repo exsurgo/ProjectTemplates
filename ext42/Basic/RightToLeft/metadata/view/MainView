@@ -29,6 +29,7 @@
                 "layout|split": false,
                 "title": "כותרת מכלי"
             },
+            "name": "MyPanel1",
             "designerId": "50c244fe-da31-4fb5-87f9-0ca07b0edb20",
             "cn": [
                 {
@@ -42,6 +43,7 @@
                         "padding": 20,
                         "text": "RTL הוא תכונה מרכזית כאשר אפליקציה צריכה זכות לתמיכה בשפת שמאל כגון עברית"
                     },
+                    "name": "MyLabel",
                     "designerId": "dcfa9ff4-4b07-4de7-a116-09f857488466"
                 }
             ]
@@ -61,6 +63,7 @@
                 "padding": null,
                 "title": "כותרת מכלי"
             },
+            "name": "MyPanel2",
             "designerId": "a8ea999e-caee-40aa-aae8-e8bb6cac3932",
             "cn": [
                 {
@@ -74,6 +77,7 @@
                         "store": "Records",
                         "title": "גריד הלוח שלי"
                     },
+                    "name": "MyGridPanel",
                     "designerId": "cfdfcd92-a910-4003-b34f-ae5517b926fc",
                     "cn": [
                         {
@@ -88,6 +92,7 @@
                                 "format": "0,000",
                                 "text": "מספר"
                             },
+                            "name": "MyNumberColumn",
                             "designerId": "445b2409-292b-4625-a451-a466e512ca99"
                         },
                         {
@@ -101,6 +106,7 @@
                                 "dataIndex": "title",
                                 "text": "טקסט"
                             },
+                            "name": "MyColumn",
                             "designerId": "9c55dadd-768d-42e5-89c7-d0fd25af3194"
                         },
                         {
@@ -114,6 +120,7 @@
                                 "dataIndex": "date",
                                 "text": "תאריך"
                             },
+                            "name": "MyDateColumn",
                             "designerId": "cde753a0-3c34-48ea-bcf1-d9f8e7026dd2"
                         },
                         {
@@ -127,6 +134,7 @@
                                 "dataIndex": "boolean",
                                 "text": "בוליאני"
                             },
+                            "name": "MyColumn1",
                             "designerId": "8d428a69-4dff-474e-8299-aadf8409a287"
                         },
                         {
@@ -136,6 +144,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
+                            "name": "MyGridView",
                             "designerId": "ea6a3e8a-4fab-4ff3-8f94-ab8ac46fdb27"
                         }
                     ]
@@ -158,6 +167,7 @@
                 "title": "כותרת מכלי",
                 "width": 200
             },
+            "name": "MyPanel3",
             "designerId": "4e40eb5a-6ac5-4ebd-a72e-8e52c98fdbf8",
             "cn": [
                 {
@@ -170,6 +180,7 @@
                     "userConfig": {
                         "text": "הכפתור שלי"
                     },
+                    "name": "MyButton",
                     "designerId": "f38f351b-5825-4535-ad9b-e596607f7567"
                 }
             ]
@@ -190,6 +201,7 @@
                 "title": "כותרת מכלי",
                 "width": 200
             },
+            "name": "MyPanel4",
             "designerId": "42591753-568e-44d8-9c7c-937e4e0cd8e7",
             "cn": [
                 {
@@ -202,6 +214,7 @@
                     "userConfig": {
                         "showText": true
                     },
+                    "name": "MyCycleButton",
                     "designerId": "57ac7687-954a-471b-8ed7-487c77fe67c8",
                     "cn": [
                         {
@@ -214,6 +227,7 @@
                             "userConfig": {
                                 "width": 120
                             },
+                            "name": "MyMenu",
                             "designerId": "f077a38d-548b-4d0d-b9fc-ad9a97ba5e38",
                             "cn": [
                                 {
@@ -226,6 +240,7 @@
                                     "userConfig": {
                                         "text": "1 פריט תפריט"
                                     },
+                                    "name": "MyCheckItem",
                                     "designerId": "8f99ce19-1e3a-48a7-985d-93ed06832d52"
                                 },
                                 {
@@ -238,6 +253,7 @@
                                     "userConfig": {
                                         "text": "2 פריט תפריט"
                                     },
+                                    "name": "MyCheckItem1",
                                     "designerId": "1f3cc31f-8132-4372-9478-6475fc194471"
                                 },
                                 {
@@ -250,6 +266,7 @@
                                     "userConfig": {
                                         "text": "3 פריט תפריט"
                                     },
+                                    "name": "MyCheckItem2",
                                     "designerId": "675a0f5d-a023-47c9-b401-cc070045ed79"
                                 }
                             ]
@@ -273,6 +290,7 @@
                 "layout|split": false,
                 "title": "כותרת מכלי"
             },
+            "name": "MyPanel5",
             "designerId": "12aee047-a8ca-4218-ac89-d6543b5a595a"
         }
     ]

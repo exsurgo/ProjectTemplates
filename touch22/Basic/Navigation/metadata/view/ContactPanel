@@ -24,6 +24,7 @@
                 "html": "Contact Us",
                 "itemId": "contactLabel"
             },
+            "name": "MyLabel2",
             "designerId": "aa06bfc6-ca2c-485c-bb27-5d31e9af4d36"
         }
     ]

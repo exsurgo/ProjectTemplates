@@ -44,6 +44,7 @@
                 "margins": "10 10 10 10",
                 "title": null
             },
+            "name": "MyPanel1",
             "configAlternates": {
                 "html": "string"
             },
@@ -69,6 +70,7 @@
                 "margins": "10 10 10 10",
                 "title": null
             },
+            "name": "MyPanel2",
             "configAlternates": {
                 "html": "string"
             },
@@ -94,6 +96,7 @@
                 "margins": "10 10 10 10",
                 "title": null
             },
+            "name": "MyPanel3",
             "configAlternates": {
                 "html": "string"
             },

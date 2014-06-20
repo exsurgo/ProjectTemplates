@@ -1,0 +1,98 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "company",
+        "designer|userClassName": "Company"
+    },
+    "designerId": "4e7c3e36-e884-4709-9086-038710c53491",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "company"
+            },
+            "name": "MyField",
+            "designerId": "4c174233-17bd-4b99-9257-7d460c51e73b"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price",
+                "type": "float"
+            },
+            "name": "MyField1",
+            "designerId": "9847abf0-920b-4695-bb13-bdd1c2648a39"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "revenue",
+                "type": "float"
+            },
+            "name": "MyField2",
+            "designerId": "c273de28-da24-40f8-9156-8a84a6bc6896"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "growth",
+                "type": "float"
+            },
+            "name": "MyField3",
+            "designerId": "14a7d7c1-d520-4128-83eb-146f022129d2"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "product",
+                "type": "float"
+            },
+            "name": "MyField4",
+            "designerId": "a3a8b131-76f1-4afe-8983-0149939eee57"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "market",
+                "type": "float"
+            },
+            "name": "MyField5",
+            "designerId": "f2dcc4be-00dc-43f0-8f66-463119ffcb68"
+        }
+    ]
+}

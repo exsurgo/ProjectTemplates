@@ -41,6 +41,7 @@
                 ],
                 "name": "disclose"
             },
+            "name": "onTicketDisclose",
             "designerId": "0adde877-feaf-40d1-9946-aa73cbbbe492"
         },
         {
@@ -67,6 +68,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onAddTicketTap",
             "designerId": "23cde0dd-e6ad-4bb5-88d1-026573ef09b5"
         },
         {
@@ -82,6 +84,7 @@
                 "selector": "mainview",
                 "xtype": "mainview"
             },
+            "name": "mainView",
             "designerId": "89259ec3-2c61-4a62-89fa-15522f23a99f"
         },
         {
@@ -95,6 +98,7 @@
                 "ref": "addTicketButton",
                 "selector": "mainview #addTicketButton"
             },
+            "name": "addTicketButton",
             "designerId": "f8f377d1-fd46-4245-a985-093957b42c8b"
         },
         {
@@ -113,6 +117,7 @@
                 ],
                 "name": "show"
             },
+            "name": "onTicketListShow",
             "designerId": "6845f23b-86e0-4f81-aa3f-66023a29f4dc"
         },
         {
@@ -152,6 +157,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onSaveTap",
             "designerId": "95642677-1356-4ecc-b729-983ca977e6f5"
         },
         {
@@ -165,6 +171,7 @@
                 "ref": "titleField",
                 "selector": "ticketview #titleField"
             },
+            "name": "titleField",
             "designerId": "c5976e22-b46e-49eb-93e8-c2b8bfc49085"
         },
         {
@@ -178,6 +185,7 @@
                 "ref": "importanceField",
                 "selector": "mainview #importanceField"
             },
+            "name": "importanceField",
             "designerId": "84bb810b-3769-49a2-82c8-9c6f8a3135df"
         },
         {
@@ -191,6 +199,7 @@
                 "ref": "statusField",
                 "selector": "mainview #statusField"
             },
+            "name": "statusField",
             "designerId": "55840782-5b61-4e59-9fb4-59002e2552b7"
         },
         {
@@ -204,6 +213,7 @@
                 "ref": "descriptionField",
                 "selector": "ticketview #descriptionField"
             },
+            "name": "descriptionField",
             "designerId": "47c02718-e881-42d6-81a3-a09a0937bb46"
         }
     ]

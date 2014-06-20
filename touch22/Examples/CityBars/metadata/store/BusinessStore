@@ -23,6 +23,7 @@
                 "type": "object"
             },
             "codeClass": null,
+            "name": "MyJsonPProxy",
             "designerId": "aee2cb22-555c-4a0d-8180-1707ec6db38b",
             "cn": [
                 {
@@ -35,6 +36,7 @@
                     "userConfig": {
                         "rootProperty": "businesses"
                     },
+                    "name": "MyJsonReader",
                     "designerId": "836a8747-af32-4e84-a9cc-8b63f02dae4c"
                 }
             ]

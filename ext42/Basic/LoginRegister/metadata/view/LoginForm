@@ -31,6 +31,7 @@
                 "itemId": "form",
                 "title": null
             },
+            "name": "MyForm",
             "designerId": "8d6c0b47-e9f0-4f97-9ab8-43a10cc9c1ec",
             "cn": [
                 {
@@ -50,6 +51,7 @@
                         "name": "identity",
                         "regexText": "Enter your username."
                     },
+                    "name": "MyTextField",
                     "designerId": "e8b40321-2cc1-4d68-829b-6a070d777f68"
                 },
                 {
@@ -69,6 +71,7 @@
                         "msgTarget": "title",
                         "name": "password"
                     },
+                    "name": "MyTextField1",
                     "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1"
                 },
                 {
@@ -85,6 +88,7 @@
                         "scale": "medium",
                         "text": "Login"
                     },
+                    "name": "MyButton3",
                     "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e"
                 }
             ]

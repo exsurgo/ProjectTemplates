@@ -19,6 +19,7 @@
                 "type": "object"
             },
             "codeClass": null,
+            "name": "MyNavigationBar",
             "designerId": "55089f46-6ed3-40b4-bb04-b9d42bcc932a"
         },
         {
@@ -31,6 +32,7 @@
             "userConfig": {
                 "title": "City Bars"
             },
+            "name": "listcontainer",
             "designerId": "65121f7e-47d3-4bf4-8dcc-293989bac56b",
             "customConfigs": [
                 {

@@ -41,6 +41,7 @@
                     "}"
                 ]
             },
+            "name": "showButtons",
             "designerId": "abcccb9e-4798-4e28-850d-3daa3ddf1a71"
         },
         {
@@ -58,6 +59,7 @@
                     "this.getListLocationsButton().hide();"
                 ]
             },
+            "name": "hideButtons",
             "designerId": "b462ebcb-9cad-4543-852b-76747ac9def0"
         },
         {
@@ -88,6 +90,7 @@
                     "});"
                 ]
             },
+            "name": "geocodeString",
             "designerId": "a48111dd-be37-4284-b902-4f5f8c517833"
         },
         {
@@ -102,6 +105,7 @@
                 "selector": "mainview #map",
                 "xtype": "Ext.Map"
             },
+            "name": "mapView",
             "designerId": "01471434-5c16-4948-b7df-affd8c6e2d20"
         },
         {
@@ -127,6 +131,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onAddLocationTap",
             "designerId": "ea3d7a3c-2862-4e38-87ba-f42acfc579f1"
         },
         {
@@ -141,6 +146,7 @@
                 "selector": "mainview",
                 "xtype": "Ext.navigation.View"
             },
+            "name": "mainView",
             "designerId": "52556649-13b2-49d6-93aa-91c841e70dc1"
         },
         {
@@ -176,6 +182,7 @@
                 ],
                 "name": "disclose"
             },
+            "name": "onLocationTap",
             "designerId": "6b16e3ac-e415-4444-a270-fe0e11f5d9fe"
         },
         {
@@ -190,6 +197,7 @@
                 "selector": "mainview #mapPanel",
                 "xtype": "Ext.Panel"
             },
+            "name": "mapPanel",
             "designerId": "f4e79960-f6b3-447c-9f7b-d75cf3b09cf2"
         },
         {
@@ -215,6 +223,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onListLocationsTap",
             "designerId": "81d0542a-9789-4d79-bf2c-7eac73c619d6"
         },
         {
@@ -229,6 +238,7 @@
                 "selector": "mainview #addLocationButton",
                 "xtype": "Ext.Button"
             },
+            "name": "addLocationButton",
             "designerId": "dd8a5f0f-c15b-455a-8d7f-b2368dd052fe"
         },
         {
@@ -243,6 +253,7 @@
                 "selector": "mainview #listLocationsButton",
                 "xtype": "Ext.Button"
             },
+            "name": "listLocationsButton",
             "designerId": "2029ba1b-926c-4f1d-91b2-0cd3ee088744"
         },
         {
@@ -262,6 +273,7 @@
                 ],
                 "name": "back"
             },
+            "name": "onBack",
             "designerId": "85b85329-4652-4739-80dc-89be9616302e"
         },
         {
@@ -275,6 +287,7 @@
                 "ref": "newLocationMap",
                 "selector": "mainview #newLocationMap"
             },
+            "name": "newLocationMap",
             "designerId": "5666b552-9296-43d0-bd66-01489c68d83e"
         },
         {
@@ -294,6 +307,7 @@
                 ],
                 "name": "activate"
             },
+            "name": "onStart",
             "designerId": "3f8a40a1-3579-48de-b854-73f37b43b9af"
         },
         {
@@ -340,6 +354,7 @@
                 ],
                 "name": "change"
             },
+            "name": "onNewLocationPositionChange",
             "designerId": "ba174bd0-c111-428a-981c-0c52b9321fc6"
         },
         {
@@ -409,6 +424,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onSaveLocationButtonTap",
             "designerId": "9903e3bb-24e6-494f-a84c-05ac85be9b9b"
         },
         {
@@ -422,6 +438,7 @@
                 "ref": "newLocationForm",
                 "selector": "mainview #formPanel"
             },
+            "name": "newLocationForm",
             "designerId": "14208b4e-2bd9-40e4-9dc2-c6de7e54e546"
         },
         {
@@ -483,6 +500,7 @@
                 ],
                 "name": "itemswipe"
             },
+            "name": "onLocationSwipe",
             "designerId": "0eee4cf8-7228-44d0-9e5a-4e06320b30df"
         }
     ]

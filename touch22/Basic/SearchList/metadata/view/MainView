@@ -27,6 +27,7 @@
                 "itemId": "list",
                 "store": "People"
             },
+            "name": "MyList",
             "designerId": "bcc65a2d-d9ec-43a1-b647-7353e0f47e26",
             "cn": [
                 {
@@ -42,6 +43,7 @@
                         "docked": "top",
                         "itemId": "toolbar"
                     },
+                    "name": "MyToolbar",
                     "designerId": "f8ccb881-5143-4507-9ecf-29691267bead",
                     "cn": [
                         {
@@ -56,6 +58,7 @@
                                 "label": "",
                                 "placeHolder": null
                             },
+                            "name": "MySearchField",
                             "designerId": "99041b90-655b-4c8f-b733-382c9df8e929"
                         }
                     ]
@@ -73,6 +76,7 @@
                             "<div>{firstName} {lastName}</div>"
                         ]
                     },
+                    "name": "tpl",
                     "designerId": "dbc4138f-6fe3-4621-9347-c376f8a06da7"
                 }
             ]

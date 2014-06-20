@@ -18,5 +18,6 @@
             "NavMenu"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

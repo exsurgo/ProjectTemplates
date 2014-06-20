@@ -1,0 +1,42 @@
+{
+    "name": "HtmlEditor",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "69af8981-3b11-48c7-8740-fc34e76f474d",
+            "d04222d5-3e95-4851-9adf-fcec5e59e1f8",
+            "2756f705-7a2d-4f1a-b52b-8ce50ac6928c",
+            "d243afac-f3de-4800-9f0f-14408abbd3a0",
+            "d479c001-2b28-459b-a4ee-7e1f02f8c1c5",
+            "e625b1b9-cf7f-41e3-a93a-76cbf673e9b8"
+        ],
+        "store": [],
+        "controller": [
+            "b4c0e0e4-ae50-4505-9a38-dacce915020e"
+        ],
+        "model": [],
+        "resource": [
+            "af449ced-15fc-4b0d-8bda-994e6fb1d849"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

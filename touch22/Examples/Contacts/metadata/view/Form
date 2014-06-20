@@ -24,6 +24,7 @@
             "userConfig": {
                 "docked": "top"
             },
+            "name": "MyToolbar",
             "designerId": "32288607-5579-4c95-b4ee-e5d4fc422625",
             "cn": [
                 {
@@ -40,6 +41,7 @@
                         "text": "Cancel",
                         "ui": "decline"
                     },
+                    "name": "MyButton1",
                     "designerId": "2c109d9b-cbc1-43c2-ad39-e4949b1298f5"
                 },
                 {
@@ -49,6 +51,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
+                    "name": "MySpacer",
                     "designerId": "e4ca9257-17fc-45c5-a763-d62e311a539b"
                 },
                 {
@@ -65,6 +68,7 @@
                         "text": "Save",
                         "ui": "action"
                     },
+                    "name": "MyButton2",
                     "designerId": "15213c48-d0d1-4993-8d50-96fa8953191b"
                 }
             ]
@@ -76,6 +80,7 @@
                 "type": "array"
             },
             "codeClass": null,
+            "name": "picture",
             "designerId": "704088da-a51c-4815-b2e0-d9b9b472694d",
             "masterInstanceId": "b037ea3a-5bcd-4f85-930a-abaa1bdc4dcd"
         },
@@ -95,6 +100,7 @@
                 "readOnly": null,
                 "required": true
             },
+            "name": "MyTextField",
             "designerId": "9e8fecd4-dbb2-4c28-92da-0c97bf71a356"
         },
         {
@@ -111,6 +117,7 @@
                 "name": "lastName",
                 "readOnly": null
             },
+            "name": "MyTextField1",
             "designerId": "dbc98826-aaf1-4c8a-9f3a-8b21d8b8b629"
         },
         {
@@ -128,6 +135,7 @@
                 "readOnly": null,
                 "required": true
             },
+            "name": "MyTextField2",
             "designerId": "b13c1c6b-53d9-4cef-bc83-eda716409342"
         },
         {
@@ -145,6 +153,7 @@
                 "placeHolder": "email@example.com",
                 "readOnly": null
             },
+            "name": "MyEmailField",
             "designerId": "1a2892c3-bd99-46ae-b464-762d633f52fb"
         },
         {
@@ -161,6 +170,7 @@
                 "name": "address",
                 "readOnly": null
             },
+            "name": "MyTextField3",
             "designerId": "fd17f2d4-3915-4475-85e5-dcf44231b4fb"
         },
         {
@@ -177,6 +187,7 @@
                 "name": "city",
                 "readOnly": null
             },
+            "name": "MyTextField4",
             "designerId": "18809ca3-c0f6-48e3-ab2c-97c4698dd74b"
         },
         {
@@ -194,6 +205,7 @@
                 "name": "city",
                 "readOnly": null
             },
+            "name": "MyTextField5",
             "designerId": "d21db6c3-5c5a-431b-9430-ce63b4e9d179"
         },
         {
@@ -211,6 +223,7 @@
                 "name": "zipcode",
                 "readOnly": null
             },
+            "name": "MyNumberField",
             "designerId": "9b45c591-814b-4735-ac57-e371670f487c"
         },
         {
@@ -236,6 +249,7 @@
                     "return errors;"
                 ]
             },
+            "name": "getValidationErrors",
             "designerId": "8698e3b0-8972-4714-b4de-531de5fdbc31"
         },
         {
@@ -257,6 +271,7 @@
                     "}"
                 ]
             },
+            "name": "setRecord",
             "designerId": "07f9a781-7028-418e-b207-f98dcf7471d6"
         }
     ]

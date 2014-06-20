@@ -1,0 +1,260 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fieldsandradios",
+        "designer|userClassName": "FieldsAndRadios"
+    },
+    "name": "MyContainer3",
+    "designerId": "b7bee559-cdf5-4906-b3b7-0c4a75fb97af",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Fields"
+            },
+            "name": "MyFieldSet",
+            "designerId": "54a2d9a8-4866-43bc-8ed8-0515843a6412",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name",
+                        "required": true
+                    },
+                    "name": "MyTextField",
+                    "designerId": "6bacf6d1-16ba-401c-bec3-ce9bfe37f9ac"
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Password"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "5070e047-b2bb-4f85-ba25-160bd10a9566"
+                },
+                {
+                    "type": "Ext.field.Email",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Email",
+                        "placeHolder": "email@example.com"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "48376b75-95e9-4066-827e-e3590cd29667"
+                },
+                {
+                    "type": "Ext.field.Url",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "URL",
+                        "placeHolder": "http://example.com"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "f4d4ad18-19b0-4338-8425-37b26ed04511"
+                },
+                {
+                    "type": "Ext.field.Spinner",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Spinner"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "041633de-79c8-4cce-ba39-46add9602cd3"
+                },
+                {
+                    "type": "Ext.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Checkbox"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "f0b49776-bb92-463a-8263-bd37d154a525"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Select",
+                        "options": [
+                            "[",
+                            "    {text: 'First Option', value: 'firstOption'},",
+                            "    {text: 'Second Option', value: 'secondOption'},",
+                            "    {text: 'Third Option', value: 'thirdOption'}",
+                            "]"
+                        ],
+                        "value": [
+                            "null"
+                        ]
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "2d4dcf8f-46ea-4621-99d2-eb636c1b7fc6"
+                },
+                {
+                    "type": "Ext.field.DatePicker",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Date",
+                        "placeHolder": "mm/dd/yyyy",
+                        "value": 1389340800000
+                    },
+                    "name": "MyDatePicker",
+                    "designerId": "03b8e00d-7d9d-4ad8-af57-02822f8e2fbf",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyDatePicker1",
+                            "designerId": "e8283b02-4ff4-4535-9dd5-6fd03e22da08",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "doneButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Done"
+                                    },
+                                    "name": "MyButton3",
+                                    "designerId": "0e185316-81d5-4272-be0e-eecd5e328ee3"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "cancelButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Cancel"
+                                    },
+                                    "name": "MyButton4",
+                                    "designerId": "67461e0f-5b7a-421b-8cfa-8bbb555ec112"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Text Area"
+                    },
+                    "name": "MyTextArea",
+                    "designerId": "07a813d7-0d9b-43b7-922d-c0eb3ebe8814"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Radio"
+            },
+            "name": "MyFieldSet1",
+            "designerId": "ba7f67e3-37e5-4830-8902-4b9f966e01e6",
+            "cn": [
+                {
+                    "type": "Ext.field.Radio",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Option 1",
+                        "name": "options"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "da678cf2-fd8f-4f6d-b0fc-92fc99159765"
+                },
+                {
+                    "type": "Ext.field.Radio",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Option 2",
+                        "name": "options"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "743ee5e3-6a61-470b-be3c-4277eb7a96fc"
+                },
+                {
+                    "type": "Ext.field.Radio",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Option 3",
+                        "name": "options"
+                    },
+                    "name": "MyRadioButton",
+                    "designerId": "a963a352-81f5-41b9-a610-3f54782596b4"
+                }
+            ]
+        }
+    ]
+}

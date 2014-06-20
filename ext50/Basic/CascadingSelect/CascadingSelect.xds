@@ -1,0 +1,39 @@
+{
+    "name": "CascadingSelect",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "f32eb8c1-4d90-4784-8243-30240cb7369b",
+            "c70e76b6-b06d-44f8-b5bb-a38c841cb075",
+            "7b3dba86-06b6-4742-a678-763fde7160a9"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [
+            "c187695b-b3f7-4de4-b1f3-bd15ff8df549"
+        ],
+        "resource": [
+            "a151ff62-cef6-489d-8363-62efbfd47c43"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

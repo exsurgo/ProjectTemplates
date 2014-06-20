@@ -21,6 +21,7 @@
                 "name": "maker",
                 "type": "string"
             },
+            "name": "field",
             "designerId": "46d99050-fe57-4448-aa6d-6437af11ef64"
         },
         {
@@ -34,6 +35,7 @@
                 "name": "series",
                 "type": "string"
             },
+            "name": "field1",
             "designerId": "6d1607b8-8904-4532-88f9-cacc99870ae1"
         },
         {
@@ -47,6 +49,7 @@
                 "name": "model",
                 "type": "string"
             },
+            "name": "field2",
             "designerId": "403f1dda-190b-407c-9e09-48bc2206bb1c"
         }
     ]

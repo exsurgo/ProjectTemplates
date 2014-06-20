@@ -25,6 +25,7 @@
                 "docked": "top",
                 "itemId": "navBar"
             },
+            "name": "MyNavigationBar",
             "designerId": "459934a0-f727-461f-b233-a0993b726842",
             "cn": [
                 {
@@ -40,6 +41,7 @@
                         "itemId": "addButton",
                         "text": null
                     },
+                    "name": "MyButton",
                     "designerId": "75f1b719-faf7-4409-b018-b956257bef3d"
                 }
             ]
@@ -51,6 +53,7 @@
                 "type": "array"
             },
             "codeClass": null,
+            "name": "tasklist",
             "designerId": "be17e96d-9ff1-45a6-8a7c-340ef2b45e2d",
             "masterInstanceId": "1f2aa174-7fca-4eb5-9083-a68ef92560e7"
         }

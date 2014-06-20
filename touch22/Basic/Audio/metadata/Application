@@ -16,5 +16,6 @@
             "SongList"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

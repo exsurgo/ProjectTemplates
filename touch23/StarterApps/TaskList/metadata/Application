@@ -25,5 +25,6 @@
             "FormPanel"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

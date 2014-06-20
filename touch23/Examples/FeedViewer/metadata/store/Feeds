@@ -45,6 +45,7 @@
             "userConfig": {
                 "id": "Feeds"
             },
+            "name": "MyLocalStorageProxy",
             "designerId": "e35f6448-1801-42c8-bdcb-ab45b1cd696c"
         }
     ]

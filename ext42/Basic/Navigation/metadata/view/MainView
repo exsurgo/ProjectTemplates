@@ -40,7 +40,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "floating": false,
-                        "itemId": null,
+                        "itemId": "menu",
                         "width": null
                     },
                     "name": "MyMenu",

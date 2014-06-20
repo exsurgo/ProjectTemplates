@@ -24,6 +24,7 @@
             "userConfig": {
                 "itemId": "contentPanel"
             },
+            "name": "MyPanel",
             "designerId": "44875bd5-f745-4c7e-9323-49325f192f28",
             "cn": [
                 {
@@ -38,6 +39,7 @@
                         "html": "Content",
                         "style": "text-align: center; padding: 20px;"
                     },
+                    "name": "MyLabel",
                     "designerId": "527f0e94-d83d-4589-b167-3c17ed867412"
                 }
             ]
@@ -53,6 +55,7 @@
                 "docked": "bottom",
                 "itemId": "bottomBar"
             },
+            "name": "MyToolbar",
             "designerId": "5f1c5c9b-e9e5-44da-b36d-276100e39540"
         }
     ]

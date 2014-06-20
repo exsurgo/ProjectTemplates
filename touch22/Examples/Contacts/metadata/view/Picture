@@ -41,6 +41,7 @@
                 "html": "",
                 "style": null
             },
+            "name": "MyComponent",
             "designerId": "4b25a1d2-93b2-49cd-b330-0e99c3ee3b1c"
         },
         {
@@ -60,6 +61,7 @@
                 "text": null,
                 "width": null
             },
+            "name": "MyButton",
             "designerId": "bf48f9d3-059b-47a7-a7a4-c91587bddde1",
             "cn": [
                 {
@@ -87,6 +89,7 @@
                         ],
                         "name": "tap"
                     },
+                    "name": "onMybuttonTap",
                     "designerId": "e7d4682b-aa74-4fc2-bec7-29a2b8303dfe"
                 }
             ]
@@ -104,6 +107,7 @@
                     "<img src=\"{picture}\" width=\"160\" />"
                 ]
             },
+            "name": "tpl1",
             "designerId": "dd7a681d-4e49-41f8-a4e0-8859ec879b86"
         }
     ]

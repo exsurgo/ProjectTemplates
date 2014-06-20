@@ -21,6 +21,7 @@
             "userConfig": {
                 "title": "Register"
             },
+            "name": "MyFieldSet1",
             "designerId": "a78ce03a-f002-4ef5-ab08-d3c6000e7522",
             "cn": [
                 {
@@ -35,6 +36,7 @@
                         "labelWidth": "40%",
                         "name": "name"
                     },
+                    "name": "MyTextField2",
                     "designerId": "059d89ee-f844-4dbf-a6de-6bd8f01607f4"
                 },
                 {
@@ -49,6 +51,7 @@
                         "labelWidth": "40%",
                         "name": "username"
                     },
+                    "name": "MyTextField3",
                     "designerId": "c591a084-a530-4821-ab87-aee228ea9664"
                 },
                 {
@@ -64,6 +67,7 @@
                         "name": "email",
                         "placeHolder": "email@example.com"
                     },
+                    "name": "MyEmailField",
                     "designerId": "7df2a6ad-b721-4cb6-9bf8-386cbc94bab8"
                 },
                 {
@@ -78,6 +82,7 @@
                         "labelWidth": "40%",
                         "name": "password"
                     },
+                    "name": "MyPasswordField",
                     "designerId": "01c51cad-9990-4229-a390-3fa6254ba4d9"
                 }
             ]
@@ -95,6 +100,7 @@
                 "padding": 8,
                 "text": "Register"
             },
+            "name": "MyButton3",
             "designerId": "6af83342-ddc9-4a42-bf4a-fd989ba1b976"
         }
     ]

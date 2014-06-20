@@ -30,6 +30,7 @@
                 "title": "Car Listings",
                 "width": 500
             },
+            "name": "MyPanel1",
             "designerId": "2e17aab0-6a81-429e-ab56-ebd6641aac00",
             "cn": [
                 {
@@ -45,6 +46,7 @@
                         "store": "CarDataStore",
                         "title": null
                     },
+                    "name": "MyGridPanel",
                     "designerId": "675363b6-8a52-414b-8d1d-cd17235955d4",
                     "cn": [
                         {
@@ -54,6 +56,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
+                            "name": "MyGridView",
                             "designerId": "78c707bc-3756-4dfe-bfc3-e79324bf3b1b"
                         },
                         {
@@ -67,6 +70,7 @@
                                 "dataIndex": "manufacturer",
                                 "text": "Manufacturer"
                             },
+                            "name": "MyColumn",
                             "designerId": "6b7f7bfe-bfdf-4092-8675-e172f98aef7d"
                         },
                         {
@@ -80,6 +84,7 @@
                                 "dataIndex": "model",
                                 "text": "Model"
                             },
+                            "name": "MyColumn1",
                             "designerId": "cb4486c2-f5d9-44d2-ae98-a9213efca08b"
                         },
                         {
@@ -93,6 +98,7 @@
                                 "dataIndex": "price",
                                 "text": "Price"
                             },
+                            "name": "MyColumn2",
                             "designerId": "cd5ec702-401d-4363-8ea1-72ccda575f0f"
                         },
                         {
@@ -106,6 +112,7 @@
                                 "dataIndex": "wiki",
                                 "text": "Wiki"
                             },
+                            "name": "MyColumn3",
                             "designerId": "57c03967-b5a9-4742-a0da-6dc876f4f63e"
                         },
                         {
@@ -119,6 +126,7 @@
                                 "dataIndex": "img",
                                 "text": "Img"
                             },
+                            "name": "MyColumn4",
                             "designerId": "30e1bb89-13d1-486a-8c9b-f72d0b257447"
                         }
                     ]
@@ -138,6 +146,7 @@
                 "layout|region": "center",
                 "title": null
             },
+            "name": "MyPanel2",
             "designerId": "253d3a6d-3776-4d6d-9ac9-fefe4789c38b",
             "cn": [
                 {
@@ -155,6 +164,7 @@
                         "layout|split": true,
                         "title": "Details"
                     },
+                    "name": "MyPanel3",
                     "designerId": "94e81405-31aa-44ec-8f76-2293f97e8699",
                     "cn": [
                         {
@@ -175,6 +185,7 @@
                                     "</div>"
                                 ]
                             },
+                            "name": "tpl",
                             "designerId": "aa310fed-b45f-4f77-894c-b9f51ea19ba3"
                         }
                     ]
@@ -195,6 +206,7 @@
                         "layout|split": true,
                         "title": "Data"
                     },
+                    "name": "MyPanel4",
                     "designerId": "b1c29c1e-4b28-4a6e-aad6-7961e8492948",
                     "cn": [
                         {
@@ -214,6 +226,7 @@
                                 "store": "CarChartStore",
                                 "width": null
                             },
+                            "name": "MyChart",
                             "designerId": "34b5e744-19eb-4105-ac76-65b9c446f4cc",
                             "cn": [
                                 {
@@ -229,6 +242,7 @@
                                         ],
                                         "title": "Quality"
                                     },
+                                    "name": "MyCategoryAxis",
                                     "designerId": "212b4d24-508c-4ccb-829f-86b639749445"
                                 },
                                 {
@@ -249,6 +263,7 @@
                                         "position": "bottom",
                                         "title": "Score"
                                     },
+                                    "name": "MyNumericAxis",
                                     "designerId": "798cb167-3cf9-4173-b6bd-8747b7d1a245"
                                 },
                                 {
@@ -272,6 +287,7 @@
                                             "rating"
                                         ]
                                     },
+                                    "name": "MyColumnSeries",
                                     "designerId": "f4dfa8fe-667e-4d2a-8d4c-d45ad0a40029"
                                 }
                             ]

@@ -23,6 +23,7 @@
                 "itemId": "taskFormField",
                 "title": null
             },
+            "name": "MyFieldSet",
             "designerId": "62c8971d-3b8b-46c9-9b79-64fb1ad86ac8",
             "cn": [
                 {
@@ -38,6 +39,7 @@
                         "name": "description",
                         "required": true
                     },
+                    "name": "MyTextField",
                     "designerId": "b4e249ee-d94c-42cf-9d31-8ee5de161034"
                 },
                 {
@@ -63,6 +65,7 @@
                             "true"
                         ]
                     },
+                    "name": "MySelectField",
                     "designerId": "48258b0e-caff-4e24-8a25-1f42ccdadb78"
                 },
                 {
@@ -78,6 +81,7 @@
                         "name": "dueDate",
                         "placeHolder": null
                     },
+                    "name": "MyDatePicker",
                     "designerId": "703c67a2-9abb-4e4c-9c65-40c7df873fe2",
                     "cn": [
                         {
@@ -87,6 +91,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
+                            "name": "MyDatePicker1",
                             "designerId": "27f2b73b-05a8-439b-8231-fdfa855983c3",
                             "cn": [
                                 {
@@ -99,6 +104,7 @@
                                     "userConfig": {
                                         "text": "Done"
                                     },
+                                    "name": "MyButton1",
                                     "designerId": "3c661544-db6a-4f25-93a8-29d9a96a0387"
                                 },
                                 {
@@ -111,6 +117,7 @@
                                     "userConfig": {
                                         "text": "Cancel"
                                     },
+                                    "name": "MyButton2",
                                     "designerId": "72042193-e7b6-410b-941e-0f43a1ee2d77"
                                 }
                             ]
@@ -129,6 +136,7 @@
                         "labelWidth": "35%",
                         "name": "completed"
                     },
+                    "name": "MyToggleField",
                     "designerId": "2ef477d6-0a58-45ef-86b3-f3905a284467"
                 }
             ]
@@ -146,6 +154,7 @@
                 "text": "Save",
                 "ui": "action"
             },
+            "name": "MyButton3",
             "designerId": "80e3f879-569e-4320-892d-bbeab1414e37"
         },
         {
@@ -162,6 +171,7 @@
                 "text": "Delete",
                 "ui": "decline"
             },
+            "name": "MyButton4",
             "designerId": "e054a189-69f0-4c90-999c-55b47094928e"
         }
     ]

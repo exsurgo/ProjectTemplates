@@ -1,0 +1,8 @@
+{
+	"title": "CascadingSelect",
+	"name": "CascadingSelect",
+	"description": "A series of combo boxes that allow users to filter information quickly",
+	"category": "Basic",
+	"hasImage": true,
+	"framework": "ext42"
+}

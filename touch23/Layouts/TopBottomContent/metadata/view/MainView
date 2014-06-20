@@ -25,6 +25,7 @@
                 "docked": "top",
                 "itemId": "topBar"
             },
+            "name": "MyTitleBar",
             "designerId": "4989521c-4156-470f-af2d-7ef64191e2d0"
         },
         {
@@ -37,6 +38,7 @@
             "userConfig": {
                 "itemId": "contentPanel"
             },
+            "name": "MyPanel",
             "designerId": "44875bd5-f745-4c7e-9323-49325f192f28"
         },
         {
@@ -50,6 +52,7 @@
                 "docked": "bottom",
                 "itemId": "bottomBar"
             },
+            "name": "MyToolbar",
             "designerId": "5f1c5c9b-e9e5-44da-b36d-276100e39540"
         }
     ]

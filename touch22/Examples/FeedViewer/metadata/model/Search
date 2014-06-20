@@ -21,6 +21,7 @@
             "userConfig": {
                 "name": "title"
             },
+            "name": "field4",
             "designerId": "146c7e18-848c-481d-9396-d204740bbe1d"
         },
         {
@@ -33,6 +34,7 @@
             "userConfig": {
                 "name": "url"
             },
+            "name": "field5",
             "designerId": "05a8608d-1b9d-43ed-9538-da4f7151714c"
         },
         {
@@ -46,6 +48,7 @@
                 "mapping": "contentSnippet",
                 "name": "description"
             },
+            "name": "field6",
             "designerId": "ae14baea-51d3-490b-9cfb-4ba8fa50bd59"
         }
     ]

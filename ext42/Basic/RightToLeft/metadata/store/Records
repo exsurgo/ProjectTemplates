@@ -55,6 +55,7 @@
             "userConfig": {
                 "name": "id"
             },
+            "name": "MyField",
             "designerId": "c3726bee-5cac-408e-b9a9-d83af648b386"
         },
         {
@@ -67,6 +68,7 @@
             "userConfig": {
                 "name": "title"
             },
+            "name": "MyField1",
             "designerId": "3c6bf67e-288b-41ce-b195-a399047a98f2"
         },
         {
@@ -79,6 +81,7 @@
             "userConfig": {
                 "name": "date"
             },
+            "name": "MyField2",
             "designerId": "35156f81-b33a-494f-bcc0-10e7563a8b75"
         },
         {
@@ -91,6 +94,7 @@
             "userConfig": {
                 "name": "boolean"
             },
+            "name": "MyField3",
             "designerId": "ccd7adc9-61ba-41d0-96d2-a02cd9d37a5b"
         }
     ]

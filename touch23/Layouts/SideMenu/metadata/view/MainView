@@ -25,6 +25,7 @@
                 "docked": "top",
                 "title": "App"
             },
+            "name": "MyToolbar",
             "designerId": "024f5b5a-e4fe-40da-9097-5a5202d8f302"
         },
         {
@@ -41,6 +42,7 @@
                 "style": "background-color: #ddf;",
                 "ui": "dark"
             },
+            "name": "MyContainer",
             "designerId": "73273ae8-24a4-4278-97a7-945a8a6d7188",
             "cn": [
                 {
@@ -54,6 +56,7 @@
                         "margin": 10,
                         "text": "Menu item 1"
                     },
+                    "name": "MyButton",
                     "designerId": "aa9cc4e3-d5b5-45fb-91a4-7c60cb3275be"
                 },
                 {
@@ -67,6 +70,7 @@
                         "margin": 10,
                         "text": "Menu item 2"
                     },
+                    "name": "MyButton1",
                     "designerId": "02b7b959-dd1e-4c94-b982-3fc12a9d5d40"
                 },
                 {
@@ -80,6 +84,7 @@
                         "margin": 10,
                         "text": "Menu item 3"
                     },
+                    "name": "MyButton2",
                     "designerId": "b4603225-e219-4a27-b26d-83030cb8658f"
                 }
             ]
@@ -97,6 +102,7 @@
                 "layout|flex": 3,
                 "scrollable": null
             },
+            "name": "MyContainer1",
             "designerId": "7f52d294-4783-4281-8191-8995143675bc",
             "cn": [
                 {
@@ -111,6 +117,7 @@
                         "designer|displayName": "Content label",
                         "html": "Content"
                     },
+                    "name": "MyLabel",
                     "designerId": "56402d8b-975f-42ff-967e-46196b9d2806"
                 }
             ]

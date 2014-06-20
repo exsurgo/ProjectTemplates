@@ -19,5 +19,6 @@
             "RegisterForm"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

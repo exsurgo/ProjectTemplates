@@ -28,6 +28,7 @@
                     "<div>{firstName} {lastName}</div>"
                 ]
             },
+            "name": "tpl",
             "designerId": "dbc4138f-6fe3-4621-9347-c376f8a06da7"
         }
     ]

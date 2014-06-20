@@ -38,58 +38,51 @@ Ext.define('MyApp.controller.Navigation', {
         * using the URL hash (#) to indicate the active view
         *
         * The following values are always equal
-        * hash = active menu 'itemId' = active panel 'itemId' + 'Panel'
+        * hash = menuItem.itemId = (panel.itemId + 'Panel')
         */
-
-        // Use var for controller
-        var ctrl = this;
 
         // Init the Ext history utility
         Ext.History.init();
 
         // Navigate on hash change
-        Ext.History.on('change', function(hash) {
-            ctrl.navigate(hash);
-        });
+        Ext.History.on('change', this.navigate, this);
 
         // Navigate if initial hash is provided
-        var hash = window.location.hash;
-        if (hash) {
-            ctrl.navigate(hash);
-        }
+        this.navigate(window.location.hash);
 
     },
 
     navigate: function(id) {
 
-        // Remove # from id if present
-        if (id[0] == '#') id = id.slice(1);
+        // id may be a hash
+        if (id) {
 
-        // Get views
-        var menu = this.getMenu(),
-            content = this.getContentPanel();
+            // Remove # from id if present
+            if (id[0] == '#') id = id.slice(1);
 
-        // Set active view
-        content.layout.setActiveItem(id + 'Panel');
+            // Set active view
+            this.getContentPanel().layout.setActiveItem(id + 'Panel');
 
-        // Set menu and page title
-        // Iterate through each menu item
-        Ext.ComponentQuery.query('menu')[0].items.each(function(item) {
+            // Set menu and page title
+            // Iterate through each menu item
+            this.getMenu().items.each(function(item) {
 
-            // Active
-            if (item.href == '#' + id) {
-                // Disable
-                item.disable();
-                // Set page title to menu item text
-                window.document.title = item.text;
-            }
+                // Active
+                if (item.href == '#' + id) {
+                    // Disable
+                    item.disable();
+                    // Set page title to menu item text
+                    window.document.title = item.text;
+                }
 
-            // Inactive
-            else {
-                item.enable();
-            }
+                // Inactive
+                else {
+                    item.enable();
+                }
 
-        });
+            });
+
+        }
 
     }
 

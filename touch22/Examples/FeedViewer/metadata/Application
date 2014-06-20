@@ -34,5 +34,6 @@
             "FeedsList"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

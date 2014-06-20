@@ -24,6 +24,7 @@
                 "layout|region": "north",
                 "title": "Header"
             },
+            "name": "MyPanel4",
             "designerId": "c66db18e-0e01-4d23-8cdc-20fb54d9398c",
             "cn": [
                 {
@@ -36,6 +37,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
+                    "name": "MyToolbar",
                     "designerId": "765a42dc-33cb-4025-9b5c-cf5291059fba",
                     "cn": [
                         {
@@ -51,6 +53,7 @@
                                 "layout|flex": null,
                                 "text": "Previous"
                             },
+                            "name": "MyButton",
                             "designerId": "1080a271-882d-4ee7-abc1-496d6a38a6e3",
                             "customConfigs": [
                                 {
@@ -73,6 +76,7 @@
                                 "layout|flex": null,
                                 "text": "Next"
                             },
+                            "name": "MyButton1",
                             "designerId": "b0c11866-0f13-4694-b807-c0d549b905b9",
                             "customConfigs": [
                                 {
@@ -92,6 +96,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
+                            "name": "MySeparator",
                             "designerId": "fec17c18-a9ed-4590-ae38-9c158e53f78b"
                         },
                         {
@@ -106,6 +111,7 @@
                                 "layout|flex": null,
                                 "text": "New Card"
                             },
+                            "name": "MyButton2",
                             "designerId": "7c578b6d-df9a-4691-b94b-010287b3c582"
                         }
                     ]
@@ -122,6 +128,7 @@
             "userConfig": {
                 "layout|region": "center"
             },
+            "name": "cardstack",
             "designerId": "b0b58b66-2fd6-46af-b619-d22c8109ea0a",
             "masterInstanceId": "683f2e27-fa82-4170-8174-011aa0d9e3f1"
         }

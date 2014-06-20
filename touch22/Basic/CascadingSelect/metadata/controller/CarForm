@@ -21,6 +21,7 @@
                 "ref": "makerField",
                 "selector": "formpanel #makerField"
             },
+            "name": "makerField",
             "designerId": "138d4bc4-39a4-4bdf-9990-fe94aa9592b9"
         },
         {
@@ -55,6 +56,7 @@
                 ],
                 "name": "show"
             },
+            "name": "onCarFormShow",
             "designerId": "7c70ac97-87ee-4d88-9a3d-7d2ea4358b57"
         },
         {
@@ -68,6 +70,7 @@
                 "ref": "seriesField",
                 "selector": "formpanel #seriesField"
             },
+            "name": "seriesField",
             "designerId": "e4e06575-22ce-4590-837f-a82f6e0365e5"
         },
         {
@@ -81,6 +84,7 @@
                 "ref": "modelField",
                 "selector": "formpanel #modelField"
             },
+            "name": "modelField",
             "designerId": "de0506f3-7f0a-4884-b2d7-9bc3c766df27"
         },
         {
@@ -94,6 +98,7 @@
                 "ref": "doneButton",
                 "selector": "formpanel #doneButton"
             },
+            "name": "doneButton",
             "designerId": "c43a75e5-a179-4359-9552-1ba4e3098363"
         },
         {
@@ -141,6 +146,7 @@
                 ],
                 "name": "change"
             },
+            "name": "onMakerFieldChange",
             "designerId": "e2f4b4cf-a28c-4181-ab5c-349fc464525c"
         },
         {
@@ -188,6 +194,7 @@
                 ],
                 "name": "change"
             },
+            "name": "onSeriesFieldChange",
             "designerId": "4ac198d5-8b30-4209-a124-c86b6aee7c81"
         },
         {
@@ -210,6 +217,7 @@
                 ],
                 "name": "change"
             },
+            "name": "onModelFieldChange",
             "designerId": "fc7fc550-e96a-46f0-b14b-d6ec9f614e0d"
         },
         {
@@ -231,6 +239,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onDoneButtonTap",
             "designerId": "38bcedf6-b0b2-487f-b887-258087be0fda"
         }
     ]

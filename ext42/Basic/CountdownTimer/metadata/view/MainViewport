@@ -29,6 +29,7 @@
                 "title": "Countdown",
                 "width": null
             },
+            "name": "MyPanel1",
             "designerId": "648255a0-3c0a-402b-949c-e2086a945c53",
             "cn": [
                 {
@@ -46,6 +47,7 @@
                         "maxWidth": null,
                         "width": 700
                     },
+                    "name": "MyContainer",
                     "designerId": "dd63d003-0655-441d-93c0-381910eb9804",
                     "cn": [
                         {
@@ -69,6 +71,7 @@
                                 ],
                                 "width": null
                             },
+                            "name": "MyContainer1",
                             "designerId": "75365882-89bf-4948-b524-2a2d66918b41"
                         },
                         {
@@ -84,6 +87,7 @@
                                 "designer|displayName": "center",
                                 "layout": "hbox"
                             },
+                            "name": "MyContainer2",
                             "designerId": "5eb711cd-4209-4abe-ab87-96d72ced9dbd",
                             "cn": [
                                 {
@@ -102,6 +106,7 @@
                                         "margin": null,
                                         "name": "date"
                                     },
+                                    "name": "MyDateField",
                                     "designerId": "8b4ffef0-b97b-405e-b5b0-40c9f72088ab"
                                 },
                                 {
@@ -120,6 +125,7 @@
                                         "layout|margins": null,
                                         "margin": "0 10 0 0"
                                     },
+                                    "name": "MyTimeField",
                                     "designerId": "bc0731c3-a082-4864-925b-6da914e39e00"
                                 },
                                 {
@@ -136,6 +142,7 @@
                                         "text": "Start",
                                         "width": null
                                     },
+                                    "name": "MyButton",
                                     "designerId": "0fae2274-d8d4-43bb-ad2e-3774d0cc5d54"
                                 },
                                 {
@@ -152,6 +159,7 @@
                                         "layout|margins": "0 10 0 0",
                                         "text": "Reset"
                                     },
+                                    "name": "MyButton1",
                                     "designerId": "98920675-747e-4e2c-9bea-d4dee3059a71"
                                 }
                             ]

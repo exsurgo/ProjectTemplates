@@ -21,6 +21,7 @@
                 "ref": "mainView",
                 "selector": "#mainView"
             },
+            "name": "mainView",
             "designerId": "890fc24b-394b-4158-9a36-29f49a8466ed"
         },
         {
@@ -71,6 +72,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "showMenu",
             "designerId": "beb8e73c-976d-4842-a233-effc11685cea"
         },
         {
@@ -112,6 +114,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "navigate",
             "designerId": "7d2ec394-96f9-46bd-afc0-b4bea517cc08"
         },
         {
@@ -126,6 +129,7 @@
                 "selector": "#navMenu",
                 "xtype": "navmenu"
             },
+            "name": "navMenu",
             "designerId": "ee9ba556-0a0b-41bb-981d-cd5cda8538c8"
         }
     ]

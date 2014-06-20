@@ -42,6 +42,7 @@
                 ],
                 "name": "select"
             },
+            "name": "view",
             "designerId": "afbfe47e-f5cc-4b00-a68c-d3739574ebfc"
         },
         {
@@ -55,6 +56,7 @@
                 "ref": "mainView",
                 "selector": "mainview"
             },
+            "name": "mainView",
             "designerId": "b3ec987b-29bb-4374-bf72-78beea5d6700"
         }
     ]

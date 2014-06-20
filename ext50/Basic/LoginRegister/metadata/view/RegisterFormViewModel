@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "registerform",
+        "designer|userClassName": "RegisterFormViewModel"
+    },
+    "designerId": "af0668f1-891f-4b52-905d-bcdecd54ed6d"
+}

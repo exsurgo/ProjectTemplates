@@ -20,6 +20,7 @@
                 "type": "array"
             },
             "codeClass": null,
+            "name": "personlist",
             "designerId": "2eaff1b4-1075-4d4d-a9df-8cd95c71ea2b",
             "masterInstanceId": "3fd09888-7815-486a-8d9a-949949008923"
         }

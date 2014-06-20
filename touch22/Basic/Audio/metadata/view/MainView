@@ -25,6 +25,7 @@
                 "layout": "fit",
                 "title": "Music Player"
             },
+            "name": "MyPanel",
             "designerId": "5453d3c1-8ec8-4176-b3a4-a7e1cc3d0f18",
             "cn": [
                 {
@@ -34,6 +35,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
+                    "name": "songlist",
                     "designerId": "2eaff1b4-1075-4d4d-a9df-8cd95c71ea2b",
                     "masterInstanceId": "3fd09888-7815-486a-8d9a-949949008923"
                 }

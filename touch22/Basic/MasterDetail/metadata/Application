@@ -22,5 +22,6 @@
             "PersonList"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

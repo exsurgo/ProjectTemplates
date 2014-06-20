@@ -1,0 +1,37 @@
+{
+    "name": "HeaderContentFooter",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "f194bb58-5f89-41a2-beae-17c7caaac065",
+            "659810a2-a7ae-4bc0-96a5-f51d0aa6831d",
+            "f2bd1090-6f3f-4159-820c-fb43ceed73cd"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "61bd66a9-d3c4-4caf-8c31-83f33cc0aad7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

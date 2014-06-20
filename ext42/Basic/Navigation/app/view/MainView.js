@@ -42,6 +42,7 @@ Ext.define('MyApp.view.MainView', {
                         {
                             xtype: 'menu',
                             floating: false,
+                            itemId: 'menu',
                             items: [
                                 {
                                     xtype: 'menuitem',

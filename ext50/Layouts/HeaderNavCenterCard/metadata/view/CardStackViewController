@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "cardstack",
+        "designer|userClassName": "CardStackViewController"
+    },
+    "designerId": "92fdf569-3a6f-454e-a425-0ef598f1aece"
+}

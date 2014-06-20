@@ -26,6 +26,7 @@
                 "layout|region": "north",
                 "title": "Header"
             },
+            "name": "MyPanel1",
             "designerId": "6be7277a-e9a9-4c8d-9548-68f84e741644"
         },
         {
@@ -43,6 +44,7 @@
                 "title": "Left",
                 "width": 150
             },
+            "name": "MyPanel2",
             "designerId": "9df01c6c-16e4-4a43-bae2-9d564f0d36a1"
         },
         {
@@ -59,6 +61,7 @@
                 "layout|split": true,
                 "title": "Right"
             },
+            "name": "MyPanel3",
             "designerId": "5a0d4079-d7a4-487f-8bf8-939eececc032"
         }
     ]

@@ -1,0 +1,33 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MainView"
+        ],
+        "name": "ComponentOverview",
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "stores": [
+            "countryStore"
+        ],
+        "views": [
+            "MainView",
+            "Buttons",
+            "FieldsAndRadios",
+            "Sliders",
+            "Toolbars",
+            "List",
+            "GroupedList",
+            "Tabs",
+            "Overlays"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

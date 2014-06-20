@@ -31,6 +31,7 @@
                 "html": "Home",
                 "itemId": "homeLabel"
             },
+            "name": "MyLabel",
             "designerId": "8d88aa70-0324-403d-b792-c0cc7b99b156"
         }
     ]

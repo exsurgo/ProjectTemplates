@@ -1,7 +1,6 @@
 {
     "name": "SearchList",
     "settings": {
-        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "iPhone",
@@ -10,14 +9,12 @@
                 "width": 320
             },
             "viewportOrientation": "portrait"
-        },
-        "urlPrefix": "",
-        "exportPath": ""
+        }
     },
-    "xdsVersion": "3.0.0",
+    "xdsVersion": "3.1.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000003,
+    "upgradeVersion": 300000000006,
     "framework": "touch23",
     "viewOrderMap": {
         "view": [

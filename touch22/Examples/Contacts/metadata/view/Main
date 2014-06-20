@@ -23,6 +23,7 @@
                 "container|pack": "center",
                 "docked": "top"
             },
+            "name": "MyTabBar",
             "designerId": "8952dde9-dac2-4b88-9838-9ef8f3fe34b8"
         },
         {
@@ -35,6 +36,7 @@
             "userConfig": {
                 "title": "Contacts"
             },
+            "name": "list",
             "designerId": "84624564-a015-48ea-8088-c56c025a60d5",
             "masterInstanceId": "5b610c64-3053-4d2f-8bfb-77077b9b2217"
         },
@@ -48,6 +50,7 @@
             "userConfig": {
                 "title": "Favorites"
             },
+            "name": "favoriteview",
             "designerId": "2ce4f1c3-5577-42a8-b2ac-501455c9e8f1",
             "masterInstanceId": "e83d8bd0-aa8b-4b79-bf87-9a8797bca19b"
         },
@@ -61,6 +64,7 @@
             "userConfig": {
                 "docked": "bottom"
             },
+            "name": "MyToolbar2",
             "designerId": "469e1f53-0b7f-427f-b138-42e45c6f7d8b",
             "cn": [
                 {
@@ -79,6 +83,7 @@
                         "text": "Add Contact",
                         "ui": "action"
                     },
+                    "name": "MyButton6",
                     "designerId": "098ee7e2-ee63-4dc9-8c17-ac69f32981a2"
                 }
             ]

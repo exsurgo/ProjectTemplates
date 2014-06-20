@@ -27,6 +27,7 @@
                 "layout|region": "center",
                 "title": "HTML Editor"
             },
+            "name": "MyPanel1",
             "designerId": "ddef7e5f-821b-4a71-9b23-736e4aeb3cee",
             "cn": [
                 {
@@ -44,6 +45,7 @@
                         "padding": null,
                         "width": 150
                     },
+                    "name": "MyHtmlEditor",
                     "configAlternates": {
                         "buttonTips": "object"
                     },
@@ -72,6 +74,7 @@
                         "dock": "bottom",
                         "style": null
                     },
+                    "name": "MyToolbar",
                     "configAlternates": {
                         "style": "string",
                         "buttonTIps": "object",
@@ -105,6 +108,7 @@
                                 "layout|flex": null,
                                 "text": "Submit"
                             },
+                            "name": "MyButton",
                             "designerId": "26a82558-f167-43e8-b651-318e5cb2b85f",
                             "customConfigs": [
                                 {
@@ -127,6 +131,7 @@
                                 "layout|flex": null,
                                 "text": "Reset"
                             },
+                            "name": "MyButton1",
                             "designerId": "6dd8183a-fd7e-4669-9f2a-def60482be38",
                             "customConfigs": [
                                 {

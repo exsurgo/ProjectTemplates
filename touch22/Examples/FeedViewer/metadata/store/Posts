@@ -62,6 +62,7 @@
                     ""
                 ]
             },
+            "name": "loadPosts",
             "designerId": "4a63984a-2b7e-4035-b84d-050c686162a4"
         },
         {
@@ -74,6 +75,7 @@
             "userConfig": {
                 "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
             },
+            "name": "MyJsonPProxy",
             "designerId": "49054a3a-dc77-4b5e-9804-8823e0343a7d",
             "cn": [
                 {
@@ -86,6 +88,7 @@
                     "userConfig": {
                         "rootProperty": "responseData.feed.entries"
                     },
+                    "name": "MyJsonReader",
                     "designerId": "eb0f29d5-bd5b-40fc-b637-63fbdaa91c69"
                 }
             ]

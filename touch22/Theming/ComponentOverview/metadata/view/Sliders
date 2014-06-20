@@ -1,0 +1,62 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "sliders",
+        "designer|userClassName": "Sliders"
+    },
+    "name": "MyContainer3",
+    "designerId": "4167f62f-1970-4176-95d0-c8d18b1a5b7d",
+    "cn": [
+        {
+            "type": "Ext.field.Slider",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Single Thumb",
+                "labelAlign": "top"
+            },
+            "name": "MySliderField",
+            "designerId": "55361b37-d7b1-4c6f-902a-440aaa67d7d8"
+        },
+        {
+            "type": "Ext.field.Slider",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Multiple Thumbs",
+                "labelAlign": "top",
+                "value": [
+                    20,
+                    80
+                ]
+            },
+            "name": "MySliderField",
+            "designerId": "31871117-7a14-4c5b-9d13-4a433acb2151"
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Toggle",
+                "labelAlign": "top"
+            },
+            "name": "MyToggleField",
+            "designerId": "5707d595-82db-4422-bb48-88405188ace9"
+        }
+    ]
+}

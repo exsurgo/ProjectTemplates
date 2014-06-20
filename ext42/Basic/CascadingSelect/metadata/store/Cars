@@ -106,6 +106,7 @@
                     "return Ext.Array.unique(values);"
                 ]
             },
+            "name": "getValues",
             "designerId": "0362e9ab-1d9e-4687-ae38-c24d3713919f"
         }
     ]

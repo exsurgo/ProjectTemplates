@@ -23,6 +23,7 @@
             "userConfig": {
                 "docked": "top"
             },
+            "name": "MyToolbar1",
             "designerId": "b4f1c33c-db01-4a13-9131-db478a8a0b21",
             "cn": [
                 {
@@ -37,6 +38,7 @@
                         "text": "Back",
                         "ui": "back"
                     },
+                    "name": "MyButton3",
                     "designerId": "59364094-80aa-40dc-81a9-6b24a0cf0d09"
                 },
                 {
@@ -56,6 +58,7 @@
                         "itemId": "nameTxt",
                         "layout|flex": 1
                     },
+                    "name": "MyComponent1",
                     "designerId": "a8e6751f-5a9a-4f5c-946c-43e2a9282518"
                 },
                 {
@@ -72,6 +75,7 @@
                         "text": "",
                         "ui": null
                     },
+                    "name": "MyButton4",
                     "designerId": "5c21c37f-b22a-468b-97e3-8403e28febc2",
                     "cn": [
                         {
@@ -92,6 +96,7 @@
                                 ],
                                 "name": "tap"
                             },
+                            "name": "onFavoriteBtnTap",
                             "designerId": "de8e3ebb-f46a-4c7d-b4e9-4cf8eebeb66e"
                         }
                     ]
@@ -109,6 +114,7 @@
                         "itemId": "editContactBtn",
                         "text": ""
                     },
+                    "name": "MyButton5",
                     "designerId": "672443c1-dc30-4aee-be97-c8468fcab5b1"
                 }
             ]
@@ -120,6 +126,7 @@
                 "type": "array"
             },
             "codeClass": null,
+            "name": "picture1",
             "designerId": "11b52498-1b3f-4cbb-9bda-c4460a0770c8",
             "masterInstanceId": "b037ea3a-5bcd-4f85-930a-abaa1bdc4dcd"
         },
@@ -139,6 +146,7 @@
                 "name": "phoneNumber",
                 "readOnly": true
             },
+            "name": "MyTextField6",
             "designerId": "149d2490-d573-478d-94a7-884d2ff9b1e8"
         },
         {
@@ -158,6 +166,7 @@
                 "placeHolder": "Email address not provided",
                 "readOnly": true
             },
+            "name": "MyTextField7",
             "designerId": "e451d8e5-5316-4268-a50c-436141b4e8a6"
         },
         {
@@ -178,6 +187,7 @@
                 "placeHolder": "Address not provided",
                 "readOnly": true
             },
+            "name": "MyTextField8",
             "designerId": "81714e4d-fcdb-4c2b-a1ca-9fa0ceba62ca"
         },
         {
@@ -203,6 +213,7 @@
                     "}"
                 ]
             },
+            "name": "setRecord",
             "designerId": "d9797c1a-36ac-4a31-a8b0-01d1ad2a4bbe"
         }
     ]

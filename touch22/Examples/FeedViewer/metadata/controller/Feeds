@@ -33,6 +33,7 @@
                 "ref": "doneButton",
                 "selector": "#doneButton"
             },
+            "name": "doneButton",
             "designerId": "56b47f9d-3034-4cc4-9ca4-125e686039fa"
         },
         {
@@ -46,6 +47,7 @@
                 "ref": "urlField",
                 "selector": "#urlField"
             },
+            "name": "urlField",
             "designerId": "d3da9e79-9b45-4d58-a449-a70f9ec351ab"
         },
         {
@@ -59,6 +61,7 @@
                 "ref": "searchField",
                 "selector": "#searchField"
             },
+            "name": "searchField",
             "designerId": "49c8f25b-848c-4a7c-a339-959b0186be31"
         },
         {
@@ -101,6 +104,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onButtonTap",
             "designerId": "6e895983-9321-4082-afaa-b99d24a600ff"
         },
         {
@@ -114,6 +118,7 @@
                 "ref": "postsNav",
                 "selector": "#postsNav"
             },
+            "name": "postsNav",
             "designerId": "ec7c1dea-7c61-4cfc-9e79-c68c82f097e3"
         },
         {
@@ -135,6 +140,7 @@
                 ],
                 "name": "itemtap"
             },
+            "name": "onFeedsListItemTap",
             "designerId": "d3fb453c-1088-49b7-a6e8-eab77b0a90e1"
         },
         {
@@ -159,6 +165,7 @@
                 ],
                 "name": "itemswipe"
             },
+            "name": "onFeedsListItemSwipe",
             "designerId": "287f9232-46c7-4e16-9d77-e24672c0f52c"
         },
         {
@@ -172,6 +179,7 @@
                 "ref": "addButton",
                 "selector": "#addButton"
             },
+            "name": "addButton",
             "designerId": "e29e8306-a726-4e9e-98cd-3490ea6ed974"
         },
         {
@@ -185,6 +193,7 @@
                 "ref": "feedsButton",
                 "selector": "#feedsButton"
             },
+            "name": "feedsButton",
             "designerId": "53a930d9-090b-4af9-820b-2b162d24131c"
         },
         {
@@ -207,6 +216,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onAddFeedButtonTap",
             "designerId": "a366c568-0198-4339-974a-81d8fcf1f7a9"
         },
         {
@@ -229,6 +239,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onViewFeedsButtonTap",
             "designerId": "48ddee33-3994-45f0-b3cd-58377928f6db"
         },
         {
@@ -255,6 +266,7 @@
                 ],
                 "name": "activeitemchange"
             },
+            "name": "onNavigationviewActiveItemChange",
             "designerId": "9e3adc67-e133-4b1f-9ff3-62fbee45af6d"
         },
         {
@@ -268,6 +280,7 @@
                 "ref": "postsList",
                 "selector": "#postsList"
             },
+            "name": "postsList",
             "designerId": "e3db05a5-abd5-4005-9262-bbf595eab754"
         }
     ]

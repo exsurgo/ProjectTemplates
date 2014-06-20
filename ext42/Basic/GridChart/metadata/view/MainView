@@ -33,6 +33,7 @@
                 "store": "DetailData",
                 "style": null
             },
+            "name": "LineChart1",
             "configAlternates": {
                 "style": "string",
                 "animate": "boolean"
@@ -56,6 +57,7 @@
                         "grid": true,
                         "title": "Months"
                     },
+                    "name": "MyCategoryAxis",
                     "configAlternates": {
                         "grid": "boolean"
                     },
@@ -72,6 +74,7 @@
                         "grid": true,
                         "title": "Temperatures"
                     },
+                    "name": "MyNumericAxis",
                     "configAlternates": {
                         "grid": "boolean"
                     },
@@ -110,6 +113,7 @@
                             "avghigh"
                         ]
                     },
+                    "name": "MyAreaSeries",
                     "designerId": "ce38965d-2696-4c62-bd37-32d341d033a6"
                 },
                 {
@@ -157,6 +161,7 @@
                             "high"
                         ]
                     },
+                    "name": "MyLineSeries",
                     "designerId": "d050addb-7e33-4897-9867-c66d2e318b25"
                 },
                 {
@@ -205,6 +210,7 @@
                             "low"
                         ]
                     },
+                    "name": "MyLineSeries1",
                     "configAlternates": {
                         "smooth": "boolean"
                     },
@@ -217,6 +223,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
+                    "name": "MyLegend",
                     "designerId": "a9f4b7cd-f5bf-408e-b82e-e1ad1f3458bf"
                 }
             ]
@@ -239,6 +246,7 @@
                 "title": "High-Low Temperature by Month",
                 "width": 300
             },
+            "name": "MyGridPanel",
             "designerId": "a5a5b467-f65a-4376-bdb4-0824d0af3b7d",
             "cn": [
                 {
@@ -252,6 +260,7 @@
                         "dataIndex": "city",
                         "text": "City"
                     },
+                    "name": "MyColumn",
                     "designerId": "abc41123-8b92-47e8-b001-d5e5f67f142e"
                 },
                 {
@@ -265,6 +274,7 @@
                         "dataIndex": "avghigh",
                         "text": "Avg High"
                     },
+                    "name": "MyNumberColumn",
                     "designerId": "0b839229-b8b7-4028-9726-8ea736e21c09"
                 },
                 {
@@ -278,6 +288,7 @@
                         "dataIndex": "avglow",
                         "text": "Avg Low"
                     },
+                    "name": "MyNumberColumn1",
                     "designerId": "082232fd-d681-4a32-9a5f-cd99d1fd8836"
                 },
                 {
@@ -287,6 +298,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
+                    "name": "MyGridView",
                     "designerId": "d13bcc86-3a4a-4bbc-9f91-6fea4257dd6f"
                 }
             ]

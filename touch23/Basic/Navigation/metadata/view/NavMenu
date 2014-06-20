@@ -32,6 +32,7 @@
                 "navView": "homepanel",
                 "text": "Home"
             },
+            "name": "MyButton1",
             "designerId": "2c4d259f-7209-431d-b20f-fdbe6210042f",
             "customConfigs": [
                 {
@@ -62,6 +63,7 @@
                 "navView": "aboutpanel",
                 "text": "About Us"
             },
+            "name": "MyButton2",
             "designerId": "87b9d312-f2da-4139-9ff0-cf82a9e65ca4",
             "customConfigs": [
                 {
@@ -96,6 +98,7 @@
                 "navView": "contactpanel",
                 "text": "Contact Us"
             },
+            "name": "MyButton3",
             "designerId": "2f7996be-3019-4db7-88bf-0d5eabbb3536",
             "customConfigs": [
                 {

@@ -23,6 +23,7 @@
                 "id": "dataList",
                 "itemId": null
             },
+            "name": "MyList",
             "designerId": "4036229e-afa2-4715-84aa-4110e88b06a0",
             "cn": [
                 {
@@ -42,6 +43,7 @@
                             "</div>"
                         ]
                     },
+                    "name": "tpl3",
                     "designerId": "0613e169-e356-409c-88b8-cb0daf10a414"
                 }
             ]

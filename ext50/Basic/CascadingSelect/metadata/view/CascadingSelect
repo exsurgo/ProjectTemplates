@@ -1,0 +1,313 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "middle",
+        "container|pack": "center",
+        "designer|initialView": true,
+        "designer|userAlias": "cascadingselect",
+        "designer|userClassName": "CascadingSelect",
+        "layout": "hbox"
+    },
+    "designerId": "f32eb8c1-4d90-4784-8243-30240cb7369b",
+    "viewControllerInstanceId": "7b3dba86-06b6-4742-a678-763fde7160a9",
+    "viewModelInstanceId": "c70e76b6-b06d-44f8-b5bb-a38c841cb075",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "itemId": null,
+                "title": "Select Car",
+                "width": 500
+            },
+            "name": "MyForm",
+            "designerId": "36195c1d-3983-4361-9de3-516a12635eea",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "value",
+                        "editable": false,
+                        "fieldLabel": "Make",
+                        "itemId": null,
+                        "labelAlign": "right",
+                        "labelWidth": 70,
+                        "layout|anchor": "100%",
+                        "reference": "makerField",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "6cb9e8a0-85cd-4843-8a44-cacaa9b35146",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMakerFieldChange",
+                                "implHandler": [
+                                    "var refs = this.getReferences(),",
+                                    "    seriesField = refs.seriesField;",
+                                    "",
+                                    "// Special case: we chose the \"choose a maker\" option",
+                                    "if (!newValue) {",
+                                    "",
+                                    "    seriesField.hide();",
+                                    "",
+                                    "} else {",
+                                    "",
+                                    "",
+                                    "    // Clear selected series value",
+                                    "    seriesField.setValue('');",
+                                    "",
+                                    "",
+                                    "    // Update the series dropdown",
+                                    "    var data = this.getStore('cars').getValues('series', { maker: newValue }),",
+                                    "        store = new Ext.data.Store({",
+                                    "            fields: ['id', 'value'],",
+                                    "            data: data",
+                                    "        });",
+                                    "    seriesField.bindStore(store);",
+                                    "",
+                                    "    // Show the series field",
+                                    "    seriesField.show();",
+                                    "",
+                                    "}",
+                                    "",
+                                    "// Hide later parts of the form",
+                                    "refs.modelField.hide();",
+                                    "refs.doneButton.hide();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onMakerFieldChange",
+                            "designerId": "fb7567d9-c32b-4683-8aa9-90b6ae0bd341"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "value",
+                        "editable": false,
+                        "fieldLabel": "Series",
+                        "itemId": null,
+                        "labelAlign": "right",
+                        "labelWidth": 70,
+                        "layout|anchor": "100%",
+                        "reference": "seriesField",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "9d2be18f-261b-4da7-8eea-b618cb0a8292",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSeriesFieldChange",
+                                "implHandler": [
+                                    "var refs = this.getReferences(),",
+                                    "    modelField = refs.modelField,",
+                                    "    makerField = refs.makerField;",
+                                    "",
+                                    "// Special case: we chose the \"choose a series\" option",
+                                    "if (!newValue) {",
+                                    "",
+                                    "    modelField.hide();",
+                                    "",
+                                    "} else {",
+                                    "",
+                                    "    // Clear selected model value",
+                                    "    modelField.setValue('');",
+                                    "",
+                                    "    // Update the model dropdown",
+                                    "    var data = this.getStore('cars').getValues('model', { maker: makerField.getValue(), series: newValue }),",
+                                    "        store = new Ext.data.Store({",
+                                    "            fields: ['id', 'value'],",
+                                    "            data: data",
+                                    "        });",
+                                    "    modelField.bindStore(store);",
+                                    "",
+                                    "    // Show the series field",
+                                    "    modelField.show();",
+                                    "",
+                                    "}",
+                                    "",
+                                    "// Hide later parts of the form",
+                                    "refs.doneButton.hide();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onSeriesFieldChange",
+                            "designerId": "08724a17-972a-4d45-8efe-5b071c859770"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "value",
+                        "editable": false,
+                        "fieldLabel": "Model",
+                        "itemId": null,
+                        "labelAlign": "right",
+                        "labelWidth": 70,
+                        "layout|anchor": "100%",
+                        "reference": "modelField",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox2",
+                    "designerId": "2f5b856e-99f3-4b56-88fd-afaef4832ef0",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onModelFieldChange",
+                                "implHandler": [
+                                    "var button = this.getReferences().doneButton;",
+                                    "if (newValue) {",
+                                    "    button.show();",
+                                    "} else {",
+                                    "    button.hide();",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onModelFieldChange",
+                            "designerId": "74c95e6b-39bd-4ee7-8fd1-c89a5b39f919"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "margin": "10 0 10 0"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "eeaab065-fee1-46fb-9ba1-0c921de7fd66",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": null,
+                                "reference": "doneButton",
+                                "text": "Choose Car"
+                            },
+                            "name": "MyButton",
+                            "designerId": "dd639517-19d3-492e-a920-fe6be32645b3",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onDoneButtonClick",
+                                        "implHandler": [
+                                            "var title = 'Car Selected',",
+                                            "    message = 'You chose a great car!';",
+                                            "",
+                                            "Ext.Msg.alert(title, message);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onDoneButtonClick",
+                                    "designerId": "6c2aa15b-9193-407e-9381-837136618ab5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onFormRender",
+                        "implHandler": [
+                            "var refs = this.getReferences(),",
+                            "    makerField = refs.makerField;",
+                            "",
+                            "// Populate the maker field",
+                            "var data = this.getStore('cars').getValues('maker');",
+                            "store = new Ext.data.Store({",
+                            "    fields: ['id', 'value'],",
+                            "    data: data",
+                            "});",
+                            "makerField.bindStore(store);",
+                            "",
+                            "// Hide later parts of the form",
+                            "refs.seriesField.hide();",
+                            "refs.modelField.hide();",
+                            "refs.doneButton.hide();"
+                        ],
+                        "name": "render",
+                        "scope": "me"
+                    },
+                    "name": "onFormRender",
+                    "designerId": "3f3bd5f2-45df-4185-b6df-087b0db46593"
+                }
+            ]
+        }
+    ]
+}

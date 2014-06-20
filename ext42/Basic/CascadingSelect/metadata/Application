@@ -23,5 +23,6 @@
             "MainViewport"
         ]
     },
+    "name": "Application",
     "designerId": "application"
 }

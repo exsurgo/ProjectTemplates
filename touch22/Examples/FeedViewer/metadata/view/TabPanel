@@ -25,6 +25,7 @@
                 "layout": "fit",
                 "title": "Posts"
             },
+            "name": "MyContainer",
             "designerId": "712a7b61-24d6-49af-9dc7-d3448f1ae691",
             "cn": [
                 {
@@ -38,6 +39,7 @@
                         "id": "postsNav",
                         "useTitleForBackButtonText": true
                     },
+                    "name": "MyNavigationView",
                     "designerId": "aae7777f-e28c-44d5-9fc8-d2dd43221ca2",
                     "cn": [
                         {
@@ -50,6 +52,7 @@
                             "userConfig": {
                                 "title": "Post"
                             },
+                            "name": "postslist",
                             "designerId": "3e3d5361-f181-4a58-9a8a-cd211b911b0d",
                             "masterInstanceId": "5d991599-1c18-47cd-aea6-a0fde376a92d"
                         },
@@ -60,6 +63,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
+                            "name": "MyNavigationBar",
                             "designerId": "0315c29b-a6d7-42e1-a94c-f8ed83873848",
                             "cn": [
                                 {
@@ -76,6 +80,7 @@
                                         "text": "",
                                         "ui": "action"
                                     },
+                                    "name": "MyButton",
                                     "designerId": "726d3be0-260a-4d99-95f2-d423d869d515"
                                 },
                                 {
@@ -89,6 +94,7 @@
                                         "id": "feedsButton",
                                         "text": "Feeds"
                                     },
+                                    "name": "MyButton1",
                                     "designerId": "2ce68ccf-74aa-4a9d-a84b-cf5a5bd1e3d2"
                                 }
                             ]
@@ -110,6 +116,7 @@
                 "layout": "fit",
                 "title": "About"
             },
+            "name": "MyContainer1",
             "designerId": "8ff1d34a-5fd6-4a95-b78b-05741e6fdbb1",
             "cn": [
                 {
@@ -119,6 +126,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
+                    "name": "about",
                     "designerId": "829d069d-ba63-4f14-abc0-7db9e260878b",
                     "masterInstanceId": "498dd6ec-4628-4484-877a-b7d33e587689"
                 }
@@ -134,6 +142,7 @@
             "userConfig": {
                 "docked": "bottom"
             },
+            "name": "MyTabBar",
             "designerId": "ec756633-9d60-4d51-bbf5-a5b0d2cf2341"
         }
     ]

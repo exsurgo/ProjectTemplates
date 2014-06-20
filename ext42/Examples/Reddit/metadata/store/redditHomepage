@@ -104,6 +104,7 @@
                 "designer|displayName": "redditJSONProxy",
                 "url": "http://www.reddit.com/.json"
             },
+            "name": "MyJsonPProxy",
             "designerId": "7ca6932d-5f47-465e-a1e7-96cb37d05e57",
             "cn": [
                 {
@@ -116,6 +117,7 @@
                     "userConfig": {
                         "root": "data.children"
                     },
+                    "name": "MyJsonReader",
                     "designerId": "a3f6511b-191f-49f9-8b52-c8dea2b51c74"
                 }
             ]

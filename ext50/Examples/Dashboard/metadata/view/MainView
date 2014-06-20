@@ -1,0 +1,325 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border"
+    },
+    "designerId": "0ba41f05-69d3-4f65-a25f-892e02e1b78d",
+    "viewControllerInstanceId": "ad755058-245e-426f-8738-736aca4db783",
+    "viewModelInstanceId": "a5745b5e-fe75-49b0-9e7f-03e37f82b0d9",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsible": true,
+                "height": 200,
+                "itemId": "headerPanel",
+                "layout": "fit",
+                "layout|region": "north",
+                "layout|split": true,
+                "title": "Dashboard"
+            },
+            "name": "MyPanel1",
+            "designerId": "6be7277a-e9a9-4c8d-9548-68f84e741644"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapseDirection": "left",
+                "collapsible": true,
+                "itemId": "leftPanel",
+                "layout": "fit",
+                "layout|flex": 1,
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "Company Data",
+                "width": 150
+            },
+            "name": "MyPanel2",
+            "designerId": "9df01c6c-16e4-4a43-bae2-9d564f0d36a1",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "companyGrid",
+                        "rowLines": false,
+                        "store": "Companies",
+                        "title": null
+                    },
+                    "name": "MyGridPanel",
+                    "designerId": "ab77d0c9-9717-4825-9104-2eeee8caba48",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "company",
+                                "text": "Company",
+                                "width": 140
+                            },
+                            "name": "MyColumn",
+                            "designerId": "6d6cc943-ef34-4ec5-b27f-3b8d51d20221"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "price",
+                                "text": "Price"
+                            },
+                            "name": "MyNumberColumn",
+                            "designerId": "839a37c9-c775-4956-90c6-0f7bdc989efe"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "revenue",
+                                "text": "Revenue"
+                            },
+                            "name": "MyNumberColumn1",
+                            "designerId": "9c02a971-4d66-454e-8c07-36bae1ad75cd"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "growth",
+                                "text": "Growth"
+                            },
+                            "name": "MyNumberColumn2",
+                            "designerId": "3ac8629d-6cac-4398-a23f-c02857870fe6"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "product",
+                                "text": "Product"
+                            },
+                            "name": "MyNumberColumn3",
+                            "designerId": "6fa961ea-9251-419e-9eeb-89e5d59e5dd1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "market",
+                                "text": "Market"
+                            },
+                            "name": "MyNumberColumn4",
+                            "designerId": "b3892ee3-e123-4b95-97d8-2cdc650dc829"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 5,
+                "collapseDirection": "right",
+                "collapsible": true,
+                "itemId": "rightPanel",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "layout|split": true,
+                "title": "Company Details"
+            },
+            "name": "MyPanel3",
+            "designerId": "5a0d4079-d7a4-487f-8bf8-939eececc032",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "container|align": "stretch",
+                        "itemId": "companyForm",
+                        "layout": "vbox",
+                        "title": null
+                    },
+                    "name": "MyForm",
+                    "designerId": "45c865a0-3700-4fb0-a06c-e4480078e6ce",
+                    "cn": [
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaults": [
+                                    "{\r",
+                                    "    width: 240,\r",
+                                    "    labelWidth: 90,\r",
+                                    "    labelAlign: 'right',\r",
+                                    "    disabled: true,\r",
+                                    "    maxValue: 100,\r",
+                                    "    minValue: 0,\r",
+                                    "    enforceMaxLength: true,\r",
+                                    "    maxLength: 5,\r",
+                                    "    bubbleEvents: ['change']\r",
+                                    "}"
+                                ],
+                                "layout|flex": 1,
+                                "title": "Company Details"
+                            },
+                            "name": "MyFieldSet",
+                            "designerId": "f13a4a0f-4ba6-4764-8c40-6ff67a037dae",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Company",
+                                        "layout|anchor": "100%",
+                                        "name": "company"
+                                    },
+                                    "name": "MyTextField",
+                                    "designerId": "e081d620-8bca-4d3e-8e22-84152dc26421"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Price",
+                                        "layout|anchor": "100%",
+                                        "name": "price"
+                                    },
+                                    "name": "MyNumberField",
+                                    "designerId": "2ec85ba8-3ad7-4e25-8058-84fd69980adf"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Revenue",
+                                        "layout|anchor": "100%",
+                                        "name": "revenue"
+                                    },
+                                    "name": "MyNumberField1",
+                                    "designerId": "8a8a2618-798d-44a5-9ef3-33b788e1f232"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Growth",
+                                        "layout|anchor": "100%",
+                                        "name": "growth"
+                                    },
+                                    "name": "MyNumberField2",
+                                    "designerId": "133bd64f-5946-4fa7-a039-b9acdc245ef7"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Product",
+                                        "layout|anchor": "100%",
+                                        "name": "product"
+                                    },
+                                    "name": "MyNumberField3",
+                                    "designerId": "8ab3a53d-72a8-4654-bd48-a054259ee02c"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Market",
+                                        "layout|anchor": "100%",
+                                        "name": "market"
+                                    },
+                                    "name": "MyNumberField4",
+                                    "designerId": "04c1dd7b-ecf8-42ff-8002-8e6e8f8f1d0c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

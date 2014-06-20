@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ticketdataview",
+        "designer|userClassName": "TicketDataViewViewController"
+    },
+    "designerId": "7bc9c36f-5271-4ca0-b74f-6a418d62576d"
+}

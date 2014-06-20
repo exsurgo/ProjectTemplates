@@ -21,6 +21,7 @@
                 "type": "object"
             },
             "codeClass": null,
+            "name": "MyLocalStorageProxy",
             "designerId": "dbc31c38-13b6-41fa-bf8f-6b29f6b2a358"
         },
         {
@@ -30,6 +31,7 @@
                 "type": "object"
             },
             "codeClass": null,
+            "name": "MyGrouper",
             "designerId": "3bba5afe-a9bb-427a-864f-f08f3fde514f",
             "cn": [
                 {
@@ -49,6 +51,7 @@
                             ""
                         ]
                     },
+                    "name": "groupFn",
                     "designerId": "797a643d-743c-4884-9d31-7dfa69d7afc7"
                 }
             ]
@@ -63,6 +66,7 @@
             "userConfig": {
                 "property": "firstName"
             },
+            "name": "MySorter",
             "designerId": "5f089979-7818-4125-bcde-c8f7d886c5ba"
         }
     ]

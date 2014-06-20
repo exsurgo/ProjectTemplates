@@ -23,6 +23,7 @@
                 "docked": "top",
                 "ui": "light"
             },
+            "name": "MyTabBar",
             "designerId": "df123052-92f8-4500-beb6-970e26615c42"
         },
         {
@@ -36,6 +37,7 @@
                 "id": "contact",
                 "title": "Contact"
             },
+            "name": "MyContainer",
             "designerId": "a7c9ab84-ccee-4082-8a8e-7afc74fea2e9",
             "cn": [
                 {
@@ -50,6 +52,7 @@
                         "layout": "hbox",
                         "padding": 10
                     },
+                    "name": "MyContainer1",
                     "designerId": "0b88ff7a-18fd-46aa-aa2a-a0074b2465a2",
                     "cn": [
                         {
@@ -64,6 +67,7 @@
                                 "id": "photo",
                                 "width": 100
                             },
+                            "name": "MyComponent",
                             "designerId": "616d4c28-3e1b-4f55-b3a3-863c5f7fd84b",
                             "cn": [
                                 {
@@ -79,6 +83,7 @@
                                             "<img class=\"photo\" src=\"{photo_url}\" width=\"100\" height=\"100\"/>"
                                         ]
                                     },
+                                    "name": "tpl",
                                     "designerId": "ec796845-d565-45b8-b4ad-5e9c053cdd64"
                                 }
                             ]
@@ -94,6 +99,7 @@
                                 "id": "data",
                                 "padding": 10
                             },
+                            "name": "MyComponent1",
                             "designerId": "cf6f5a05-8b83-4545-8cbf-092a0784b401",
                             "cn": [
                                 {
@@ -113,6 +119,7 @@
                                             "</div>"
                                         ]
                                     },
+                                    "name": "tpl1",
                                     "designerId": "f03e0f27-ac7a-452b-bc6f-bee70e7b91c5"
                                 }
                             ]
@@ -135,6 +142,7 @@
                                     "</div>"
                                 ]
                             },
+                            "name": "tpl2",
                             "designerId": "5d6e1885-b4c4-4e76-b9eb-de9c2f8b68f2"
                         }
                     ]
@@ -151,6 +159,7 @@
                         "designer|displayName": "center",
                         "layout": "hbox"
                     },
+                    "name": "MyContainer2",
                     "designerId": "57826839-31be-48ed-ac57-1f1ba642a04d",
                     "cn": [
                         {
@@ -165,6 +174,7 @@
                                 "text": "Call",
                                 "width": 100
                             },
+                            "name": "MyButton",
                             "designerId": "ece3ad08-ed72-4875-9e21-31b3c3bdb0f3"
                         },
                         {
@@ -177,6 +187,7 @@
                             "userConfig": {
                                 "width": 57
                             },
+                            "name": "MySpacer",
                             "designerId": "a37e66fa-61d0-49b0-ab90-61c12c5ccef7"
                         },
                         {
@@ -191,6 +202,7 @@
                                 "text": "More",
                                 "width": 100
                             },
+                            "name": "MyButton1",
                             "designerId": "e3ff8722-e30d-49f8-a9a8-d04d5389b56d"
                         }
                     ]
@@ -210,6 +222,7 @@
                 "title": "Map",
                 "useCurrentLocation": null
             },
+            "name": "MyMap",
             "designerId": "1746f8cf-68e1-41c9-a69d-a68703633d84"
         }
     ]

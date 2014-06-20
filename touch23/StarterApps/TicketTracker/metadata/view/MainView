@@ -26,6 +26,7 @@
                 "store": "ticketStore",
                 "title": "Tickets"
             },
+            "name": "MyList",
             "designerId": "913fe698-48aa-4020-86e0-04c63f6ce4cd",
             "cn": [
                 {
@@ -44,6 +45,7 @@
                             "</div>"
                         ]
                     },
+                    "name": "tpl",
                     "designerId": "b8c99c9b-56db-4090-b600-64cdaa407cf5"
                 }
             ]
@@ -59,6 +61,7 @@
                 "designer|displayName": "Navigation bar",
                 "docked": "top"
             },
+            "name": "MyNavigationBar",
             "designerId": "292548a7-4f83-4d6e-aec9-3db8ffcd2646",
             "cn": [
                 {
@@ -74,6 +77,7 @@
                         "id": "addTicketButton",
                         "text": null
                     },
+                    "name": "MyButton",
                     "designerId": "05c30a45-3c0b-4f4e-9b5b-cad9f687f443"
                 }
             ]

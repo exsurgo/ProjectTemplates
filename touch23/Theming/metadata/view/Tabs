@@ -1,0 +1,443 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Tabs"
+    },
+    "name": "MyContainer6",
+    "designerId": "753871a6-437a-493b-abcd-e5a9218e083f",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyTabPanel",
+            "designerId": "a38cbad9-f267-4965-b219-b33d838a8e3c",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "2c34f216-6759-4ba9-95e6-493ba679bfa4"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "0879ef8c-9943-4b00-857f-79fabf5b9b1d"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "f752ffb5-0232-4661-85d2-5cc2833aecc7"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top"
+                    },
+                    "name": "MyTabBar3",
+                    "designerId": "bd88365e-d306-432d-80df-4ee34311108e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "designer|uiInterfaceName": "light",
+                "ui": "light"
+            },
+            "name": "MyTabPanel",
+            "designerId": "77bb04c6-cf1c-4d5e-9774-d1cf1641dcf0",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "b04ab71c-31a2-4f0e-8723-1e105f9a4723"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "78b6f721-21ac-4931-b12c-7205e6973b36"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "fdf76e90-d5cb-4ff2-b173-617866260ee9"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "designer|uiInterfaceName": "light",
+                        "docked": "top",
+                        "ui": "light"
+                    },
+                    "name": "MyTabBar",
+                    "designerId": "4cb79eaa-79b9-4d2a-bcf3-edc41f207c6c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "neutral",
+                "ui": "neutral"
+            },
+            "name": "MyTabPanel",
+            "designerId": "ea5b5c89-d731-449f-a60d-cd6f73a6e435",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "54592507-3659-48df-a30f-fcfb54806e66"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "f30d3804-805c-48c7-bd3f-527c19cd857c"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "31944e12-119e-4c40-adc1-66a4ef6be1dd"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "end",
+                        "designer|uiInterfaceName": "neutral",
+                        "docked": "top",
+                        "ui": "neutral"
+                    },
+                    "name": "MyTabBar1",
+                    "designerId": "56e1ac98-8881-41b2-bcd0-1428c4f96f38"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "name": "MyTabPanel",
+            "designerId": "8662dd75-b8d6-48f8-8ba3-739b94c28eb9",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "home",
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "6b163352-376a-4d2b-99d2-1c6d9c9427b8"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "settings",
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "f3487946-afb4-420a-ae29-e331d6d0000e"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "badgeText": "Full",
+                        "iconCls": "trash",
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "111ddafa-4891-49af-9459-e69de009f79b"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom"
+                    },
+                    "name": "MyTabBar2",
+                    "designerId": "7fde91b7-fb25-451d-9f7d-bd31fd64960f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "light",
+                "docked": "bottom",
+                "ui": "light"
+            },
+            "name": "MyTabPanel",
+            "designerId": "f7da54a2-780e-4c2a-bc7a-878dbd5dbe29",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "home",
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "0a028cee-cc20-4ceb-b0ac-e14f69ffba0f"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "settings",
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "46a8bd8f-2fed-4a8f-8bdf-95e31ec08f30"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "badgeText": "Full",
+                        "iconCls": "trash",
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "bc0a9387-4ead-4499-b52a-4cdafa62f140"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "light",
+                        "docked": "bottom",
+                        "ui": "light"
+                    },
+                    "name": "MyTabBar2",
+                    "designerId": "4e9a0998-836d-4556-a43d-08cbca715afa"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "neutral",
+                "docked": "bottom",
+                "ui": "neutral"
+            },
+            "name": "MyTabPanel",
+            "designerId": "b781a672-48cf-48a3-90ea-d78a88d02d7c",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "home",
+                        "title": "Home"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "38f20c98-5053-49cc-9aa1-a1d980d2f35a"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "settings",
+                        "title": "Settings"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "240ea899-c70a-42ca-9b1f-8643ecd4bf87"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "badgeText": "Full",
+                        "iconCls": "trash",
+                        "title": "Trash"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "4429ef93-5c03-4784-98af-be21652cab87"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "neutral",
+                        "docked": "bottom",
+                        "ui": "neutral"
+                    },
+                    "name": "MyTabBar2",
+                    "designerId": "12b51b76-0e75-46fd-a579-d9a9ee13a483"
+                }
+            ]
+        }
+    ]
+}

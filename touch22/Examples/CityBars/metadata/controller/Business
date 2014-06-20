@@ -45,6 +45,7 @@
                 ],
                 "name": "itemtap"
             },
+            "name": "onListItemTap",
             "designerId": "d8288a0b-efe9-49bf-8651-5eb9cc5056eb"
         },
         {
@@ -84,6 +85,7 @@
                     ""
                 ]
             },
+            "name": "launch",
             "designerId": "f1a7c610-b00d-4c71-9025-f8ba6a0fbbb2"
         },
         {
@@ -105,6 +107,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onCallButtonTap",
             "designerId": "70740668-3f6f-4c6c-9f9b-7661f1c0634b"
         },
         {
@@ -165,6 +168,7 @@
                 ],
                 "name": "activate"
             },
+            "name": "onMapActivate",
             "designerId": "cd8b10d0-a0b8-43fc-9c15-4c7fef8a168d"
         },
         {
@@ -178,6 +182,7 @@
                 "ref": "dataList",
                 "selector": "#dataList"
             },
+            "name": "dataList",
             "designerId": "29a547db-e122-4051-95d2-f35e39515f1e"
         },
         {
@@ -191,6 +196,7 @@
                 "ref": "listCard",
                 "selector": "#listCard"
             },
+            "name": "listCard",
             "designerId": "ac584b3b-1a09-4137-ada3-eaf3b0895d9b"
         },
         {
@@ -204,6 +210,7 @@
                 "ref": "mainNav",
                 "selector": "mainnav"
             },
+            "name": "mainNav",
             "designerId": "dcccfdc5-6cf1-4636-8cb6-19f69dcca72a"
         },
         {
@@ -217,6 +224,7 @@
                 "ref": "detailCard",
                 "selector": "detailpanel"
             },
+            "name": "detailCard",
             "designerId": "c63afc32-69f5-4b83-bed8-f7d760cc2ba0"
         },
         {
@@ -241,6 +249,7 @@
                     "}"
                 ]
             },
+            "name": "getLocation",
             "designerId": "3885eee6-ec58-49e1-a432-5cfd4640cfa3"
         },
         {
@@ -271,6 +280,7 @@
                     ""
                 ]
             },
+            "name": "getBusinesses",
             "designerId": "0d1be29d-0940-4265-877a-750f8738f6d9"
         }
     ]

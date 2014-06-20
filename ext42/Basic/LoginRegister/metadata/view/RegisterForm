@@ -29,6 +29,7 @@
                 "itemId": "form",
                 "title": null
             },
+            "name": "MyForm1",
             "designerId": "b20d5c82-ecdd-43d9-8125-a8390c19d6eb",
             "cn": [
                 {
@@ -48,6 +49,7 @@
                         "msgTarget": "title",
                         "name": "name"
                     },
+                    "name": "MyTextField2",
                     "designerId": "6bd751cd-c8ad-4c0d-9a19-2710ea5bc48a"
                 },
                 {
@@ -69,6 +71,7 @@
                         "regex": null,
                         "regexText": null
                     },
+                    "name": "MyTextField3",
                     "designerId": "19d10e9d-e48b-414e-bff7-5d9375014e2d"
                 },
                 {
@@ -88,6 +91,7 @@
                         "msgTarget": "title",
                         "name": "username"
                     },
+                    "name": "MyTextField4",
                     "designerId": "e581400b-6ffc-46bb-a568-02a972d76f0b"
                 },
                 {
@@ -107,6 +111,7 @@
                         "msgTarget": "title",
                         "name": "password"
                     },
+                    "name": "MyTextField5",
                     "designerId": "496b291d-72ec-4066-a0bd-af7d060d7b8d"
                 },
                 {
@@ -122,6 +127,7 @@
                         "scale": "medium",
                         "text": "Register"
                     },
+                    "name": "MyButton4",
                     "designerId": "fade9dce-5a0f-45f0-85ab-d36ec43e621d"
                 }
             ]

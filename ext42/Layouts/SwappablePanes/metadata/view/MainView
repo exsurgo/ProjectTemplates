@@ -27,6 +27,7 @@
                 "title": "West",
                 "width": 200
             },
+            "name": "MyPanel1",
             "designerId": "756c6ad9-8cef-4855-96c5-c834abb824a9"
         },
         {
@@ -43,6 +44,7 @@
                 "layout|region": "center",
                 "title": null
             },
+            "name": "MyPanel2",
             "designerId": "e6f9501e-58fa-4be4-aac0-08d5c3e1cdd0",
             "cn": [
                 {
@@ -57,6 +59,7 @@
                         "layout|region": "center",
                         "title": "Messages"
                     },
+                    "name": "MyPanel3",
                     "designerId": "b94ee3d7-4caa-4817-8a67-cd0f02226cf7",
                     "cn": [
                         {
@@ -70,6 +73,7 @@
                                 "designer|displayName": "MessagesToolbar",
                                 "dock": "top"
                             },
+                            "name": "MyToolbar",
                             "designerId": "692d204c-c207-4710-88b5-6bdfa7619364",
                             "cn": [
                                 {
@@ -84,6 +88,7 @@
                                         "layout|flex": null,
                                         "text": "Preview: Bottom"
                                     },
+                                    "name": "MySplitButton",
                                     "designerId": "5108ccd0-7a66-45e8-8135-c6221fd4f906",
                                     "cn": [
                                         {
@@ -97,6 +102,7 @@
                                                 "designer|displayName": "PreviewMenu",
                                                 "width": 120
                                             },
+                                            "name": "MyMenu",
                                             "designerId": "f00babed-0987-4782-bf5c-9af9312c81a0",
                                             "cn": [
                                                 {
@@ -111,6 +117,7 @@
                                                         "opt": "south",
                                                         "text": "Bottom"
                                                     },
+                                                    "name": "MyMenuItem",
                                                     "configAlternates": {
                                                         "checked": "boolean"
                                                     },
@@ -139,6 +146,7 @@
                                                         "opt": "east",
                                                         "text": "Right"
                                                     },
+                                                    "name": "MyMenuItem1",
                                                     "designerId": "19f63e53-9500-4c15-b090-dc2c9438f533",
                                                     "customConfigs": [
                                                         {
@@ -160,6 +168,7 @@
                                                         "opt": "hide",
                                                         "text": "Hide"
                                                     },
+                                                    "name": "MyMenuItem2",
                                                     "designerId": "de90186f-2984-40d3-844b-26f8d1dc2fe6",
                                                     "customConfigs": [
                                                         {
@@ -201,6 +210,7 @@
                         "padding": "",
                         "title": "Preview"
                     },
+                    "name": "MyPanel4",
                     "configAlternates": {
                         "html": "string"
                     },

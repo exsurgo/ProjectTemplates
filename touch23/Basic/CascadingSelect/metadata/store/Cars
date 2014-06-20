@@ -93,6 +93,7 @@
                     "return Ext.Array.unique(makerNames);"
                 ]
             },
+            "name": "getMakerNames",
             "designerId": "47d23f52-cdc8-4e61-ac83-1d035423b444"
         },
         {
@@ -117,6 +118,7 @@
                     "return Ext.Array.unique(seriesNames);"
                 ]
             },
+            "name": "getSeriesNames",
             "designerId": "b64720d4-dc8b-4e7b-99e4-d7a88a82e33f"
         },
         {
@@ -142,6 +144,7 @@
                     "return modelNames;"
                 ]
             },
+            "name": "getModelNames",
             "designerId": "ca1dc329-5c44-4197-b64c-b34409f7b827"
         }
     ]

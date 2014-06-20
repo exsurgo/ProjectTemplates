@@ -1,0 +1,46 @@
+{
+    "name": "ComponentOverview",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPad",
+                "builtIn": true,
+                "height": 1024,
+                "width": 768
+            },
+            "viewportOrientation": "landscape"
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "04b3ce3f-3430-414d-b170-eacda58a02a6",
+            "e1496f00-20dc-4d8c-85c7-a8f5feb67011",
+            "b7bee559-cdf5-4906-b3b7-0c4a75fb97af",
+            "4167f62f-1970-4176-95d0-c8d18b1a5b7d",
+            "1e7e4750-8899-454e-93a0-78873d20ede3",
+            "1061aa4b-de58-4b04-a909-d3341a9d33bc",
+            "b20a9923-8024-426e-ac9d-bd7e4f1c1a0b",
+            "753871a6-437a-493b-abcd-e5a9218e083f",
+            "8597ee21-646f-4cd3-b11a-f00640c49cd6"
+        ],
+        "store": [
+            "b7e25125-3857-4cd4-8617-1d82f9a1f68e"
+        ],
+        "controller": [
+            "4411d918-5c32-4898-ba67-69cfab106c3c"
+        ],
+        "model": [],
+        "resource": [
+            "64c9230d-74c6-423b-9956-bdab32b3d960",
+            "6a5b0d66-fd90-4a3b-987d-66415aef9a3c"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

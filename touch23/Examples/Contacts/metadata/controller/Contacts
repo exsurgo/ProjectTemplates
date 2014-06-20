@@ -29,6 +29,7 @@
                 "selector": "contactinfo",
                 "xtype": "contactinfo"
             },
+            "name": "contactinfo",
             "designerId": "aaf3562e-9dd8-4774-b619-db3a85a3c662"
         },
         {
@@ -44,6 +45,7 @@
                 "selector": "contactform",
                 "xtype": "contactform"
             },
+            "name": "contactform",
             "designerId": "6a75e451-ac6f-4d7b-bbd6-4189dcdd488c"
         },
         {
@@ -59,6 +61,7 @@
                 "selector": "contactlist",
                 "xtype": "contactlist"
             },
+            "name": "contactlist",
             "designerId": "b0dbf22d-ae16-4210-80ea-da98cf28a963"
         },
         {
@@ -82,6 +85,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onAddContactBtnTap",
             "designerId": "3efca5c9-ebe0-4e82-b509-e3c44f3d01b8"
         },
         {
@@ -120,6 +124,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onSaveContactBtnTap",
             "designerId": "d444927a-59ad-452a-8405-2bc07da520bc"
         },
         {
@@ -143,6 +148,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onEditContactBtnTap",
             "designerId": "2baf8996-4664-453c-88bf-afcc6c0b911b"
         },
         {
@@ -164,6 +170,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onCancelBtnTap",
             "designerId": "fa65c1a2-487e-47c4-aed7-415ea63318c7"
         },
         {
@@ -185,6 +192,7 @@
                 ],
                 "name": "itemtap"
             },
+            "name": "onContactItemTap",
             "designerId": "9019be36-ff75-4ffc-912b-e3ff75e854d6"
         },
         {
@@ -203,6 +211,7 @@
                 ],
                 "name": "tap"
             },
+            "name": "onInfoBackBtnTap",
             "designerId": "f4378b83-8210-4128-8355-4a6903119441"
         },
         {
@@ -222,6 +231,7 @@
                 ],
                 "name": "activate"
             },
+            "name": "onFavoriteViewActivate",
             "designerId": "a03bdc4d-ba07-46cf-a75a-a814494edc0e"
         },
         {
@@ -241,6 +251,7 @@
                 ],
                 "name": "activate"
             },
+            "name": "onListActivate",
             "designerId": "e9c9c5a8-4919-40d1-98ba-d7b517a585d6"
         },
         {
@@ -266,6 +277,7 @@
                 ],
                 "name": "change"
             },
+            "name": "onContactPickerChange",
             "designerId": "e4509ca3-bc1e-47aa-99d1-23415c289449"
         }
     ]

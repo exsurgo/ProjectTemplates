@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ticketpanel",
+        "designer|userClassName": "TicketPanelViewModel"
+    },
+    "designerId": "4c0e9546-a38b-4cb7-802b-1ef6345f12e8"
+}

@@ -23,6 +23,7 @@
                 "id": "fieldset",
                 "title": "Choose a car!"
             },
+            "name": "MyFieldSet",
             "designerId": "26b0e8ee-80e9-4eca-8922-c6a43f573bb2",
             "cn": [
                 {
@@ -39,6 +40,7 @@
                             "true"
                         ]
                     },
+                    "name": "MySelectField",
                     "designerId": "6519ddf9-40f9-44be-917c-eaae85205c20"
                 },
                 {
@@ -55,6 +57,7 @@
                             "true"
                         ]
                     },
+                    "name": "MySelectField1",
                     "designerId": "57f1b3ff-8413-4fbc-908a-de06e892ac50"
                 },
                 {
@@ -71,6 +74,7 @@
                             "true"
                         ]
                     },
+                    "name": "MySelectField2",
                     "designerId": "9228a547-c404-4bd3-b617-7c858d7b21ad"
                 },
                 {
@@ -86,6 +90,7 @@
                         "text": "Nice choice!",
                         "ui": null
                     },
+                    "name": "MyButton",
                     "designerId": "87cfe0cd-30e3-4063-bf34-77b8d14092cc"
                 }
             ]

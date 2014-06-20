@@ -1,0 +1,34 @@
+{
+    "name": "TabMenu",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000006,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "35c69714-67c2-4b23-b866-4b95489c7ddb",
+            "dc427b0a-b147-4a29-a415-953572ee4c96",
+            "74a938a0-e0ed-4f22-9d21-07f2763be39d"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "d6a53836-080b-4f82-8772-33c644640c03"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

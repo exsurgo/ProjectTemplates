@@ -1,0 +1,37 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyTreeStore",
+        "model": "treeModel",
+        "root": [
+            "{",
+            "    expanded: true,",
+            "    children: [",
+            "        {",
+            "            text: 'Trees',",
+            "            leaf: false,",
+            "            expanded: true,",
+            "            children: [",
+            "                {",
+            "                    text: 'Oak',",
+            "                    leaf: true",
+            "                },",
+            "                {",
+            "                    text: 'Pine',",
+            "                    leaf: true",
+            "                } ",
+            "            ]",
+            "        }",
+            "    ]",
+            "}",
+            ""
+        ],
+        "storeId": "MyTreeStore"
+    },
+    "designerId": "1654ec72-751a-4d4e-8b0a-80dbe9f6ef69"
+}

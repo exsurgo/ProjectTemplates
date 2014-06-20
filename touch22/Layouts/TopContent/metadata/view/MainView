@@ -24,6 +24,7 @@
                 "docked": "top",
                 "itemId": "topBar"
             },
+            "name": "MyTitleBar",
             "designerId": "4989521c-4156-470f-af2d-7ef64191e2d0"
         },
         {
@@ -36,6 +37,7 @@
             "userConfig": {
                 "itemId": "contentPanel"
             },
+            "name": "MyPanel",
             "designerId": "720af727-96ec-4ac3-b561-5e920cbc1f70"
         }
     ]
