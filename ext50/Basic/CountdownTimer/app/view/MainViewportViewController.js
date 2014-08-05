@@ -15,5 +15,108 @@
 
 Ext.define('MyApp.view.MainViewportViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.mainviewport'
+    alias: 'controller.mainviewport',
+
+    statics: {
+        complete: function() {
+            Ext.Msg.alert('Time is up!', 'The countdown has completed');
+        }
+    },
+
+    onStartButtonClick: function(button, e, eOpts) {
+        var DISPLAY_FORMAT = "{0} Days, {1} Hours, {2} Minutes, {3} Seconds";
+
+        var me = this,
+            refs = me.getReferences(),
+            dateField = refs.dateField,
+            timeField = refs.timeField,
+            date = dateField.getValue(),
+            time = timeField.getValue(),
+            resetButton = refs.resetButton,
+            startButton = refs.startButton,
+            timerDisplay = refs.timerDisplay;
+
+        // Ensure date and time have been entered
+        if (date && time) {
+
+            // Add time to date
+            date.setHours(time.getHours());
+            date.setMinutes(time.getMinutes());
+
+            // Ensure date is greater than present
+            if (date.getTime() > new Date().getTime()) {
+
+                // Set UI state
+                startButton.disable();
+                dateField.disable();
+                timeField.disable();
+                resetButton.enable();
+
+                // Variables for time units
+                var days, hours, minutes, seconds;
+
+                // Start timer
+                me.interval = setInterval(function() {
+
+                    // Calculate seconds left
+                    var currentDate = new Date().getTime(),
+                        secondsLeft = (date - currentDate) / 1000;
+
+                    if (secondsLeft <= 0) {
+                        clearInterval(me.interval);
+                        me.reset();
+                        me.complete();
+                    }
+
+                    // Update state
+                    days = parseInt(secondsLeft / 86400);
+                    secondsLeft = secondsLeft % 86400;
+                    hours = parseInt(secondsLeft / 3600);
+                    secondsLeft = secondsLeft % 3600;
+                    minutes = parseInt(secondsLeft / 60);
+                    seconds = parseInt(secondsLeft % 60);
+
+                    // Update display
+                    timerDisplay.update(Ext.String.format(DISPLAY_FORMAT, days, hours, minutes, seconds));
+
+
+                }, 1000);
+
+            }
+
+            else {
+                Ext.Msg.alert('Alert', 'Date must be in the future.');
+            }
+
+        }
+
+        else {
+            Ext.Msg.alert('Alert', 'Please enter a valid start date and time.');
+        }
+
+    },
+
+    onResetButtonClick: function(button, e, eOpts) {
+        var refs = this.getReferences(),
+            dateField = refs.dateField,
+            timeField = refs.timeField,
+            resetButton = refs.resetButton,
+            startButton = refs.startButton,
+            timerDisplay = refs.timerDisplay;
+
+        // Set UI state
+        startButton.enable();
+        dateField.enable();
+        timeField.enable();
+        resetButton.disable();
+        dateField.setValue('');
+        timeField.setValue('');
+
+        // Clear interval counter
+        clearInterval(this.interval);
+
+        // Clear display
+        timerDisplay.update('');
+    }
+
 });

@@ -9,8 +9,11 @@
         "designer|initialView": true,
         "designer|userAlias": "mainview",
         "designer|userClassName": "MainView",
-        "itemId": "mainView",
-        "layout": "border"
+        "itemId": null,
+        "layout": "border",
+        "requires": [
+            "Ext.TaskManager"
+        ]
     },
     "designerId": "69af8981-3b11-48c7-8740-fc34e76f474d",
     "viewControllerInstanceId": "2756f705-7a2d-4f1a-b52b-8ce50ac6928c",
@@ -24,7 +27,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "center",
+                "itemId": null,
                 "layout": "fit",
                 "layout|region": "center",
                 "title": "HTML Editor"
@@ -41,10 +44,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "buttonTips": null,
-                        "designer|displayName": "HtmlEditor",
+                        "designer|displayName": null,
                         "fieldLabel": null,
                         "itemId": null,
                         "padding": null,
+                        "reference": "editor",
                         "width": 150
                     },
                     "name": "MyHtmlEditor",
@@ -118,6 +122,34 @@
                                     "name": "action",
                                     "type": "string"
                                 }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSubmitButtonClick",
+                                        "implHandler": [
+                                            "var editor = this.getReferences().editor,",
+                                            "    text = editor.getValue(),",
+                                            "    htmlWindow = Ext.create('htmlwindow');",
+                                            "",
+                                            "// Update the text in the window",
+                                            "htmlWindow.update(text);",
+                                            "",
+                                            "// Show the window",
+                                            "htmlWindow.show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onSubmitButtonClick",
+                                    "designerId": "135a7b70-98ef-4dca-877c-ad37ab4e935e"
+                                }
                             ]
                         },
                         {
@@ -140,6 +172,27 @@
                                     "group": "(Custom Properties)",
                                     "name": "action",
                                     "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onResetButtonClick",
+                                        "implHandler": [
+                                            "// Clear the HTML editor",
+                                            "this.getReferences().editor.setValue();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onResetButtonClick",
+                                    "designerId": "1d905e78-a923-48ce-8ff4-674a5ad206e0"
                                 }
                             ]
                         }

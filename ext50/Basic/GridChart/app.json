@@ -1,0 +1,58 @@
+{
+   "name": "MyApp",
+   "classpath": "${app.dir}/app",
+   "framework": "ext",
+   "theme": "ext-theme-neptune",
+   "requires": [
+      "sencha-charts"
+   ],
+   "sass": {
+      "namespace": "MyApp"
+   },
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "app.js",
+         "bundle": true
+      }
+   ],
+   "css": [
+      {
+         "path": "bootstrap.css",
+         "bootstrap": true
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [],
+   "ignore": [
+      "^\\.svn$",
+      "^\\.git$"
+   ],
+   "archivePath": "archive",
+   "slicer": {
+      "js": [
+         {
+            "path": "${app.dir}/sass/example/custom.js",
+            "isWidgetManifest": true
+         }
+      ]
+   },
+   "production": {},
+   "testing": {},
+   "development": {},
+   "manifest": {
+      "name": "app.json",
+      "bootstrap": "bootstrap.json"
+   },
+   "output": "${workspace.build.dir}/${build.environment}/${app.name}",
+   "id": "5db3adc8-f38f-42f4-88dc-a8febc393819"
+}

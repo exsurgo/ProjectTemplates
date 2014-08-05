@@ -6,9 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "basePath": null,
         "designer|userClassName": "Library",
-        "theme": "crisp"
+        "theme": "neptune"
     },
     "designerId": "67363d08-999e-4648-b11d-5d9fe657da91"
 }

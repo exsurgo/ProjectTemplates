@@ -30,7 +30,6 @@ Ext.define('MyApp.view.LoginForm', {
         type: 'loginform'
     },
     height: 200,
-    itemId: 'loginForm',
     shrinkWrap: 3,
     manageHeight: false,
     title: 'Login',
@@ -39,7 +38,6 @@ Ext.define('MyApp.view.LoginForm', {
     items: [
         {
             xtype: 'form',
-            itemId: 'form',
             bodyPadding: 20,
             items: [
                 {
@@ -67,10 +65,12 @@ Ext.define('MyApp.view.LoginForm', {
                 {
                     xtype: 'button',
                     formBind: true,
-                    itemId: 'loginButton',
                     margin: '0 15 0 0',
                     scale: 'medium',
-                    text: 'Login'
+                    text: 'Login',
+                    listeners: {
+                        click: 'onLoginButtonClick'
+                    }
                 }
             ]
         }

@@ -13,11 +13,11 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.CarChartStore', {
+Ext.define('CarListings.store.CarChartStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.CarChart'
+        'CarListings.model.CarChart'
     ],
 
     constructor: function(cfg) {
@@ -25,7 +25,7 @@ Ext.define('MyApp.store.CarChartStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             storeId: 'MyStore',
-            model: 'MyApp.model.CarChart'
+            model: 'CarListings.model.CarChart'
         }, cfg)]);
     }
 });

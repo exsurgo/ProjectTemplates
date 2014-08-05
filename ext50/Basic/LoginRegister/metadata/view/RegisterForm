@@ -130,7 +130,64 @@
                         "text": "Register"
                     },
                     "name": "MyButton4",
-                    "designerId": "fade9dce-5a0f-45f0-85ab-d36ec43e621d"
+                    "designerId": "fade9dce-5a0f-45f0-85ab-d36ec43e621d",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRegisterButtonClick",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    form = button.up('form'),",
+                                    "    formWindow = button.up('window'),",
+                                    "    values = form.getValues();",
+                                    "",
+                                    "// Success",
+                                    "var successCallback = function(resp, ops) {",
+                                    "",
+                                    "    // Hide login panel",
+                                    "    view.loginPanel.hide();",
+                                    "",
+                                    "    // Show logout panel",
+                                    "    view.logoutPanel.show();",
+                                    "",
+                                    "    // Close window",
+                                    "    formWindow.destroy();",
+                                    "",
+                                    "};",
+                                    "",
+                                    "// Failure",
+                                    "var failureCallback = function(resp, ops) {",
+                                    "",
+                                    "    // Show login failure error",
+                                    "    Ext.Msg.alert('Registration Failure', resp);",
+                                    "",
+                                    "};",
+                                    "",
+                                    "",
+                                    "// TODO: Register using server-side authentication service",
+                                    "// Ext.Ajax.request({",
+                                    "//\t\t\t\t\turl: \"/register\",",
+                                    "//\t\tparams: values,",
+                                    "//\t\tsuccess: successCallback,",
+                                    "//\t\tfailure: failureCallback",
+                                    "// });",
+                                    "",
+                                    "// Just run success for now",
+                                    "successCallback();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onRegisterButtonClick",
+                            "designerId": "bf6ec924-e752-4a15-94fd-f01d0dccf5a8"
+                        }
+                    ]
                 }
             ]
         }

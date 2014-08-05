@@ -1,0 +1,319 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "reddit",
+        "designer|userClassName": "Reddit"
+    },
+    "designerId": "b8d50ac2-9d3c-4412-b25c-f55c5a697125",
+    "viewControllerInstanceId": "a27c3bc3-1e4f-434d-b205-d65b56e39999",
+    "viewModelInstanceId": "18424cd9-7341-40d5-8136-bb69e131183d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "store": "redditHomepage",
+                "title": "Reddit Posts",
+                "width": null
+            },
+            "name": "MyGridPanel",
+            "designerId": "2c287404-9f99-46c8-9d50-459ab8e503e1",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "869a387f-1101-43b4-b3c3-3152d367198f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "title",
+                        "defaultWidth": 300,
+                        "maxHeight": null,
+                        "minHeight": null,
+                        "text": "Title",
+                        "width": 456
+                    },
+                    "name": "MyColumn",
+                    "designerId": "fc2476cb-2724-42b9-94ca-a98d9c9ad810",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return '<strong><a target=\"_blank\" href=\"'+record.get('url')+'\">' + value + '</a></strong>';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "f6b6d789-ee16-45a5-9570-a68e53861f50"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "subreddit",
+                        "text": "Subreddit"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "cf6c8885-68e8-432a-b4b6-9acf32d5e870",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return '<a target=\"_blank\" href=\"http://reddit.com/r/'+value+'\">'+value+'</a>';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "b01ff5d1-ec5c-4404-abc0-ad17001d9e59"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "defaultWidth": 200,
+                        "text": "Points",
+                        "width": 200
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "ec86d874-7e19-4d71-954b-1613c0eee242",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var points = record.data.ups - record.data.downs;",
+                                    "return points + \" (<span class='ups'>\"+record.data.ups+\"</span>/<span class='downs'>\"+record.data.downs+\"</span>)\";"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "bbe2182c-f953-4692-a8c5-702cc8317b52"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "is_self",
+                        "hidden": true,
+                        "text": "Is_self"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "80d6d2d0-aa05-41dd-a486-689c5ec881f3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "permalink",
+                        "hidden": true,
+                        "text": "Permalink"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "08cf7ee9-8144-4eb2-bbfd-b59e8cfed919"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "author",
+                        "defaultWidth": 200,
+                        "text": "Author",
+                        "width": 200
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "0192fbc6-0384-46eb-9f77-eb97012c3e3b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return '<a href=\"http://reddit.com/u/'+value+'\">'+value+'</a>';"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "6983b07e-3ca8-483a-a92a-973ccc19e0ca"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Settings",
+                        "itemId": null,
+                        "type": "gear"
+                    },
+                    "name": "MyTool",
+                    "designerId": "b622cd91-923a-4f3f-aa6f-4662b5051673",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSettingsToolClick",
+                                "implHandler": [
+                                    "var panel = Ext.create('MyApp.view.SettingsPanel');",
+                                    "",
+                                    "panel.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onSettingsToolClick",
+                            "designerId": "4a5d6e6e-b6ff-4e99-818e-bdbb871e2652"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Reload",
+                        "type": "refresh"
+                    },
+                    "name": "MyTool1",
+                    "designerId": "aa67189d-2b0f-4308-9741-053e88a0c7f1",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onReloadToolClick",
+                                "implHandler": [
+                                    "Ext.getStore('redditHomepage').reload();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onReloadToolClick",
+                            "designerId": "9e0e65c3-79f7-41b6-b64b-8a193fafdde2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

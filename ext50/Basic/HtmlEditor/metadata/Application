@@ -6,9 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "controllers": [
-            "Main"
-        ],
         "name": "MyApp",
         "views": [
             "MainView",

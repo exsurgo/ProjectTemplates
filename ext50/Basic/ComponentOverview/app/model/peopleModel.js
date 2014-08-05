@@ -17,7 +17,8 @@ Ext.define('ViewOverviewExtJS.model.peopleModel', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.field.Field'
+        'Ext.data.field.String',
+        'Ext.data.field.Integer'
     ],
 
     fields: [

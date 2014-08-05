@@ -6,9 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "controllers": [
-            "UserController"
-        ],
         "models": [
             "RedditPost"
         ],
@@ -18,7 +15,7 @@
         ],
         "views": [
             "SettingsPanel",
-            "MainViewport"
+            "Reddit"
         ]
     },
     "name": "Application",

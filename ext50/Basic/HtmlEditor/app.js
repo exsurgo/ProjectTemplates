@@ -24,9 +24,6 @@ Ext.application({
         'MainView',
         'HtmlWindow'
     ],
-    controllers: [
-        'Main'
-    ],
     name: 'MyApp',
 
     launch: function() {

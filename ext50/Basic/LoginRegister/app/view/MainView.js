@@ -28,7 +28,6 @@ Ext.define('MyApp.view.MainView', {
     viewModel: {
         type: 'mainview'
     },
-    itemId: 'mainView',
     layout: 'border',
 
     items: [
@@ -36,39 +35,44 @@ Ext.define('MyApp.view.MainView', {
             xtype: 'panel',
             region: 'north',
             height: 100,
-            itemId: 'headerPanel',
             title: 'Header',
             dockedItems: [
                 {
                     xtype: 'panel',
                     dock: 'right',
-                    itemId: 'loginPanel',
+                    reference: 'loginPanel',
                     items: [
                         {
                             xtype: 'button',
-                            itemId: 'loginButton',
                             margin: 6,
-                            text: 'Login'
+                            text: 'Login',
+                            listeners: {
+                                click: 'onLoginButtonClick'
+                            }
                         },
                         {
                             xtype: 'button',
-                            itemId: 'registerButton',
                             margin: 5,
-                            text: 'Register'
+                            text: 'Register',
+                            listeners: {
+                                click: 'onRegisterButtonClick'
+                            }
                         }
                     ]
                 },
                 {
                     xtype: 'panel',
                     dock: 'right',
+                    reference: 'logoutPanel',
                     hidden: true,
-                    itemId: 'logoutPanel',
                     items: [
                         {
                             xtype: 'button',
-                            itemId: 'logoutButton',
                             margin: 6,
-                            text: 'Logout'
+                            text: 'Logout',
+                            listeners: {
+                                click: 'onLogoutButtonClick'
+                            }
                         }
                     ]
                 }

@@ -52,8 +52,8 @@ Ext.define('MyApp.view.MainViewport', {
                     items: [
                         {
                             xtype: 'container',
+                            reference: 'timerDisplay',
                             height: 45,
-                            itemId: 'timerDisplay',
                             margin: '0 0 20',
                             style: {
                                 'font-size': '1.5em',
@@ -73,7 +73,7 @@ Ext.define('MyApp.view.MainViewport', {
                                 {
                                     xtype: 'datefield',
                                     flex: 1,
-                                    itemId: 'dateField',
+                                    reference: 'dateField',
                                     fieldLabel: 'Date',
                                     labelAlign: 'right',
                                     labelWidth: 60,
@@ -82,7 +82,7 @@ Ext.define('MyApp.view.MainViewport', {
                                 {
                                     xtype: 'timefield',
                                     flex: 1,
-                                    itemId: 'timeField',
+                                    reference: 'timeField',
                                     margin: '0 10 0 0',
                                     fieldLabel: 'Time',
                                     labelAlign: 'right',
@@ -91,17 +91,23 @@ Ext.define('MyApp.view.MainViewport', {
                                 {
                                     xtype: 'button',
                                     flex: 1,
-                                    itemId: 'startButton',
+                                    reference: 'startButton',
                                     margin: '0 10 0 0',
-                                    text: 'Start'
+                                    text: 'Start',
+                                    listeners: {
+                                        click: 'onStartButtonClick'
+                                    }
                                 },
                                 {
                                     xtype: 'button',
                                     flex: 1,
                                     margins: '0 10 0 0',
+                                    reference: 'resetButton',
                                     disabled: true,
-                                    itemId: 'resetButton',
-                                    text: 'Reset'
+                                    text: 'Reset',
+                                    listeners: {
+                                        click: 'onResetButtonClick'
+                                    }
                                 }
                             ]
                         }

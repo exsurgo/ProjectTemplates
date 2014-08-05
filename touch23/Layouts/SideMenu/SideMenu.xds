@@ -1,7 +1,6 @@
 {
     "name": "SideMenu",
     "settings": {
-        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "iPad",
@@ -10,9 +9,7 @@
                 "width": 768
             },
             "viewportOrientation": "landscape"
-        },
-        "urlPrefix": "",
-        "exportPath": ""
+        }
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 0,

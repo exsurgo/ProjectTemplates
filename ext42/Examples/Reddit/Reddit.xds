@@ -1,7 +1,6 @@
 {
     "name": "Reddit",
     "settings": {
-        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -9,9 +8,7 @@
                 "height": null,
                 "width": null
             }
-        },
-        "urlPrefix": "",
-        "exportPath": ""
+        }
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 0,

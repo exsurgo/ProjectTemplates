@@ -61,8 +61,9 @@
                             "codeClass": null,
                             "userConfig": {
                                 "height": 45,
-                                "itemId": "timerDisplay",
+                                "itemId": null,
                                 "margin": "0 0 20",
+                                "reference": "timerDisplay",
                                 "style": [
                                     "{\r",
                                     "    \"font-size\": \"1.5em\",\r",
@@ -101,12 +102,12 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "fieldLabel": "Date",
-                                        "itemId": "dateField",
                                         "labelAlign": "right",
                                         "labelWidth": 60,
                                         "layout|flex": 1,
                                         "margin": null,
-                                        "name": "date"
+                                        "name": "date",
+                                        "reference": "dateField"
                                     },
                                     "name": "MyDateField",
                                     "designerId": "8b4ffef0-b97b-405e-b5b0-40c9f72088ab"
@@ -120,12 +121,12 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "fieldLabel": "Time",
-                                        "itemId": "timeField",
                                         "labelAlign": "right",
                                         "labelWidth": 50,
                                         "layout|flex": 1,
                                         "layout|margins": null,
-                                        "margin": "0 10 0 0"
+                                        "margin": "0 10 0 0",
+                                        "reference": "timeField"
                                     },
                                     "name": "MyTimeField",
                                     "designerId": "bc0731c3-a082-4864-925b-6da914e39e00"
@@ -138,14 +139,103 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "itemId": "startButton",
                                         "layout|flex": 1,
                                         "margin": "0 10 0 0",
+                                        "reference": "startButton",
                                         "text": "Start",
                                         "width": null
                                     },
                                     "name": "MyButton",
-                                    "designerId": "0fae2274-d8d4-43bb-ad2e-3774d0cc5d54"
+                                    "designerId": "0fae2274-d8d4-43bb-ad2e-3774d0cc5d54",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onStartButtonClick",
+                                                "implHandler": [
+                                                    "var DISPLAY_FORMAT = \"{0} Days, {1} Hours, {2} Minutes, {3} Seconds\";",
+                                                    "",
+                                                    "var me = this,",
+                                                    "    refs = me.getReferences(),",
+                                                    "    dateField = refs.dateField,",
+                                                    "    timeField = refs.timeField,",
+                                                    "    date = dateField.getValue(),",
+                                                    "    time = timeField.getValue(),",
+                                                    "    resetButton = refs.resetButton,",
+                                                    "    startButton = refs.startButton,",
+                                                    "    timerDisplay = refs.timerDisplay;",
+                                                    "",
+                                                    "// Ensure date and time have been entered",
+                                                    "if (date && time) {",
+                                                    "",
+                                                    "    // Add time to date",
+                                                    "    date.setHours(time.getHours());",
+                                                    "    date.setMinutes(time.getMinutes());",
+                                                    "",
+                                                    "    // Ensure date is greater than present",
+                                                    "    if (date.getTime() > new Date().getTime()) {",
+                                                    "",
+                                                    "        // Set UI state",
+                                                    "        startButton.disable();",
+                                                    "        dateField.disable();",
+                                                    "        timeField.disable();",
+                                                    "        resetButton.enable();",
+                                                    "",
+                                                    "        // Variables for time units",
+                                                    "        var days, hours, minutes, seconds;",
+                                                    "",
+                                                    "        // Start timer",
+                                                    "        me.interval = setInterval(function() {",
+                                                    "",
+                                                    "            // Calculate seconds left",
+                                                    "            var currentDate = new Date().getTime(),",
+                                                    "                secondsLeft = (date - currentDate) / 1000;",
+                                                    "",
+                                                    "            if (secondsLeft <= 0) {",
+                                                    "                clearInterval(me.interval);",
+                                                    "                me.reset();",
+                                                    "                me.complete();",
+                                                    "            }",
+                                                    "",
+                                                    "            // Update state",
+                                                    "            days = parseInt(secondsLeft / 86400);",
+                                                    "            secondsLeft = secondsLeft % 86400;",
+                                                    "            hours = parseInt(secondsLeft / 3600);",
+                                                    "            secondsLeft = secondsLeft % 3600;",
+                                                    "            minutes = parseInt(secondsLeft / 60);",
+                                                    "            seconds = parseInt(secondsLeft % 60);",
+                                                    "",
+                                                    "            // Update display",
+                                                    "            timerDisplay.update(Ext.String.format(DISPLAY_FORMAT, days, hours, minutes, seconds));",
+                                                    "",
+                                                    "",
+                                                    "        }, 1000);",
+                                                    "",
+                                                    "    }",
+                                                    "",
+                                                    "    else {",
+                                                    "        Ext.Msg.alert('Alert', 'Date must be in the future.');",
+                                                    "    }",
+                                                    "",
+                                                    "}",
+                                                    "",
+                                                    "else {",
+                                                    "    Ext.Msg.alert('Alert', 'Please enter a valid start date and time.');",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onStartButtonClick",
+                                            "designerId": "1ae62895-d90f-4da0-84b9-a73571d58d39"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "Ext.button.Button",
@@ -156,13 +246,52 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "disabled": true,
-                                        "itemId": "resetButton",
                                         "layout|flex": 1,
                                         "layout|margins": "0 10 0 0",
+                                        "reference": "resetButton",
                                         "text": "Reset"
                                     },
                                     "name": "MyButton1",
-                                    "designerId": "98920675-747e-4e2c-9bea-d4dee3059a71"
+                                    "designerId": "98920675-747e-4e2c-9bea-d4dee3059a71",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onResetButtonClick",
+                                                "implHandler": [
+                                                    "var refs = this.getReferences(),",
+                                                    "    dateField = refs.dateField,",
+                                                    "    timeField = refs.timeField,",
+                                                    "    resetButton = refs.resetButton,",
+                                                    "    startButton = refs.startButton,",
+                                                    "    timerDisplay = refs.timerDisplay;",
+                                                    "",
+                                                    "// Set UI state",
+                                                    "startButton.enable();",
+                                                    "dateField.enable();",
+                                                    "timeField.enable();",
+                                                    "resetButton.disable();",
+                                                    "dateField.setValue('');",
+                                                    "timeField.setValue('');",
+                                                    "",
+                                                    "// Clear interval counter",
+                                                    "clearInterval(this.interval);",
+                                                    "",
+                                                    "// Clear display",
+                                                    "timerDisplay.update('');"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onResetButtonClick",
+                                            "designerId": "f8486ca2-ea31-4959-84c7-3042869991d8"
+                                        }
+                                    ]
                                 }
                             ]
                         }

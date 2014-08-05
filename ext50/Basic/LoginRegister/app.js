@@ -29,9 +29,6 @@ Ext.application({
         'LoginForm',
         'RegisterForm'
     ],
-    controllers: [
-        'Account'
-    ],
     name: 'MyApp',
 
     launch: function() {

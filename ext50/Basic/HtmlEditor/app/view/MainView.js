@@ -23,26 +23,26 @@ Ext.define('MyApp.view.MainView', {
         'Ext.panel.Panel',
         'Ext.form.field.HtmlEditor',
         'Ext.toolbar.Toolbar',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.TaskManager'
     ],
 
     controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },
-    itemId: 'mainView',
     layout: 'border',
 
     items: [
         {
             xtype: 'panel',
             region: 'center',
-            itemId: 'center',
             layout: 'fit',
             title: 'HTML Editor',
             items: [
                 {
                     xtype: 'htmleditor',
+                    reference: 'editor',
                     width: 150
                 }
             ],
@@ -59,13 +59,19 @@ Ext.define('MyApp.view.MainView', {
                             xtype: 'button',
                             action: 'submit',
                             itemId: 'submitButton',
-                            text: 'Submit'
+                            text: 'Submit',
+                            listeners: {
+                                click: 'onSubmitButtonClick'
+                            }
                         },
                         {
                             xtype: 'button',
                             action: 'reset',
                             itemId: 'resetButton',
-                            text: 'Reset'
+                            text: 'Reset',
+                            listeners: {
+                                click: 'onResetButtonClick'
+                            }
                         }
                     ]
                 }

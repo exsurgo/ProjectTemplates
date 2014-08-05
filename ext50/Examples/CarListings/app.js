@@ -29,15 +29,12 @@ Ext.application({
         'CarChartStore'
     ],
     views: [
-        'MainView'
+        'Main'
     ],
-    controllers: [
-        'Cars'
-    ],
-    name: 'MyApp',
+    name: 'CarListings',
 
     launch: function() {
-        Ext.create('MyApp.view.MainView');
+        Ext.create('CarListings.view.Main');
     },
 
     /* @private Architect utility method */

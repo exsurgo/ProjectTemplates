@@ -90,7 +90,10 @@ Ext.define('MyApp.view.RegisterForm', {
                     formBind: true,
                     itemId: 'registerButton',
                     scale: 'medium',
-                    text: 'Register'
+                    text: 'Register',
+                    listeners: {
+                        click: 'onRegisterButtonClick'
+                    }
                 }
             ]
         }

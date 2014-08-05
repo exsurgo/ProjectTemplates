@@ -9,5 +9,23 @@
         "designer|userAlias": "mainviewport",
         "designer|userClassName": "MainViewportViewController"
     },
-    "designerId": "8c74fc16-d506-4334-b43f-7645488e77b5"
+    "designerId": "8c74fc16-d506-4334-b43f-7645488e77b5",
+    "cn": [
+        {
+            "type": "staticfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "complete",
+                "implHandler": [
+                    "Ext.Msg.alert('Time is up!', 'The countdown has completed');"
+                ]
+            },
+            "name": "complete",
+            "designerId": "a552fbbf-6b63-4857-9004-cc41e66d162d"
+        }
+    ]
 }

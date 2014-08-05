@@ -9,7 +9,7 @@
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginForm",
         "height": 200,
-        "itemId": "loginForm",
+        "itemId": null,
         "manageHeight": false,
         "modal": true,
         "shrinkWrap": 3,
@@ -30,7 +30,7 @@
             "userConfig": {
                 "bodyPadding": 20,
                 "height": null,
-                "itemId": "form",
+                "itemId": null,
                 "title": null
             },
             "name": "MyForm",
@@ -85,13 +85,70 @@
                     "codeClass": null,
                     "userConfig": {
                         "formBind": true,
-                        "itemId": "loginButton",
+                        "itemId": null,
                         "margin": "0 15 0 0",
                         "scale": "medium",
                         "text": "Login"
                     },
                     "name": "MyButton3",
-                    "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e"
+                    "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onLoginButtonClick",
+                                "implHandler": [
+                                    "var view = this.getView(),",
+                                    "    form = button.up('form'),",
+                                    "    formWindow = button.up('window'),",
+                                    "    values = form.getValues();",
+                                    "",
+                                    "// Success",
+                                    "var successCallback = function(resp, ops) {",
+                                    "debugger;",
+                                    "    // Hide login panel",
+                                    "    view.loginPanel.hide();",
+                                    "",
+                                    "    // Show logout panel",
+                                    "    view.logoutPanel.show();",
+                                    "",
+                                    "    // Close window",
+                                    "    formWindow.destroy();",
+                                    "",
+                                    "};",
+                                    "",
+                                    "// Failure",
+                                    "var failureCallback = function(resp, ops) {",
+                                    "",
+                                    "    // Show login failure error",
+                                    "    Ext.Msg.alert('Login Failure', resp);",
+                                    "",
+                                    "};",
+                                    "",
+                                    "",
+                                    "// TODO: Login using server-side authentication service",
+                                    "// Ext.Ajax.request({",
+                                    "//\t\turl: \"/login\",",
+                                    "//\t\tparams: values,",
+                                    "//\t\tsuccess: successCallback,",
+                                    "//\t\tfailure: failureCallback",
+                                    "// });",
+                                    "",
+                                    "// Just run success for now",
+                                    "successCallback();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onLoginButtonClick",
+                            "designerId": "c1d04818-1800-4d0f-aba8-385a64214bbe"
+                        }
+                    ]
                 }
             ]
         }

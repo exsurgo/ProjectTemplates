@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.CarData', {
+Ext.define('CarListings.model.CarData', {
     extend: 'Ext.data.Model',
 
     requires: [

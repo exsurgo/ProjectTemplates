@@ -1,7 +1,6 @@
 {
     "name": "Reddit",
     "settings": {
-        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -9,9 +8,7 @@
                 "height": null,
                 "width": null
             }
-        },
-        "urlPrefix": "",
-        "exportPath": ""
+        }
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 0,
@@ -30,16 +27,13 @@
         "store": [
             "f0614e19-3c8a-4a65-88b8-617e77db563f"
         ],
-        "controller": [
-            "69acfe15-89f2-44df-afff-6f6cb446320f"
-        ],
+        "controller": [],
         "model": [
             "55d3ca0b-c7e6-44bc-b786-c9b0f8a2693c"
         ],
         "resource": [
             "806dc76a-43ae-4cf3-a624-20b915e91afd",
-            "b58b6bb6-72a1-404e-a7f8-13a194f94f7f",
-            "bed9e27d-aa99-463f-ae0d-8c2867cc7e0a"
+            "b58b6bb6-72a1-404e-a7f8-13a194f94f7f"
         ],
         "app": [
             "application"

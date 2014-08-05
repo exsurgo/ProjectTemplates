@@ -6,20 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
-        "controllers": [
-            "Cars"
-        ],
         "models": [
             "CarData",
             "CarChart"
         ],
-        "name": "MyApp",
+        "name": "CarListings",
         "stores": [
             "CarDataStore",
             "CarChartStore"
         ],
         "views": [
-            "MainView"
+            "Main"
         ]
     },
     "name": "Application",

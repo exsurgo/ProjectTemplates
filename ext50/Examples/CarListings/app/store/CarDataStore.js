@@ -13,11 +13,11 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.CarDataStore', {
+Ext.define('CarListings.store.CarDataStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.CarData',
+        'CarListings.model.CarData',
         'Ext.data.proxy.Memory'
     ],
 
@@ -27,7 +27,7 @@ Ext.define('MyApp.store.CarDataStore', {
         me.callParent([Ext.apply({
             storeId: 'MyJsonStore',
             autoLoad: true,
-            model: 'MyApp.model.CarData',
+            model: 'CarListings.model.CarData',
             proxy: {
                 type: 'memory',
                 data: [

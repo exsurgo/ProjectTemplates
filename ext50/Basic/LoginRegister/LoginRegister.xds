@@ -1,7 +1,6 @@
 {
     "name": "LoginRegister",
     "settings": {
-        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -9,9 +8,7 @@
                 "height": null,
                 "width": null
             }
-        },
-        "urlPrefix": "",
-        "exportPath": ""
+        }
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 0,
@@ -31,9 +28,7 @@
             "9727f78e-d27a-47e6-b614-1bbf508f5e97"
         ],
         "store": [],
-        "controller": [
-            "d1cc0c66-0a94-4c48-95da-b7881bbec645"
-        ],
+        "controller": [],
         "model": [],
         "resource": [
             "21d39171-39d0-4171-bbaf-901980656599"

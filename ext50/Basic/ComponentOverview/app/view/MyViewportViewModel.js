@@ -16,4 +16,5 @@
 Ext.define('ViewOverviewExtJS.view.MyViewportViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.myviewport'
+
 });

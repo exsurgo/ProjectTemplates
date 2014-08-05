@@ -9,7 +9,7 @@
         "designer|initialView": true,
         "designer|userAlias": "mainview",
         "designer|userClassName": "MainView",
-        "itemId": "mainView",
+        "itemId": null,
         "layout": "border"
     },
     "designerId": "7372b4da-6a89-4a02-a378-f8fe5e5b5b3d",
@@ -25,7 +25,7 @@
             "codeClass": null,
             "userConfig": {
                 "height": 100,
-                "itemId": "headerPanel",
+                "itemId": null,
                 "layout|region": "north",
                 "title": "Header"
             },
@@ -41,7 +41,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dock": "right",
-                        "itemId": "loginPanel"
+                        "itemId": null,
+                        "reference": "loginPanel"
                     },
                     "name": "MyPanel2",
                     "designerId": "c12c2f13-e2ba-4905-af03-2e595c920e65",
@@ -54,12 +55,41 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "itemId": "loginButton",
+                                "itemId": null,
                                 "margin": 6,
                                 "text": "Login"
                             },
                             "name": "MyButton",
-                            "designerId": "47d6fa80-65f0-4547-ba32-f68445b1d5d5"
+                            "designerId": "47d6fa80-65f0-4547-ba32-f68445b1d5d5",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onLoginButtonClick",
+                                        "implHandler": [
+                                            "var refs = this.getReferences();",
+                                            "",
+                                            "// Create new login form window",
+                                            "var login = Ext.create('widget.loginform', {",
+                                            "    loginPanel: refs.loginPanel,",
+                                            "    logoutPanel: refs.logoutPanel",
+                                            "});",
+                                            "",
+                                            "// Show window",
+                                            "login.show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onLoginButtonClick",
+                                    "designerId": "b6dd2836-0304-448b-b75f-43ecad70d395"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.button.Button",
@@ -69,12 +99,41 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "itemId": "registerButton",
+                                "itemId": null,
                                 "margin": 5,
                                 "text": "Register"
                             },
                             "name": "MyButton1",
-                            "designerId": "e137362f-bf61-46ee-a1cf-75589c9ec918"
+                            "designerId": "e137362f-bf61-46ee-a1cf-75589c9ec918",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onRegisterButtonClick",
+                                        "implHandler": [
+                                            "var refs = this.getReferences();",
+                                            "",
+                                            "// Create new login form window",
+                                            "var register = Ext.create('widget.registerform', {",
+                                            "    loginPanel: refs.loginPanel,",
+                                            "    lougoutPanel: refs.logoutPanel",
+                                            "});",
+                                            "",
+                                            "// Show window",
+                                            "register.show();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onRegisterButtonClick",
+                                    "designerId": "860f4453-cd24-478f-87b6-90ebe1ff9118"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -88,7 +147,8 @@
                     "userConfig": {
                         "dock": "right",
                         "hidden": true,
-                        "itemId": "logoutPanel"
+                        "itemId": null,
+                        "reference": "logoutPanel"
                     },
                     "name": "MyPanel3",
                     "designerId": "a86d27c8-3d38-4c68-80b1-a99f0244beda",
@@ -101,12 +161,29 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "itemId": "logoutButton",
+                                "itemId": null,
                                 "margin": 6,
                                 "text": "Logout"
                             },
                             "name": "MyButton2",
-                            "designerId": "3cbad9b7-f07c-471d-a81f-3163e00e7ff1"
+                            "designerId": "3cbad9b7-f07c-471d-a81f-3163e00e7ff1",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onLogoutButtonClick",
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onLogoutButtonClick",
+                                    "designerId": "e4159eec-b2f4-4046-a026-81203017735e"
+                                }
+                            ]
                         }
                     ]
                 }

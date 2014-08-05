@@ -28,15 +28,12 @@ Ext.application({
     ],
     views: [
         'SettingsPanel',
-        'MainViewport'
-    ],
-    controllers: [
-        'UserController'
+        'Reddit'
     ],
     name: 'MyApp',
 
     launch: function() {
-        Ext.create('MyApp.view.MainViewport');
+        Ext.create('MyApp.view.Reddit');
     },
 
     /* @private Architect utility method */

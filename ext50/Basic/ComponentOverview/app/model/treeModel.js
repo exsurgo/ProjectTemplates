@@ -17,7 +17,8 @@ Ext.define('ViewOverviewExtJS.model.treeModel', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.field.Field'
+        'Ext.data.field.Integer',
+        'Ext.data.field.String'
     ],
 
     fields: [

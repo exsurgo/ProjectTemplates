@@ -19,7 +19,6 @@ Ext.define('ViewOverviewExtJS.view.MyViewport', {
 
     requires: [
         'ViewOverviewExtJS.view.MyViewportViewModel',
-        'ViewOverviewExtJS.view.MyViewportViewController',
         'Ext.panel.Tool',
         'Ext.grid.Panel',
         'Ext.grid.View',
@@ -47,7 +46,6 @@ Ext.define('ViewOverviewExtJS.view.MyViewport', {
         'Ext.tree.View'
     ],
 
-    controller: 'myviewport',
     viewModel: {
         type: 'myviewport'
     },

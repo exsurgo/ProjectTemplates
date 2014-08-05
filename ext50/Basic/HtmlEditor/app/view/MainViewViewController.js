@@ -15,5 +15,23 @@
 
 Ext.define('MyApp.view.MainViewViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.mainview'
+    alias: 'controller.mainview',
+
+    onSubmitButtonClick: function(button, e, eOpts) {
+        var editor = this.getReferences().editor,
+            text = editor.getValue(),
+            htmlWindow = Ext.create('htmlwindow');
+
+        // Update the text in the window
+        htmlWindow.update(text);
+
+        // Show the window
+        htmlWindow.show();
+    },
+
+    onResetButtonClick: function(button, e, eOpts) {
+        // Clear the HTML editor
+        this.getReferences().editor.setValue();
+    }
+
 });

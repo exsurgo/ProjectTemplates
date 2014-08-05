@@ -11,7 +11,7 @@
     "designerId": "75358848-7c94-4540-90de-eec0ec1811d7",
     "cn": [
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -21,11 +21,11 @@
                 "name": "name",
                 "type": "string"
             },
-            "name": "MyField",
+            "name": "MyString",
             "designerId": "c115b839-d3ea-4d0c-ad89-f710b6c38af4"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -35,11 +35,11 @@
                 "name": "gender",
                 "type": "string"
             },
-            "name": "MyField1",
+            "name": "MyString1",
             "designerId": "8dc70cb7-f25c-414b-99c6-edb2ec87608f"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Integer",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -49,7 +49,7 @@
                 "name": "age",
                 "type": "int"
             },
-            "name": "MyField2",
+            "name": "MyInteger",
             "designerId": "e15f7db7-4941-47a9-be7b-9b188b3d3449"
         }
     ]
