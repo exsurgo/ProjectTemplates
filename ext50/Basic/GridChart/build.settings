@@ -1,6 +1,0 @@
-{
-    "webBuild": {
-        "environment": "testing",
-        "publishPath": ""
-    }
-}
