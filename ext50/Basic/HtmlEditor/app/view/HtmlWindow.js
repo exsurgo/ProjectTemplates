@@ -18,11 +18,9 @@ Ext.define('MyApp.view.HtmlWindow', {
     alias: 'widget.htmlwindow',
 
     requires: [
-        'MyApp.view.HtmlWindowViewModel',
-        'MyApp.view.HtmlWindowViewController'
+        'MyApp.view.HtmlWindowViewModel'
     ],
 
-    controller: 'htmlwindow',
     viewModel: {
         type: 'htmlwindow'
     },

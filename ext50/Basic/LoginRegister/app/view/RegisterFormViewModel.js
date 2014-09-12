@@ -16,4 +16,5 @@
 Ext.define('MyApp.view.RegisterFormViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.registerform'
+
 });

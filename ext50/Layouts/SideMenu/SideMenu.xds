@@ -1,6 +1,7 @@
 {
     "name": "SideMenu",
     "settings": {
+        "cmd": {},
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -8,12 +9,14 @@
                 "height": null,
                 "width": null
             }
-        }
+        },
+        "urlPrefix": "",
+        "exportPath": ""
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000006,
+    "upgradeVersion": 300000000007,
     "framework": "ext50",
     "viewOrderMap": {
         "view": [

@@ -182,4 +182,5 @@ Ext.define('TaskList.view.TasksViewModel', {
             }
         }
     }
+
 });

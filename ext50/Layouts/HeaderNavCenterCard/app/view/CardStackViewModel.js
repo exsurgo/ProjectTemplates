@@ -16,4 +16,5 @@
 Ext.define('MyApp.view.CardStackViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.cardstack'
+
 });

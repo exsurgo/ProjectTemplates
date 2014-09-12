@@ -29,10 +29,12 @@
         "model": "Feed",
         "storeId": "Feed"
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "bca16d92-974d-41c6-b021-ca22bcb31fd8",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "Ext.data.proxy.JsonP",

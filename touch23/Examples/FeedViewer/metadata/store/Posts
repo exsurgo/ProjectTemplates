@@ -34,10 +34,12 @@
         "model": "Post",
         "storeId": "Posts"
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "f6c25b60-a60b-4ab6-a994-1d34cee875f5",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "basicfunction",

@@ -21,10 +21,12 @@
         "scrollable": "vertical",
         "styleHtmlContent": true
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "2a091605-b040-405a-850b-7188c860907c",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "Ext.XTemplate",

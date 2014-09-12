@@ -23,12 +23,12 @@ Ext.define('ViewOverviewExtJS.model.treeModel', {
 
     fields: [
         {
-            name: 'id',
-            type: 'int'
+            type: 'int',
+            name: 'id'
         },
         {
-            name: 'text',
-            type: 'string'
+            type: 'string',
+            name: 'text'
         }
     ]
 });

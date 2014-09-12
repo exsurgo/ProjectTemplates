@@ -19,11 +19,9 @@ Ext.define('TicketTracker.view.TicketDataView', {
 
     requires: [
         'TicketTracker.view.TicketDataViewViewModel',
-        'TicketTracker.view.TicketDataViewViewController',
         'Ext.XTemplate'
     ],
 
-    controller: 'ticketdataview',
     viewModel: {
         type: 'ticketdataview'
     },

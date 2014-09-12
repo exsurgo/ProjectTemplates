@@ -19,7 +19,6 @@ Ext.define('MyApp.view.MainView', {
 
     requires: [
         'MyApp.view.MainViewViewModel',
-        'MyApp.view.MainViewViewController',
         'MyApp.view.CardStack',
         'Ext.panel.Panel',
         'Ext.toolbar.Toolbar',
@@ -27,7 +26,6 @@ Ext.define('MyApp.view.MainView', {
         'Ext.toolbar.Separator'
     ],
 
-    controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },

@@ -19,7 +19,6 @@ Ext.define('MyApp.view.MainView', {
 
     requires: [
         'MyApp.view.MainViewViewModel',
-        'MyApp.view.MainViewViewController',
         'Ext.form.Label',
         'Ext.grid.Panel',
         'Ext.grid.column.Number',
@@ -30,7 +29,6 @@ Ext.define('MyApp.view.MainView', {
         'Ext.menu.CheckItem'
     ],
 
-    controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },

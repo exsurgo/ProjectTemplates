@@ -39,33 +39,6 @@ Ext.application({
 
     launch: function() {
         Ext.create('TicketTracker.view.TicketPanel', {renderTo: Ext.getBody()});
-    },
-
-    /* @private Architect utility method */
-    $xdsMergeConfigs: function(instance, baseConfig, instanceConfig) {
-        var configs, name, value, baseValue, cfg, merge;
-        if (instanceConfig) {
-            configs = instance.getConfigurator().configs;
-            for (name in instanceConfig) {
-                value = instanceConfig[name];
-                cfg = configs[name];
-                if (cfg) {
-                    merge = cfg.merge;
-                    if (merge) {
-                        value = merge.call(cfg, value, baseConfig[name], instance);
-                    } else if (value && value.constructor === Object) {
-                        baseValue = baseConfig[name];
-                        if (baseValue && baseValue.constructor === Object) {
-                            value = Ext.Object.merge(baseValue, value);
-                        } else {
-                            value = Ext.clone(value);
-                        }
-                    }
-                }
-                baseConfig[name] = value;
-            }
-        }
-        return baseConfig;
     }
 
 });

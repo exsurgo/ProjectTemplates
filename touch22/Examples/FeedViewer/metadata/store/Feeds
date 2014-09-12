@@ -30,10 +30,12 @@
         "model": "Feed",
         "storeId": "Feeds"
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "9cd5d50c-3d15-48ba-a903-a64be6a6ba8f",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "Ext.data.proxy.LocalStorage",

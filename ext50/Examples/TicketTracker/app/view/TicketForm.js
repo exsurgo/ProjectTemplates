@@ -19,13 +19,11 @@ Ext.define('TicketTracker.view.TicketForm', {
 
     requires: [
         'TicketTracker.view.TicketFormViewModel',
-        'TicketTracker.view.TicketFormViewController',
         'Ext.form.field.TextArea',
         'Ext.form.field.Number',
         'Ext.form.field.ComboBox'
     ],
 
-    controller: 'ticketform',
     viewModel: {
         type: 'ticketform'
     },

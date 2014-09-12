@@ -16,4 +16,5 @@
 Ext.define('CarListings.view.MainViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.main'
+
 });

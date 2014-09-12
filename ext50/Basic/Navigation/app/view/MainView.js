@@ -19,124 +19,111 @@ Ext.define('MyApp.view.MainView', {
 
     requires: [
         'MyApp.view.MainViewViewModel',
-        'MyApp.view.MainViewViewController',
         'Ext.menu.Menu',
         'Ext.menu.Item',
         'Ext.form.Label'
     ],
 
-    controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },
     itemId: 'mainView',
     layout: 'border',
+    defaultListenerScope: true,
 
-    initConfig: function(instanceConfig) {
-        var me = this,
-            config = {
-                items: [
-                    {
-                        xtype: 'panel',
-                        region: 'west',
-                        split: true,
-                        itemId: 'menuPanel',
-                        width: 150,
-                        title: 'Menu',
-                        items: [
-                            {
-                                xtype: 'menu',
-                                floating: false,
-                                itemId: 'menu',
-                                items: [
-                                    {
-                                        xtype: 'menuitem',
-                                        itemId: 'home',
-                                        text: 'Home'
-                                    },
-                                    {
-                                        xtype: 'menuitem',
-                                        itemId: 'about',
-                                        text: 'About Us'
-                                    },
-                                    {
-                                        xtype: 'menuitem',
-                                        itemId: 'contact',
-                                        text: 'Contact us'
-                                    }
-                                ],
-                                listeners: {
-                                    click: {
-                                        fn: me.onMenuClick,
-                                        scope: me
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        xtype: 'panel',
-                        region: 'center',
-                        itemId: 'contentPanel',
-                        layout: 'card',
-                        items: [
-                            {
-                                xtype: 'panel',
-                                itemId: 'homePanel',
-                                title: 'Home',
-                                layout: {
-                                    type: 'vbox',
-                                    align: 'center',
-                                    pack: 'center'
-                                },
-                                items: [
-                                    {
-                                        xtype: 'label',
-                                        text: 'Home View'
-                                    }
-                                ]
-                            },
-                            {
-                                xtype: 'panel',
-                                itemId: 'aboutPanel',
-                                title: 'About Us',
-                                layout: {
-                                    type: 'vbox',
-                                    align: 'center',
-                                    pack: 'center'
-                                },
-                                items: [
-                                    {
-                                        xtype: 'label',
-                                        text: 'About Us View'
-                                    }
-                                ]
-                            },
-                            {
-                                xtype: 'panel',
-                                itemId: 'contactPanel',
-                                title: 'Contact Us',
-                                layout: {
-                                    type: 'vbox',
-                                    align: 'center',
-                                    pack: 'center'
-                                },
-                                items: [
-                                    {
-                                        xtype: 'label',
-                                        text: 'Contact Us View'
-                                    }
-                                ]
-                            }
-                        ]
+    items: [
+        {
+            xtype: 'panel',
+            region: 'west',
+            split: true,
+            itemId: 'menuPanel',
+            width: 150,
+            title: 'Menu',
+            items: [
+                {
+                    xtype: 'menu',
+                    floating: false,
+                    itemId: 'menu',
+                    items: [
+                        {
+                            xtype: 'menuitem',
+                            itemId: 'home',
+                            text: 'Home'
+                        },
+                        {
+                            xtype: 'menuitem',
+                            itemId: 'about',
+                            text: 'About Us'
+                        },
+                        {
+                            xtype: 'menuitem',
+                            itemId: 'contact',
+                            text: 'Contact us'
+                        }
+                    ],
+                    listeners: {
+                        click: 'onMenuClick'
                     }
-                ]
-            };
-        if (instanceConfig) {
-            MyApp.getApplication().$xdsMergeConfigs(me, config, instanceConfig);
+                }
+            ]
+        },
+        {
+            xtype: 'panel',
+            region: 'center',
+            itemId: 'contentPanel',
+            layout: 'card',
+            items: [
+                {
+                    xtype: 'panel',
+                    itemId: 'homePanel',
+                    title: 'Home',
+                    layout: {
+                        type: 'vbox',
+                        align: 'center',
+                        pack: 'center'
+                    },
+                    items: [
+                        {
+                            xtype: 'label',
+                            text: 'Home View'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    itemId: 'aboutPanel',
+                    title: 'About Us',
+                    layout: {
+                        type: 'vbox',
+                        align: 'center',
+                        pack: 'center'
+                    },
+                    items: [
+                        {
+                            xtype: 'label',
+                            text: 'About Us View'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    itemId: 'contactPanel',
+                    title: 'Contact Us',
+                    layout: {
+                        type: 'vbox',
+                        align: 'center',
+                        pack: 'center'
+                    },
+                    items: [
+                        {
+                            xtype: 'label',
+                            text: 'Contact Us View'
+                        }
+                    ]
+                }
+            ]
         }
-        return me.callParent([config]);
-    },
+    ],
 
     onMenuClick: function(menu, item, e, eOpts) {
         location.hash = item.itemId;

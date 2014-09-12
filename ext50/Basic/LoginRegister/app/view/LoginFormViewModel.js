@@ -16,4 +16,5 @@
 Ext.define('MyApp.view.LoginFormViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.loginform'
+
 });

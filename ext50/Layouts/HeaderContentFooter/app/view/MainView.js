@@ -19,11 +19,9 @@ Ext.define('MyApp.view.MainView', {
 
     requires: [
         'MyApp.view.MainViewViewModel',
-        'MyApp.view.MainViewViewController',
         'Ext.panel.Panel'
     ],
 
-    controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },

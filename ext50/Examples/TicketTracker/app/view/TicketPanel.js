@@ -19,7 +19,6 @@ Ext.define('TicketTracker.view.TicketPanel', {
 
     requires: [
         'TicketTracker.view.TicketPanelViewModel',
-        'TicketTracker.view.TicketPanelViewController',
         'TicketTracker.view.TicketDataView',
         'Ext.toolbar.Toolbar',
         'Ext.form.field.ComboBox',
@@ -27,7 +26,6 @@ Ext.define('TicketTracker.view.TicketPanel', {
         'Ext.view.View'
     ],
 
-    controller: 'ticketpanel',
     viewModel: {
         type: 'ticketpanel'
     },

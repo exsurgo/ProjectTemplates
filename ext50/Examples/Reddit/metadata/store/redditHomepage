@@ -87,10 +87,12 @@
         "model": "RedditPost",
         "storeId": "MyJsonPStore"
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "f0614e19-3c8a-4a65-88b8-617e77db563f",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "Ext.data.proxy.JsonP",

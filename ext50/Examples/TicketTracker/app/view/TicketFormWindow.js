@@ -19,7 +19,6 @@ Ext.define('TicketTracker.view.TicketFormWindow', {
 
     requires: [
         'TicketTracker.view.TicketFormWindowViewModel',
-        'TicketTracker.view.TicketFormWindowViewController',
         'TicketTracker.view.TicketForm',
         'Ext.form.Panel'
     ],
@@ -33,7 +32,6 @@ Ext.define('TicketTracker.view.TicketFormWindow', {
         ]
     },
 
-    controller: 'ticketformwindow',
     viewModel: {
         type: 'ticketformwindow'
     },

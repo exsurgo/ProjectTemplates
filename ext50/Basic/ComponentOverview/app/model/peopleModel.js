@@ -23,16 +23,16 @@ Ext.define('ViewOverviewExtJS.model.peopleModel', {
 
     fields: [
         {
-            name: 'name',
-            type: 'string'
+            type: 'string',
+            name: 'name'
         },
         {
-            name: 'gender',
-            type: 'string'
+            type: 'string',
+            name: 'gender'
         },
         {
-            name: 'age',
-            type: 'int'
+            type: 'int',
+            name: 'age'
         }
     ]
 });

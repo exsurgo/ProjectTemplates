@@ -12,115 +12,107 @@
     "designerId": "3b278091-bbd1-4471-9384-2594bdf50300",
     "cn": [
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Integer",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "type": "int"
+                "name": "id"
             },
-            "name": "MyField",
+            "name": "MyInteger",
             "designerId": "b76d7b75-c851-41ba-b698-3397d7e3f71d"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "type": "string"
+                "name": "description"
             },
-            "name": "MyField1",
+            "name": "MyString",
             "designerId": "fab078f9-6ed9-4afe-9e19-1a3245a5f158"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Date",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "dueDate",
-                "type": "date"
+                "name": "dueDate"
             },
-            "name": "MyField2",
+            "name": "MyDate",
             "designerId": "3c21a073-45c0-45f2-9040-ecf58b2a21dd"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "priority",
-                "type": "string"
+                "name": "priority"
             },
-            "name": "MyField3",
+            "name": "MyString1",
             "designerId": "8cd6ddb8-7f6d-4295-a9dc-18947e2fe859"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "details",
-                "type": "string"
+                "name": "details"
             },
-            "name": "MyField4",
+            "name": "MyString2",
             "designerId": "31693a84-56db-46a9-9f5d-4dbe7ef2b93d"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Date",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "createdAt",
-                "type": "date"
+                "name": "createdAt"
             },
-            "name": "MyField5",
+            "name": "MyDate1",
             "designerId": "564e88ab-0250-4c0c-b8e4-0f3ba7faad0a"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Date",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "updatedAt",
-                "type": "date"
+                "name": "updatedAt"
             },
-            "name": "MyField6",
+            "name": "MyDate2",
             "designerId": "d7a5a970-bfb9-4afb-8fab-46424144cbff"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "assignedTo",
-                "type": "string"
+                "name": "assignedTo"
             },
-            "name": "MyField7",
+            "name": "MyString3",
             "designerId": "eddd23a8-be07-41bd-96de-f9758150e1b7"
         }
     ]

@@ -16,4 +16,5 @@
 Ext.define('TicketTracker.view.TicketFormWindowViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.ticketformwindow'
+
 });

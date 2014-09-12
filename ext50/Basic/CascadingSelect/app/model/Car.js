@@ -17,21 +17,21 @@ Ext.define('CascadingSelect.model.Car', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.field.Field'
+        'Ext.data.field.String'
     ],
 
     fields: [
         {
-            name: 'maker',
-            type: 'string'
+            type: 'string',
+            name: 'maker'
         },
         {
-            name: 'series',
-            type: 'string'
+            type: 'string',
+            name: 'series'
         },
         {
-            name: 'model',
-            type: 'string'
+            type: 'string',
+            name: 'model'
         }
     ]
 });

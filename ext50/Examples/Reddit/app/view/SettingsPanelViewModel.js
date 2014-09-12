@@ -16,4 +16,5 @@
 Ext.define('MyApp.view.SettingsPanelViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.settingspanel'
+
 });

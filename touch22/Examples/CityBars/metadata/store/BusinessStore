@@ -11,10 +11,12 @@
         "model": "Business",
         "storeId": "BusinessStore"
     },
-    "mockCfgs": [
-        "data"
-    ],
     "designerId": "b866f522-624d-4bde-a112-b25880c8285f",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
     "cn": [
         {
             "type": "Ext.data.proxy.JsonP",

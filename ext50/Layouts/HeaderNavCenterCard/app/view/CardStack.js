@@ -19,11 +19,9 @@ Ext.define('MyApp.view.CardStack', {
 
     requires: [
         'MyApp.view.CardStackViewModel',
-        'MyApp.view.CardStackViewController',
         'Ext.panel.Panel'
     ],
 
-    controller: 'cardstack',
     viewModel: {
         type: 'cardstack'
     },

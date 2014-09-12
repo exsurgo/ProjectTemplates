@@ -18,11 +18,9 @@ Ext.define('MyApp.view.SettingsPanel', {
     alias: 'widget.settingspanel',
 
     requires: [
-        'MyApp.view.SettingsPanelViewModel',
-        'MyApp.view.SettingsPanelViewController'
+        'MyApp.view.SettingsPanelViewModel'
     ],
 
-    controller: 'settingspanel',
     viewModel: {
         type: 'settingspanel'
     },

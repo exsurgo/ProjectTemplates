@@ -18,41 +18,43 @@ Ext.define('TaskList.model.Task', {
     alias: 'model.task',
 
     requires: [
-        'Ext.data.field.Field'
+        'Ext.data.field.Integer',
+        'Ext.data.field.String',
+        'Ext.data.field.Date'
     ],
 
     fields: [
         {
-            name: 'id',
-            type: 'int'
+            type: 'int',
+            name: 'id'
         },
         {
-            name: 'description',
-            type: 'string'
+            type: 'string',
+            name: 'description'
         },
         {
-            name: 'dueDate',
-            type: 'date'
+            type: 'date',
+            name: 'dueDate'
         },
         {
-            name: 'priority',
-            type: 'string'
+            type: 'string',
+            name: 'priority'
         },
         {
-            name: 'details',
-            type: 'string'
+            type: 'string',
+            name: 'details'
         },
         {
-            name: 'createdAt',
-            type: 'date'
+            type: 'date',
+            name: 'createdAt'
         },
         {
-            name: 'updatedAt',
-            type: 'date'
+            type: 'date',
+            name: 'updatedAt'
         },
         {
-            name: 'assignedTo',
-            type: 'string'
+            type: 'string',
+            name: 'assignedTo'
         }
     ]
 });

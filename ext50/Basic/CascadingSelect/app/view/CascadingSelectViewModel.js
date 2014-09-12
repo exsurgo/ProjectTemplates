@@ -104,4 +104,5 @@ Ext.define('CascadingSelect.view.CascadingSelectViewModel', {
             ]
         }
     }
+
 });

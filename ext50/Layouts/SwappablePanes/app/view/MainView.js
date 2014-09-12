@@ -19,14 +19,12 @@ Ext.define('MyApp.view.MainView', {
 
     requires: [
         'MyApp.view.MainViewViewModel',
-        'MyApp.view.MainViewViewController',
         'Ext.toolbar.Toolbar',
         'Ext.button.Split',
         'Ext.menu.Menu',
         'Ext.menu.Item'
     ],
 
-    controller: 'mainview',
     viewModel: {
         type: 'mainview'
     },

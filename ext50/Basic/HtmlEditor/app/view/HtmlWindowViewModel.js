@@ -16,4 +16,5 @@
 Ext.define('MyApp.view.HtmlWindowViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.htmlwindow'
+
 });

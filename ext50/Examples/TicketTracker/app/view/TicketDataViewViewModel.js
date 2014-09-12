@@ -16,4 +16,5 @@
 Ext.define('TicketTracker.view.TicketDataViewViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.ticketdataview'
+
 });

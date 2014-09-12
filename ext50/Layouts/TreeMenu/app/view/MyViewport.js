@@ -19,12 +19,10 @@ Ext.define('MyApp.view.MyViewport', {
 
     requires: [
         'MyApp.view.MyViewportViewModel',
-        'MyApp.view.MyViewportViewController',
         'Ext.tree.Panel',
         'Ext.tree.View'
     ],
 
-    controller: 'myviewport',
     viewModel: {
         type: 'myviewport'
     },
