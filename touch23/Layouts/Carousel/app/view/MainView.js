@@ -40,7 +40,7 @@ Ext.define('MyApp.view.MainView', {
                         xtype: 'image',
                         height: 201,
                         itemId: 'image1',
-                        src: 'images/sencha.png'
+                        src: 'resources/images/sencha.png'
                     }
                 ]
             },
@@ -58,7 +58,7 @@ Ext.define('MyApp.view.MainView', {
                         xtype: 'image',
                         height: 201,
                         itemId: 'image2',
-                        src: 'images/sencha.png'
+                        src: 'resources/images/sencha.png'
                     }
                 ]
             },
@@ -76,7 +76,7 @@ Ext.define('MyApp.view.MainView', {
                         xtype: 'image',
                         height: 201,
                         itemId: 'image3',
-                        src: 'images/sencha.png'
+                        src: 'resources/images/sencha.png'
                     }
                 ]
             }

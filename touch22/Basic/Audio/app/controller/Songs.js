@@ -53,7 +53,7 @@ Ext.define('MyApp.controller.Songs', {
                     items: [
                         {
                             xtype: 'audio',
-                            url: 'songs/crash.mp3',
+                            url: 'resources/songs/crash.mp3',
                             loop: true,
                             autoResume: true
                         }
@@ -65,7 +65,7 @@ Ext.define('MyApp.controller.Songs', {
                     items: [
                         {
                             xtype: 'image',
-                            src: 'images/cover.png',
+                            src: 'resources/images/cover.png',
                             width: 250,
                             height: 250
                         }

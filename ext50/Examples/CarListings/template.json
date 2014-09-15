@@ -1,5 +1,6 @@
 {
     "title": "Car Listings",
     "description": "Example that illustrates a grid data bound to a details view template and a bar chart.",
-    "category": "Examples"
+    "category": "Examples",
+	"useImagePreview": true
 }

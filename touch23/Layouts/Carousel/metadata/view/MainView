@@ -52,7 +52,7 @@
                     "userConfig": {
                         "height": 201,
                         "itemId": "image1",
-                        "src": "images/sencha.png"
+                        "src": "resources/images/sencha.png"
                     },
                     "name": "MyImg",
                     "designerId": "9e8af58b-436a-4d5e-9e3e-13a9d985e828"
@@ -97,7 +97,7 @@
                     "userConfig": {
                         "height": 201,
                         "itemId": "image2",
-                        "src": "images/sencha.png"
+                        "src": "resources/images/sencha.png"
                     },
                     "name": "MyImg1",
                     "designerId": "9fc67162-ddee-4ab8-a61e-e87bf4bf8026"
@@ -142,7 +142,7 @@
                     "userConfig": {
                         "height": 201,
                         "itemId": "image3",
-                        "src": "images/sencha.png"
+                        "src": "resources/images/sencha.png"
                     },
                     "name": "MyImg2",
                     "designerId": "24d48c7a-aa33-41a2-aec8-081bc2268efb"

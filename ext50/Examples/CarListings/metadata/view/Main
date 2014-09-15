@@ -229,11 +229,11 @@
                             "userConfig": {
                                 "designer|displayName": "tpl",
                                 "implHandler": [
-                                    "<div style=\"padding: 10px\">\r",
-                                    "    <img src=\"data/{img}\" style=\"float: right; border: 1px solid #999\" />\r",
-                                    "    <b>Manufacturer</b>: {manufacturer}<br>\r",
-                                    "    <b>Model</b>: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>\r",
-                                    "    <b>Price</b>: {price:usMoney}<br>\r",
+                                    "<div style=\"padding: 10px\">",
+                                    "    <img src=\"resources/images/{img}\" style=\"float: right; border: 1px solid #999\" />",
+                                    "    <b>Manufacturer</b>: {manufacturer}<br>",
+                                    "    <b>Model</b>: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>",
+                                    "    <b>Price</b>: {price:usMoney}<br>",
                                     "</div>"
                                 ]
                             },

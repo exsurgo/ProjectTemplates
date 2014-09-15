@@ -107,7 +107,7 @@ Ext.define('CarListings.view.Main', {
                     itemId: 'detailPanel',
                     tpl: [
                         '<div style="padding: 10px">',
-                        '    <img src="data/{img}" style="float: right; border: 1px solid #999" />',
+                        '    <img src="resources/images/{img}" style="float: right; border: 1px solid #999" />',
                         '    <b>Manufacturer</b>: {manufacturer}<br>',
                         '    <b>Model</b>: <a href="{wiki}" target="_blank">{model}</a><br>',
                         '    <b>Price</b>: {price:usMoney}<br>',

@@ -25,7 +25,7 @@ Ext.define('MyApp.controller.App', {
     launch: function() {
 
         var store = Ext.getStore('Records'),	// Record store
-        	mainView = this.getMainView();		// Main view
+            mainView = this.getMainView();		// Main view
 
         // Loop through each category in the store
         store.each(function(category) {
@@ -45,7 +45,7 @@ Ext.define('MyApp.controller.App', {
                 // Add an image
                 slide.add({
                     xtype: 'image',
-                    src: 'images/sencha.png'
+                    src: 'resources/images/sencha.png'
                 });
 
                 // Add a label to the slide displaying the category and value

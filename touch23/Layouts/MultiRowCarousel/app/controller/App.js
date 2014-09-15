@@ -45,7 +45,7 @@ Ext.define('MyApp.controller.App', {
                 // Add an image
                 slide.add({
                     xtype: 'image',
-                    src: 'images/sencha.png'
+                    src: 'resources/images/sencha.png'
                 });
 
                 // Add a label to the slide displaying the category and value

@@ -78,7 +78,7 @@ Ext.define('TaskList.view.Tasks', {
                                 '<table>',
                                 '    <tr>',
                                 '        <td style="padding-right: 8px">',
-                                '            <img src="images/{priority}.png" title="{priority} Priority" />',
+                                '            <img src="resources/images/{priority}.png" title="{priority} Priority" />',
                                 '        </td>',
                                 '        <td>',
                                 '            {priority}',
