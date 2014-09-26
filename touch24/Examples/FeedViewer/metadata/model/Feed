@@ -1,0 +1,98 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "feed",
+        "designer|userClassName": "Feed"
+    },
+    "designerId": "56645fcf-b8ce-42ee-a55d-84138aaed06c",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "feedUrl",
+                "name": "url"
+            },
+            "name": "field7",
+            "designerId": "6e7041db-6c74-4bd0-bddb-40ad72460741"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "name": "field8",
+            "designerId": "9db658ff-4b2d-4c04-8f8f-ab5f1590b2d8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "link"
+            },
+            "name": "field9",
+            "designerId": "fd42fac6-fbe0-4fba-a1c4-3a2619637e38"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "author"
+            },
+            "name": "field10",
+            "designerId": "27936281-bd83-47d1-9de0-aba474dc7412"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description"
+            },
+            "name": "field11",
+            "designerId": "4d54db1c-1b2f-4084-8338-99a475328b2a"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "entries",
+                "filterProperty": null,
+                "model": "Post",
+                "name": "posts",
+                "store": null
+            },
+            "name": "MyHasManyAssociation",
+            "designerId": "1cb1d437-5c75-4d19-a6e2-efb3cd570c7f"
+        }
+    ]
+}

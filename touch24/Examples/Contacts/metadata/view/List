@@ -1,0 +1,44 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contactlist",
+        "designer|userClassName": "List",
+        "disableSelection": true,
+        "emptyText": "No Contacts",
+        "store": "ContactStore"
+    },
+    "designerId": "5b610c64-3053-4d2f-8bfb-77077b9b2217",
+    "cn": [
+        {
+            "type": "Ext.dataview.IndexBar",
+            "reference": {
+                "name": "indexBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyIndexBar",
+            "designerId": "62e06e22-c1ef-4c62-a31f-308b64178caa"
+        },
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{firstName} {lastName}</div>"
+                ]
+            },
+            "name": "tpl2",
+            "designerId": "218dddcb-9a35-4f10-8ae0-78a321386a81"
+        }
+    ]
+}

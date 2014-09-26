@@ -1,0 +1,54 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}]"
+        ],
+        "designer|userClassName": "Feeds",
+        "model": "Feed",
+        "storeId": "Feeds"
+    },
+    "designerId": "9cd5d50c-3d15-48ba-a903-a64be6a6ba8f",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "Feeds"
+            },
+            "name": "MyLocalStorageProxy",
+            "designerId": "e35f6448-1801-42c8-bdcb-ab45b1cd696c"
+        }
+    ]
+}

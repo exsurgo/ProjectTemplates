@@ -1,0 +1,360 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userClassName": "Overlays",
+        "layout": "vbox",
+        "margin": null
+    },
+    "name": "MyContainer7",
+    "designerId": "8597ee21-646f-4cd3-b11a-f00640c49cd6",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "ActionSheet",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Action Sheet",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "6b6db92e-499d-40ac-9b9a-5da3ab80b738",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onActionSheetTap",
+                        "implHandler": [
+                            "var actionSheet;",
+                            "",
+                            "if (!actionSheet) {",
+                            "    actionSheet = Ext.create('Ext.ActionSheet', {",
+                            "        items: [",
+                            "            {",
+                            "                text: 'Save',",
+                            "                ui: 'confirm',",
+                            "                handler: function() {",
+                            "                    actionSheet.hide();",
+                            "                }",
+                            "            },",
+                            "            {",
+                            "                text: 'Delete',",
+                            "                ui  : 'decline',",
+                            "                handler: function() {",
+                            "                    actionSheet.hide();",
+                            "                }",
+                            "            },",
+                            "            {",
+                            "                text: 'Info',",
+                            "                ui: 'action',",
+                            "                handler: function() {",
+                            "                    actionSheet.hide();",
+                            "                }",
+                            "            },",
+                            "            {",
+                            "                text: 'Cancel',",
+                            "                handler: function() {",
+                            "                    actionSheet.hide();",
+                            "                }",
+                            "            }",
+                            "        ]",
+                            "    });",
+                            "    Ext.Viewport.add(actionSheet);",
+                            "}",
+                            "",
+                            "actionSheet.show();"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onActionSheetTap",
+                    "designerId": "fe8ca4b2-d153-4a9a-a669-d4ad32d11bab"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "Overlay",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Overlay",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "9c752b55-c7e8-4b87-9d93-e83311021499",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onOverlayTap",
+                        "implHandler": [
+                            "var overlay;",
+                            "",
+                            "if (!overlay) {",
+                            "        ",
+                            "    overlay = Ext.create('Ext.Panel', {",
+                            "         ",
+                            "        left: 0,",
+                            "        top: 0,",
+                            "        ",
+                            "        modal: true,",
+                            "        hideOnMaskTap: true,",
+                            "        ",
+                            "        hidden: true,",
+                            "        ",
+                            "        width: 300,",
+                            "        height: 300,",
+                            "        ",
+                            "        showAnimation: 'fade',",
+                            "        hideAnimation: 'fadeOut',",
+                            "         ",
+                            "        html: \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec dui interdum, luctus velit et, fringilla nulla. Praesent mi orci, cursus a ante eget, imperdiet ultricies justo. Nunc dolor dui, fringilla ut congue in, malesuada id dolor. Proin quis convallis tortor. In libero lectus, mollis eleifend risus id, imperdiet molestie lacus. Praesent sodales augue mollis nisl egestas gravida. Sed vel dui semper arcu sagittis imperdiet ullamcorper et nunc. Phasellus blandit arcu sit amet congue suscipit. Etiam diam elit, porttitor nec nunc eu, volutpat cursus ligula. Donec vel felis magna.\",",
+                            "         ",
+                            "        styleHtmlContent: true,",
+                            "        scrollable: true,",
+                            "        ",
+                            "        items: [{",
+                            "            docked: 'top',",
+                            "            xtype: 'toolbar',",
+                            "            title: 'Overlay'",
+                            "        }]",
+                            "    });",
+                            "    Ext.Viewport.add(overlay);",
+                            "}",
+                            "overlay.showBy(button);"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onOverlayTap",
+                    "designerId": "e83e945a-db81-450b-90c5-4b61a3e5a86f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "Alert",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Alert",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "3713e344-9dd2-441b-8604-91b401be0445",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAlertTap",
+                        "implHandler": [
+                            "",
+                            "Ext.Msg.alert('Alert', 'You clicked alert!', Ext.emptyFn);"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onAlertTap",
+                    "designerId": "dc996075-f962-4ca6-9e83-be0dce2b22d0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "Prompt",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Prompt",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "5115260b-793b-4e61-aeeb-d8d982092546",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPromptTap",
+                        "implHandler": [
+                            "",
+                            "Ext.Msg.prompt('Enter Data', 'Some data is required.', Ext.emptyFn);"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onPromptTap",
+                    "designerId": "c2993108-bf7a-4534-af11-e797d5fda1a7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "Confirm",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Confirm",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "643e753d-0661-48b8-a435-7b65fa123f84",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onConfirmTap",
+                        "implHandler": [
+                            "",
+                            "Ext.Msg.confirm('Confirm your click', 'Are you sure?', Ext.emptyFn);"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onConfirmTap",
+                    "designerId": "9dc567fc-131d-454f-8ab0-32ac93f93f50"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": null,
+                "itemId": "Picker",
+                "layout|flex": null,
+                "margin": "0 0 1em 0",
+                "text": "Picker",
+                "width": 200
+            },
+            "name": "MyButton16",
+            "designerId": "872bc9c8-4a43-45a7-9c8b-5eec5b03b891",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPickerTap",
+                        "implHandler": [
+                            "var picker;",
+                            "",
+                            "if (!picker) {",
+                            "    picker = Ext.create('Ext.Picker', {",
+                            "        slots: [",
+                            "            {",
+                            "                name: 'day',",
+                            "                title: 'Day',",
+                            "                data: [",
+                            "                    { text: 'Monday', value: 'monday' },",
+                            "                    { text: 'Tuesday', value: 'tuesday' },",
+                            "                    { text: 'Wednesday', value: 'wednesday' },",
+                            "                    { text: 'Thursday', value: 'thursday' },",
+                            "                    { text: 'Friday', value: 'friday' },",
+                            "                    { text: 'Saturday', value: 'saturday' },",
+                            "                    { text: 'Sunday', value: 'sunday' }",
+                            "                ]",
+                            "            }, {",
+                            "                name: 'month',",
+                            "                title: 'Month',",
+                            "                data: [",
+                            "                    { text: 'January', value: 'january' },",
+                            "                    { text: 'February', value: 'february' },",
+                            "                    { text: 'March', value: 'march' },",
+                            "                    { text: 'April', value: 'april' },",
+                            "                    { text: 'May', value: 'may' },",
+                            "                    { text: 'June', value: 'june' },",
+                            "                    { text: 'July', value: 'july' },",
+                            "                    { text: 'August', value: 'august' },",
+                            "                    { text: 'September', value: 'september' },",
+                            "                    { text: 'October', value: 'october' },",
+                            "                    { text: 'November', value: 'november' },",
+                            "                    { text: 'December', value: 'december' }",
+                            "                ]",
+                            "            }",
+                            "        ]",
+                            "    });",
+                            "    Ext.Viewport.add(picker);",
+                            "} ",
+                            "",
+                            "picker.show();"
+                        ],
+                        "name": "tap"
+                    },
+                    "name": "onPickerTap",
+                    "designerId": "d15a9907-4b7c-4f51-be56-9780c9e9ecd1"
+                }
+            ]
+        }
+    ]
+}

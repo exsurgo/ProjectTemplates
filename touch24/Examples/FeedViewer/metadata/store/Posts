@@ -1,0 +1,99 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{",
+            "    title: 'Mock Post One',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the first post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Two',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the second post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Three',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the third post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Four',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the fourth post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}]"
+        ],
+        "designer|userAlias": "posts",
+        "designer|userClassName": "Posts",
+        "model": "Post",
+        "storeId": "Posts"
+    },
+    "designerId": "f6c25b60-a60b-4ab6-a994-1d34cee875f5",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "feedUrl",
+                    "numPosts"
+                ],
+                "fn": "loadPosts",
+                "implHandler": [
+                    "this.load({",
+                    "    params:{",
+                    "        q: feedUrl,",
+                    "        num: numPosts || 20",
+                    "    }",
+                    "});",
+                    ""
+                ]
+            },
+            "name": "loadPosts",
+            "designerId": "4a63984a-2b7e-4035-b84d-050c686162a4"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
+            },
+            "name": "MyJsonPProxy",
+            "designerId": "49054a3a-dc77-4b5e-9804-8823e0343a7d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "responseData.feed.entries"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "eb0f29d5-bd5b-40fc-b637-63fbdaa91c69"
+                }
+            ]
+        }
+    ]
+}

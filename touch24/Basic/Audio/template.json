@@ -1,0 +1,6 @@
+{
+	"title": "Audio Player",
+    "description": "Audio list with built-in audio player and controls",
+    "category": "Basic",
+	"useImagePreview": true
+}

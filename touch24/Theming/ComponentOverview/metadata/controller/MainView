@@ -1,0 +1,88 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView"
+    },
+    "name": "MyController",
+    "designerId": "4411d918-5c32-4898-ba67-69cfab106c3c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#navList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var view = record.get('view');",
+                    "",
+                    "if (this.viewList.indexOf(view) < 0) {",
+                    "    this.viewList[view] = Ext.create('ComponentOverview.view.' + view);",
+                    "}",
+                    "",
+                    "this.getMainContent().push(this.viewList[view]);",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "name": "onListItemTap",
+            "designerId": "70be5534-f0ee-496c-8ccd-7e65ff2b02af"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "navList",
+                "selector": "list#navList"
+            },
+            "name": "navList",
+            "designerId": "8f9ff52c-e93c-4b41-8b3a-f86e64f6d2aa"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainContent",
+                "selector": "navigationview#mainContent"
+            },
+            "name": "mainContent",
+            "designerId": "ef173f57-0aa7-4260-8e9c-60d44a5e49e4"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "this.viewList = [];",
+                    "this.viewList.Buttons = Ext.create('ComponentOverview.view.Buttons');",
+                    "this.getMainContent().push(this.viewList.Buttons);",
+                    "this.getNavList().select(0);"
+                ]
+            },
+            "name": "launch",
+            "designerId": "1a17733f-f16f-4bdc-a007-e7f8f221eda6"
+        }
+    ]
+}

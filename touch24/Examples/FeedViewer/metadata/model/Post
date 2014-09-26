@@ -1,0 +1,70 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "post",
+        "designer|userClassName": "Post"
+    },
+    "designerId": "c0b797e7-eb24-41b3-bdb9-8bdb6995dc99",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "name": "field",
+            "designerId": "d5a2e48a-6fd3-4ceb-a782-938614b5a433"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "author"
+            },
+            "name": "field1",
+            "designerId": "44fce92c-5629-4347-9aa1-3c0885a02706"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "content",
+                "name": "story"
+            },
+            "name": "field2",
+            "designerId": "aedb1714-1ea2-4fdd-9398-05f5a07ff0bd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "publishedDate",
+                "name": "date",
+                "type": "date"
+            },
+            "name": "field3",
+            "designerId": "3ed29110-3a22-4137-b0e7-3ef1ccc3a6e3"
+        }
+    ]
+}

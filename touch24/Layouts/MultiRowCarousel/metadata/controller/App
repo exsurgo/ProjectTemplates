@@ -1,0 +1,85 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "App"
+    },
+    "designerId": "2244a5b7-0d9b-441f-ad44-36d0838fd3f9",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "",
+                    "var store = Ext.getStore('Records'),\t// Record store",
+                    "\tmainView = this.getMainView();\t\t// Main view",
+                    "",
+                    "// Loop through each category in the store",
+                    "store.each(function(category) {",
+                    "",
+                    "    // Create a horizontal carousel",
+                    "    var carousel = Ext.create('Ext.carousel.Carousel', {",
+                    "        direction: 'horizontal',",
+                    "        directionLock: true",
+                    "    });",
+                    "",
+                    "    // Loop through each value in the record",
+                    "    Ext.each(category.get('values'), function(item) {",
+                    "",
+                    "        // Create a new slide",
+                    "        var slide = Ext.create('widget.slide');",
+                    "",
+                    "        // Add an image",
+                    "        slide.add({",
+                    "            xtype: 'image',",
+                    "            src: 'resources/images/sencha.png'",
+                    "        });",
+                    "",
+                    "        // Add a label to the slide displaying the category and value",
+                    "        slide.add({",
+                    "            xtype: 'label',",
+                    "            centered: true,",
+                    "            html: category.get('category') + \" - \" + item",
+                    "        });",
+                    "",
+                    "",
+                    "        // Add slide to horizontal carousel",
+                    "        carousel.add(slide);",
+                    "",
+                    "    });",
+                    "",
+                    "    //  Add horizontal carousel to the main vertical carousel",
+                    "    mainView.add(carousel);",
+                    "",
+                    "});"
+                ]
+            },
+            "name": "launch",
+            "designerId": "8017ce1d-ac67-4f33-8560-658026be78b2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "mainview"
+            },
+            "name": "mainView",
+            "designerId": "48b6c6ca-2424-4b69-8d93-4a3db13452eb"
+        }
+    ]
+}

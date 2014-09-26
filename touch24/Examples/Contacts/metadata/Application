@@ -1,0 +1,89 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Contacts"
+        ],
+        "models": [
+            "Contact"
+        ],
+        "name": "Contact",
+        "requires": [
+            "Ext.MessageBox",
+            "Ext.device.Camera"
+        ],
+        "stores": [
+            "ContactStore"
+        ],
+        "views": [
+            "Main",
+            "Info",
+            "Form",
+            "Picture",
+            "List",
+            "FavoriteView"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.util.Format.empty = function(value, defaultValue) {\r",
+                    "    return !Ext.isEmpty(value) ? value : defaultValue;\r",
+                    "};\r",
+                    "Ext.util.Format.undef = function(value, defaultValue) {\r",
+                    "    return Ext.isDefined(value) ? value : defaultValue;\r",
+                    "};\r",
+                    "var ds = Ext.StoreMgr.lookup('ContactStore');\r",
+                    "if (!ds.getCount()) {\r",
+                    "    Ext.Msg.alert('Intro', 'Setting up default database.');\r",
+                    "    ds.add({\r",
+                    "        firstName: 'Aaron',\r",
+                    "        lastName: 'Conran',\r",
+                    "        emailAddress: 'aaron@sencha.com',\r",
+                    "        phoneNumber: '443-555-1234'\r",
+                    "    });\r",
+                    "    ds.add({\r",
+                    "        firstName: 'Aditya',\r",
+                    "        lastName: 'Bansod',\r",
+                    "        phoneNumber: '555-555-1234'\r",
+                    "    });\r",
+                    "    ds.add({\r",
+                    "        firstName: 'Luca',\r",
+                    "        lastName: 'Candela',\r",
+                    "        phoneNumber: '555-555-1234'\r",
+                    "    });\r",
+                    "    ds.add({\r",
+                    "        firstName: 'Tommy',\r",
+                    "        lastName: 'Maintz',\r",
+                    "        isFavorite: true,\r",
+                    "        phoneNumber: '717-555-1234'\r",
+                    "    });\r",
+                    "    ds.add({\r",
+                    "        firstName: 'Nige',\r",
+                    "        lastName: '(Animal) White',\r",
+                    "        isFavorite: true,\r",
+                    "        phoneNumber: '555-555-1234'\r",
+                    "    });\r",
+                    "}"
+                ]
+            },
+            "name": "launch",
+            "designerId": "ba1fcbb2-e63e-445e-a67c-ec117224b08e"
+        }
+    ]
+}

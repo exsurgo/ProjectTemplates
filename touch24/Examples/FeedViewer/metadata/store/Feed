@@ -1,0 +1,97 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}]"
+        ],
+        "designer|userAlias": "feed",
+        "designer|userClassName": "Feed",
+        "model": "Feed",
+        "storeId": "Feed"
+    },
+    "designerId": "bca16d92-974d-41c6-b021-ca22bcb31fd8",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
+            },
+            "name": "MyJsonPProxy2",
+            "designerId": "cb3f6054-74a2-4508-8d75-942e45c98035",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "record": null,
+                        "rootProperty": "responseData.feed",
+                        "useSimpleAccessors": null
+                    },
+                    "name": "MyJsonReader2",
+                    "designerId": "107cd083-db99-4d66-91e4-5cad0035de81"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "feedUrl",
+                    "numPosts"
+                ],
+                "fn": "loadFeed",
+                "implHandler": [
+                    "console.log('Loading feed');",
+                    "this.load({",
+                    "    params:{",
+                    "        q: feedUrl,",
+                    "        num: numPosts || 20",
+                    "    }",
+                    "});",
+                    ""
+                ]
+            },
+            "name": "loadFeed",
+            "designerId": "05f9cef4-2a83-428d-8b10-e2f8ca55bddf"
+        }
+    ]
+}

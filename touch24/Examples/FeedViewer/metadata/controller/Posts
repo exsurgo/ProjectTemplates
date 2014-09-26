@@ -1,0 +1,180 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "posts",
+        "designer|userClassName": "Posts",
+        "models": [
+            "Post"
+        ],
+        "stores": [
+            "Posts",
+            "Feed",
+            "Feeds"
+        ],
+        "views": [
+            "PostsList",
+            "PostsStory"
+        ]
+    },
+    "designerId": "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "postsNav",
+                "selector": "#postsNav"
+            },
+            "name": "postsNav",
+            "designerId": "1d294d9c-f2b2-4437-b1c8-6a3617e621e9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "postsList",
+                "selector": "#postsList"
+            },
+            "name": "postsList",
+            "designerId": "9d4292e3-4cc8-4636-a8ae-4963d5e2ff9b"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "this.loadPostsOnFeedLoad();\r",
+                    "\r",
+                    "Ext.getStore('Feed').loadFeed('http://feeds.feedburner.com/blogspot/MKuf');\r",
+                    "//https://blog.facebook.com/atom.php\r",
+                    "//http://feeds.feedburner.com/blogspot/MKuf\r",
+                    "//http://feeds.feedburner.com/SenchaBlog\r",
+                    ""
+                ]
+            },
+            "name": "launch",
+            "designerId": "ba81473e-8677-415d-8024-270befc0c87c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadPostsOnFeedLoad",
+                "implHandler": [
+                    "var self = this;\r",
+                    "\r",
+                    "Ext.getStore('Feed').on('load', function(store, records) {\r",
+                    "    var feed = records[0],\r",
+                    "        posts, title, feedsStore;\r",
+                    "\r",
+                    "    if (feed) {\r",
+                    "        posts = feed.posts().getData().items;\r",
+                    "        title = feed.get('title');\r",
+                    "        feedsStore = Ext.getStore('Feeds');\r",
+                    "\r",
+                    "        Ext.getStore('Posts').setData(posts);\r",
+                    "\r",
+                    "        self.getPostsList().title = title;\r",
+                    "\r",
+                    "        if (feedsStore.find('url', feed.get('url')) < 0){\r",
+                    "            feedsStore.add(feed);\r",
+                    "        }\r",
+                    "    } else {\r",
+                    "        Ext.Msg.alert('Error', 'Could not load feed. Check that the URL is a valid feed.');\r",
+                    "    }\r",
+                    "});\r",
+                    ""
+                ]
+            },
+            "name": "loadPostsOnFeedLoad",
+            "designerId": "4257c28b-bc15-4254-91cd-28cfbe4ff4c4"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "postslist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onPostsListActivate",
+                "implHandler": [
+                    "this.getApplication().fireEvent('updateNav');"
+                ],
+                "name": "activate"
+            },
+            "name": "onPostsListActivate",
+            "designerId": "09a681bf-e595-4ec4-9c5a-7f55ebe10c93"
+        },
+        {
+            "type": "applicationaction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onUpdateNav",
+                "implHandler": [
+                    "var self = this;\r",
+                    "// ugly hack, so that this happens after title is internally set by back state stack\r",
+                    "Ext.defer(function(){\r",
+                    "    var title = self.getPostsList().title;\r",
+                    "    self.getPostsNav().getNavigationBar().setTitle(title);\r",
+                    "},500);"
+                ],
+                "name": "updateNav",
+                "scope": "this"
+            },
+            "name": "onUpdateNav",
+            "designerId": "a5a6ba56-e7af-4b35-9b35-c56812aa4e48"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "postslist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onPostsListItemTap",
+                "implHandler": [
+                    "var story = Ext.create('widget.postsstory',{\r",
+                    "    title: record.get('title')\r",
+                    "});\r",
+                    "story.setData(record.data);\r",
+                    "this.getPostsNav().push(story);"
+                ],
+                "name": "itemtap"
+            },
+            "name": "onPostsListItemTap",
+            "designerId": "a6fc06e1-c607-4d4b-ae9e-ab88ecb2fc93"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "    title: 'Post One',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is some mock content.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}"
+        ],
+        "designer|userAlias": "postsstory",
+        "designer|userClassName": "PostsStory",
+        "html": null,
+        "layout": "fit",
+        "scrollable": "vertical",
+        "styleHtmlContent": true
+    },
+    "designerId": "2a091605-b040-405a-850b-7188c860907c",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "tpl",
+                "implHandler": [
+                    "{story}"
+                ]
+            },
+            "name": "tpl2",
+            "designerId": "23020e46-1839-4ada-8238-6b094e9cb545"
+        }
+    ]
+}

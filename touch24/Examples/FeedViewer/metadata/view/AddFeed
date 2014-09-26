@@ -1,0 +1,144 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "addfeed",
+        "designer|userClassName": "AddFeed",
+        "styleHtmlContent": true
+    },
+    "designerId": "bbf9d344-a904-48fc-9751-b7d983fadc22",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Enter URL"
+            },
+            "name": "MyFieldSet",
+            "designerId": "6e782018-f198-434c-9ce6-8cc2382b6cb6",
+            "cn": [
+                {
+                    "type": "Ext.field.Url",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "urlField",
+                        "label": "URL",
+                        "placeHolder": "http://example.com"
+                    },
+                    "name": "MyUrlField",
+                    "designerId": "5550dd0f-14bc-4a2c-bcec-202f6935d979"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "or",
+                "styleHtmlContent": true
+            },
+            "name": "MyLabel",
+            "designerId": "94c9ff7a-56a7-4624-9786-5688fa61cab5"
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Search"
+            },
+            "name": "MyFieldSet1",
+            "designerId": "ad62516b-ead7-4e1a-91cb-1eb84fac6e88",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "searchField",
+                        "label": "Keyword"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "2bead2c9-7c46-4be0-8fe2-50ae024939f3"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "center",
+                "layout": "hbox"
+            },
+            "name": "MyContainer2",
+            "designerId": "009819b7-a655-411b-a517-b972c4e5dd2c",
+            "cn": [
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer",
+                    "designerId": "d7e7065a-ce33-450d-b9b1-0f5824e12ed7"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": null,
+                        "height": 40,
+                        "id": "doneButton",
+                        "layout|flex": 1,
+                        "text": "Done",
+                        "ui": "confirm",
+                        "width": 100
+                    },
+                    "name": "MyButton2",
+                    "designerId": "ba6b3728-0a8c-42f6-97b9-7038e6211249"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer1",
+                    "designerId": "504f350d-bac6-4bd4-ad92-9aff4ff5e8a9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "title": "Feed Viewer",
+    "description": "An RSS feed reader that connects to the Google Feed API",
+    "category": "Examples",
+	"useImagePreview": true
+}

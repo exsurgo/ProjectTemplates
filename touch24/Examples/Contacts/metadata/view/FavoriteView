@@ -1,0 +1,39 @@
+{
+    "type": "Ext.dataview.DataView",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "favoriteview",
+        "designer|userClassName": "FavoriteView",
+        "emptyText": "No Favorite Contacts",
+        "inline": [
+            "true"
+        ],
+        "store": "ContactStore"
+    },
+    "designerId": "e83d8bd0-aa8b-4b79-bf87-9a8797bca19b",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"favorite\">\r",
+                    "    <img src=\"{picture:empty(\"resources/img/defaultContactPic.png\")}\" width=\"160\" />\r",
+                    "    <div>{firstName} {lastName}</div>\r",
+                    "</div>"
+                ]
+            },
+            "name": "tpl",
+            "designerId": "1308b91b-18a7-4f92-84d9-e7b4edce8da0"
+        }
+    ]
+}

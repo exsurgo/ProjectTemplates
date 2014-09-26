@@ -1,0 +1,84 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}]"
+        ],
+        "designer|userAlias": "search",
+        "designer|userClassName": "Searches",
+        "model": "Search",
+        "storeId": "Searches"
+    },
+    "designerId": "836a9d83-2905-4366-829b-fae819f43a55",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://ajax.googleapis.com/ajax/services/feed/find?v=1.0"
+            },
+            "name": "MyJsonPProxy1",
+            "designerId": "c3a457f0-9c23-48e9-bd2c-b1fdd39e1b65",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "responseData.entries"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "a7ca019c-222c-4747-9c09-942498e01e1b"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "keywords"
+                ],
+                "fn": "search",
+                "implHandler": [
+                    "    this.load({",
+                    "        params:{",
+                    "            q: keywords",
+                    "        }",
+                    "    });",
+                    ""
+                ]
+            },
+            "name": "search",
+            "designerId": "48c025ba-ab6a-4a84-8e29-0d42274a0144"
+        }
+    ]
+}
