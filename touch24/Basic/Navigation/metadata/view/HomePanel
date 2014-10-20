@@ -10,7 +10,8 @@
         "designer|userClassName": "HomePanel",
         "itemId": "homePanel"
     },
-    "designerId": "12fcc33d-36a7-475b-8792-6b6c96745316",
+    "name": "MyPanel",
+    "designerId": "b1599c44-c741-4494-a530-2e493ff2e295",
     "customConfigs": [
         {
             "group": "(Custom Properties)",

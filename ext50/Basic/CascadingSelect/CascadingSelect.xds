@@ -11,12 +11,21 @@
             }
         },
         "urlPrefix": "",
-        "exportPath": ""
+        "exportPath": "",
+        "projectHasEnabledWebServer": false,
+        "lockUrlPrefix": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed"
     },
-    "xdsVersion": "3.1.0",
+    "xdsVersion": "3.2.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000007,
+    "upgradeVersion": 310000000001,
     "framework": "ext50",
     "viewOrderMap": {
         "view": [

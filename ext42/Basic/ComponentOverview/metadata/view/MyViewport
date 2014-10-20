@@ -222,6 +222,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig",
+                            "designerId": "63ca30b2-74e8-43c6-9e5a-e46dab8d1750"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig",
+                            "designerId": "e17222c1-9ab6-464f-99d8-a749bfe5e5bd"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig",
                             "designerId": "6df7ad11-e0dc-42fa-b344-afc58006d5ba"
                         }
                     ]
@@ -247,6 +267,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig1",
+                            "designerId": "0d282515-fca0-4a20-ad57-4cf2a70868a4"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig1",
+                            "designerId": "7908d247-d57b-4615-9e39-f03b42bba1b8"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig1",
                             "designerId": "fe7b6234-5825-41eb-8b7a-1865bcfb035c"
                         }
                     ]
@@ -264,6 +304,26 @@
                     "name": "MyPanel6",
                     "designerId": "aa8c5790-06d7-4bef-9a61-259942301625",
                     "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig2",
+                            "designerId": "5a2bfae0-f290-4d1c-b749-0dbc8437c049"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig2",
+                            "designerId": "44b57342-0318-442e-8ac2-ca2fcf8b497b"
+                        },
                         {
                             "type": "Ext.tab.Tab",
                             "reference": {
@@ -320,6 +380,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig3",
+                            "designerId": "85e068c9-fd04-40b8-9f02-5ea1e2149c0c"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig3",
+                            "designerId": "4361d1c7-e12f-4339-8ef4-8a008e12fe51"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig3",
                             "designerId": "8a1daeb1-5f5d-474d-94f8-805e3e874f66"
                         }
                     ]
@@ -345,6 +425,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig4",
+                            "designerId": "3445384f-9b28-4a09-af48-2ec6799ac36e"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig4",
+                            "designerId": "e5c63848-a7a6-4e4e-8b9e-a92adbcfe946"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig4",
                             "designerId": "0441870d-990b-43fc-bde5-b197e312f8cb"
                         }
                     ]
@@ -362,6 +462,26 @@
                     "name": "MyPanel9",
                     "designerId": "ea5ccc62-63e3-47a3-9ed5-62b4d648759c",
                     "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig5",
+                            "designerId": "02e3d2f3-06bb-47cb-960a-baeb15a69bc2"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig5",
+                            "designerId": "a15bbf75-5c9b-4234-9ec6-3661031301c0"
+                        },
                         {
                             "type": "Ext.tab.Tab",
                             "reference": {
@@ -418,6 +538,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig6",
+                            "designerId": "700c9852-18b6-464d-99cd-296d3e9e2cee"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig6",
+                            "designerId": "52856f94-758b-41c6-8870-6c6aff4100e6"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig6",
                             "designerId": "704046a7-aac5-457d-aacd-11413f02b1ac"
                         }
                     ]
@@ -443,6 +583,26 @@
                             },
                             "codeClass": null,
                             "name": "TabConfig7",
+                            "designerId": "0e16ae60-1374-4b6d-acad-ba367989c45a"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig7",
+                            "designerId": "d358d2e7-8697-47c9-8e3b-1b41b7e00f1b"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig7",
                             "designerId": "76f9d76e-6691-4a00-84fd-4bd68ffd5210"
                         }
                     ]
@@ -460,6 +620,26 @@
                     "name": "MyPanel12",
                     "designerId": "a766af77-bfb8-4de7-bd6f-ed93a2a828e6",
                     "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig8",
+                            "designerId": "4ea6d1b8-5c55-4f32-80bf-afd6d20e4588"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig8",
+                            "designerId": "0523aae1-e9f2-4116-9bb9-6e00855a5abb"
+                        },
                         {
                             "type": "Ext.tab.Tab",
                             "reference": {

@@ -11,20 +11,6 @@
     "designerId": "b65f72c1-bee5-4e5a-9fed-ce939650a75c",
     "cn": [
         {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "mainView",
-                "selector": "#mainView"
-            },
-            "name": "mainView",
-            "designerId": "890fc24b-394b-4158-9a36-29f49a8466ed"
-        },
-        {
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -116,6 +102,20 @@
             },
             "name": "navigate",
             "designerId": "7d2ec394-96f9-46bd-afc0-b4bea517cc08"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainView",
+                "selector": "#mainView"
+            },
+            "name": "mainView",
+            "designerId": "890fc24b-394b-4158-9a36-29f49a8466ed"
         },
         {
             "type": "controllerref",

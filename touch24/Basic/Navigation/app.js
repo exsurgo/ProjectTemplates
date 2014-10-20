@@ -21,11 +21,11 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MainView',
-        'HomePanel',
         'AboutPanel',
         'ContactPanel',
-        'NavMenu'
+        'NavMenu',
+        'MainView',
+        'HomePanel'
     ],
     controllers: [
         'Navigation'

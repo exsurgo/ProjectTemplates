@@ -11,19 +11,9 @@
         "designer|userClassName": "MainView",
         "itemId": "mainView"
     },
-    "designerId": "faa0b672-f068-471f-a6d3-46b660667fb3",
+    "name": "MyNavigationView",
+    "designerId": "93ed1728-5b7f-4f1a-8f9a-ff6522bfe569",
     "cn": [
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "name": "homepanel",
-            "designerId": "498cac42-a8ff-45b0-8824-6cd6462aa473",
-            "masterInstanceId": "12fcc33d-36a7-475b-8792-6b6c96745316"
-        },
         {
             "type": "Ext.navigation.Bar",
             "reference": {
@@ -32,13 +22,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "centered": false,
-                "container|align": "center",
                 "docked": "top",
                 "itemId": "navBar"
             },
-            "name": "MyNavigationBar",
-            "designerId": "0f1bbba6-fd7c-4481-b01a-5619bf8837f8",
+            "name": "MyNavigationBar1",
+            "designerId": "573aaa08-af83-4d7a-b3b5-a818f305e963",
             "cn": [
                 {
                     "type": "Ext.Button",
@@ -53,9 +41,20 @@
                         "text": "Menu"
                     },
                     "name": "MyButton",
-                    "designerId": "4e669aad-cf0b-4bd8-bc1b-a90720ca5001"
+                    "designerId": "54b3ff3b-55b4-4cd5-b158-dea31dc01c39"
                 }
             ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "homepanel",
+            "designerId": "87c8f121-6bc8-4b83-91f9-977895d3279b",
+            "masterInstanceId": "b1599c44-c741-4494-a530-2e493ff2e295"
         }
     ]
 }

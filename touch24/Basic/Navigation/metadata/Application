@@ -11,11 +11,11 @@
         ],
         "name": "MyApp",
         "views": [
-            "MainView",
-            "HomePanel",
             "AboutPanel",
             "ContactPanel",
-            "NavMenu"
+            "NavMenu",
+            "MainView",
+            "HomePanel"
         ]
     },
     "name": "Application",

@@ -1,7 +1,11 @@
 {
     "name": "ComponentOverview",
     "settings": {
-        "cmd": {},
+        "cmd": {
+            "license": "",
+            "cmdVersion": "",
+            "frameworkVersion": ""
+        },
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -10,13 +14,24 @@
                 "width": null
             }
         },
-        "urlPrefix": "",
-        "exportPath": ""
+        "urlPrefix": "http://localhost/ComponentOverview/",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lockUrlPrefix": true,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1481-inputEl": "a new version of the framework is available"
     },
-    "xdsVersion": "3.1.0",
+    "xdsVersion": "3.2.0",
     "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000007,
+    "upgradeVersion": 310000000001,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [
